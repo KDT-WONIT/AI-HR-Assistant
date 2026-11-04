@@ -1,0 +1,15 @@
+{
+  "generated_for": "2026-11-03",
+  "schema_tables": 43,
+  "employee_count": 100,
+  "department_count": 16,
+  "regulation_count": 59,
+  "topic_count": 211,
+  "keyword_count": 1199,
+  "article_count": 1765,
+  "chunk_count": 2796,
+  "contact_card_count": 211,
+  "avatar_placeholders": 100,
+  "fk_validation": "PASS"
+}
+rows= 12117 files= 43

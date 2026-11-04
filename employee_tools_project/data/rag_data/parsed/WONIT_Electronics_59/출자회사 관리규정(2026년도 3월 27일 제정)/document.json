@@ -1,0 +1,7253 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "출자회사 관리규정(2026년도 3월 27일 제정)",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 16434347714377066143,
+    "filename": "출자회사 관리규정(2026년도 3월 27일 제정).pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/tables/0"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/tables/1"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/tables/2"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/texts/45"
+      },
+      {
+        "$ref": "#/texts/46"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/49"
+      },
+      {
+        "$ref": "#/tables/3"
+      },
+      {
+        "$ref": "#/texts/50"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/55"
+      },
+      {
+        "$ref": "#/texts/56"
+      },
+      {
+        "$ref": "#/texts/57"
+      },
+      {
+        "$ref": "#/groups/4"
+      },
+      {
+        "$ref": "#/texts/63"
+      },
+      {
+        "$ref": "#/groups/5"
+      },
+      {
+        "$ref": "#/texts/71"
+      },
+      {
+        "$ref": "#/groups/6"
+      },
+      {
+        "$ref": "#/texts/73"
+      },
+      {
+        "$ref": "#/pictures/3"
+      },
+      {
+        "$ref": "#/texts/76"
+      },
+      {
+        "$ref": "#/tables/4"
+      },
+      {
+        "$ref": "#/texts/77"
+      },
+      {
+        "$ref": "#/groups/7"
+      },
+      {
+        "$ref": "#/texts/97"
+      },
+      {
+        "$ref": "#/pictures/4"
+      },
+      {
+        "$ref": "#/texts/100"
+      },
+      {
+        "$ref": "#/tables/5"
+      },
+      {
+        "$ref": "#/groups/8"
+      },
+      {
+        "$ref": "#/texts/108"
+      },
+      {
+        "$ref": "#/groups/9"
+      },
+      {
+        "$ref": "#/texts/117"
+      },
+      {
+        "$ref": "#/pictures/5"
+      },
+      {
+        "$ref": "#/texts/120"
+      },
+      {
+        "$ref": "#/tables/6"
+      },
+      {
+        "$ref": "#/texts/121"
+      },
+      {
+        "$ref": "#/texts/122"
+      },
+      {
+        "$ref": "#/texts/123"
+      },
+      {
+        "$ref": "#/groups/10"
+      },
+      {
+        "$ref": "#/texts/131"
+      },
+      {
+        "$ref": "#/texts/132"
+      },
+      {
+        "$ref": "#/texts/133"
+      },
+      {
+        "$ref": "#/texts/134"
+      },
+      {
+        "$ref": "#/texts/135"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        },
+        {
+          "$ref": "#/texts/32"
+        },
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        },
+        {
+          "$ref": "#/texts/35"
+        },
+        {
+          "$ref": "#/texts/36"
+        },
+        {
+          "$ref": "#/texts/37"
+        },
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/texts/39"
+        },
+        {
+          "$ref": "#/texts/40"
+        },
+        {
+          "$ref": "#/texts/41"
+        },
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/51"
+        },
+        {
+          "$ref": "#/texts/52"
+        },
+        {
+          "$ref": "#/texts/53"
+        },
+        {
+          "$ref": "#/texts/54"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/58"
+        },
+        {
+          "$ref": "#/texts/59"
+        },
+        {
+          "$ref": "#/texts/60"
+        },
+        {
+          "$ref": "#/texts/61"
+        },
+        {
+          "$ref": "#/texts/62"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/64"
+        },
+        {
+          "$ref": "#/texts/65"
+        },
+        {
+          "$ref": "#/texts/66"
+        },
+        {
+          "$ref": "#/texts/67"
+        },
+        {
+          "$ref": "#/texts/68"
+        },
+        {
+          "$ref": "#/texts/69"
+        },
+        {
+          "$ref": "#/texts/70"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/72"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/78"
+        },
+        {
+          "$ref": "#/texts/79"
+        },
+        {
+          "$ref": "#/texts/80"
+        },
+        {
+          "$ref": "#/texts/81"
+        },
+        {
+          "$ref": "#/texts/82"
+        },
+        {
+          "$ref": "#/texts/83"
+        },
+        {
+          "$ref": "#/texts/84"
+        },
+        {
+          "$ref": "#/texts/85"
+        },
+        {
+          "$ref": "#/texts/86"
+        },
+        {
+          "$ref": "#/texts/87"
+        },
+        {
+          "$ref": "#/texts/88"
+        },
+        {
+          "$ref": "#/texts/89"
+        },
+        {
+          "$ref": "#/texts/90"
+        },
+        {
+          "$ref": "#/texts/91"
+        },
+        {
+          "$ref": "#/texts/92"
+        },
+        {
+          "$ref": "#/texts/93"
+        },
+        {
+          "$ref": "#/texts/94"
+        },
+        {
+          "$ref": "#/texts/95"
+        },
+        {
+          "$ref": "#/texts/96"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/101"
+        },
+        {
+          "$ref": "#/texts/102"
+        },
+        {
+          "$ref": "#/texts/103"
+        },
+        {
+          "$ref": "#/texts/104"
+        },
+        {
+          "$ref": "#/texts/105"
+        },
+        {
+          "$ref": "#/texts/106"
+        },
+        {
+          "$ref": "#/texts/107"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/109"
+        },
+        {
+          "$ref": "#/texts/110"
+        },
+        {
+          "$ref": "#/texts/111"
+        },
+        {
+          "$ref": "#/texts/112"
+        },
+        {
+          "$ref": "#/texts/113"
+        },
+        {
+          "$ref": "#/texts/114"
+        },
+        {
+          "$ref": "#/texts/115"
+        },
+        {
+          "$ref": "#/texts/116"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/124"
+        },
+        {
+          "$ref": "#/texts/125"
+        },
+        {
+          "$ref": "#/texts/126"
+        },
+        {
+          "$ref": "#/texts/127"
+        },
+        {
+          "$ref": "#/texts/128"
+        },
+        {
+          "$ref": "#/texts/129"
+        },
+        {
+          "$ref": "#/texts/130"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 68.66666666666667,
+            "t": 784.3333333333334,
+            "r": 94.0,
+            "b": 771.6666666666666,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 67.66666666666667,
+            "t": 766.6666666666666,
+            "r": 99.66666666666666,
+            "b": 756.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 185.059705,
+            "t": 782.05441925,
+            "r": 312.430675,
+            "b": 767.085777875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "출자회사 관리규정",
+      "text": "출자회사 관리규정",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 267.21518,
+            "t": 727.8196902,
+            "r": 328.6219,
+            "b": 715.8447771,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "제1장 총칙",
+      "text": "제1장 총칙",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.60932,
+            "t": 688.638829384,
+            "r": 538.26828,
+            "b": 660.121035332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "제1조(목적) 이 규정은 WONIT Electronics가 출자한 회사의 효율적 관리를 위하여 필요한 기 준과 절차를 정함을 목적으로 한다.",
+      "text": "제1조(목적) 이 규정은 WONIT Electronics가 출자한 회사의 효율적 관리를 위하여 필요한 기 준과 절차를 정함을 목적으로 한다."
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.60932,
+            "t": 635.8964693839999,
+            "r": 378.96725482,
+            "b": 624.879549332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "제2조(정의) 이 규정에서 사용하는 용어의 정의는 다음과 같다.",
+      "text": "제2조(정의) 이 규정에서 사용하는 용어의 정의는 다음과 같다."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 67.523405,
+            "t": 618.395595384,
+            "r": 538.269335450068,
+            "b": 572.1371893319999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            148
+          ]
+        }
+      ],
+      "orig": "1. \"출자회사\"란 WONIT Electronics(이하 \"회사\"라 한다)가 경영에 관여할 목적으로 출자하 여 지분을 보유한 회사를 말하며, 지배력 여하에 따라 다음 각 목으로 구분한다. 다만, 공 공기관으로 지정된 회사 또는 면허ᆞ자격 유지 등을 위해 공제조합ᆞ협회 등의 지분을",
+      "text": "\"출자회사\"란 WONIT Electronics(이하 \"회사\"라 한다)가 경영에 관여할 목적으로 출자하 여 지분을 보유한 회사를 말하며, 지배력 여하에 따라 다음 각 목으로 구분한다. 다만, 공 공기관으로 지정된 회사 또는 면허ᆞ자격 유지 등을 위해 공제조합ᆞ협회 등의 지분을",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 84.91398,
+            "t": 565.653235384,
+            "r": 220.05337982,
+            "b": 554.636315332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "보유한 경우에는 제외한다.",
+      "text": "보유한 경우에는 제외한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 73.040415,
+            "t": 548.0324923840001,
+            "r": 538.26828,
+            "b": 501.89395533199996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            103
+          ]
+        }
+      ],
+      "orig": "가. 자회사 : 출자회사 중 회사가 50% 이상 지분을 보유하였거나 30% 이상 지분을 보유 하고 임원 임면권 등 사실상 지배력을 가진 법인으로서 회사의 연결재무제표상 연결대상 출자회사",
+      "text": "가. 자회사 : 출자회사 중 회사가 50% 이상 지분을 보유하였거나 30% 이상 지분을 보유 하고 임원 임면권 등 사실상 지배력을 가진 법인으로서 회사의 연결재무제표상 연결대상 출자회사",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 73.040415,
+            "t": 495.290132384,
+            "r": 538.267944182,
+            "b": 466.65246933199995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            85
+          ]
+        }
+      ],
+      "orig": "나. 관계회사 : 회사가 의결권의 20% 이상을 소유하고 출자회사의 재무정책과 영업정책에 관한 의사결정에 참여할 수 있는 유의적인 영향력이 있는 출자회사",
+      "text": "나. 관계회사 : 회사가 의결권의 20% 이상을 소유하고 출자회사의 재무정책과 영업정책에 관한 의사결정에 참여할 수 있는 유의적인 영향력이 있는 출자회사",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 73.040415,
+            "t": 460.168515384,
+            "r": 332.699354182,
+            "b": 449.15159533199994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "다. 기타 출자회사 : 가목 및 나목 이외의 출자회사",
+      "text": "다. 기타 출자회사 : 가목 및 나목 이외의 출자회사",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 67.523405,
+            "t": 442.547772384,
+            "r": 449.00929482,
+            "b": 431.53085233199994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            40
+          ]
+        }
+      ],
+      "orig": "2. \"출자회사 관리부서\"란 출자회사 경영관리를 총괄하는 부서를 말한다.",
+      "text": "\"출자회사 관리부서\"란 출자회사 경영관리를 총괄하는 부서를 말한다.",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 67.523405,
+            "t": 424.927029384,
+            "r": 522.796665,
+            "b": 396.409235332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            52
+          ]
+        }
+      ],
+      "orig": "3. \"사업주관부서\"란 출자회사의 설립과 목적사업 수행에 대한 관리를 담당하는 부서를 말한다.",
+      "text": "\"사업주관부서\"란 출자회사의 설립과 목적사업 수행에 대한 관리를 담당하는 부서를 말한다.",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 67.523405,
+            "t": 389.805412384,
+            "r": 520.37061982,
+            "b": 361.16774933199997,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            75
+          ]
+        }
+      ],
+      "orig": "4. \"전략적 출자부서\"란 투자심의위원회 개최 등 신규 출자회사 설립과 출자회사 매각, 청산 등 전략적 출자를 담당하는 부서를 말한다.",
+      "text": "\"전략적 출자부서\"란 투자심의위원회 개최 등 신규 출자회사 설립과 출자회사 매각, 청산 등 전략적 출자를 담당하는 부서를 말한다.",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 67.523405,
+            "t": 354.683795384,
+            "r": 514.97354482,
+            "b": 343.666875332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            47
+          ]
+        }
+      ],
+      "orig": "5. \"관계부서\"란 「직제규정」에 따른 출자회사 관리업무와 관련 있는 부서를 말한다.",
+      "text": "\"관계부서\"란 「직제규정」에 따른 출자회사 관리업무와 관련 있는 부서를 말한다.",
+      "enumerated": true,
+      "marker": "5."
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 67.523405,
+            "t": 337.06305238399995,
+            "r": 535.150401754966,
+            "b": 308.425389332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            84
+          ]
+        }
+      ],
+      "orig": "6. \"SPC(Special Purpose Company)\"란 출자회사 중 특수한 목적을 위해 지분출자 등의 방식으로 설립 또는 투자한 회사를 말한다.",
+      "text": "\"SPC(Special Purpose Company)\"란 출자회사 중 특수한 목적을 위해 지분출자 등의 방식으로 설립 또는 투자한 회사를 말한다.",
+      "enumerated": true,
+      "marker": "6."
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 67.523405,
+            "t": 301.941435384,
+            "r": 532.8721644799999,
+            "b": 273.303772332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            66
+          ]
+        }
+      ],
+      "orig": "7. \"기타비상무이사\"란 출자회사의 비상근 이사로서, 출자회사의 경영을 감독하고 조언하는 역할을 수행하는 자를 말한다.",
+      "text": "\"기타비상무이사\"란 출자회사의 비상근 이사로서, 출자회사의 경영을 감독하고 조언하는 역할을 수행하는 자를 말한다.",
+      "enumerated": true,
+      "marker": "7."
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.60932,
+            "t": 249.1990753839999,
+            "r": 538.267944182,
+            "b": 220.56141233200003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            89
+          ]
+        }
+      ],
+      "orig": "제3조(적용범위) 출자 및 출자한 회사의 관리에 관하여 다음 각호의 경우 및 다른 규정에서 특별히 정하고 있는 경우를 제외하고는 이 규정이 정하는 바에 따른다.",
+      "text": "제3조(적용범위) 출자 및 출자한 회사의 관리에 관하여 다음 각호의 경우 및 다른 규정에서 특별히 정하고 있는 경우를 제외하고는 이 규정이 정하는 바에 따른다."
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 73.040415,
+            "t": 213.9575893839999,
+            "r": 242.50857,
+            "b": 202.94066933199997,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "1. 법령 및 정부지침에 의한 경우",
+      "text": "법령 및 정부지침에 의한 경우",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 73.040415,
+            "t": 196.45671538399995,
+            "r": 154.595543364,
+            "b": 185.43979533200002,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "2. 해외현지법인",
+      "text": "해외현지법인",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 73.040415,
+            "t": 178.835972384,
+            "r": 374.317135,
+            "b": 167.81905233199996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "3. 기타 정부의 지시 또는 출자사간 등의 합의에 의한 경우",
+      "text": "기타 정부의 지시 또는 출자사간 등의 합의에 의한 경우",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 233.753315,
+            "t": 143.6980532,
+            "r": 361.124285,
+            "b": 131.7231400999999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "제2장 출자회사의 설립",
+      "text": "제2장 출자회사의 설립",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.60932,
+            "t": 106.91457238399994,
+            "r": 538.26828,
+            "b": 78.27690933200006,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            100
+          ]
+        }
+      ],
+      "orig": "제4조(출자 사전협의) ① 회사의 사업주관부서는 사업을 추진하기 위해 출자회사를 설립(설립 후 추가 출자를 포함한다. 이하 같다.)하거나 지분을 인수하려는 경우 「공공기관의 운영에",
+      "text": "제4조(출자 사전협의) ① 회사의 사업주관부서는 사업을 추진하기 위해 출자회사를 설립(설립 후 추가 출자를 포함한다. 이하 같다.)하거나 지분을 인수하려는 경우 「공공기관의 운영에"
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 284.96556,
+            "t": 52.96800841000004,
+            "r": 309.87342093,
+            "b": 43.01888141000006,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "- 1 -",
+      "text": "- 1 -"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 68.66666666666667,
+            "t": 784.3333333333334,
+            "r": 94.0,
+            "b": 771.6666666666666,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.66666666666667,
+            "t": 766.6666666666666,
+            "r": 99.66666666666666,
+            "b": 756.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 185.059705,
+            "t": 782.05441925,
+            "r": 312.430675,
+            "b": 767.085777875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "출자회사 관리규정",
+      "text": "출자회사 관리규정",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.64334,
+            "t": 727.8359923840001,
+            "r": 538.267944182,
+            "b": 664.0767123319999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            161
+          ]
+        }
+      ],
+      "orig": "관한 법률」 제51조의2에 따라 정부 주무기관의 장 및 재정경제부장관과 사전에 협의하여 야 하며, 이사회 심의 · 의결이 필요한 경우에는 이사회 심의 · 의결 전에 사전협의를 하 여야 한다. 다만「공공기관의 운영에 관한 법률 시행령」제29조의2에 해당하는 경우 사전협의 대상에서 제외한다.",
+      "text": "관한 법률」 제51조의2에 따라 정부 주무기관의 장 및 재정경제부장관과 사전에 협의하여 야 하며, 이사회 심의 · 의결이 필요한 경우에는 이사회 심의 · 의결 전에 사전협의를 하 여야 한다. 다만「공공기관의 운영에 관한 법률 시행령」제29조의2에 해당하는 경우 사전협의 대상에서 제외한다."
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.12633,
+            "t": 657.4728893839999,
+            "r": 531.431649182,
+            "b": 611.334352332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            150
+          ]
+        }
+      ],
+      "orig": "② 제1항에 따른 사전협의는 해당연도 출연·출자계획에 대해 연 2회 실시하되, 전년도 10 월 말과 해당연도 4월 말까지 요청하는 것을 원칙으로 한다. 다만, 법령 제·개정 정책상황 의 변경 등 정책추진 및 사업추진을 위해 시급한 필요가 있는 경우 재정경제부장관과 수시",
+      "text": "② 제1항에 따른 사전협의는 해당연도 출연·출자계획에 대해 연 2회 실시하되, 전년도 10 월 말과 해당연도 4월 말까지 요청하는 것을 원칙으로 한다. 다만, 법령 제·개정 정책상황 의 변경 등 정책추진 및 사업추진을 위해 시급한 필요가 있는 경우 재정경제부장관과 수시",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.523405,
+            "t": 604.730529384,
+            "r": 164.16366982,
+            "b": 593.713609332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "로 협의할 수 있다.",
+      "text": "로 협의할 수 있다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.12633,
+            "t": 587.229655384,
+            "r": 538.26828,
+            "b": 558.591992332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            77
+          ]
+        }
+      ],
+      "orig": "③ 사업주관부서는 사전협의 시 다음 각 호의 사항을 포함하는 출자 계획서를 작성하여 주무 기관의 장 및 재정경제부장관에게 제출하여야 한다.",
+      "text": "③ 사업주관부서는 사전협의 시 다음 각 호의 사항을 포함하는 출자 계획서를 작성하여 주무 기관의 장 및 재정경제부장관에게 제출하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.523405,
+            "t": 551.988169384,
+            "r": 198.492089182,
+            "b": 540.971249332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "1. 출자의 목적 및 필요성",
+      "text": "출자의 목적 및 필요성",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.523405,
+            "t": 534.4872953839999,
+            "r": 264.456675,
+            "b": 523.470375332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "2. 출자 대상 법인의 사업범위 및 내용",
+      "text": "출자 대상 법인의 사업범위 및 내용",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.523405,
+            "t": 516.866552384,
+            "r": 187.57834,
+            "b": 505.84963233199994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "3. 출자의 금액 및 시기",
+      "text": "출자의 금액 및 시기",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.523405,
+            "t": 499.245809384,
+            "r": 326.34279918199996,
+            "b": 488.22888933199994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            28
+          ]
+        }
+      ],
+      "orig": "4. 출자대상 법인의 최소 5년간의 연도별 재무계획",
+      "text": "출자대상 법인의 최소 5년간의 연도별 재무계획",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.523405,
+            "t": 481.74493538400003,
+            "r": 538.26828,
+            "b": 453.107272332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            56
+          ]
+        }
+      ],
+      "orig": "5. 정부 또는 공공기관의 출자대상 법인에 대한 예산지원, 채무보증, 담보제공, 손실보전 등 의 내용",
+      "text": "정부 또는 공공기관의 출자대상 법인에 대한 예산지원, 채무보증, 담보제공, 손실보전 등 의 내용",
+      "enumerated": true,
+      "marker": "5."
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.60932,
+            "t": 429.002575384,
+            "r": 538.26828,
+            "b": 400.36491233199996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            100
+          ]
+        }
+      ],
+      "orig": "제5조(자금의 조달) ① 출자회사의 프로젝트 파이낸싱(PF) 대출 금융주선기관을 선정할 때는 금융회사 간 실질적인 경쟁을 유도하여 가장 유리한 금융조건으로 자금을 조달하여야 한다.",
+      "text": "제5조(자금의 조달) ① 출자회사의 프로젝트 파이낸싱(PF) 대출 금융주선기관을 선정할 때는 금융회사 간 실질적인 경쟁을 유도하여 가장 유리한 금융조건으로 자금을 조달하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.12633,
+            "t": 393.761089384,
+            "r": 538.267944182,
+            "b": 347.622552332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            113
+          ]
+        }
+      ],
+      "orig": "② 프로젝트 파이낸싱(PF) 대출약정은 출자지분비율 이내에서 대출금 상환의무를 부담하도 록 협의하여야 한다. 이 경우 건설, 운영 출자자, 재무적 출자자에 대한 과도한 확정 수익을 보장하여서는 안 된다.",
+      "text": "② 프로젝트 파이낸싱(PF) 대출약정은 출자지분비율 이내에서 대출금 상환의무를 부담하도 록 협의하여야 한다. 이 경우 건설, 운영 출자자, 재무적 출자자에 대한 과도한 확정 수익을 보장하여서는 안 된다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.12633,
+            "t": 341.0187293839999,
+            "r": 538.267944182,
+            "b": 312.50093533200004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            84
+          ]
+        }
+      ],
+      "orig": "③ 출자회사의 재정자립도 향상을 위해 출자회사의 채무에 대한 회사의 지급보증은 원칙적으 로 금지한다. 다만, 이사회의 승인을 받으면 그러하지 아니한다.",
+      "text": "③ 출자회사의 재정자립도 향상을 위해 출자회사의 채무에 대한 회사의 지급보증은 원칙적으 로 금지한다. 다만, 이사회의 승인을 받으면 그러하지 아니한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.12633,
+            "t": 305.8971123839999,
+            "r": 538.26828,
+            "b": 277.25944933200003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            74
+          ]
+        }
+      ],
+      "orig": "④ 회사는 출자회사와「독점규제 및 공정거래에 관한 법률」에 따른 대규모 내부거래를 하려 는 경우에는 이사회 심의·의결을 거쳐야 한다.",
+      "text": "④ 회사는 출자회사와「독점규제 및 공정거래에 관한 법률」에 따른 대규모 내부거래를 하려 는 경우에는 이사회 심의·의결을 거쳐야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.12633,
+            "t": 270.7754953839999,
+            "r": 538.148009182,
+            "b": 242.13783233200002,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            84
+          ]
+        }
+      ],
+      "orig": "⑤ 회사는 출자회사에 자금을 대여할 경우 이사회의 승인을 받아야 하며,「독점규제 및 공정 거래에 관한 법률」상 부당지원행위에 해당되지 않도록 해야한다.",
+      "text": "⑤ 회사는 출자회사에 자금을 대여할 경우 이사회의 승인을 받아야 하며,「독점규제 및 공정 거래에 관한 법률」상 부당지원행위에 해당되지 않도록 해야한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.60932,
+            "t": 218.03313538399993,
+            "r": 538.267944182,
+            "b": 189.39547233200005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            94
+          ]
+        }
+      ],
+      "orig": "제6조(기본계획 수립) ① 출자회사를 설립하려는 부서는 출자회사 관리부서 및 전략적 출자부 서와의 협의를 거쳐 다음 각 호의 사항을 검토하여 기본계획을 수립하여야 한다.",
+      "text": "제6조(기본계획 수립) ① 출자회사를 설립하려는 부서는 출자회사 관리부서 및 전략적 출자부 서와의 협의를 거쳐 다음 각 호의 사항을 검토하여 기본계획을 수립하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.523405,
+            "t": 182.79164938399992,
+            "r": 509.36360918199995,
+            "b": 171.774729332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            48
+          ]
+        }
+      ],
+      "orig": "1. 회사의 사업목적과 관련성, 회사에 대한 기여 및 사업 경제성을 포함한 설립 필요성",
+      "text": "회사의 사업목적과 관련성, 회사에 대한 기여 및 사업 경제성을 포함한 설립 필요성",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.523405,
+            "t": 165.29077538399997,
+            "r": 477.340964182,
+            "b": 154.27385533200004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            45
+          ]
+        }
+      ],
+      "orig": "2. 설립한 출자회사의 사업계획, 자본금 규모, 연차별 출자계획, 출자회사의 정관",
+      "text": "설립한 출자회사의 사업계획, 자본금 규모, 연차별 출자계획, 출자회사의 정관",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.12633,
+            "t": 147.6700323839999,
+            "r": 379.92673482,
+            "b": 136.65311233199998,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "② 기존회사에 출자하거나 인수하는 경우에도 제1항에 따른다.",
+      "text": "② 기존회사에 출자하거나 인수하는 경우에도 제1항에 따른다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.60932,
+            "t": 112.5484153839999,
+            "r": 538.267944182,
+            "b": 83.91075233200002,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            99
+          ]
+        }
+      ],
+      "orig": "제7조(출자회사 설립 후 사후보고) 사업주관부서는 출자회사 설립 또는 지분 취득이 완료된 경우, 설립 또는 취득 완료일부터 1개월 이내에 다음 각 호의 사항을 포함한 결과보고서를",
+      "text": "제7조(출자회사 설립 후 사후보고) 사업주관부서는 출자회사 설립 또는 지분 취득이 완료된 경우, 설립 또는 취득 완료일부터 1개월 이내에 다음 각 호의 사항을 포함한 결과보고서를"
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 284.96556,
+            "t": 52.96800841000004,
+            "r": 309.87342093,
+            "b": 43.01888141000006,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "- 2 -",
+      "text": "- 2 -"
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 68.66666666666667,
+            "t": 784.3333333333334,
+            "r": 94.0,
+            "b": 771.6666666666666,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.66666666666667,
+            "t": 766.6666666666666,
+            "r": 99.66666666666666,
+            "b": 756.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 185.059705,
+            "t": 782.05441925,
+            "r": 312.430675,
+            "b": 767.085777875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "출자회사 관리규정",
+      "text": "출자회사 관리규정",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.64334,
+            "t": 727.8359923840001,
+            "r": 416.98664981999997,
+            "b": 716.819072332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "작성하여 주무기관의 장관 및 재정경제부 장관에게 제출하여야 한다.",
+      "text": "작성하여 주무기관의 장관 및 재정경제부 장관에게 제출하여야 한다."
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.523405,
+            "t": 710.215249384,
+            "r": 409.097949182,
+            "b": 699.198329332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            39
+          ]
+        }
+      ],
+      "orig": "1. 출자회사의 명칭, 설립일, 소재지, 자본금, 주주구성 등 일반현황",
+      "text": "출자회사의 명칭, 설립일, 소재지, 자본금, 주주구성 등 일반현황",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.523405,
+            "t": 692.714375384,
+            "r": 234.712459182,
+            "b": 681.697455332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "2. 출자금액, 지분율 등 출자현황",
+      "text": "출자금액, 지분율 등 출자현황",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.523405,
+            "t": 675.093632384,
+            "r": 275.490695,
+            "b": 664.0767123319999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "3. 사전협의 내용과의 차이점 및 그 사유",
+      "text": "사전협의 내용과의 차이점 및 그 사유",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.523405,
+            "t": 657.4728893839999,
+            "r": 379.833809182,
+            "b": 646.455969332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "4. 그 밖에 출자회사 설립 또는 지분 취득과 관련된 중요사항",
+      "text": "그 밖에 출자회사 설립 또는 지분 취득과 관련된 중요사항",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 233.753315,
+            "t": 622.3349702,
+            "r": 361.124285,
+            "b": 610.3600571,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "제3장 출자회사의 관리",
+      "text": "제3장 출자회사의 관리",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.60932,
+            "t": 585.551489384,
+            "r": 538.267944182,
+            "b": 557.033695332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "제8조(관리의 기본사항) 회사는 출자회사의 책임경영체제 확립을 위하여 출자회사의 자율경영 을 보장하여야 한다.",
+      "text": "제8조(관리의 기본사항) 회사는 출자회사의 책임경영체제 확립을 위하여 출자회사의 자율경영 을 보장하여야 한다."
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.60932,
+            "t": 532.809129384,
+            "r": 538.26828,
+            "b": 504.29133533199996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            82
+          ]
+        }
+      ],
+      "orig": "제9조(출자관리위원회) ① 출자회사 관리에 관한 중요사항을 심의·의결하고 임원후보자 추천 에 관한 기본방침을 수립하기 위하여 출자관리위원회를 둔다.",
+      "text": "제9조(출자관리위원회) ① 출자회사 관리에 관한 중요사항을 심의·의결하고 임원후보자 추천 에 관한 기본방침을 수립하기 위하여 출자관리위원회를 둔다."
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.12633,
+            "t": 497.687512384,
+            "r": 513.5343248199999,
+            "b": 486.67059233199996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            49
+          ]
+        }
+      ],
+      "orig": "② 출자관리위원회는 위원장 1명을 포함하여, 6인 이상 11인 이내의 위원으로 구성한다.",
+      "text": "② 출자관리위원회는 위원장 1명을 포함하여, 6인 이상 11인 이내의 위원으로 구성한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.12633,
+            "t": 480.066769384,
+            "r": 389.52153482,
+            "b": 469.04984933199995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "③ 위원장은 출자회사 관리부서가 속한 조직의 본부장으로 한다.",
+      "text": "③ 위원장은 출자회사 관리부서가 속한 조직의 본부장으로 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.12633,
+            "t": 462.565895384,
+            "r": 459.56357482,
+            "b": 451.54897533199994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "④ 위원은 위원장이 지명하는 5인 이상 10인 이내의 본사 처ᆞ실장으로 한다.",
+      "text": "④ 위원은 위원장이 지명하는 5인 이상 10인 이내의 본사 처ᆞ실장으로 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.12633,
+            "t": 444.945152384,
+            "r": 538.267944182,
+            "b": 416.307489332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            58
+          ]
+        }
+      ],
+      "orig": "⑤ 출자관리위원회 사무를 처리하기 위하여 간사 1인을 두되, 간사는 출자회사 관리부서의 부서장으로 한다.",
+      "text": "⑤ 출자관리위원회 사무를 처리하기 위하여 간사 1인을 두되, 간사는 출자회사 관리부서의 부서장으로 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.12633,
+            "t": 409.823535384,
+            "r": 538.26828,
+            "b": 381.185872332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "⑥ 출자관리위원회는 위원장을 포함한 위원 과반수 이상의 출석으로 성립하고, 출석위원의 과 반수 이상의 찬성으로 의결한다.",
+      "text": "⑥ 출자관리위원회는 위원장을 포함한 위원 과반수 이상의 출석으로 성립하고, 출석위원의 과 반수 이상의 찬성으로 의결한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.60932,
+            "t": 357.081175384,
+            "r": 538.26828,
+            "b": 328.44351233200007,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            78
+          ]
+        }
+      ],
+      "orig": "제10조(출자회사 관리 업무) ① 회사는 출자회사의 경영목표 달성을 위하여 필요한 범위 안에 서 다음 각 호의 출자회사 관리업무를 수행한다.",
+      "text": "제10조(출자회사 관리 업무) ① 회사는 출자회사의 경영목표 달성을 위하여 필요한 범위 안에 서 다음 각 호의 출자회사 관리업무를 수행한다."
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.523405,
+            "t": 321.83968938399994,
+            "r": 302.95581,
+            "b": 310.822769332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "1. 주주권 및 이사회 의결권 행사에 관한 사항",
+      "text": "주주권 및 이사회 의결권 행사에 관한 사항",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.523405,
+            "t": 304.338815384,
+            "r": 215.043455,
+            "b": 293.32189533200005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "2. 예산 및 결산에 관한 사항",
+      "text": "예산 및 결산에 관한 사항",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.523405,
+            "t": 286.7180723839999,
+            "r": 220.560465,
+            "b": 275.701152332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "3. 경영실적 평가에 관한 사항",
+      "text": "경영실적 평가에 관한 사항",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.523405,
+            "t": 269.097329384,
+            "r": 242.50857,
+            "b": 258.08040933200004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "4. 조직 및 임원 인사에 관한 사항",
+      "text": "조직 및 임원 인사에 관한 사항",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.523405,
+            "t": 251.5964553839999,
+            "r": 297.4388,
+            "b": 240.57953533199998,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "5. 그 밖에 회사가 필요하다고 인정하는 사항",
+      "text": "그 밖에 회사가 필요하다고 인정하는 사항",
+      "enumerated": true,
+      "marker": "5."
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.12633,
+            "t": 233.97571238399996,
+            "r": 538.26828,
+            "b": 187.83717533200002,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            123
+          ]
+        }
+      ],
+      "orig": "② 사업주관부서는 제1항의 관리업무에 대하여 출자회사 관리부서와의 사전협의를 거쳐 수행 하며, 사업주관부서는 필요시 관계부서에 검토의견을 요청할 수 있으며, 요청을 받은 관계부 서는 검토의견을 주관부서에 회신하여야 한다.",
+      "text": "② 사업주관부서는 제1항의 관리업무에 대하여 출자회사 관리부서와의 사전협의를 거쳐 수행 하며, 사업주관부서는 필요시 관계부서에 검토의견을 요청할 수 있으며, 요청을 받은 관계부 서는 검토의견을 주관부서에 회신하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.12633,
+            "t": 181.233352384,
+            "r": 538.148009182,
+            "b": 152.595689332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            56
+          ]
+        }
+      ],
+      "orig": "③ 제1항 및 제2항의 출자회사 관리부서, 사업주관부서 및 관계부서는「직제규정」이 정한 바에 따른다.",
+      "text": "③ 제1항 및 제2항의 출자회사 관리부서, 사업주관부서 및 관계부서는「직제규정」이 정한 바에 따른다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.60932,
+            "t": 128.49099238399992,
+            "r": 538.26828,
+            "b": 99.85332933200004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            94
+          ]
+        }
+      ],
+      "orig": "제11조(출자회사의 주주총회 및 이사회) ① 회사는 출자회사의 운영에 있어 회사의 의사가 최 대한 반영되도록 하며, 출자회사에 대한 회사의 권리를 최대한 행사해야 한다.",
+      "text": "제11조(출자회사의 주주총회 및 이사회) ① 회사는 출자회사의 운영에 있어 회사의 의사가 최 대한 반영되도록 하며, 출자회사에 대한 회사의 권리를 최대한 행사해야 한다."
+    },
+    {
+      "self_ref": "#/texts/72",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.12633,
+            "t": 93.36937538399991,
+            "r": 538.26828,
+            "b": 82.35245533199998,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            48
+          ]
+        }
+      ],
+      "orig": "② 회사는 출자회사의 주주총회 안건을 사전에 검토하여 소속직원으로 하여금 주주총회에 참",
+      "text": "② 회사는 출자회사의 주주총회 안건을 사전에 검토하여 소속직원으로 하여금 주주총회에 참",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/73",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 284.96556,
+            "t": 52.96800841000004,
+            "r": 309.87342093,
+            "b": 43.01888141000006,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "- 3 -",
+      "text": "- 3 -"
+    },
+    {
+      "self_ref": "#/texts/74",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 68.66666666666667,
+            "t": 784.3333333333334,
+            "r": 94.0,
+            "b": 771.6666666666666,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/75",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.66666666666667,
+            "t": 766.6666666666666,
+            "r": 99.66666666666666,
+            "b": 756.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/76",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 185.059705,
+            "t": 782.05441925,
+            "r": 312.430675,
+            "b": 767.085777875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "출자회사 관리규정",
+      "text": "출자회사 관리규정",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/77",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.64334,
+            "t": 727.8359923840001,
+            "r": 268.62705482,
+            "b": 716.819072332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "석하여 의결권을 행사하도록 해야 한다.",
+      "text": "석하여 의결권을 행사하도록 해야 한다."
+    },
+    {
+      "self_ref": "#/texts/78",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.12633,
+            "t": 710.215249384,
+            "r": 538.148345,
+            "b": 681.697455332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            82
+          ]
+        }
+      ],
+      "orig": "③ 회사는 자회사로 하여금 주주총회 및 이사회 안건에 대하여 사전 협의하도록 해야하며, 주 주총회 및 이사회 의결내용을 즉시 보고하도록 해야 한다.",
+      "text": "③ 회사는 자회사로 하여금 주주총회 및 이사회 안건에 대하여 사전 협의하도록 해야하며, 주 주총회 및 이사회 의결내용을 즉시 보고하도록 해야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/79",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.12633,
+            "t": 675.093632384,
+            "r": 438.93475481999997,
+            "b": 664.0767123319999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            40
+          ]
+        }
+      ],
+      "orig": "④ 회사는 출자회사의 유형에 따라 다음 각 호와 같이 주주권을 행사한다.",
+      "text": "④ 회사는 출자회사의 유형에 따라 다음 각 호와 같이 주주권을 행사한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/80",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.523405,
+            "t": 657.4728893839999,
+            "r": 538.26828,
+            "b": 628.9550953319999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            75
+          ]
+        }
+      ],
+      "orig": "1. 자회사: 경영목표 제출, 예산편성, 경영계약, 경영실적 평가, 조직 및 임원 인사, 주주권 및 이사회 의결권 행사 등 포괄적 관리",
+      "text": "자회사: 경영목표 제출, 예산편성, 경영계약, 경영실적 평가, 조직 및 임원 인사, 주주권 및 이사회 의결권 행사 등 포괄적 관리",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/81",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.523405,
+            "t": 622.351272384,
+            "r": 538.267944182,
+            "b": 593.713609332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "2. 관계회사: 이사회 참여, 주요 의사결정 참여, 경영정보 요청 등 유의적인 영향력을 행사할 수 있는 범위 내 관리",
+      "text": "관계회사: 이사회 참여, 주요 의사결정 참여, 경영정보 요청 등 유의적인 영향력을 행사할 수 있는 범위 내 관리",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/82",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.523405,
+            "t": 587.229655384,
+            "r": 452.63469,
+            "b": 576.212735332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "3. 기타 출자회사: 주주권 행사, 정보요청 등 주주로서의 권한 범위 내 관리",
+      "text": "기타 출자회사: 주주권 행사, 정보요청 등 주주로서의 권한 범위 내 관리",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/83",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.60932,
+            "t": 551.988169384,
+            "r": 538.267944182,
+            "b": 523.470375332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "제12조(경영목표의 제출) ① 회사는 자회사가 다음연도 경영목표를 11월 30일까지 제출하도 록 하여야 한다.",
+      "text": "제12조(경영목표의 제출) ① 회사는 자회사가 다음연도 경영목표를 11월 30일까지 제출하도 록 하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/84",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.12633,
+            "t": 516.866552384,
+            "r": 538.148345,
+            "b": 488.22888933199994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            82
+          ]
+        }
+      ],
+      "orig": "② 회사는 자회사가 경영목표를 변경하는 경우에는 해당 자회사의 사장이 경영목표 제출 후 30일 이내에 변경된 사항을 회사에 제출하도록 하여야 한다.",
+      "text": "② 회사는 자회사가 경영목표를 변경하는 경우에는 해당 자회사의 사장이 경영목표 제출 후 30일 이내에 변경된 사항을 회사에 제출하도록 하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/85",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.60932,
+            "t": 464.124192384,
+            "r": 538.26828,
+            "b": 435.486529332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            62
+          ]
+        }
+      ],
+      "orig": "제13조(예산의 편성) ① 자회사의 예산은 예산총칙, 추정손익계산서, 추정대차대조표 및 자금 계획서로 구분한다.",
+      "text": "제13조(예산의 편성) ① 자회사의 예산은 예산총칙, 추정손익계산서, 추정대차대조표 및 자금 계획서로 구분한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/86",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.12633,
+            "t": 429.002575384,
+            "r": 538.26828,
+            "b": 400.36491233199996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            56
+          ]
+        }
+      ],
+      "orig": "② 회사는 자회사의 다음 회계연도 예산편성에 적용되는 공통지침을 작성하여 자회사에 통보 할 수 있다.",
+      "text": "② 회사는 자회사의 다음 회계연도 예산편성에 적용되는 공통지침을 작성하여 자회사에 통보 할 수 있다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/87",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.12633,
+            "t": 393.761089384,
+            "r": 538.26828,
+            "b": 365.24329533199995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            57
+          ]
+        }
+      ],
+      "orig": "③ 자회사는 다음 회계연도의 예산 및 사업계획을 해당 회계연도 개시 전까지 편성하여 확정 하여야 한다.",
+      "text": "③ 자회사는 다음 회계연도의 예산 및 사업계획을 해당 회계연도 개시 전까지 편성하여 확정 하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/88",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.12633,
+            "t": 358.639472384,
+            "r": 537.76119482,
+            "b": 347.622552332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "④ 자회사는 예산이 확정되거나 변경된 때에는 지체 없이 그 내용을 회사에 제출하도록 한다.",
+      "text": "④ 자회사는 예산이 확정되거나 변경된 때에는 지체 없이 그 내용을 회사에 제출하도록 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/89",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.60932,
+            "t": 323.517855384,
+            "r": 538.267944182,
+            "b": 277.25944933200003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            143
+          ]
+        }
+      ],
+      "orig": "제14조(경영계약의 체결) 회사의 사장은 자회사의 사장으로 선임된 자와 자회사의 사장이 임기 중 달성하여야 할 경영목표, 성과급, 해임기준 등에 관한 사항을 정한 경영계약을 체결하여야 한다. 다만, 정부의 행정규칙 등에서 별도로 정하는 경우는 예외로 한다.",
+      "text": "제14조(경영계약의 체결) 회사의 사장은 자회사의 사장으로 선임된 자와 자회사의 사장이 임기 중 달성하여야 할 경영목표, 성과급, 해임기준 등에 관한 사항을 정한 경영계약을 체결하여야 한다. 다만, 정부의 행정규칙 등에서 별도로 정하는 경우는 예외로 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/90",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.60932,
+            "t": 253.15475238399995,
+            "r": 538.267944182,
+            "b": 224.51708933200007,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "제15조(경영실적 평가) ① 회사는 매년 자회사 경영실적 평가를 위한 기준을 정하여 자회사에 통보하여야 한다.",
+      "text": "제15조(경영실적 평가) ① 회사는 매년 자회사 경영실적 평가를 위한 기준을 정하여 자회사에 통보하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/91",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.12633,
+            "t": 218.03313538399993,
+            "r": 538.267944182,
+            "b": 189.39547233200005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            58
+          ]
+        }
+      ],
+      "orig": "② 자회사는 매년 경영목표를 수립하여 회사에 제출하고, 회사는 이를 검토하여 승인여부를 통보하여야 한다.",
+      "text": "② 자회사는 매년 경영목표를 수립하여 회사에 제출하고, 회사는 이를 검토하여 승인여부를 통보하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/92",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.12633,
+            "t": 182.79164938399992,
+            "r": 471.91687982,
+            "b": 171.774729332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "③ 회사는 경영실적 평가와 관련하여 자회사 사장과 경영계약을 체결할 수 있다.",
+      "text": "③ 회사는 경영실적 평가와 관련하여 자회사 사장과 경영계약을 체결할 수 있다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/93",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.12633,
+            "t": 165.29077538399997,
+            "r": 538.26828,
+            "b": 136.65311233199998,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            74
+          ]
+        }
+      ],
+      "orig": "④ 회사는 자회사로 하여금 매년 경영실적보고서를 작성하여, 다음 각 호의 서류와 함께 3월 31일까지 회사에 제출하도록 하여야 한다.",
+      "text": "④ 회사는 자회사로 하여금 매년 경영실적보고서를 작성하여, 다음 각 호의 서류와 함께 3월 31일까지 회사에 제출하도록 하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/94",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.523405,
+            "t": 130.04928938399996,
+            "r": 116.09674418200001,
+            "b": 119.03236933200003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "1. 결산서",
+      "text": "결산서",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/95",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.523405,
+            "t": 112.5484153839999,
+            "r": 187.578004182,
+            "b": 101.53149533199996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "2. 재무제표와 부속서류",
+      "text": "재무제표와 부속서류",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/96",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.523405,
+            "t": 94.92767238399995,
+            "r": 379.834145,
+            "b": 83.91075233200002,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "3. 그 밖에 결산의 내용을 명확하게 하기 위하여 필요한 서류",
+      "text": "그 밖에 결산의 내용을 명확하게 하기 위하여 필요한 서류",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/97",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 284.96556,
+            "t": 52.96800841000004,
+            "r": 309.87342093,
+            "b": 43.01888141000006,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "- 4 -",
+      "text": "- 4 -"
+    },
+    {
+      "self_ref": "#/texts/98",
+      "parent": {
+        "$ref": "#/pictures/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 68.66666666666667,
+            "t": 784.3333333333334,
+            "r": 94.0,
+            "b": 771.6666666666666,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/99",
+      "parent": {
+        "$ref": "#/pictures/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 67.66666666666667,
+            "t": 766.0,
+            "r": 99.66666666666666,
+            "b": 756.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/100",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 185.059705,
+            "t": 782.05441925,
+            "r": 312.430675,
+            "b": 767.085777875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "출자회사 관리규정",
+      "text": "출자회사 관리규정",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/101",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.12633,
+            "t": 727.8359923840001,
+            "r": 538.1473375459999,
+            "b": 699.198329332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "⑤ 회사는 자회사 경영실적 평가를 위해 직원 또는 외부 전문가로 구성된 경영실적평가위원 회를 구성할 수 있다.",
+      "text": "⑤ 회사는 자회사 경영실적 평가를 위해 직원 또는 외부 전문가로 구성된 경영실적평가위원 회를 구성할 수 있다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/102",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.12633,
+            "t": 692.714375384,
+            "r": 538.26828,
+            "b": 664.0767123319999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            90
+          ]
+        }
+      ],
+      "orig": "⑥ 회사는 자회사의 경영실적을 평가한 결과 시정을 요하는 사항이 있을 경우 그 시정을 요 구하거나, 이에 대한 중대한 책임이 있는 임원의 해임을 요구할 수 있다.",
+      "text": "⑥ 회사는 자회사의 경영실적을 평가한 결과 시정을 요하는 사항이 있을 경우 그 시정을 요 구하거나, 이에 대한 중대한 책임이 있는 임원의 해임을 요구할 수 있다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/103",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.60932,
+            "t": 639.972015384,
+            "r": 538.267944182,
+            "b": 593.713609332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            106
+          ]
+        }
+      ],
+      "orig": "제16조(계약관리) 회사는 자회사의 공정한 계약업무 수행을 위하여 자회사로 하여금 「국가를 당사자로 하는 계약에 관한 법률」 등을 우선적으로 준용한 계약관리 규정을 운영하도록 하 여야 한다.",
+      "text": "제16조(계약관리) 회사는 자회사의 공정한 계약업무 수행을 위하여 자회사로 하여금 「국가를 당사자로 하는 계약에 관한 법률」 등을 우선적으로 준용한 계약관리 규정을 운영하도록 하 여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/104",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.60932,
+            "t": 569.608912384,
+            "r": 538.26828,
+            "b": 523.470375332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            115
+          ]
+        }
+      ],
+      "orig": "제17조(채용관리) ① 회사는 자회사로 하여금 직원채용시 공정하고 투명한 채용을 위하여 공 개채용을 원칙으로 하고 특별채용 시에도 기준 및 자격요건을 마련하는 등의 인사관리 규정 을 운영하도록 하여야 한다.",
+      "text": "제17조(채용관리) ① 회사는 자회사로 하여금 직원채용시 공정하고 투명한 채용을 위하여 공 개채용을 원칙으로 하고 특별채용 시에도 기준 및 자격요건을 마련하는 등의 인사관리 규정 을 운영하도록 하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/105",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.12633,
+            "t": 516.866552384,
+            "r": 451.28805982,
+            "b": 505.84963233199994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            41
+          ]
+        }
+      ],
+      "orig": "② 자회사가 회사의 퇴직 임직원을 채용하는 경우 제1항을 준용하여야 한다.",
+      "text": "② 자회사가 회사의 퇴직 임직원을 채용하는 경우 제1항을 준용하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/106",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.60932,
+            "t": 481.74493538400003,
+            "r": 538.26828,
+            "b": 453.107272332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            97
+          ]
+        }
+      ],
+      "orig": "제18조(인력운영) ① 회사는 정관에 따른 겸직제한 규정을 준수하는 범위내에서 관계법령 및 사유에 따라 임직원을 자회사에 파견하거나 자회사의 임직원으로 겸직하게 할 수 있다.",
+      "text": "제18조(인력운영) ① 회사는 정관에 따른 겸직제한 규정을 준수하는 범위내에서 관계법령 및 사유에 따라 임직원을 자회사에 파견하거나 자회사의 임직원으로 겸직하게 할 수 있다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/107",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.12633,
+            "t": 446.503449384,
+            "r": 538.267944182,
+            "b": 417.98565533199996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            79
+          ]
+        }
+      ],
+      "orig": "② 제1항에 따라 파견되거나 겸직된 임직원은 관계법령 및 사규에 따라 자회사 임직원으로서 역할을 성실히 수행하고 업무에 책임을 다하여야 한다.",
+      "text": "② 제1항에 따라 파견되거나 겸직된 임직원은 관계법령 및 사규에 따라 자회사 임직원으로서 역할을 성실히 수행하고 업무에 책임을 다하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/108",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.60932,
+            "t": 393.761089384,
+            "r": 538.26828,
+            "b": 365.24329533199995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            101
+          ]
+        }
+      ],
+      "orig": "제19조(퇴직임직원의 출자회사 등 취업) ① 퇴직임직원(퇴직예정자를 포함한다. 이하 같다.)이 출자회사에 취업하려는 경우 출자회사는 회사에 퇴직임직원 여부의 조회를 요청하여야 한다.",
+      "text": "제19조(퇴직임직원의 출자회사 등 취업) ① 퇴직임직원(퇴직예정자를 포함한다. 이하 같다.)이 출자회사에 취업하려는 경우 출자회사는 회사에 퇴직임직원 여부의 조회를 요청하여야 한다."
+    },
+    {
+      "self_ref": "#/texts/109",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.12633,
+            "t": 358.639472384,
+            "r": 538.26828,
+            "b": 312.50093533200004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            130
+          ]
+        }
+      ],
+      "orig": "② 제1항에 따라 퇴직임직원에 해당될 경우 회사는 퇴직임직원 재취업 심사위원회(이하 \"심 사위원회\"라 한다)를 구성하여 심의·의결하여야 한다. 다만, 해당 임직원이 공직자윤리법 에 따른 취업심사 대상에 해당되는 경우에는 예외로 한다.",
+      "text": "② 제1항에 따라 퇴직임직원에 해당될 경우 회사는 퇴직임직원 재취업 심사위원회(이하 \"심 사위원회\"라 한다)를 구성하여 심의·의결하여야 한다. 다만, 해당 임직원이 공직자윤리법 에 따른 취업심사 대상에 해당되는 경우에는 예외로 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/110",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.12633,
+            "t": 305.8971123839999,
+            "r": 538.26828,
+            "b": 277.25944933200003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            90
+          ]
+        }
+      ],
+      "orig": "③ 제2항의 심사위원회 구성 시 위원은 직·간접적 이해관계가 있는 사항에서 제외되며 심사 대상, 심사기준 및 심사위원회 구성·운영에 관한 세부사항은 따로 정한다.",
+      "text": "③ 제2항의 심사위원회 구성 시 위원은 직·간접적 이해관계가 있는 사항에서 제외되며 심사 대상, 심사기준 및 심사위원회 구성·운영에 관한 세부사항은 따로 정한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/111",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.12633,
+            "t": 270.7754953839999,
+            "r": 538.26828,
+            "b": 242.13783233200002,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            87
+          ]
+        }
+      ],
+      "orig": "④ 사업주관부서는 심사위원회 개최 사실을 출자회사 관리부서에 사전 통보하여야 하며, 출자 회사 관리부서는 정부 주무부처에 그 사실을 사전에 통보하여야 한다.",
+      "text": "④ 사업주관부서는 심사위원회 개최 사실을 출자회사 관리부서에 사전 통보하여야 하며, 출자 회사 관리부서는 정부 주무부처에 그 사실을 사전에 통보하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/112",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.12633,
+            "t": 235.534009384,
+            "r": 538.26828,
+            "b": 189.39547233200005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            117
+          ]
+        }
+      ],
+      "orig": "⑤ 사업주관부서는 제2항에 따라 심의·의결을 한 경우 즉시 출자회사 관리부서에 다음 각 호에 해당하는 사항을 제출하고, 출자회사 관리부서는 심의·의결을 한 날부터 10일 이내에 정부 주무부처에 제출하여야 한다.",
+      "text": "⑤ 사업주관부서는 제2항에 따라 심의·의결을 한 경우 즉시 출자회사 관리부서에 다음 각 호에 해당하는 사항을 제출하고, 출자회사 관리부서는 심의·의결을 한 날부터 10일 이내에 정부 주무부처에 제출하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/113",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 67.523405,
+            "t": 182.79164938399992,
+            "r": 220.560465,
+            "b": 171.774729332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "1. 심사위원회 구성 및 회의록",
+      "text": "심사위원회 구성 및 회의록",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/114",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 67.523405,
+            "t": 165.29077538399997,
+            "r": 357.885704182,
+            "b": 154.27385533200004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "2. 취업 사전절차 관련 서류일체 및 퇴직임직원의 이력서",
+      "text": "취업 사전절차 관련 서류일체 및 퇴직임직원의 이력서",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/115",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 67.523405,
+            "t": 147.6700323839999,
+            "r": 346.851684182,
+            "b": 136.65311233199998,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "3. 그 밖에 정부 주무부처가 필요하다고 인정하는 사항",
+      "text": "그 밖에 정부 주무부처가 필요하다고 인정하는 사항",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/116",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.12633,
+            "t": 130.04928938399996,
+            "r": 538.267944182,
+            "b": 101.53149533199996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            74
+          ]
+        }
+      ],
+      "orig": "⑥ 사업주관부서장은 퇴직임직원이 출자회사 등에 재취업한 경우에는 공공기관 경영정보시스 템(알리오) 등에 해당 내용을 공개하여야 한다.",
+      "text": "⑥ 사업주관부서장은 퇴직임직원이 출자회사 등에 재취업한 경우에는 공공기관 경영정보시스 템(알리오) 등에 해당 내용을 공개하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/117",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 284.96556,
+            "t": 52.96800841000004,
+            "r": 309.87342093,
+            "b": 43.01888141000006,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "- 5 -",
+      "text": "- 5 -"
+    },
+    {
+      "self_ref": "#/texts/118",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 68.66666666666667,
+            "t": 784.3333333333334,
+            "r": 94.0,
+            "b": 771.6666666666666,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/119",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 67.66666666666667,
+            "t": 766.0,
+            "r": 99.66666666666666,
+            "b": 756.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/120",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 185.059705,
+            "t": 782.05441925,
+            "r": 312.430675,
+            "b": 767.085777875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "출자회사 관리규정",
+      "text": "출자회사 관리규정",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/121",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 56.60932,
+            "t": 727.8359923840001,
+            "r": 396.83756982,
+            "b": 716.819072332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "제20조(회계연도) 자회사의 회계연도는 회사의 회계연도에 따른다.",
+      "text": "제20조(회계연도) 자회사의 회계연도는 회사의 회계연도에 따른다."
+    },
+    {
+      "self_ref": "#/texts/122",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 56.60932,
+            "t": 692.714375384,
+            "r": 538.148345,
+            "b": 664.0767123319999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            89
+          ]
+        }
+      ],
+      "orig": "제21조(경영공시) 출자회사는 회사의 경영공시에 적극 협조하여야 하며, 통합공시 입력을 위 한 해당 자료를 공시 기한 내에 출자회사 관리부서에 통보하여야 한다.",
+      "text": "제21조(경영공시) 출자회사는 회사의 경영공시에 적극 협조하여야 하며, 통합공시 입력을 위 한 해당 자료를 공시 기한 내에 출자회사 관리부서에 통보하여야 한다."
+    },
+    {
+      "self_ref": "#/texts/123",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 56.60932,
+            "t": 639.972015384,
+            "r": 538.269143509932,
+            "b": 576.212735332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            173
+          ]
+        }
+      ],
+      "orig": "제22조(출자회사의 임원) ① 회사는 출자회사가 임원을 선임하는 경우 임원추천위원회를 구성 하여 운영하도록 한다. 다만, 「상법」 제382조제3항 각 호에 따른 기타비상무이사를 선임 하거나, 사업 초기 및 출자회사의 규모, 경영여건 등을 고려할 필요가 있는 등 특별한 사유가 있는 경우에는 예외로 할 수 있다.",
+      "text": "제22조(출자회사의 임원) ① 회사는 출자회사가 임원을 선임하는 경우 임원추천위원회를 구성 하여 운영하도록 한다. 다만, 「상법」 제382조제3항 각 호에 따른 기타비상무이사를 선임 하거나, 사업 초기 및 출자회사의 규모, 경영여건 등을 고려할 필요가 있는 등 특별한 사유가 있는 경우에는 예외로 할 수 있다."
+    },
+    {
+      "self_ref": "#/texts/124",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 62.12633,
+            "t": 569.608912384,
+            "r": 538.26828,
+            "b": 505.84963233199994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            190
+          ]
+        }
+      ],
+      "orig": "② 회사는 사업운영 단계에 있는 출자회사의 경영관리를 위하여 해당 출자회사의 이사회에 기타비상무이사로 참여할 필요가 있는 경우, 출자회사의 주주총회에서 기타비상무이사를 선 임할 수 있도록 필요한 조치를 취할 수 있다. 이 경우 회사는 출자회사 관리부서의 장 또는 출자회사 관리부서의 장이 지명하는 자를 기타비상무이사 후보로 추천할 수 있다.",
+      "text": "② 회사는 사업운영 단계에 있는 출자회사의 경영관리를 위하여 해당 출자회사의 이사회에 기타비상무이사로 참여할 필요가 있는 경우, 출자회사의 주주총회에서 기타비상무이사를 선 임할 수 있도록 필요한 조치를 취할 수 있다. 이 경우 회사는 출자회사 관리부서의 장 또는 출자회사 관리부서의 장이 지명하는 자를 기타비상무이사 후보로 추천할 수 있다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/125",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 62.12633,
+            "t": 499.245809384,
+            "r": 538.26828,
+            "b": 470.728015332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            57
+          ]
+        }
+      ],
+      "orig": "③ 회사는 출자회사가 제1항에 따라 임원선임을 하는 경우 공개모집을 원칙으로 하도록 관리 하여야 한다.",
+      "text": "③ 회사는 출자회사가 제1항에 따라 임원선임을 하는 경우 공개모집을 원칙으로 하도록 관리 하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/126",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 62.12633,
+            "t": 464.124192384,
+            "r": 538.26828,
+            "b": 417.98565533199996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            122
+          ]
+        }
+      ],
+      "orig": "④ 회사는 출자회사 임원이 형사사건으로 기소되는 등 비리 의혹이 있을 경우에는 해당 임원 에 대한 직무 정지를 요구할 수 있으며, 비위혐의로 조사‧수사 중인 자회사 임원에 대해서는 의원면직을 제한하도록 요구하여야 한다.",
+      "text": "④ 회사는 출자회사 임원이 형사사건으로 기소되는 등 비리 의혹이 있을 경우에는 해당 임원 에 대한 직무 정지를 요구할 수 있으며, 비위혐의로 조사‧수사 중인 자회사 임원에 대해서는 의원면직을 제한하도록 요구하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/127",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 62.12633,
+            "t": 411.381832384,
+            "r": 538.148009182,
+            "b": 365.24329533199995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            107
+          ]
+        }
+      ],
+      "orig": "⑤ 회사가 선임 권한을 보유하고 있는 출자회사의 임원을 추천할 때는 출자회사 임원추천위 원회를 구성하고 위원회의 심의·의결을 거치도록 한다. 이 경우 위원회의 운영 관련 사항은 별도로 정한다.",
+      "text": "⑤ 회사가 선임 권한을 보유하고 있는 출자회사의 임원을 추천할 때는 출자회사 임원추천위 원회를 구성하고 위원회의 심의·의결을 거치도록 한다. 이 경우 위원회의 운영 관련 사항은 별도로 정한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/128",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 56.60932,
+            "t": 341.0187293839999,
+            "r": 538.148345,
+            "b": 294.880192332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            105
+          ]
+        }
+      ],
+      "orig": "제23조(감사) ① 회사는 회사와 출자회사 간 협약에 따라 출자회사의 업무 및 회계에 관한 사 항을 감사할 수 있으며, 감사시행에 관한 세부사항은 협약서 등 출자회사와 협의하여 시행한 다.",
+      "text": "제23조(감사) ① 회사는 회사와 출자회사 간 협약에 따라 출자회사의 업무 및 회계에 관한 사 항을 감사할 수 있으며, 감사시행에 관한 세부사항은 협약서 등 출자회사와 협의하여 시행한 다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/129",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 62.12633,
+            "t": 288.27636938399996,
+            "r": 538.148009182,
+            "b": 259.75857533199996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            75
+          ]
+        }
+      ],
+      "orig": "② 회사는 제1항의 감사결과 위법 또는 부당한 사실이 있을 때는 출자회사의 사장에게 시정 또는 그 밖의 필요한 조치를 요구할 수 있다.",
+      "text": "② 회사는 제1항의 감사결과 위법 또는 부당한 사실이 있을 때는 출자회사의 사장에게 시정 또는 그 밖의 필요한 조치를 요구할 수 있다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/130",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 62.12633,
+            "t": 253.15475238399995,
+            "r": 529.60561482,
+            "b": 242.13783233200002,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "③ 제1항 및 제2항의 시행에 관한 세부기준 및 절차 등은 회사의 「감사규정」을 준용한다.",
+      "text": "③ 제1항 및 제2항의 시행에 관한 세부기준 및 절차 등은 회사의 「감사규정」을 준용한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/131",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 266.73544,
+            "t": 218.01683319999995,
+            "r": 328.14216,
+            "b": 206.04192009999997,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "제4장 보칙",
+      "text": "제4장 보칙",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/132",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 56.60932,
+            "t": 181.233352384,
+            "r": 424.30268481999997,
+            "b": 170.21643233200007,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            40
+          ]
+        }
+      ],
+      "orig": "제24조(세부사항) 이 규정의 시행에 필요한 세부 사항은 별도로 정한다.",
+      "text": "제24조(세부사항) 이 규정의 시행에 필요한 세부 사항은 별도로 정한다."
+    },
+    {
+      "self_ref": "#/texts/133",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 227.8765,
+            "t": 146.0954332,
+            "r": 367.0370805,
+            "b": 134.1205200999999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "부 칙 〈2026. 3. 27.>",
+      "text": "부 칙 〈2026. 3. 27.>",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/134",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 56.60932,
+            "t": 126.932695384,
+            "r": 271.86529982,
+            "b": 115.91577533199995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "이 규정은 2026년 3월 27일부터 시행한다.",
+      "text": "이 규정은 2026년 3월 27일부터 시행한다."
+    },
+    {
+      "self_ref": "#/texts/135",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 284.96556,
+            "t": 52.96800841000004,
+            "r": 309.87342093,
+            "b": 43.01888141000006,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "- 6 -",
+      "text": "- 6 -"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 66.05541229248047,
+            "t": 791.075309753418,
+            "r": 100.09638977050781,
+            "b": 756.6092300415039,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 66.05484771728516,
+            "t": 791.1986389160156,
+            "r": 99.9515609741211,
+            "b": 756.5432815551758,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/47"
+        },
+        {
+          "$ref": "#/texts/48"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 66.31643676757812,
+            "t": 791.0079803466797,
+            "r": 99.8601303100586,
+            "b": 756.8025054931641,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/74"
+        },
+        {
+          "$ref": "#/texts/75"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 66.06600189208984,
+            "t": 791.1639289855957,
+            "r": 100.14925384521484,
+            "b": 756.5625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/98"
+        },
+        {
+          "$ref": "#/texts/99"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 65.93860626220703,
+            "t": 791.1684608459473,
+            "r": 100.27466583251953,
+            "b": 756.4544448852539,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/118"
+        },
+        {
+          "$ref": "#/texts/119"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 66.32818603515625,
+            "t": 791.3881721496582,
+            "r": 99.7376937866211,
+            "b": 756.4938735961914,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.14222717285156,
+            "t": 771.7620620727539,
+            "r": 539.6771240234375,
+            "b": 48.25836181640625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 296.9590775686035,
+              "t": 87.81207372300003,
+              "r": 372.8204061675,
+              "b": 105.74831193099999,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 6,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 8,
+            "text": "규 정",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 207.9448897962695,
+              "t": 134.70902193799998,
+              "r": 307.80935831984374,
+              "b": 149.32459736766987,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 4,
+            "text": "출자회사 관리",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 390.62377494968746,
+              "t": 136.969991016,
+              "r": 433.2060235645,
+              "b": 147.0674559035,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 6,
+            "text": "제정일자",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 463.55309266,
+              "t": 137.8853107,
+              "r": 514.6306746420001,
+              "b": 146.15075772599994,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 6,
+            "end_col_offset_idx": 8,
+            "text": "2026.03.27.",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 162.84994493164064,
+              "t": 200.42096800000002,
+              "r": 193.45140703125,
+              "b": 214.140349640625,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "제 ․",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 209.53701544311522,
+              "t": 200.46591887499994,
+              "r": 274.92100375,
+              "b": 214.17593575,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "개정 이력",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 391.8156515,
+              "t": 173.22269189999997,
+              "r": 402.348942875,
+              "b": 240.76887339999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "관 리 구 분",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 60.64307792613281,
+              "t": 269.12076875599996,
+              "r": 94.85924193109177,
+              "b": 279.119326734875,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "개정번호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 106.9379879261328,
+              "t": 269.09871286,
+              "r": 149.3198785645,
+              "b": 279.15344444900006,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "개정일자",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 224.91458524,
+              "t": 269.1759084959999,
+              "r": 287.72661361875,
+              "b": 279.1189605725391,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "변 경 내",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 306.6451905025,
+              "t": 269.1112916131874,
+              "r": 403.4624793825,
+              "b": 279.10244018950004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "용 작",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 415.54992034523434,
+              "t": 269.15385259999994,
+              "r": 423.77341166499997,
+              "b": 278.99078221600007,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "성",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 445.4417682775,
+              "t": 269.186936444,
+              "r": 476.94671385,
+              "b": 279.095547722,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "검 토",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 497.14567556609376,
+              "t": 269.2641320800001,
+              "r": 506.71673968,
+              "b": 278.63788788,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 6,
+            "end_col_offset_idx": 7,
+            "text": "승",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 519.8017681150001,
+              "t": 269.15385259999994,
+              "r": 528.040323458164,
+              "b": 278.6819996720001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 7,
+            "end_col_offset_idx": 8,
+            "text": "인",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 75.19828552,
+              "t": 311.89805917900003,
+              "r": 79.71767618999999,
+              "b": 319.32010792100004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "0",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 101.94906766,
+              "t": 311.45562270000005,
+              "r": 153.026649642,
+              "b": 319.721069726,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "2026.03.27.",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 170.53268915857424,
+              "t": 311.052383384,
+              "r": 277.9319119575,
+              "b": 320.19327983847074,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "출자회사 관리규정 제정",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 390.30198184875,
+              "t": 311.092179892,
+              "r": 412.6243929740918,
+              "b": 320.1707582795,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "한 재",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 420.2410722243652,
+              "t": 311.092179892,
+              "r": 427.3012397225,
+              "b": 320.15583458900005,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "희",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 442.0346344179199,
+              "t": 311.141925527,
+              "r": 465.46266774625,
+              "b": 320.056343319,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "정 수",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 471.76541690687503,
+              "t": 311.0472533653906,
+              "r": 502.46189563625,
+              "b": 320.09738346787503,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 6,
+            "end_col_offset_idx": 7,
+            "text": "옥 박",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 508.4759029241114,
+              "t": 311.11207814600004,
+              "r": 530.9648981424999,
+              "b": 319.966801176,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 7,
+            "end_col_offset_idx": 8,
+            "text": "상 형",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 71.33333333333333,
+              "t": 99.0,
+              "r": 113.33333333333333,
+              "b": 119.66666666666666,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "WONIT Electronics",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 69.66666666666667,
+              "t": 129.33333333333331,
+              "r": 123.66666666666667,
+              "b": 147.33333333333331,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "WONIT Electronics",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 5,
+        "num_cols": 8,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 71.33333333333333,
+                "t": 99.0,
+                "r": 113.33333333333333,
+                "b": 119.66666666666666,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "WONIT Electronics",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 71.33333333333333,
+                "t": 99.0,
+                "r": 113.33333333333333,
+                "b": 119.66666666666666,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "WONIT Electronics",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 296.9590775686035,
+                "t": 87.81207372300003,
+                "r": 372.8204061675,
+                "b": 105.74831193099999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 6,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 8,
+              "text": "규 정",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 296.9590775686035,
+                "t": 87.81207372300003,
+                "r": 372.8204061675,
+                "b": 105.74831193099999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 6,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 8,
+              "text": "규 정",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 296.9590775686035,
+                "t": 87.81207372300003,
+                "r": 372.8204061675,
+                "b": 105.74831193099999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 6,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 8,
+              "text": "규 정",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 296.9590775686035,
+                "t": 87.81207372300003,
+                "r": 372.8204061675,
+                "b": 105.74831193099999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 6,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 8,
+              "text": "규 정",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 296.9590775686035,
+                "t": 87.81207372300003,
+                "r": 372.8204061675,
+                "b": 105.74831193099999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 6,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 8,
+              "text": "규 정",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 296.9590775686035,
+                "t": 87.81207372300003,
+                "r": 372.8204061675,
+                "b": 105.74831193099999,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 6,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 8,
+              "text": "규 정",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 69.66666666666667,
+                "t": 129.33333333333331,
+                "r": 123.66666666666667,
+                "b": 147.33333333333331,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "WONIT Electronics",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 69.66666666666667,
+                "t": 129.33333333333331,
+                "r": 123.66666666666667,
+                "b": 147.33333333333331,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "WONIT Electronics",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 207.9448897962695,
+                "t": 134.70902193799998,
+                "r": 307.80935831984374,
+                "b": 149.32459736766987,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "출자회사 관리",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 207.9448897962695,
+                "t": 134.70902193799998,
+                "r": 307.80935831984374,
+                "b": 149.32459736766987,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "출자회사 관리",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 390.62377494968746,
+                "t": 136.969991016,
+                "r": 433.2060235645,
+                "b": 147.0674559035,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 6,
+              "text": "제정일자",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 390.62377494968746,
+                "t": 136.969991016,
+                "r": 433.2060235645,
+                "b": 147.0674559035,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 6,
+              "text": "제정일자",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 463.55309266,
+                "t": 137.8853107,
+                "r": 514.6306746420001,
+                "b": 146.15075772599994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 6,
+              "end_col_offset_idx": 8,
+              "text": "2026.03.27.",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 463.55309266,
+                "t": 137.8853107,
+                "r": 514.6306746420001,
+                "b": 146.15075772599994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 6,
+              "end_col_offset_idx": 8,
+              "text": "2026.03.27.",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 162.84994493164064,
+                "t": 200.42096800000002,
+                "r": 193.45140703125,
+                "b": 214.140349640625,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "제 ․",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 209.53701544311522,
+                "t": 200.46591887499994,
+                "r": 274.92100375,
+                "b": 214.17593575,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "개정 이력",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 391.8156515,
+                "t": 173.22269189999997,
+                "r": 402.348942875,
+                "b": 240.76887339999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "관 리 구 분",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 6,
+              "end_col_offset_idx": 7,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 7,
+              "end_col_offset_idx": 8,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 60.64307792613281,
+                "t": 269.12076875599996,
+                "r": 94.85924193109177,
+                "b": 279.119326734875,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "개정번호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 106.9379879261328,
+                "t": 269.09871286,
+                "r": 149.3198785645,
+                "b": 279.15344444900006,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "개정일자",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 224.91458524,
+                "t": 269.1759084959999,
+                "r": 287.72661361875,
+                "b": 279.1189605725391,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "변 경 내",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 306.6451905025,
+                "t": 269.1112916131874,
+                "r": 403.4624793825,
+                "b": 279.10244018950004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "용 작",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 415.54992034523434,
+                "t": 269.15385259999994,
+                "r": 423.77341166499997,
+                "b": 278.99078221600007,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "성",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 445.4417682775,
+                "t": 269.186936444,
+                "r": 476.94671385,
+                "b": 279.095547722,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "검 토",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 497.14567556609376,
+                "t": 269.2641320800001,
+                "r": 506.71673968,
+                "b": 278.63788788,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 6,
+              "end_col_offset_idx": 7,
+              "text": "승",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 519.8017681150001,
+                "t": 269.15385259999994,
+                "r": 528.040323458164,
+                "b": 278.6819996720001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 7,
+              "end_col_offset_idx": 8,
+              "text": "인",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 75.19828552,
+                "t": 311.89805917900003,
+                "r": 79.71767618999999,
+                "b": 319.32010792100004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "0",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 101.94906766,
+                "t": 311.45562270000005,
+                "r": 153.026649642,
+                "b": 319.721069726,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "2026.03.27.",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 170.53268915857424,
+                "t": 311.052383384,
+                "r": 277.9319119575,
+                "b": 320.19327983847074,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "출자회사 관리규정 제정",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 390.30198184875,
+                "t": 311.092179892,
+                "r": 412.6243929740918,
+                "b": 320.1707582795,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "한 재",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 420.2410722243652,
+                "t": 311.092179892,
+                "r": 427.3012397225,
+                "b": 320.15583458900005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "희",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 442.0346344179199,
+                "t": 311.141925527,
+                "r": 465.46266774625,
+                "b": 320.056343319,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "정 수",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 471.76541690687503,
+                "t": 311.0472533653906,
+                "r": 502.46189563625,
+                "b": 320.09738346787503,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 6,
+              "end_col_offset_idx": 7,
+              "text": "옥 박",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 508.4759029241114,
+                "t": 311.11207814600004,
+                "r": 530.9648981424999,
+                "b": 319.966801176,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 7,
+              "end_col_offset_idx": 8,
+              "text": "상 형",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 385.46612548828125,
+            "t": 797.8695259094238,
+            "r": 537.4133911132812,
+            "b": 752.043815612793,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 396.8208829261328,
+              "t": 50.23997475600004,
+              "r": 438.9517496094999,
+              "b": 60.23853273487498,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "개정번호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 489.47968148,
+              "t": 51.12221059600006,
+              "r": 494.48912655999993,
+              "b": 59.349059804000035,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "0",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 396.64069651750003,
+              "t": 72.87315985999999,
+              "r": 437.55352339250004,
+              "b": 82.96373228000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "페 이 지",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 479.53083336,
+              "t": 73.06063497599996,
+              "r": 504.80353655999994,
+              "b": 82.68803358000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "1 / 6",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 2,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 396.8208829261328,
+                "t": 50.23997475600004,
+                "r": 438.9517496094999,
+                "b": 60.23853273487498,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "개정번호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 489.47968148,
+                "t": 51.12221059600006,
+                "r": 494.48912655999993,
+                "b": 59.349059804000035,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "0",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 396.64069651750003,
+                "t": 72.87315985999999,
+                "r": 437.55352339250004,
+                "b": 82.96373228000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "페 이 지",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 479.53083336,
+                "t": 73.06063497599996,
+                "r": 504.80353655999994,
+                "b": 82.68803358000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "1 / 6",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 384.43328857421875,
+            "t": 797.890739440918,
+            "r": 537.7247314453125,
+            "b": 752.0164642333984,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 396.8208829261328,
+              "t": 50.23997475600004,
+              "r": 438.9517496094999,
+              "b": 60.23853273487498,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "개정번호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 489.47968148,
+              "t": 51.12221059600006,
+              "r": 494.48912655999993,
+              "b": 59.349059804000035,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "0",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 396.64069651750003,
+              "t": 72.87315985999999,
+              "r": 437.55352339250004,
+              "b": 82.96373228000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "페 이 지",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 479.14464266,
+              "t": 73.06063497599996,
+              "r": 504.80353655999994,
+              "b": 82.68803358000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "2 / 6",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 2,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 396.8208829261328,
+                "t": 50.23997475600004,
+                "r": 438.9517496094999,
+                "b": 60.23853273487498,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "개정번호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 489.47968148,
+                "t": 51.12221059600006,
+                "r": 494.48912655999993,
+                "b": 59.349059804000035,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "0",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 396.64069651750003,
+                "t": 72.87315985999999,
+                "r": 437.55352339250004,
+                "b": 82.96373228000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "페 이 지",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 479.14464266,
+                "t": 73.06063497599996,
+                "r": 504.80353655999994,
+                "b": 82.68803358000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "2 / 6",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 385.7046203613281,
+            "t": 797.798412322998,
+            "r": 537.4100952148438,
+            "b": 751.8495559692383,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 396.8208829261328,
+              "t": 50.23997475600004,
+              "r": 438.9517496094999,
+              "b": 60.23853273487498,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "개정번호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 489.47968148,
+              "t": 51.12221059600006,
+              "r": 494.48912655999993,
+              "b": 59.349059804000035,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "0",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 396.64069651750003,
+              "t": 72.87315985999999,
+              "r": 437.55352339250004,
+              "b": 82.96373228000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "페 이 지",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 479.02326844,
+              "t": 73.06063497599996,
+              "r": 504.80353655999994,
+              "b": 82.68803358000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "3 / 6",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 2,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 396.8208829261328,
+                "t": 50.23997475600004,
+                "r": 438.9517496094999,
+                "b": 60.23853273487498,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "개정번호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 489.47968148,
+                "t": 51.12221059600006,
+                "r": 494.48912655999993,
+                "b": 59.349059804000035,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "0",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 396.64069651750003,
+                "t": 72.87315985999999,
+                "r": 437.55352339250004,
+                "b": 82.96373228000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "페 이 지",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 479.02326844,
+                "t": 73.06063497599996,
+                "r": 504.80353655999994,
+                "b": 82.68803358000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "3 / 6",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 385.2808837890625,
+            "t": 797.8293037414551,
+            "r": 537.6961669921875,
+            "b": 752.1305999755859,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 396.8208829261328,
+              "t": 50.23997475600004,
+              "r": 438.9517496094999,
+              "b": 60.23853273487498,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "개정번호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 489.47968148,
+              "t": 51.12221059600006,
+              "r": 494.48912655999993,
+              "b": 59.349059804000035,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "0",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 396.64069651750003,
+              "t": 72.87315985999999,
+              "r": 437.55352339250004,
+              "b": 82.96373228000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "페 이 지",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 478.93499628,
+              "t": 73.06063497599996,
+              "r": 504.80353655999994,
+              "b": 82.68803358000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "4 / 6",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 2,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 396.8208829261328,
+                "t": 50.23997475600004,
+                "r": 438.9517496094999,
+                "b": 60.23853273487498,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "개정번호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 489.47968148,
+                "t": 51.12221059600006,
+                "r": 494.48912655999993,
+                "b": 59.349059804000035,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "0",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 396.64069651750003,
+                "t": 72.87315985999999,
+                "r": 437.55352339250004,
+                "b": 82.96373228000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "페 이 지",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 478.93499628,
+                "t": 73.06063497599996,
+                "r": 504.80353655999994,
+                "b": 82.68803358000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "4 / 6",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 384.3467102050781,
+            "t": 797.9230575561523,
+            "r": 537.6986694335938,
+            "b": 751.9090423583984,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 396.8208829261328,
+              "t": 50.23997475600004,
+              "r": 438.9517496094999,
+              "b": 60.23853273487498,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "개정번호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 489.47968148,
+              "t": 51.12221059600006,
+              "r": 494.48912655999993,
+              "b": 59.349059804000035,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "0",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 396.64069651750003,
+              "t": 72.87315985999999,
+              "r": 437.55352339250004,
+              "b": 82.96373228000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "페 이 지",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 478.96809834,
+              "t": 73.06063497599996,
+              "r": 504.80353655999994,
+              "b": 82.68803358000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "5 / 6",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 2,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 396.8208829261328,
+                "t": 50.23997475600004,
+                "r": 438.9517496094999,
+                "b": 60.23853273487498,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "개정번호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 489.47968148,
+                "t": 51.12221059600006,
+                "r": 494.48912655999993,
+                "b": 59.349059804000035,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "0",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 396.64069651750003,
+                "t": 72.87315985999999,
+                "r": 437.55352339250004,
+                "b": 82.96373228000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "페 이 지",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 478.96809834,
+                "t": 73.06063497599996,
+                "r": 504.80353655999994,
+                "b": 82.68803358000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "5 / 6",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 385.55511474609375,
+            "t": 797.9844284057617,
+            "r": 537.5415649414062,
+            "b": 751.7684097290039,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 396.8208829261328,
+              "t": 50.23997475600004,
+              "r": 438.9517496094999,
+              "b": 60.23853273487498,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "개정번호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 489.47968148,
+              "t": 51.12221059600006,
+              "r": 494.48912655999993,
+              "b": 59.349059804000035,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "0",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 396.64069651750003,
+              "t": 72.87315985999999,
+              "r": 437.55352339250004,
+              "b": 82.96373228000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "페 이 지",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 478.97913236,
+              "t": 73.06063497599996,
+              "r": 504.80353655999994,
+              "b": 82.68803358000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "6 / 6",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 2,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 396.8208829261328,
+                "t": 50.23997475600004,
+                "r": 438.9517496094999,
+                "b": 60.23853273487498,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "개정번호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 489.47968148,
+                "t": 51.12221059600006,
+                "r": 494.48912655999993,
+                "b": 59.349059804000035,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "0",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 396.64069651750003,
+                "t": 72.87315985999999,
+                "r": 437.55352339250004,
+                "b": 82.96373228000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "페 이 지",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 478.97913236,
+                "t": 73.06063497599996,
+                "r": 504.80353655999994,
+                "b": 82.68803358000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "6 / 6",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 4
+    },
+    "5": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 5
+    },
+    "6": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 6
+    },
+    "7": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 7
+    }
+  }
+}

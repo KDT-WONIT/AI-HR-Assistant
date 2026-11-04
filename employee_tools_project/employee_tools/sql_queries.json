@@ -1,0 +1,7 @@
+{
+  "employee": "SELECT employee_id, name, department, job_title, travel_grade FROM employees WHERE employee_id = :employee_id",
+  "leave_balance": "SELECT employee_id, leave_type, period_start, period_end, granted_days, carried_days, adjustment_days, expired_days FROM leave_balances WHERE employee_id = :employee_id AND leave_type = :leave_type AND period_start <= :as_of AND period_end >= :as_of",
+  "leave_usage": "SELECT usage_id, employee_id, leave_type, used_on, days, status FROM leave_usage WHERE employee_id = :employee_id AND leave_type = :leave_type AND used_on BETWEEN :period_start AND :period_end ORDER BY used_on, usage_id",
+  "contacts": "SELECT contact_id, name, department, topic, keywords_json, phone, email FROM contacts WHERE is_active = 1 ORDER BY contact_id",
+  "inquiries": "SELECT inquiry_id, employee_id, question, answer, category, created_at, status FROM inquiries WHERE employee_id = :employee_id AND (:keyword = '' OR instr(lower(question), lower(:keyword)) > 0 OR instr(lower(COALESCE(answer, '')), lower(:keyword)) > 0 OR instr(lower(COALESCE(category, '')), lower(:keyword)) > 0) ORDER BY created_at DESC, inquiry_id DESC LIMIT :limit"
+}

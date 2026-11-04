@@ -1,0 +1,7 @@
+﻿leave_type_id,type_name,paid_flag,deducts_annual_leave,minimum_unit,regulation_article_id
+LT01,연차,1,1,0.25,ART0530009
+LT02,반차,1,1,0.5,ART0530009
+LT03,반반차,1,1,0.25,ART0530009
+LT04,경조휴가,1,0,1,ART0530009
+LT05,공가,1,0,1,ART0530009
+LT06,무급휴가,0,0,1,ART0530009

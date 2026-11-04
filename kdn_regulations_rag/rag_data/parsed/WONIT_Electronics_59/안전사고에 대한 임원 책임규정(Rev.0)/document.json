@@ -1,0 +1,6667 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "안전사고에 대한 임원 책임규정(Rev.0)",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 3901348032957257515,
+    "filename": "안전사고에 대한 임원 책임규정(Rev.0).pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/tables/0"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/tables/1"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/texts/29"
+      },
+      {
+        "$ref": "#/texts/30"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/34"
+      },
+      {
+        "$ref": "#/texts/35"
+      },
+      {
+        "$ref": "#/texts/36"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/39"
+      },
+      {
+        "$ref": "#/tables/2"
+      },
+      {
+        "$ref": "#/texts/40"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/texts/45"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/47"
+      },
+      {
+        "$ref": "#/texts/48"
+      },
+      {
+        "$ref": "#/pictures/3"
+      },
+      {
+        "$ref": "#/texts/51"
+      },
+      {
+        "$ref": "#/tables/3"
+      },
+      {
+        "$ref": "#/texts/52"
+      },
+      {
+        "$ref": "#/tables/4"
+      },
+      {
+        "$ref": "#/groups/4"
+      },
+      {
+        "$ref": "#/texts/54"
+      },
+      {
+        "$ref": "#/texts/55"
+      },
+      {
+        "$ref": "#/pictures/4"
+      },
+      {
+        "$ref": "#/texts/58"
+      },
+      {
+        "$ref": "#/tables/5"
+      },
+      {
+        "$ref": "#/tables/6"
+      },
+      {
+        "$ref": "#/texts/59"
+      },
+      {
+        "$ref": "#/groups/5"
+      },
+      {
+        "$ref": "#/texts/61"
+      },
+      {
+        "$ref": "#/texts/62"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/31"
+        },
+        {
+          "$ref": "#/texts/32"
+        },
+        {
+          "$ref": "#/texts/33"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/41"
+        },
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/46"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/53"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    },
+    {
+      "self_ref": "#/groups/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/60"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 69.0,
+            "t": 734.0,
+            "r": 111.0,
+            "b": 714.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 66.66666666666667,
+            "t": 704.3333333333333,
+            "r": 122.0,
+            "b": 687.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 68.33333333333333,
+            "t": 769.6666666666666,
+            "r": 93.66666666666666,
+            "b": 756.3333333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 67.33333333333333,
+            "t": 750.6666666666666,
+            "r": 100.0,
+            "b": 740.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 57.28623314,
+            "t": 713.097499489,
+            "r": 88.6641195834546,
+            "b": 704.030113869375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "1. 목적",
+      "text": "1. 목적",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 71.43962240966796,
+            "t": 683.70190475,
+            "r": 281.39149699999996,
+            "b": 648.477275328125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            78
+          ]
+        }
+      ],
+      "orig": "이 규정은 WONIT Electronics(이하 \"회사\"라 한다) 사업장에서 안전사고가 발생한 경우 임원의 문책에 관한 사항을 정하는 것을 목적으로 한다.",
+      "text": "이 규정은 WONIT Electronics(이하 \"회사\"라 한다) 사업장에서 안전사고가 발생한 경우 임원의 문책에 관한 사항을 정하는 것을 목적으로 한다."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.937821965,
+            "t": 616.123478489,
+            "r": 109.60263576036381,
+            "b": 607.056092869375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "2. 적용범위",
+      "text": "2. 적용범위",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 76.74303332812501,
+            "t": 585.861830225,
+            "r": 248.74219162499998,
+            "b": 577.61783975,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "이 규정은 회사의 임원에 대하여 적용한다.",
+      "text": "이 규정은 회사의 임원에 대하여 적용한다."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.82832131,
+            "t": 542.513963362,
+            "r": 173.4483898809546,
+            "b": 533.3929651615292,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "3. 임원의 안전관리 책무",
+      "text": "3. 임원의 안전관리 책무",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 66.88209240966796,
+            "t": 512.25327405,
+            "r": 280.60133148828123,
+            "b": 460.86543374999997,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            107
+          ]
+        }
+      ],
+      "orig": "회사의 임원은 근로자와 국민의 생명을 존중하고 사업장의 안전사고 방지를 위한 조치를 하며 관계법 령과 지침에 따른 안전관리 의무를 이행하고, 소속 직원이 이를 준수하도록 지시․감독하여야 한다.",
+      "text": "회사의 임원은 근로자와 국민의 생명을 존중하고 사업장의 안전사고 방지를 위한 조치를 하며 관계법 령과 지침에 따른 안전관리 의무를 이행하고, 소속 직원이 이를 준수하도록 지시․감독하여야 한다."
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.74868447,
+            "t": 425.885157284625,
+            "r": 126.51475104657962,
+            "b": 416.77175695262497,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "4. 문책의 사유",
+      "text": "4. 문책의 사유",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 67.35686635107422,
+            "t": 395.827511075,
+            "r": 282.767376328125,
+            "b": 301.101408415625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            189
+          ]
+        }
+      ],
+      "orig": "사장은「공공기관의 안전관리에 관한 지침」에서 정한 안전관리 대상 사업․시설에서 다음 각 호의 어느 하나에 해당하는 안전사고가 발생한 경우에는 해당사고와 관련한 임원을 별표에서 정한 기준에 따 라 문책할 수 있다. 다만, 그 임원이 제3조에서 정한 책무에 관하여 상당한 주의와 감독을 게을리 하지 아니한 경우에는 감경 및 면제 할 수 있다.",
+      "text": "사장은「공공기관의 안전관리에 관한 지침」에서 정한 안전관리 대상 사업․시설에서 다음 각 호의 어느 하나에 해당하는 안전사고가 발생한 경우에는 해당사고와 관련한 임원을 별표에서 정한 기준에 따 라 문책할 수 있다. 다만, 그 임원이 제3조에서 정한 책무에 관하여 상당한 주의와 감독을 게을리 하지 아니한 경우에는 감경 및 면제 할 수 있다."
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 77.2501335,
+            "t": 280.75327107500004,
+            "r": 277.0315599754658,
+            "b": 272.13169325,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            28
+          ]
+        }
+      ],
+      "orig": "1) 「산업안전보건법」제2조 제2호에 따른 중대재해",
+      "text": "「산업안전보건법」제2조 제2호에 따른 중대재해",
+      "enumerated": true,
+      "marker": "1)"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 76.935304125,
+            "t": 251.98471107499995,
+            "r": 278.26194309375,
+            "b": 243.36313325000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "2) 「산업안전보건법」제44조에 따른 중대산업사고",
+      "text": "「산업안전보건법」제44조에 따른 중대산업사고",
+      "enumerated": true,
+      "marker": "2)"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 76.83635774999999,
+            "t": 223.21615107499997,
+            "r": 281.8086166408691,
+            "b": 200.39009675,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            54
+          ]
+        }
+      ],
+      "orig": "3) 「시설물의 안전 및 유지관리에 관한 특별법」제 58조 제1항에 따른 일정한 규모 이상의 사고",
+      "text": "「시설물의 안전 및 유지관리에 관한 특별법」제 58조 제1항에 따른 일정한 규모 이상의 사고",
+      "enumerated": true,
+      "marker": "3)"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 76.76439674999999,
+            "t": 179.87774824414066,
+            "r": 281.4284906228027,
+            "b": 157.22733595141597,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "4) 그 밖에 이에 준하는 경우로서 국민의 안전에 중대한 위해를 발생시킨 산업재해 또는 사고",
+      "text": "그 밖에 이에 준하는 경우로서 국민의 안전에 중대한 위해를 발생시킨 산업재해 또는 사고",
+      "enumerated": true,
+      "marker": "4)"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.778548285,
+            "t": 120.57508336199999,
+            "r": 163.0824827903296,
+            "b": 111.43933635802739,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "5. 문책의 종류와 효과",
+      "text": "5. 문책의 종류와 효과",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 71.63530151562499,
+            "t": 90.35035474999995,
+            "r": 279.47028821875,
+            "b": 82.06947295141595,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "문책은 해임․연임제한․업무배제․기본연봉감액․",
+      "text": "문책은 해임․연임제한․업무배제․기본연봉감액․"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 136.18383877562502,
+            "t": 766.241420639,
+            "r": 363.7532002325,
+            "b": 751.628055996375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "안전사고에 대한 임원 책임규정",
+      "text": "안전사고에 대한 임원 책임규정",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 322.42163529687497,
+            "t": 713.1542799359376,
+            "r": 516.4371116250001,
+            "b": 704.94793581875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "경고․주의로 구분하고 그 내용은 다음과 같다.",
+      "text": "경고․주의로 구분하고 그 내용은 다음과 같다."
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 331.77319212500004,
+            "t": 684.38515805,
+            "r": 363.20320830625,
+            "b": 676.1530900922363,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "5.1 해임",
+      "text": "5.1 해임",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 331.77319212500004,
+            "t": 655.6345784,
+            "r": 381.114076328125,
+            "b": 647.402949415625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "5.2 연임제한",
+      "text": "5.2 연임제한"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 331.77319212500004,
+            "t": 626.8660184,
+            "r": 381.83440664086913,
+            "b": 618.603116951416,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "5.3 업무배제",
+      "text": "5.3 업무배제",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 347.348625859375,
+            "t": 612.454767875,
+            "r": 537.6880944375,
+            "b": 575.513015028125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            57
+          ]
+        }
+      ],
+      "orig": "1개월 이상 3개월 이하의 기간 동안 출근 및 직무정지를 하고, 기본연봉은 지급하지 않는 것을 말한다.",
+      "text": "1개월 이상 3개월 이하의 기간 동안 출근 및 직무정지를 하고, 기본연봉은 지급하지 않는 것을 말한다."
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 331.77319212500004,
+            "t": 554.96259875,
+            "r": 404.31550207812495,
+            "b": 546.6961328375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "5.4 기본연봉 감액",
+      "text": "5.4 기본연봉 감액",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 347.20465115356444,
+            "t": 540.54235805,
+            "r": 537.860126203125,
+            "b": 489.15451774999997,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            85
+          ]
+        }
+      ],
+      "orig": "1개월 이상 3개월 이하의 기간동안 임원보수 규정에 따른 기본연봉 월액의 3분의 1을 감하 여 지급하는 것을 말한다.(경고 3회 이상 누적 시에도 적용)",
+      "text": "1개월 이상 3개월 이하의 기간동안 임원보수 규정에 따른 기본연봉 월액의 3분의 1을 감하 여 지급하는 것을 말한다.(경고 3회 이상 누적 시에도 적용)"
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 331.77319212500004,
+            "t": 468.54903665,
+            "r": 364.73507809374996,
+            "b": 460.700613875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "5.5 경고",
+      "text": "5.5 경고",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 350.54676759375,
+            "t": 454.245668225,
+            "r": 537.6919923070097,
+            "b": 417.25446941562495,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            64
+          ]
+        }
+      ],
+      "orig": "인사위원회 심의를 거쳐 사장 명의의 서면으로 각성을 촉구하고 당사자는 과오에 대한 경위서 를 제출하는 것을 말한다.",
+      "text": "인사위원회 심의를 거쳐 사장 명의의 서면으로 각성을 촉구하고 당사자는 과오에 대한 경위서 를 제출하는 것을 말한다."
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 331.77319212500004,
+            "t": 396.6815777,
+            "r": 363.555592328125,
+            "b": 388.5092452409668,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "5.6 주의",
+      "text": "5.6 주의",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 347.078772109375,
+            "t": 382.324268225,
+            "r": 536.5018623191298,
+            "b": 359.6843386167969,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            45
+          ]
+        }
+      ],
+      "orig": "인사위원회 심의를 거치지 않고 사장 명의의 서면으로 각성을 촉구하는 것을 말한다.",
+      "text": "인사위원회 심의를 거치지 않고 사장 명의의 서면으로 각성을 촉구하는 것을 말한다."
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 311.77031289,
+            "t": 323.17359161600007,
+            "r": 381.6657893315796,
+            "b": 314.044023952625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "6. 문책의 절차",
+      "text": "6. 문책의 절차",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 332.2319435,
+            "t": 292.90199422499995,
+            "r": 537.8491821433702,
+            "b": 227.17187489882804,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            118
+          ]
+        }
+      ],
+      "orig": "1) 안전관리부서는 4.1)〜4.4)에 해당하는 안전사고 발생 시 문책의 사유에 해당하는지조사하고 해당할 경우 사장과 주무부처에 보고하며, 사고조사 부 처 및 사고조사 기관의 사고조사 시 해당 조사 에 대응한다.",
+      "text": "안전관리부서는 4.1)〜4.4)에 해당하는 안전사고 발생 시 문책의 사유에 해당하는지조사하고 해당할 경우 사장과 주무부처에 보고하며, 사고조사 부 처 및 사고조사 기관의 사고조사 시 해당 조사 에 대응한다.",
+      "enumerated": true,
+      "marker": "1)"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 331.917114125,
+            "t": 206.58732405,
+            "r": 537.9131975215812,
+            "b": 126.483741028125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            131
+          ]
+        }
+      ],
+      "orig": "2) 안전관리부서는 사고조사보고서 등을 접수한 후 해당 임원이 관련법령 및 지침이 정한 안전 관리 의무를 위반하였는지 검토하여 사장에 보 고한다. 해당임원이 관련 법령 등의 구체적 의 무를 위반한 경우에는 인사위원회에 부의하여야 한다.",
+      "text": "안전관리부서는 사고조사보고서 등을 접수한 후 해당 임원이 관련법령 및 지침이 정한 안전 관리 의무를 위반하였는지 검토하여 사장에 보 고한다. 해당임원이 관련 법령 등의 구체적 의 무를 위반한 경우에는 인사위원회에 부의하여야 한다.",
+      "enumerated": true,
+      "marker": "2)"
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 331.81816775,
+            "t": 105.89736404999996,
+            "r": 537.740191203125,
+            "b": 83.2578909741211,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "3) 임원 문책을 위한 인사위원회의 위원장은 사장이 해당 안전사고와 무관한 본부장 중에서 선임하",
+      "text": "임원 문책을 위한 인사위원회의 위원장은 사장이 해당 안전사고와 무관한 본부장 중에서 선임하",
+      "enumerated": true,
+      "marker": "3)"
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.758639075,
+            "t": 51.20413607499995,
+            "r": 114.23652834500001,
+            "b": 43.762189078999995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "PA1300-09A",
+      "text": "PA1300-09A"
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 240.38323184875,
+            "t": 51.990117107999936,
+            "r": 303.02393308,
+            "b": 43.13290679625004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 439.471224075,
+            "t": 51.80108369499999,
+            "r": 526.70270808,
+            "b": 43.18513971300001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "A4(210㎜ X 297㎜)",
+      "text": "A4(210㎜ X 297㎜)"
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 68.33333333333333,
+            "t": 769.3333333333334,
+            "r": 93.66666666666666,
+            "b": 756.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.33333333333333,
+            "t": 751.0,
+            "r": 100.0,
+            "b": 740.3333333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 136.18383877562502,
+            "t": 766.241420639,
+            "r": 363.7532002325,
+            "b": 751.628055996375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "안전사고에 대한 임원 책임규정",
+      "text": "안전사고에 대한 임원 책임규정",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 92.2640570974121,
+            "t": 713.162708225,
+            "r": 282.590847,
+            "b": 690.583690564209,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "며, 위원 전원을 사외이사 또는 외부위원으로 구성할 수 있다.",
+      "text": "며, 위원 전원을 사외이사 또는 외부위원으로 구성할 수 있다."
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 76.76439674999999,
+            "t": 670.0220892441406,
+            "r": 282.7389667160049,
+            "b": 633.000689065625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            62
+          ]
+        }
+      ],
+      "orig": "4) 사장은 해당임원을 문책할 경우 당사자에게 통 보하여야 하며, 인사위원회 의결 결과에 따라 문책하여야 한다.",
+      "text": "사장은 해당임원을 문책할 경우 당사자에게 통 보하여야 하며, 인사위원회 의결 결과에 따라 문책하여야 한다.",
+      "enumerated": true,
+      "marker": "4)"
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 76.791382125,
+            "t": 612.46375805,
+            "r": 281.430475875,
+            "b": 589.847849065625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "5) 사장은 사고조사보고서 등을 접수한 날로부터 2개월 내에 필요한 문책조치를 하여야 한다.",
+      "text": "사장은 사고조사보고서 등을 접수한 날로부터 2개월 내에 필요한 문책조치를 하여야 한다.",
+      "enumerated": true,
+      "marker": "5)"
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 76.80037725,
+            "t": 569.3199082250001,
+            "r": 282.878316203125,
+            "b": 532.3274451722657,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "6) 인사위원회에서 임원에 대한 문책에 관한 사항 을 심의할 때에는 당사자가 인사위원회에 출 석하여 진술할 수 있다.",
+      "text": "인사위원회에서 임원에 대한 문책에 관한 사항 을 심의할 때에는 당사자가 인사위원회에 출 석하여 진술할 수 있다.",
+      "enumerated": true,
+      "marker": "6)"
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 76.809372375,
+            "t": 511.782788225,
+            "r": 282.702911265625,
+            "b": 431.61739775,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            160
+          ]
+        }
+      ],
+      "orig": "7) 문책양정, 인사위원회 심의․표결, 항고, 문책 의 재심의 또는 재의결, 문책처분의 집행, 문 책의 시효, 포상자에 대한 문책의 감경, 문책 의 면제 등에 관하여는 이 규정에서 정한 것 을 제외하고 인사규정, 취업규칙 및 상벌규정 을 준용한다. 이 경우 \"징계\"는 \"문책\"으로 본다.",
+      "text": "문책양정, 인사위원회 심의․표결, 항고, 문책 의 재심의 또는 재의결, 문책처분의 집행, 문 책의 시효, 포상자에 대한 문책의 감경, 문책 의 면제 등에 관하여는 이 규정에서 정한 것 을 제외하고 인사규정, 취업규칙 및 상벌규정 을 준용한다. 이 경우 \"징계\"는 \"문책\"으로 본다.",
+      "enumerated": true,
+      "marker": "7)"
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 98.091463328125,
+            "t": 396.7084077535156,
+            "r": 242.385636625,
+            "b": 374.08027775,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "부 칙 〈2020. 09. 17.〉 이 규정은 2020.09.17부터 시행한다.",
+      "text": "부 칙 〈2020. 09. 17.〉 이 규정은 2020.09.17부터 시행한다."
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 439.471224075,
+            "t": 51.80108369499999,
+            "r": 526.70270808,
+            "b": 43.18513971300001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "A4(210㎜ X 297㎜)",
+      "text": "A4(210㎜ X 297㎜)"
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.758639075,
+            "t": 51.20413607499995,
+            "r": 114.23652834500001,
+            "b": 43.762189078999995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "PA1300-09A",
+      "text": "PA1300-09A"
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 240.38323184875,
+            "t": 51.990117107999936,
+            "r": 303.02393308,
+            "b": 43.13290679625004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 68.33333333333333,
+            "t": 769.3333333333334,
+            "r": 93.66666666666666,
+            "b": 756.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.33333333333333,
+            "t": 751.0,
+            "r": 100.0,
+            "b": 740.3333333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 136.18383877562502,
+            "t": 766.241420639,
+            "r": 363.7532002325,
+            "b": 751.628055996375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "안전사고에 대한 임원 책임규정",
+      "text": "안전사고에 대한 임원 책임규정",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 72.55683708,
+            "t": 713.097499489,
+            "r": 248.54878144562502,
+            "b": 703.977880952625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "(별표) 안전의무 위반에 따른 문책기준",
+      "text": "(별표) 안전의무 위반에 따른 문책기준"
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 439.471224075,
+            "t": 51.80108369499999,
+            "r": 526.70270808,
+            "b": 43.18513971300001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "A4(210㎜ X 297㎜)",
+      "text": "A4(210㎜ X 297㎜)"
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.758639075,
+            "t": 51.20413607499995,
+            "r": 114.23652834500001,
+            "b": 43.762189078999995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "PA1300-09A",
+      "text": "PA1300-09A"
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 240.38323184875,
+            "t": 51.990117107999936,
+            "r": 303.02393308,
+            "b": 43.13290679625004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/pictures/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 68.33333333333333,
+            "t": 769.3333333333334,
+            "r": 93.66666666666666,
+            "b": 756.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/pictures/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.33333333333333,
+            "t": 751.0,
+            "r": 100.0,
+            "b": 740.3333333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 136.18383877562502,
+            "t": 766.241420639,
+            "r": 363.7532002325,
+            "b": 751.628055996375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "안전사고에 대한 임원 책임규정",
+      "text": "안전사고에 대한 임원 책임규정",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 71.601195,
+            "t": 203.09518047300003,
+            "r": 389.42846526,
+            "b": 193.15600259999997,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "※ 안전사고에 관한 임원문책은 관련법령 위반으로 인한 처벌과 무관",
+      "text": "※ 안전사고에 관한 임원문책은 관련법령 위반으로 인한 처벌과 무관"
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 439.471224075,
+            "t": 51.80108369499999,
+            "r": 526.70270808,
+            "b": 43.18513971300001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "A4(210㎜ X 297㎜)",
+      "text": "A4(210㎜ X 297㎜)"
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.758639075,
+            "t": 51.20413607499995,
+            "r": 114.23652834500001,
+            "b": 43.762189078999995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "PA1300-09A",
+      "text": "PA1300-09A"
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 240.38323184875,
+            "t": 51.990117107999936,
+            "r": 303.02393308,
+            "b": 43.13290679625004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 61.87450408935547,
+            "t": 745.148063659668,
+            "r": 122.96314239501953,
+            "b": 689.3064270019531,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 66.5333251953125,
+            "t": 774.7302093505859,
+            "r": 99.68865966796875,
+            "b": 741.3252105712891,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/37"
+        },
+        {
+          "$ref": "#/texts/38"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 66.69671630859375,
+            "t": 774.8964309692383,
+            "r": 99.68850708007812,
+            "b": 741.4344787597656,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/49"
+        },
+        {
+          "$ref": "#/texts/50"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 66.68174743652344,
+            "t": 775.2352066040039,
+            "r": 99.72428131103516,
+            "b": 741.5318298339844,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/56"
+        },
+        {
+          "$ref": "#/texts/57"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 66.65615844726562,
+            "t": 775.1984405517578,
+            "r": 99.73455047607422,
+            "b": 741.4989776611328,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 50.9993782043457,
+            "t": 764.4934234619141,
+            "r": 548.95849609375,
+            "b": 99.517822265625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 224.03858,
+              "t": 94.06288246600002,
+              "r": 304.035225,
+              "b": 114.06098734299997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 4,
+            "text": "규 정",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 396.98485,
+              "t": 98.07681579999996,
+              "r": 444.95885,
+              "b": 277.373509668,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "문서번호 작",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 468.72133168,
+              "t": 100.0067067,
+              "r": 528.6349568669657,
+              "b": 108.27215372599994,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 3,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 7,
+            "text": "WONIT-L-709",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 147.400115,
+              "t": 141.31188593399997,
+              "r": 380.5533592145,
+              "b": 157.23852035699997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 4,
+            "text": "안전사고에 대한 임원 책임 규정",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 396.98485,
+              "t": 143.38729779999994,
+              "r": 531.671855,
+              "b": 155.36221090000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 3,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 7,
+            "text": "제정일자 2020.09. 17",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 172.7064,
+              "t": 204.22680875000003,
+              "r": 272.73219,
+              "b": 219.19545012499998,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 4,
+            "text": "제 ․ 개정 이력",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 402.142055,
+              "t": 177.07048680000003,
+              "r": 414.135555,
+              "b": 246.58251989999997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 3,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 7,
+            "text": "관 리 구 분",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 55.050165,
+              "t": 266.35658961600006,
+              "r": 90.31129547992225,
+              "b": 277.373509668,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "개정번호",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 108.18137,
+              "t": 266.35658961600006,
+              "r": 143.44250047992224,
+              "b": 277.373509668,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "개정일자",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 237.95104,
+              "t": 266.35658961600006,
+              "r": 312.7904801535168,
+              "b": 277.373509668,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "변 경 내 용",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 423.490485,
+              "t": 266.35658961600006,
+              "r": 432.3656751535168,
+              "b": 277.373509668,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "성",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 457.19222,
+              "t": 266.35658961600006,
+              "r": 483.6978551535168,
+              "b": 277.373509668,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "검 토",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 508.5244,
+              "t": 266.35658961600006,
+              "r": 535.0300351535168,
+              "b": 277.373509668,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 6,
+            "end_col_offset_idx": 7,
+            "text": "승 인",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 70.161975,
+              "t": 301.5647520340001,
+              "r": 75.1392775,
+              "b": 311.50392990699993,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "0",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 100.7454,
+              "t": 301.5647520340001,
+              "r": 150.69760789000003,
+              "b": 311.50392990699993,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "2020.09.17",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 165.75017,
+              "t": 301.5647520340001,
+              "r": 210.72531526,
+              "b": 311.50392990699993,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "신규 제정",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 399.14368,
+              "t": 301.5647520340001,
+              "r": 424.09016,
+              "b": 311.50392990699993,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "백 성",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 429.12743,
+              "t": 301.5647520340001,
+              "r": 439.082035,
+              "b": 311.50392990699993,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "필",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 450.47586,
+              "t": 301.5647520340001,
+              "r": 490.414215,
+              "b": 311.50392990699993,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "조 용 래",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 501.80804,
+              "t": 301.5647520340001,
+              "r": 541.746395,
+              "b": 311.50392990699993,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 6,
+            "end_col_offset_idx": 7,
+            "text": "박 성 철",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 69.0,
+              "t": 107.0,
+              "r": 111.0,
+              "b": 127.0,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "WONIT Electronics",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 66.66666666666667,
+              "t": 136.66666666666669,
+              "r": 122.0,
+              "b": 154.0,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "WONIT Electronics",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 5,
+        "num_cols": 7,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 69.0,
+                "t": 107.0,
+                "r": 111.0,
+                "b": 127.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "WONIT Electronics",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 69.0,
+                "t": 107.0,
+                "r": 111.0,
+                "b": 127.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "WONIT Electronics",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 224.03858,
+                "t": 94.06288246600002,
+                "r": 304.035225,
+                "b": 114.06098734299997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "규 정",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 224.03858,
+                "t": 94.06288246600002,
+                "r": 304.035225,
+                "b": 114.06098734299997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "규 정",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 468.72133168,
+                "t": 100.0067067,
+                "r": 528.6349568669657,
+                "b": 108.27215372599994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 7,
+              "text": "WONIT-L-709",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 468.72133168,
+                "t": 100.0067067,
+                "r": 528.6349568669657,
+                "b": 108.27215372599994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 7,
+              "text": "WONIT-L-709",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 468.72133168,
+                "t": 100.0067067,
+                "r": 528.6349568669657,
+                "b": 108.27215372599994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 7,
+              "text": "WONIT-L-709",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 66.66666666666667,
+                "t": 136.66666666666669,
+                "r": 122.0,
+                "b": 154.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "WONIT Electronics",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 66.66666666666667,
+                "t": 136.66666666666669,
+                "r": 122.0,
+                "b": 154.0,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "WONIT Electronics",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 147.400115,
+                "t": 141.31188593399997,
+                "r": 380.5533592145,
+                "b": 157.23852035699997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "안전사고에 대한 임원 책임 규정",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 147.400115,
+                "t": 141.31188593399997,
+                "r": 380.5533592145,
+                "b": 157.23852035699997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 4,
+              "text": "안전사고에 대한 임원 책임 규정",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 396.98485,
+                "t": 143.38729779999994,
+                "r": 531.671855,
+                "b": 155.36221090000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 7,
+              "text": "제정일자 2020.09. 17",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 396.98485,
+                "t": 143.38729779999994,
+                "r": 531.671855,
+                "b": 155.36221090000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 7,
+              "text": "제정일자 2020.09. 17",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 396.98485,
+                "t": 143.38729779999994,
+                "r": 531.671855,
+                "b": 155.36221090000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 7,
+              "text": "제정일자 2020.09. 17",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 172.7064,
+                "t": 204.22680875000003,
+                "r": 272.73219,
+                "b": 219.19545012499998,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 4,
+              "text": "제 ․ 개정 이력",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 172.7064,
+                "t": 204.22680875000003,
+                "r": 272.73219,
+                "b": 219.19545012499998,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 4,
+              "text": "제 ․ 개정 이력",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 172.7064,
+                "t": 204.22680875000003,
+                "r": 272.73219,
+                "b": 219.19545012499998,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 4,
+              "text": "제 ․ 개정 이력",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 172.7064,
+                "t": 204.22680875000003,
+                "r": 272.73219,
+                "b": 219.19545012499998,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 4,
+              "text": "제 ․ 개정 이력",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 402.142055,
+                "t": 177.07048680000003,
+                "r": 414.135555,
+                "b": 246.58251989999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 7,
+              "text": "관 리 구 분",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 402.142055,
+                "t": 177.07048680000003,
+                "r": 414.135555,
+                "b": 246.58251989999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 7,
+              "text": "관 리 구 분",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 402.142055,
+                "t": 177.07048680000003,
+                "r": 414.135555,
+                "b": 246.58251989999997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 7,
+              "text": "관 리 구 분",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 55.050165,
+                "t": 266.35658961600006,
+                "r": 90.31129547992225,
+                "b": 277.373509668,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "개정번호",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 108.18137,
+                "t": 266.35658961600006,
+                "r": 143.44250047992224,
+                "b": 277.373509668,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "개정일자",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 237.95104,
+                "t": 266.35658961600006,
+                "r": 312.7904801535168,
+                "b": 277.373509668,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "변 경 내 용",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 396.98485,
+                "t": 98.07681579999996,
+                "r": 444.95885,
+                "b": 277.373509668,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "문서번호 작",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 423.490485,
+                "t": 266.35658961600006,
+                "r": 432.3656751535168,
+                "b": 277.373509668,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "성",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 457.19222,
+                "t": 266.35658961600006,
+                "r": 483.6978551535168,
+                "b": 277.373509668,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "검 토",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 508.5244,
+                "t": 266.35658961600006,
+                "r": 535.0300351535168,
+                "b": 277.373509668,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 6,
+              "end_col_offset_idx": 7,
+              "text": "승 인",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 70.161975,
+                "t": 301.5647520340001,
+                "r": 75.1392775,
+                "b": 311.50392990699993,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "0",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 100.7454,
+                "t": 301.5647520340001,
+                "r": 150.69760789000003,
+                "b": 311.50392990699993,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "2020.09.17",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 165.75017,
+                "t": 301.5647520340001,
+                "r": 210.72531526,
+                "b": 311.50392990699993,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "신규 제정",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 399.14368,
+                "t": 301.5647520340001,
+                "r": 424.09016,
+                "b": 311.50392990699993,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "백 성",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 429.12743,
+                "t": 301.5647520340001,
+                "r": 439.082035,
+                "b": 311.50392990699993,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "필",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 450.47586,
+                "t": 301.5647520340001,
+                "r": 490.414215,
+                "b": 311.50392990699993,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "조 용 래",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 501.80804,
+                "t": 301.5647520340001,
+                "r": 541.746395,
+                "b": 311.50392990699993,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 6,
+              "end_col_offset_idx": 7,
+              "text": "박 성 철",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 392.0329895019531,
+            "t": 783.1619415283203,
+            "r": 537.5538330078125,
+            "b": 734.7653274536133,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 404.81126839250004,
+              "t": 60.995100912,
+              "r": 447.46713460949996,
+              "b": 71.11100315006252,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "문서번호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 467.64191668,
+              "t": 61.88836470000001,
+              "r": 527.5566452468978,
+              "b": 70.15381172599996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "WONIT-L-709",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 405.3362679261328,
+              "t": 77.090630756,
+              "r": 447.46713460949996,
+              "b": 87.08918873487505,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "개정번호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 495.11662648,
+              "t": 77.97286659600002,
+              "r": 500.12607155999996,
+              "b": 86.199715804,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "0",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 405.1560815175,
+              "t": 93.13102086000004,
+              "r": 446.0689083925,
+              "b": 103.22159327999998,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "페 이 지",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 485.16777836,
+              "t": 93.31849597600001,
+              "r": 510.52875372000005,
+              "b": 102.94589457999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "1 / 4",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 3,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 404.81126839250004,
+                "t": 60.995100912,
+                "r": 447.46713460949996,
+                "b": 71.11100315006252,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "문서번호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 467.64191668,
+                "t": 61.88836470000001,
+                "r": 527.5566452468978,
+                "b": 70.15381172599996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "WONIT-L-709",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 405.3362679261328,
+                "t": 77.090630756,
+                "r": 447.46713460949996,
+                "b": 87.08918873487505,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "개정번호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 495.11662648,
+                "t": 77.97286659600002,
+                "r": 500.12607155999996,
+                "b": 86.199715804,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "0",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 405.1560815175,
+                "t": 93.13102086000004,
+                "r": 446.0689083925,
+                "b": 103.22159327999998,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "페 이 지",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 485.16777836,
+                "t": 93.31849597600001,
+                "r": 510.52875372000005,
+                "b": 102.94589457999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "1 / 4",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 392.8572082519531,
+            "t": 782.9897918701172,
+            "r": 537.1820678710938,
+            "b": 734.8440780639648,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 404.81126839250004,
+              "t": 60.995100912,
+              "r": 447.46713460949996,
+              "b": 71.11100315006252,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "문서번호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 467.64191668,
+              "t": 61.88836470000001,
+              "r": 527.5566452468978,
+              "b": 70.15381172599996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "WONIT-L-709",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 405.3362679261328,
+              "t": 77.090630756,
+              "r": 447.46713460949996,
+              "b": 87.08918873487505,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "개정번호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 495.11662648,
+              "t": 77.97286659600002,
+              "r": 500.12607155999996,
+              "b": 86.199715804,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "0",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 405.1560815175,
+              "t": 93.13102086000004,
+              "r": 446.0689083925,
+              "b": 103.22159327999998,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "페 이 지",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 484.78158766,
+              "t": 93.31849597600001,
+              "r": 510.52875372000005,
+              "b": 102.94589457999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "2 / 4",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 3,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 404.81126839250004,
+                "t": 60.995100912,
+                "r": 447.46713460949996,
+                "b": 71.11100315006252,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "문서번호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 467.64191668,
+                "t": 61.88836470000001,
+                "r": 527.5566452468978,
+                "b": 70.15381172599996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "WONIT-L-709",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 405.3362679261328,
+                "t": 77.090630756,
+                "r": 447.46713460949996,
+                "b": 87.08918873487505,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "개정번호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 495.11662648,
+                "t": 77.97286659600002,
+                "r": 500.12607155999996,
+                "b": 86.199715804,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "0",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 405.1560815175,
+                "t": 93.13102086000004,
+                "r": 446.0689083925,
+                "b": 103.22159327999998,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "페 이 지",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 484.78158766,
+                "t": 93.31849597600001,
+                "r": 510.52875372000005,
+                "b": 102.94589457999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "2 / 4",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 393.0267639160156,
+            "t": 783.266918182373,
+            "r": 537.263427734375,
+            "b": 735.0191879272461,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 404.81126839250004,
+              "t": 60.995100912,
+              "r": 447.46713460949996,
+              "b": 71.11100315006252,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "문서번호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 467.64191668,
+              "t": 61.88836470000001,
+              "r": 527.5566452468978,
+              "b": 70.15381172599996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "WONIT-L-709",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 405.3362679261328,
+              "t": 77.090630756,
+              "r": 447.46713460949996,
+              "b": 87.08918873487505,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "개정번호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 495.11662648,
+              "t": 77.97286659600002,
+              "r": 500.12607155999996,
+              "b": 86.199715804,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "0",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 405.1560815175,
+              "t": 93.13102086000004,
+              "r": 446.0689083925,
+              "b": 103.22159327999998,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "페 이 지",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 484.66021344,
+              "t": 93.31849597600001,
+              "r": 510.52875372000005,
+              "b": 102.94589457999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "3 / 4",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 3,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 404.81126839250004,
+                "t": 60.995100912,
+                "r": 447.46713460949996,
+                "b": 71.11100315006252,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "문서번호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 467.64191668,
+                "t": 61.88836470000001,
+                "r": 527.5566452468978,
+                "b": 70.15381172599996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "WONIT-L-709",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 405.3362679261328,
+                "t": 77.090630756,
+                "r": 447.46713460949996,
+                "b": 87.08918873487505,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "개정번호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 495.11662648,
+                "t": 77.97286659600002,
+                "r": 500.12607155999996,
+                "b": 86.199715804,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "0",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 405.1560815175,
+                "t": 93.13102086000004,
+                "r": 446.0689083925,
+                "b": 103.22159327999998,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "페 이 지",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 484.66021344,
+                "t": 93.31849597600001,
+                "r": 510.52875372000005,
+                "b": 102.94589457999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "3 / 4",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 68.05207824707031,
+            "t": 690.044677734375,
+            "r": 528.8141479492188,
+            "b": 72.91302490234375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 96.18787,
+              "t": 156.27117752699996,
+              "r": 130.35255929521452,
+              "b": 166.21035540000003,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "관련법령",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 279.44855,
+              "t": 156.27117752699996,
+              "r": 319.369184995201,
+              "b": 166.21035540000003,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "위반 의무",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 467.146825,
+              "t": 156.27117752699996,
+              "r": 501.3115142952145,
+              "b": 166.21035540000003,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "문책유형",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 76.27866,
+              "t": 351.178171527,
+              "r": 93.77144999520105,
+              "b": 387.1289224,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "직영 및 도급",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 112.01929,
+              "t": 351.178171527,
+              "r": 147.50199324263397,
+              "b": 374.1830704,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "산업안전 보건법",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.633485,
+              "t": 172.93296852699996,
+              "r": 438.5111443952218,
+              "b": 492.97324940000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "① 작업설비 등 부적절, 고장(규칙 제9조 등) ② 안전시설 미비, 부적절, 고장(규칙 제21조 등) ③ 안전(방호)장치 미비, 부적절, 고장, 해제(규칙 제12조 등) ④ 작업지휘자·감시자 미배치, 부적절(규칙 제39조 등) ⑤ 위험상황 작업강행(규칙 제37조 등) ⑥ 대피조치 미흡, 부적절(규칙 제241조의2제1항 등) ⑦ 공사기간 단축·공법변경 금지의무(법 제69조제1항·제2항)_도급인 ⑧ 설계변경·변경요청의무(법 제71조제3항 후단)_도급인 ① 비상구·소화설비 미비, 부적절, 고장(규칙 제241조제1항제3호 등) ② 경보, 구호설비 미비, 부적절, 고장(규칙 제11조제4호 등) ③ 위험기계·기구 안전검사 미수검(규칙 제36조 등) ④ 작업계획·점검 미실시, 부적절(규칙 제38조제1항 등) ⑤ 작업방법 부적절(규칙 제38조제3항 등) ⑥ 작업시간·기간 불충분(규칙 제421조제1항 등) ⑦ 무자격자·미숙련자 작업배치(규칙 제318조 등) ⑧ 작업지시·신호 미실시, 부적절(규칙 제40조 등) ⑨ 작업장(위험장소) 출입·이동방법 부적절(규칙 제11조 등) ⑩ 작업설비 등 용도 외, 부적절 사용(규칙 제96조 등) ⑪ 안전교육 미실시, 부적절(규칙 제89조 등) ⑫ 건설공사 기간 연장의무(법 제70조제2항후단)_도급인 ⑬ 경보체계 운영과 대피방법 등 훈련 미실시(법 제64조제1항제5호)_도급인 ⑭ 도급작업에 따른 안전·보건 관련 정보 미제공(법 제65조제1항)_도급인",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 455.27326,
+              "t": 208.89366852700005,
+              "r": 513.8554965160325,
+              "b": 401.6330714,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "해임 연임제한 업무배제 업무배제 기본연봉 감액",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.633485,
+              "t": 499.57599352700004,
+              "r": 411.28589939522175,
+              "b": 565.4939944,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "① 보호구 미지급, 부적절, 고장(규칙 제6조제2항 등) ② 안전표지 등 경고표시 미비, 부적절(규칙 제11조제5호 등) ③ 보호구 미착용, 성능 미달 보호구(규칙 제6조제3항 등) ④ 작업수칙·지시 위반(규칙 제436조 등) ⑤ 전도 방지 미조치(규칙 제3조 등)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 455.27326,
+              "t": 514.559618527,
+              "r": 513.8554965160325,
+              "b": 550.5103694000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "기본연봉 감액 경고 주의",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 76.51853,
+              "t": 663.317047527,
+              "r": 93.53204219304932,
+              "b": 673.2562254000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 3,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "발주",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 112.01929,
+              "t": 590.676433527,
+              "r": 147.50199324263397,
+              "b": 613.5614634000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "산업안전 보건법",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.633485,
+              "t": 571.137786527,
+              "r": 395.69434939522176,
+              "b": 632.9802414000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "① 공사기간 단축·공법변경 금지의무(제69조 제1항·제2항) ② 설계변경의무(제71조제4항) ③ 건설공사 기간 연장의무(제70조제1항) ④ 안전보건조정자 선임의무(제68조제1항) ⑤ 안전보건대장 작성, 제공, 확인의무(제67조제1항)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 455.27326,
+              "t": 611.413770527,
+              "r": 513.8554965160325,
+              "b": 647.3645214000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 2,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "연임제한 업무배제 기본연봉 감액",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 112.618965,
+              "t": 658.162680527,
+              "r": 146.78365429521452,
+              "b": 681.1675794,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "건설기술 진흥법",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.633485,
+              "t": 638.743902527,
+              "r": 384.80543651603256,
+              "b": 700.5863574000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "① 건설사업관리계획 수립의무 위반 ② 설계의 안전성 검토 미시행 ③ 안전관리계획 승인규정 위반 ④ 안전관리비 계상의무 위반 ⑤ 건설사업관리계획 준수 불가시 착공금지 의무 위반",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 112.01929,
+              "t": 724.450237527,
+              "r": 147.50199324263397,
+              "b": 747.3352674,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "건설산업 기본법령",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.633485,
+              "t": 717.857442527,
+              "r": 375.8103115160326,
+              "b": 753.8081934,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "① 직접시공 준수여부 확인의무 위반 ② 건설공사 참여제한 하수급인 변경요구 의무 위반 ③ 하도급계약 적정성 심사의무 위반",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 455.27326,
+              "t": 711.3845165270001,
+              "r": 513.8554965160325,
+              "b": 747.3352674,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "기본연봉 감액 경고 주의",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 6,
+        "num_cols": 4,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 96.18787,
+                "t": 156.27117752699996,
+                "r": 130.35255929521452,
+                "b": 166.21035540000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "관련법령",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 96.18787,
+                "t": 156.27117752699996,
+                "r": 130.35255929521452,
+                "b": 166.21035540000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "관련법령",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 279.44855,
+                "t": 156.27117752699996,
+                "r": 319.369184995201,
+                "b": 166.21035540000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "위반 의무",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 467.146825,
+                "t": 156.27117752699996,
+                "r": 501.3115142952145,
+                "b": 166.21035540000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "문책유형",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 76.27866,
+                "t": 351.178171527,
+                "r": 93.77144999520105,
+                "b": 387.1289224,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "직영 및 도급",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 112.01929,
+                "t": 351.178171527,
+                "r": 147.50199324263397,
+                "b": 374.1830704,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "산업안전 보건법",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.633485,
+                "t": 172.93296852699996,
+                "r": 438.5111443952218,
+                "b": 492.97324940000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "① 작업설비 등 부적절, 고장(규칙 제9조 등) ② 안전시설 미비, 부적절, 고장(규칙 제21조 등) ③ 안전(방호)장치 미비, 부적절, 고장, 해제(규칙 제12조 등) ④ 작업지휘자·감시자 미배치, 부적절(규칙 제39조 등) ⑤ 위험상황 작업강행(규칙 제37조 등) ⑥ 대피조치 미흡, 부적절(규칙 제241조의2제1항 등) ⑦ 공사기간 단축·공법변경 금지의무(법 제69조제1항·제2항)_도급인 ⑧ 설계변경·변경요청의무(법 제71조제3항 후단)_도급인 ① 비상구·소화설비 미비, 부적절, 고장(규칙 제241조제1항제3호 등) ② 경보, 구호설비 미비, 부적절, 고장(규칙 제11조제4호 등) ③ 위험기계·기구 안전검사 미수검(규칙 제36조 등) ④ 작업계획·점검 미실시, 부적절(규칙 제38조제1항 등) ⑤ 작업방법 부적절(규칙 제38조제3항 등) ⑥ 작업시간·기간 불충분(규칙 제421조제1항 등) ⑦ 무자격자·미숙련자 작업배치(규칙 제318조 등) ⑧ 작업지시·신호 미실시, 부적절(규칙 제40조 등) ⑨ 작업장(위험장소) 출입·이동방법 부적절(규칙 제11조 등) ⑩ 작업설비 등 용도 외, 부적절 사용(규칙 제96조 등) ⑪ 안전교육 미실시, 부적절(규칙 제89조 등) ⑫ 건설공사 기간 연장의무(법 제70조제2항후단)_도급인 ⑬ 경보체계 운영과 대피방법 등 훈련 미실시(법 제64조제1항제5호)_도급인 ⑭ 도급작업에 따른 안전·보건 관련 정보 미제공(법 제65조제1항)_도급인",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 455.27326,
+                "t": 208.89366852700005,
+                "r": 513.8554965160325,
+                "b": 401.6330714,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "해임 연임제한 업무배제 업무배제 기본연봉 감액",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.633485,
+                "t": 499.57599352700004,
+                "r": 411.28589939522175,
+                "b": 565.4939944,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "① 보호구 미지급, 부적절, 고장(규칙 제6조제2항 등) ② 안전표지 등 경고표시 미비, 부적절(규칙 제11조제5호 등) ③ 보호구 미착용, 성능 미달 보호구(규칙 제6조제3항 등) ④ 작업수칙·지시 위반(규칙 제436조 등) ⑤ 전도 방지 미조치(규칙 제3조 등)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 455.27326,
+                "t": 514.559618527,
+                "r": 513.8554965160325,
+                "b": 550.5103694000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "기본연봉 감액 경고 주의",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 76.51853,
+                "t": 663.317047527,
+                "r": 93.53204219304932,
+                "b": 673.2562254000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "발주",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 112.01929,
+                "t": 590.676433527,
+                "r": 147.50199324263397,
+                "b": 613.5614634000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "산업안전 보건법",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.633485,
+                "t": 571.137786527,
+                "r": 395.69434939522176,
+                "b": 632.9802414000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "① 공사기간 단축·공법변경 금지의무(제69조 제1항·제2항) ② 설계변경의무(제71조제4항) ③ 건설공사 기간 연장의무(제70조제1항) ④ 안전보건조정자 선임의무(제68조제1항) ⑤ 안전보건대장 작성, 제공, 확인의무(제67조제1항)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 455.27326,
+                "t": 611.413770527,
+                "r": 513.8554965160325,
+                "b": 647.3645214000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "연임제한 업무배제 기본연봉 감액",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 76.51853,
+                "t": 663.317047527,
+                "r": 93.53204219304932,
+                "b": 673.2562254000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "발주",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 112.618965,
+                "t": 658.162680527,
+                "r": 146.78365429521452,
+                "b": 681.1675794,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "건설기술 진흥법",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.633485,
+                "t": 638.743902527,
+                "r": 384.80543651603256,
+                "b": 700.5863574000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "① 건설사업관리계획 수립의무 위반 ② 설계의 안전성 검토 미시행 ③ 안전관리계획 승인규정 위반 ④ 안전관리비 계상의무 위반 ⑤ 건설사업관리계획 준수 불가시 착공금지 의무 위반",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 455.27326,
+                "t": 611.413770527,
+                "r": 513.8554965160325,
+                "b": 647.3645214000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "연임제한 업무배제 기본연봉 감액",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 76.51853,
+                "t": 663.317047527,
+                "r": 93.53204219304932,
+                "b": 673.2562254000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "발주",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 112.01929,
+                "t": 724.450237527,
+                "r": 147.50199324263397,
+                "b": 747.3352674,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "건설산업 기본법령",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.633485,
+                "t": 717.857442527,
+                "r": 375.8103115160326,
+                "b": 753.8081934,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "① 직접시공 준수여부 확인의무 위반 ② 건설공사 참여제한 하수급인 변경요구 의무 위반 ③ 하도급계약 적정성 심사의무 위반",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 455.27326,
+                "t": 711.3845165270001,
+                "r": 513.8554965160325,
+                "b": 747.3352674,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "기본연봉 감액 경고 주의",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 392.8905029296875,
+            "t": 783.196117401123,
+            "r": 537.1829833984375,
+            "b": 734.8675155639648,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 404.81126839250004,
+              "t": 60.995100912,
+              "r": 447.46713460949996,
+              "b": 71.11100315006252,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "문서번호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 467.64191668,
+              "t": 61.88836470000001,
+              "r": 527.5566452468978,
+              "b": 70.15381172599996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "WONIT-L-709",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 405.3362679261328,
+              "t": 77.090630756,
+              "r": 447.46713460949996,
+              "b": 87.08918873487505,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "개정번호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 495.11662648,
+              "t": 77.97286659600002,
+              "r": 500.12607155999996,
+              "b": 86.199715804,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "0",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 405.1560815175,
+              "t": 93.13102086000004,
+              "r": 446.0689083925,
+              "b": 103.22159327999998,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "페 이 지",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 484.57194128,
+              "t": 93.31849597600001,
+              "r": 510.52875372000005,
+              "b": 102.94589457999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "4 / 4",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 3,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 404.81126839250004,
+                "t": 60.995100912,
+                "r": 447.46713460949996,
+                "b": 71.11100315006252,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "문서번호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 467.64191668,
+                "t": 61.88836470000001,
+                "r": 527.5566452468978,
+                "b": 70.15381172599996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "WONIT-L-709",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 405.3362679261328,
+                "t": 77.090630756,
+                "r": 447.46713460949996,
+                "b": 87.08918873487505,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "개정번호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 495.11662648,
+                "t": 77.97286659600002,
+                "r": 500.12607155999996,
+                "b": 86.199715804,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "0",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 405.1560815175,
+                "t": 93.13102086000004,
+                "r": 446.0689083925,
+                "b": 103.22159327999998,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "페 이 지",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 484.57194128,
+                "t": 93.31849597600001,
+                "r": 510.52875372000005,
+                "b": 102.94589457999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "4 / 4",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 96.95417022705078,
+            "t": 712.4254302978516,
+            "r": 529.1005249023438,
+            "b": 219.9378662109375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 112.01929,
+              "t": 132.177508527,
+              "r": 147.50199324263397,
+              "b": 181.0741114,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "건설공사 안전관리 업무수행 지침",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.633485,
+              "t": 138.65043452700002,
+              "r": 330.7147515160326,
+              "b": 174.60118539999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "① 안전관리계획 이행여부 확인의무 위반 ② 안전관리비 적정사용 확인의무 위반 ③ 안전관리실태 점검회의 개최의무 위반",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 475.42234,
+              "t": 145.24322952700004,
+              "r": 493.58648151603256,
+              "b": 168.12825939999993,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "경고 주의",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 112.01929,
+              "t": 214.04803552700002,
+              "r": 147.50199324263397,
+              "b": 237.05293440000003,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 2,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "전기 공사업법",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.633485,
+              "t": 199.78362452700003,
+              "r": 330.7147515160326,
+              "b": 209.72280239999998,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "① 전기공사 분리발주규정을 위반한 경우",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 455.27326,
+              "t": 186.83777252699997,
+              "r": 513.8554965160325,
+              "b": 222.66865440000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "연임제한 업무배제 기본연봉 감액",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.633485,
+              "t": 241.37816752699996,
+              "r": 294.7342515160326,
+              "b": 251.31734540000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "② 도급계약 규정을 위반한 경우",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 455.27326,
+              "t": 228.43231552700001,
+              "r": 513.8554965160325,
+              "b": 264.38306639999996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "기본연봉 감액 경고 주의",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 116.456885,
+              "t": 323.248694527,
+              "r": 142.94463161891753,
+              "b": 346.2535934,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 2,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "전기 사업법",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.633485,
+              "t": 270.02685852700006,
+              "r": 416.9228443952218,
+              "b": 331.8693134,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "① 전기안전관리자를 선임하지 않은 경우 ② 사용전검사 합격규정을 위반한 경우 ③ 기술기준에의 적합명령 규정을 위반한 경우(사업용･자가용) ④ 정기검사 규정을 위반한 경우 ⑤ 제73조에 따른 전기안전관리자 업무규정을 위반한 경우",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 455.27326,
+              "t": 282.972710527,
+              "r": 513.8554965160325,
+              "b": 318.92346139999995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "연임제한 업무배제 기본연봉 감액",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.633485,
+              "t": 337.632974527,
+              "r": 436.3769610028105,
+              "b": 399.4754294,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "⑥ 일반용전기설비 점검규정을 위반한 경우 ⑦ 기술기준에의 적합명령 규정을 위반한 경우(일반용) ⑧ 제73조의3에 따른 전기설비 안전관리 기록규정을 위반한 경우 ⑨ 제73조의8에 따른 전기안전관리업무 실태조사규정을 위반한 경우 ⑩ 제73조의4에 따른 전기안전관리자 교육규정을 위반한 경우",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 455.27326,
+              "t": 350.578826527,
+              "r": 513.8554965160325,
+              "b": 386.5295774,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "기본연봉 감액 경고 주의",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 112.01929,
+              "t": 445.515074527,
+              "r": 147.50199324263397,
+              "b": 468.4001044,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 2,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "전력기술 관리법",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.633485,
+              "t": 411.712016527,
+              "r": 362.25765651603257,
+              "b": 447.6627674,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "① 전력시설물 설계용역 발주규정을 위반한 경우 ② 전력시설물 공사감리 발주규정을 위반한 경우 ③ 전력시설물의 설계･감리규정을 위반한 경우",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 455.27326,
+              "t": 411.712016527,
+              "r": 513.8554965160325,
+              "b": 447.6627674,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "연임제한 업무배제 기본연봉 감액",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.633485,
+              "t": 466.252411527,
+              "r": 422.705197916204,
+              "b": 502.20316240000005,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "④ 감리원 배치 규정을 위반한 경우 ⑤ 감리원 배치 신고, 공사감리 완료보고서 제출 규정을 위반한 경우",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 455.27326,
+              "t": 466.252411527,
+              "r": 513.8554965160325,
+              "b": 502.20316240000005,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "기본연봉 감액 경고 주의",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 112.01929,
+              "t": 514.439749527,
+              "r": 147.50199324263397,
+              "b": 537.3247794,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "정보통신 공사업법",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.633485,
+              "t": 514.439749527,
+              "r": 375.8103115160326,
+              "b": 537.3247794,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "① 공사설계 및 공사감리 용역발주 의무 위반 ② 공사발주 의무 위반 등 해당 법령상의 의무 위반",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 455.27326,
+              "t": 515.039094527,
+              "r": 513.8554965160325,
+              "b": 563.9356974000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 2,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "연임제한 업무배제 기본연봉 감액 경고",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 475.42234,
+              "t": 567.062240527,
+              "r": 493.58648151603256,
+              "b": 577.0014184,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "주의",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 112.01929,
+              "t": 548.842152527,
+              "r": 147.50199324263397,
+              "b": 571.8470514,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "소방시설 공사업법",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 247.905645,
+              "t": 555.315078527,
+              "r": 351.58344151603256,
+              "b": 565.2542564,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "해당 법령상의 의무 위반",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 108.945955625,
+              "t": 589.9965365590001,
+              "r": 151.98091239,
+              "b": 598.333904985,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 9,
+            "end_row_offset_idx": 10,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "대형사고등",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.633485,
+              "t": 583.364424527,
+              "r": 416.8273808164553,
+              "b": 619.1953064,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 9,
+            "end_row_offset_idx": 10,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "① 단일 사고 사망자 3명 이상 ② 단일 사고 3개월 이상 요양이 필요한 부상자 10명 이상 발생 ③ 시설물 붕괴 또는 전도사고가 발생하여 재시공이 필요한 경우",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 475.42234,
+              "t": 596.310276527,
+              "r": 493.58648151603256,
+              "b": 606.2494544000001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 9,
+            "end_row_offset_idx": 10,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "해임",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 10,
+        "num_cols": 3,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 112.01929,
+                "t": 132.177508527,
+                "r": 147.50199324263397,
+                "b": 181.0741114,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "건설공사 안전관리 업무수행 지침",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.633485,
+                "t": 138.65043452700002,
+                "r": 330.7147515160326,
+                "b": 174.60118539999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "① 안전관리계획 이행여부 확인의무 위반 ② 안전관리비 적정사용 확인의무 위반 ③ 안전관리실태 점검회의 개최의무 위반",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 475.42234,
+                "t": 145.24322952700004,
+                "r": 493.58648151603256,
+                "b": 168.12825939999993,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "경고 주의",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 112.01929,
+                "t": 214.04803552700002,
+                "r": 147.50199324263397,
+                "b": 237.05293440000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "전기 공사업법",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.633485,
+                "t": 199.78362452700003,
+                "r": 330.7147515160326,
+                "b": 209.72280239999998,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "① 전기공사 분리발주규정을 위반한 경우",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 455.27326,
+                "t": 186.83777252699997,
+                "r": 513.8554965160325,
+                "b": 222.66865440000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "연임제한 업무배제 기본연봉 감액",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 112.01929,
+                "t": 214.04803552700002,
+                "r": 147.50199324263397,
+                "b": 237.05293440000003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "전기 공사업법",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.633485,
+                "t": 241.37816752699996,
+                "r": 294.7342515160326,
+                "b": 251.31734540000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "② 도급계약 규정을 위반한 경우",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 455.27326,
+                "t": 228.43231552700001,
+                "r": 513.8554965160325,
+                "b": 264.38306639999996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "기본연봉 감액 경고 주의",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 116.456885,
+                "t": 323.248694527,
+                "r": 142.94463161891753,
+                "b": 346.2535934,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "전기 사업법",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.633485,
+                "t": 270.02685852700006,
+                "r": 416.9228443952218,
+                "b": 331.8693134,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "① 전기안전관리자를 선임하지 않은 경우 ② 사용전검사 합격규정을 위반한 경우 ③ 기술기준에의 적합명령 규정을 위반한 경우(사업용･자가용) ④ 정기검사 규정을 위반한 경우 ⑤ 제73조에 따른 전기안전관리자 업무규정을 위반한 경우",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 455.27326,
+                "t": 282.972710527,
+                "r": 513.8554965160325,
+                "b": 318.92346139999995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "연임제한 업무배제 기본연봉 감액",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 116.456885,
+                "t": 323.248694527,
+                "r": 142.94463161891753,
+                "b": 346.2535934,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "전기 사업법",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.633485,
+                "t": 337.632974527,
+                "r": 436.3769610028105,
+                "b": 399.4754294,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "⑥ 일반용전기설비 점검규정을 위반한 경우 ⑦ 기술기준에의 적합명령 규정을 위반한 경우(일반용) ⑧ 제73조의3에 따른 전기설비 안전관리 기록규정을 위반한 경우 ⑨ 제73조의8에 따른 전기안전관리업무 실태조사규정을 위반한 경우 ⑩ 제73조의4에 따른 전기안전관리자 교육규정을 위반한 경우",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 455.27326,
+                "t": 350.578826527,
+                "r": 513.8554965160325,
+                "b": 386.5295774,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "기본연봉 감액 경고 주의",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 112.01929,
+                "t": 445.515074527,
+                "r": 147.50199324263397,
+                "b": 468.4001044,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "전력기술 관리법",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.633485,
+                "t": 411.712016527,
+                "r": 362.25765651603257,
+                "b": 447.6627674,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "① 전력시설물 설계용역 발주규정을 위반한 경우 ② 전력시설물 공사감리 발주규정을 위반한 경우 ③ 전력시설물의 설계･감리규정을 위반한 경우",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 455.27326,
+                "t": 411.712016527,
+                "r": 513.8554965160325,
+                "b": 447.6627674,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "연임제한 업무배제 기본연봉 감액",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 112.01929,
+                "t": 445.515074527,
+                "r": 147.50199324263397,
+                "b": 468.4001044,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "전력기술 관리법",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.633485,
+                "t": 466.252411527,
+                "r": 422.705197916204,
+                "b": 502.20316240000005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "④ 감리원 배치 규정을 위반한 경우 ⑤ 감리원 배치 신고, 공사감리 완료보고서 제출 규정을 위반한 경우",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 455.27326,
+                "t": 466.252411527,
+                "r": 513.8554965160325,
+                "b": 502.20316240000005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "기본연봉 감액 경고 주의",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 112.01929,
+                "t": 514.439749527,
+                "r": 147.50199324263397,
+                "b": 537.3247794,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "정보통신 공사업법",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.633485,
+                "t": 514.439749527,
+                "r": 375.8103115160326,
+                "b": 537.3247794,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "① 공사설계 및 공사감리 용역발주 의무 위반 ② 공사발주 의무 위반 등 해당 법령상의 의무 위반",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 455.27326,
+                "t": 515.039094527,
+                "r": 513.8554965160325,
+                "b": 563.9356974000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "연임제한 업무배제 기본연봉 감액 경고",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 112.01929,
+                "t": 548.842152527,
+                "r": 147.50199324263397,
+                "b": 571.8470514,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "소방시설 공사업법",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 247.905645,
+                "t": 555.315078527,
+                "r": 351.58344151603256,
+                "b": 565.2542564,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "해당 법령상의 의무 위반",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 475.42234,
+                "t": 567.062240527,
+                "r": 493.58648151603256,
+                "b": 577.0014184,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "주의",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 108.945955625,
+                "t": 589.9965365590001,
+                "r": 151.98091239,
+                "b": 598.333904985,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "대형사고등",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.633485,
+                "t": 583.364424527,
+                "r": 416.8273808164553,
+                "b": 619.1953064,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "① 단일 사고 사망자 3명 이상 ② 단일 사고 3개월 이상 요양이 필요한 부상자 10명 이상 발생 ③ 시설물 붕괴 또는 전도사고가 발생하여 재시공이 필요한 경우",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 475.42234,
+                "t": 596.310276527,
+                "r": 493.58648151603256,
+                "b": 606.2494544000001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "해임",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 4
+    },
+    "5": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 5
+    }
+  }
+}

@@ -1,0 +1,6 @@
+﻿role_id,role_name,role_category,description,security_level
+R001,부서장,MANAGER,소속 조직의 업무를 총괄하는 가상 역할,INTERNAL
+R002,실무담당자,PROCESSOR,정해진 업무 질문을 처리하는 가상 역할,INTERNAL
+R003,대체담당자,BACKUP,주담당자 부재 시 업무 접수,INTERNAL
+R004,승인권자,APPROVER,업무 관련 승인 경로를 안내하는 가상 역할,INTERNAL
+R005,직원,EMPLOYEE,일반 사용자,INTERNAL

@@ -1,0 +1,1117 @@
+2026-11-03 18:20:10,087 ERROR 작업을 완료하지 못했습니다
+Traceback (most recent call last):
+  File "C:\cykim\workspace_bigdata\workspace_AI\14.Review\kdn_regulations_rag\ingest_regulations.py", line 479, in main
+    sources = discover_sources(args.input, args.workdir, args.zip_encoding)
+  File "C:\cykim\workspace_bigdata\workspace_AI\14.Review\kdn_regulations_rag\ingest_regulations.py", line 133, in discover_sources
+    raise FileNotFoundError(f"PDF, ZIP 또는 폴더를 찾을 수 없습니다: {input_path}")
+FileNotFoundError: PDF, ZIP 또는 폴더를 찾을 수 없습니다: C:\cykim\workspace_bigdata\workspace_AI\14.Review\kdn_regulations_rag\한전KDN_59.zip
+2026-11-03 18:21:42,708 INFO 처리 대상 PDF: 59개
+2026-11-03 18:21:50,941 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:21:50,942 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-03 18:21:50,953 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-03 18:21:51,249 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:21:51,261 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-03 18:21:51,263 INFO Loading SentenceTransformer model from BAAI/bge-m3.
+2026-11-03 18:21:51,555 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:21:51,568 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-03 18:21:51,802 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:21:51,815 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/README.md "HTTP/1.1 200 OK"
+2026-11-03 18:21:52,059 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:21:52,071 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-03 18:21:52,373 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:21:52,386 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-11-03 18:21:52,680 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:21:52,987 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:21:53,009 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-03 18:21:53,294 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-11-03 18:21:53,526 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-03 18:21:53,706 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:21:53,761 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/main "HTTP/1.1 200 OK"
+2026-11-03 18:21:54,013 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:21:54,013 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/discussions?p=0 "HTTP/1.1 200 OK"
+2026-11-03 18:21:54,225 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:21:54,247 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/refs%2Fpr%2F130 "HTTP/1.1 200 OK"
+2026-11-03 18:21:54,430 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:21:54,511 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:21:54,627 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:21:54,641 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-03 18:21:54,707 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors "HTTP/1.1 302 Found"
+2026-11-03 18:21:54,840 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:21:54,852 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-03 18:21:55,137 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:21:55,148 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-03 18:21:55,377 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:21:55,391 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-03 18:21:55,649 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-11-03 18:21:55,856 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-11-03 18:21:58,760 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-03 18:21:59,014 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:21:59,041 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-11-03 18:21:59,340 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-03 18:22:04,886 INFO [1/59] 한전KDN_59/5직급 운영규정(2025년도 07월 개정).pdf
+2026-11-03 18:22:08,384 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 18:22:08,386 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 18:22:08,784 INFO Going to convert document batch...
+2026-11-03 18:22:08,786 INFO Initializing pipeline for StandardPdfPipeline with options hash cb68a97751e65d3ca2afc7549821a6fe
+2026-11-03 18:22:08,883 INFO Loading plugin 'docling_defaults'
+2026-11-03 18:22:08,892 INFO Registered picture descriptions: ['picture_description_vlm_engine', 'vlm', 'api']
+2026-11-03 18:22:08,999 INFO Loading plugin 'docling_defaults'
+2026-11-03 18:22:09,036 INFO Registered ocr engines: ['auto', 'easyocr', 'kserve_v2_ocr', 'nemotron-ocr', 'ocrmac', 'rapidocr', 'tesserocr', 'tesseract']
+2026-11-03 18:22:09,191 WARNING Downloading detection model, please wait. This may take several minutes depending upon your network connection.
+2026-11-03 18:22:11,411 INFO Download complete
+2026-11-03 18:22:11,412 WARNING Downloading recognition model, please wait. This may take several minutes depending upon your network connection.
+2026-11-03 18:22:12,315 INFO Download complete.
+2026-11-03 18:22:13,567 INFO Loading plugin 'docling_defaults'
+2026-11-03 18:22:13,571 INFO Registered layout engines: ['layout_object_detection', 'docling_layout_default', 'docling_experimental_table_crops_layout']
+2026-11-03 18:22:13,573 INFO Initializing Transformers object-detection engine
+2026-11-03 18:22:13,573 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-11-03 18:22:13,573 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+2026-11-03 18:22:13,876 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-11-03 18:22:13,883 INFO Model docling-project/docling-layout-heron already cached at C:\Users\KDT21\.cache\huggingface\hub\models--docling-project--docling-layout-heron\snapshots\8f39ad3c0b4c58e9c2d2c84a38465abf757272d8
+2026-11-03 18:22:16,365 INFO Accelerator device: 'cpu'
+2026-11-03 18:22:16,736 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-11-03 18:22:16,769 INFO Loading plugin 'docling_defaults'
+2026-11-03 18:22:16,773 INFO Registered table structure engines: ['docling_tableformer', 'docling_tableformer_v2', 'granite_vision_table']
+2026-11-03 18:22:16,774 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-11-03 18:22:17,051 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-11-03 18:22:17,058 INFO Model docling-project/docling-models already cached at C:\Users\KDT21\.cache\huggingface\hub\models--docling-project--docling-models\snapshots\fc0f2d45e2218ea24bce5045f58a389aed16dc23
+2026-11-03 18:22:17,069 INFO Accelerator device: 'cpu'
+2026-11-03 18:22:17,327 INFO Processing document 02b4fcae9a6f861236e1fb1f.pdf
+2026-11-03 18:23:04,543 INFO Finished converting document 02b4fcae9a6f861236e1fb1f.pdf in 56.16 sec.
+2026-11-03 18:23:05,302 INFO   임베딩 / Chroma 저장: 86개 청크
+2026-11-03 18:23:30,911 INFO [2/59] 한전KDN_59/ESG위원회 운영세칙(2025년도 07월 개정).pdf
+2026-11-03 18:23:30,913 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 18:23:30,914 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 18:23:30,991 INFO Going to convert document batch...
+2026-11-03 18:23:30,992 INFO Processing document c9933feeba017918388d05e8.pdf
+2026-11-03 18:24:09,354 INFO Finished converting document c9933feeba017918388d05e8.pdf in 38.44 sec.
+2026-11-03 18:24:09,526 INFO   임베딩 / Chroma 저장: 49개 청크
+2026-11-03 18:24:22,218 INFO [3/59] 한전KDN_59/감사규정(2024년도 07월 개정).pdf
+2026-11-03 18:24:22,241 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 18:24:22,242 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 18:24:22,345 INFO Going to convert document batch...
+2026-11-03 18:24:22,346 INFO Processing document 3698979b1adfafdb0a0ccde6.pdf
+2026-11-03 18:25:16,194 INFO Finished converting document 3698979b1adfafdb0a0ccde6.pdf in 53.95 sec.
+2026-11-03 18:25:16,804 INFO   임베딩 / Chroma 저장: 149개 청크
+2026-11-03 18:26:03,978 INFO [4/59] 한전KDN_59/계약규정(2025년도 07월 개정).pdf
+2026-11-03 18:26:03,979 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 18:26:03,980 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 18:26:04,092 INFO Going to convert document batch...
+2026-11-03 18:26:04,093 INFO Processing document b5e355778ea0d526c811e67c.pdf
+2026-11-03 18:27:37,244 ERROR Stage ocr failed for run 4: Stage ocr stopped during its model call
+Traceback (most recent call last):
+  File "C:\Users\KDT21\anaconda3\envs\bigdata\Lib\site-packages\docling\pipeline\standard_pdf_pipeline.py", line 389, in _process_batch
+    processed_pages = self._run_model(good[0].conv_res, pages)
+  File "C:\Users\KDT21\anaconda3\envs\bigdata\Lib\site-packages\docling\pipeline\standard_pdf_pipeline.py", line 284, in _run_model
+    raise RuntimeError(f"Stage {self.name} stopped during its model call")
+RuntimeError: Stage ocr stopped during its model call
+2026-11-03 18:27:37,355 ERROR Stage table failed for run 4: Stage table stopped during its model call
+Traceback (most recent call last):
+  File "C:\Users\KDT21\anaconda3\envs\bigdata\Lib\site-packages\docling\pipeline\standard_pdf_pipeline.py", line 389, in _process_batch
+    processed_pages = self._run_model(good[0].conv_res, pages)
+  File "C:\Users\KDT21\anaconda3\envs\bigdata\Lib\site-packages\docling\pipeline\standard_pdf_pipeline.py", line 284, in _run_model
+    raise RuntimeError(f"Stage {self.name} stopped during its model call")
+RuntimeError: Stage table stopped during its model call
+2026-11-03 18:28:19,651 INFO 처리 대상 PDF: 59개
+2026-11-03 18:28:27,133 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:28:27,134 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-03 18:28:27,147 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-03 18:28:27,349 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:28:27,367 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-03 18:28:27,368 INFO Loading SentenceTransformer model from BAAI/bge-m3.
+2026-11-03 18:28:27,618 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:28:27,629 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-03 18:28:27,845 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:28:27,856 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/README.md "HTTP/1.1 200 OK"
+2026-11-03 18:28:28,151 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:28:28,163 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-03 18:28:28,460 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:28:28,476 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-11-03 18:28:28,766 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:28:29,074 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:28:29,086 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-03 18:28:29,302 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-11-03 18:28:29,531 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-03 18:28:29,791 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:28:29,792 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/main "HTTP/1.1 200 OK"
+2026-11-03 18:28:30,098 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:28:30,099 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/discussions?p=0 "HTTP/1.1 200 OK"
+2026-11-03 18:28:30,308 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:28:30,324 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/refs%2Fpr%2F130 "HTTP/1.1 200 OK"
+2026-11-03 18:28:30,502 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:28:30,540 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:28:30,815 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:28:30,816 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors "HTTP/1.1 302 Found"
+2026-11-03 18:28:30,829 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-03 18:28:31,122 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:28:31,135 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-03 18:28:31,429 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:28:31,441 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-03 18:28:31,736 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:28:31,747 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-03 18:28:32,050 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-11-03 18:28:32,352 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-11-03 18:28:34,605 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-03 18:28:34,911 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:28:34,922 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-11-03 18:28:35,218 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-03 18:28:35,834 INFO [1/59] 한전KDN_59/5직급 운영규정(2025년도 07월 개정).pdf
+2026-11-03 18:28:35,891 INFO   완료된 문서 건너뜀: 86개 청크
+2026-11-03 18:28:35,891 INFO [2/59] 한전KDN_59/ESG위원회 운영세칙(2025년도 07월 개정).pdf
+2026-11-03 18:28:35,895 INFO   완료된 문서 건너뜀: 49개 청크
+2026-11-03 18:28:35,895 INFO [3/59] 한전KDN_59/감사규정(2024년도 07월 개정).pdf
+2026-11-03 18:28:35,903 INFO   완료된 문서 건너뜀: 149개 청크
+2026-11-03 18:28:35,903 INFO [4/59] 한전KDN_59/계약규정(2025년도 07월 개정).pdf
+2026-11-03 18:28:37,106 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 18:28:37,107 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 18:28:37,238 INFO Going to convert document batch...
+2026-11-03 18:28:37,239 INFO Initializing pipeline for StandardPdfPipeline with options hash 2b0c4c20be3e8dbe1eea96ba762bb754
+2026-11-03 18:28:37,269 INFO Loading plugin 'docling_defaults'
+2026-11-03 18:28:37,271 INFO Registered picture descriptions: ['picture_description_vlm_engine', 'vlm', 'api']
+2026-11-03 18:28:37,300 INFO Loading plugin 'docling_defaults'
+2026-11-03 18:28:37,320 INFO Registered ocr engines: ['auto', 'easyocr', 'kserve_v2_ocr', 'nemotron-ocr', 'ocrmac', 'rapidocr', 'tesserocr', 'tesseract']
+2026-11-03 18:28:38,766 INFO Loading plugin 'docling_defaults'
+2026-11-03 18:28:38,770 INFO Registered layout engines: ['layout_object_detection', 'docling_layout_default', 'docling_experimental_table_crops_layout']
+2026-11-03 18:28:38,771 INFO Initializing Transformers object-detection engine
+2026-11-03 18:28:38,771 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-11-03 18:28:38,771 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+2026-11-03 18:28:38,977 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-11-03 18:28:38,983 INFO Model docling-project/docling-layout-heron already cached at C:\Users\KDT21\.cache\huggingface\hub\models--docling-project--docling-layout-heron\snapshots\8f39ad3c0b4c58e9c2d2c84a38465abf757272d8
+2026-11-03 18:28:41,490 INFO Accelerator device: 'cpu'
+2026-11-03 18:28:41,864 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-11-03 18:28:41,891 INFO Loading plugin 'docling_defaults'
+2026-11-03 18:28:41,896 INFO Registered table structure engines: ['docling_tableformer', 'docling_tableformer_v2', 'granite_vision_table']
+2026-11-03 18:28:41,896 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-11-03 18:28:42,182 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-11-03 18:28:42,192 INFO Model docling-project/docling-models already cached at C:\Users\KDT21\.cache\huggingface\hub\models--docling-project--docling-models\snapshots\fc0f2d45e2218ea24bce5045f58a389aed16dc23
+2026-11-03 18:28:42,203 INFO Accelerator device: 'cpu'
+2026-11-03 18:28:42,478 INFO Processing document b5e355778ea0d526c811e67c.pdf
+2026-11-03 18:30:15,725 ERROR Stage ocr failed for run 1: Stage ocr stopped during its model call
+Traceback (most recent call last):
+  File "C:\Users\KDT21\anaconda3\envs\bigdata\Lib\site-packages\docling\pipeline\standard_pdf_pipeline.py", line 389, in _process_batch
+    processed_pages = self._run_model(good[0].conv_res, pages)
+  File "C:\Users\KDT21\anaconda3\envs\bigdata\Lib\site-packages\docling\pipeline\standard_pdf_pipeline.py", line 284, in _run_model
+    raise RuntimeError(f"Stage {self.name} stopped during its model call")
+RuntimeError: Stage ocr stopped during its model call
+2026-11-03 18:30:15,914 ERROR Stage table failed for run 1: Stage table stopped during its model call
+Traceback (most recent call last):
+  File "C:\Users\KDT21\anaconda3\envs\bigdata\Lib\site-packages\docling\pipeline\standard_pdf_pipeline.py", line 389, in _process_batch
+    processed_pages = self._run_model(good[0].conv_res, pages)
+  File "C:\Users\KDT21\anaconda3\envs\bigdata\Lib\site-packages\docling\pipeline\standard_pdf_pipeline.py", line 284, in _run_model
+    raise RuntimeError(f"Stage {self.name} stopped during its model call")
+RuntimeError: Stage table stopped during its model call
+2026-11-03 18:40:17,253 INFO 처리 대상 PDF: 59개
+2026-11-03 18:40:25,177 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:40:25,178 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-03 18:40:25,192 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-03 18:40:25,390 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:40:25,403 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-03 18:40:25,404 INFO Loading SentenceTransformer model from BAAI/bge-m3.
+2026-11-03 18:40:25,677 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:40:25,691 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-03 18:40:25,983 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:40:25,997 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/README.md "HTTP/1.1 200 OK"
+2026-11-03 18:40:26,290 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:40:26,303 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-03 18:40:26,557 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:40:26,570 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-11-03 18:40:26,802 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:40:27,110 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:40:27,126 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-03 18:40:27,377 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-11-03 18:40:27,588 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-03 18:40:27,827 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:40:27,828 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/main "HTTP/1.1 200 OK"
+2026-11-03 18:40:28,134 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:40:28,135 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/discussions?p=0 "HTTP/1.1 200 OK"
+2026-11-03 18:40:28,348 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:40:28,367 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/refs%2Fpr%2F130 "HTTP/1.1 200 OK"
+2026-11-03 18:40:28,647 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:40:28,648 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:40:28,953 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors "HTTP/1.1 302 Found"
+2026-11-03 18:40:28,954 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:40:28,970 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-03 18:40:29,173 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:40:29,189 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-03 18:40:29,397 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:40:29,418 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-03 18:40:29,620 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:40:29,637 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-03 18:40:30,079 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-11-03 18:40:30,332 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-11-03 18:40:33,347 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-03 18:40:33,566 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:40:33,578 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-11-03 18:40:33,868 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-03 18:40:34,461 INFO [1/59] 한전KDN_59/5직급 운영규정(2025년도 07월 개정).pdf
+2026-11-03 18:40:34,519 INFO   완료된 문서 건너뜀: 86개 청크
+2026-11-03 18:40:34,521 INFO [2/59] 한전KDN_59/ESG위원회 운영세칙(2025년도 07월 개정).pdf
+2026-11-03 18:40:34,525 INFO   완료된 문서 건너뜀: 49개 청크
+2026-11-03 18:40:34,526 INFO [3/59] 한전KDN_59/감사규정(2024년도 07월 개정).pdf
+2026-11-03 18:40:34,538 INFO   완료된 문서 건너뜀: 149개 청크
+2026-11-03 18:40:34,540 INFO [4/59] 한전KDN_59/계약규정(2025년도 07월 개정).pdf
+2026-11-03 18:40:35,818 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 18:40:35,819 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 18:40:35,950 INFO Going to convert document batch...
+2026-11-03 18:40:35,951 INFO Initializing pipeline for StandardPdfPipeline with options hash 49d63a390f499eae2487df7bcdbbdd3d
+2026-11-03 18:40:35,981 INFO Loading plugin 'docling_defaults'
+2026-11-03 18:40:35,984 INFO Registered picture descriptions: ['picture_description_vlm_engine', 'vlm', 'api']
+2026-11-03 18:40:36,014 INFO Loading plugin 'docling_defaults'
+2026-11-03 18:40:36,029 INFO Registered ocr engines: ['auto', 'easyocr', 'kserve_v2_ocr', 'nemotron-ocr', 'ocrmac', 'rapidocr', 'tesserocr', 'tesseract']
+2026-11-03 18:40:37,402 INFO Loading plugin 'docling_defaults'
+2026-11-03 18:40:37,406 INFO Registered layout engines: ['layout_object_detection', 'docling_layout_default', 'docling_experimental_table_crops_layout']
+2026-11-03 18:40:37,407 INFO Initializing Transformers object-detection engine
+2026-11-03 18:40:37,407 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-11-03 18:40:37,407 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+2026-11-03 18:40:37,616 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-11-03 18:40:37,621 INFO Model docling-project/docling-layout-heron already cached at C:\Users\KDT21\.cache\huggingface\hub\models--docling-project--docling-layout-heron\snapshots\8f39ad3c0b4c58e9c2d2c84a38465abf757272d8
+2026-11-03 18:40:40,096 INFO Accelerator device: 'cpu'
+2026-11-03 18:40:40,492 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-11-03 18:40:40,526 INFO Loading plugin 'docling_defaults'
+2026-11-03 18:40:40,530 INFO Registered table structure engines: ['docling_tableformer', 'docling_tableformer_v2', 'granite_vision_table']
+2026-11-03 18:40:40,530 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-11-03 18:40:40,816 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-11-03 18:40:40,825 INFO Model docling-project/docling-models already cached at C:\Users\KDT21\.cache\huggingface\hub\models--docling-project--docling-models\snapshots\fc0f2d45e2218ea24bce5045f58a389aed16dc23
+2026-11-03 18:40:40,845 INFO Accelerator device: 'cpu'
+2026-11-03 18:40:41,155 INFO Processing document 계약규정(2025년도 07월 개정).pdf
+2026-11-03 18:42:35,645 INFO Finished converting document 계약규정(2025년도 07월 개정).pdf in 119.83 sec.
+2026-11-03 18:42:37,701 INFO   임베딩 / Chroma 저장: 338개 청크
+2026-11-03 18:49:03,038 INFO 처리 대상 PDF: 59개
+2026-11-03 18:49:10,174 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:49:10,175 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-03 18:49:10,196 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-03 18:49:10,482 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:49:10,497 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-03 18:49:10,498 INFO Loading SentenceTransformer model from BAAI/bge-m3.
+2026-11-03 18:49:10,701 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:49:10,714 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-03 18:49:10,992 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:49:11,006 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/README.md "HTTP/1.1 200 OK"
+2026-11-03 18:49:11,260 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:49:11,273 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-03 18:49:11,504 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:49:11,518 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-11-03 18:49:11,812 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:49:12,119 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:49:12,134 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-03 18:49:12,425 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-11-03 18:49:12,633 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-03 18:49:12,835 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:49:12,864 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/main "HTTP/1.1 200 OK"
+2026-11-03 18:49:13,143 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:49:13,145 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/discussions?p=0 "HTTP/1.1 200 OK"
+2026-11-03 18:49:13,451 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/refs%2Fpr%2F130 "HTTP/1.1 200 OK"
+2026-11-03 18:49:13,452 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:49:13,757 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:49:13,758 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-03 18:49:14,065 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors "HTTP/1.1 302 Found"
+2026-11-03 18:49:14,066 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:49:14,080 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-03 18:49:14,371 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:49:14,385 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-03 18:49:14,680 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:49:14,692 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-03 18:49:14,986 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:49:14,999 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-03 18:49:15,293 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-11-03 18:49:15,601 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-11-03 18:49:17,576 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-03 18:49:18,060 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-03 18:49:18,083 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-11-03 18:49:18,305 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-03 18:49:19,220 INFO [1/59] 한전KDN_59/5직급 운영규정(2025년도 07월 개정).pdf
+2026-11-03 18:49:20,329 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 18:49:20,330 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 18:49:20,423 INFO Going to convert document batch...
+2026-11-03 18:49:20,424 INFO Initializing pipeline for StandardPdfPipeline with options hash aaeab183f58488e191be414a00a809ae
+2026-11-03 18:49:20,449 INFO Loading plugin 'docling_defaults'
+2026-11-03 18:49:20,451 INFO Registered picture descriptions: ['picture_description_vlm_engine', 'vlm', 'api']
+2026-11-03 18:49:20,475 INFO Loading plugin 'docling_defaults'
+2026-11-03 18:49:20,486 INFO Registered ocr engines: ['auto', 'easyocr', 'kserve_v2_ocr', 'nemotron-ocr', 'ocrmac', 'rapidocr', 'tesserocr', 'tesseract']
+2026-11-03 18:49:21,779 INFO Loading plugin 'docling_defaults'
+2026-11-03 18:49:21,783 INFO Registered layout engines: ['layout_object_detection', 'docling_layout_default', 'docling_experimental_table_crops_layout']
+2026-11-03 18:49:21,784 INFO Initializing Transformers object-detection engine
+2026-11-03 18:49:21,784 INFO Downloading object-detection model from HuggingFace: docling-project/docling-layout-heron@main
+2026-11-03 18:49:21,784 INFO Fetching model docling-project/docling-layout-heron (revision: main)...
+2026-11-03 18:49:22,029 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-11-03 18:49:22,037 INFO Model docling-project/docling-layout-heron already cached at C:\Users\KDT21\.cache\huggingface\hub\models--docling-project--docling-layout-heron\snapshots\8f39ad3c0b4c58e9c2d2c84a38465abf757272d8
+2026-11-03 18:49:24,547 INFO Accelerator device: 'cpu'
+2026-11-03 18:49:24,942 INFO Transformers engine ready (device=cpu, dtype=torch.float32)
+2026-11-03 18:49:24,968 INFO Loading plugin 'docling_defaults'
+2026-11-03 18:49:24,971 INFO Registered table structure engines: ['docling_tableformer', 'docling_tableformer_v2', 'granite_vision_table']
+2026-11-03 18:49:24,971 INFO Fetching model docling-project/docling-models (revision: v2.3.0)...
+2026-11-03 18:49:25,210 INFO HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-11-03 18:49:25,219 INFO Model docling-project/docling-models already cached at C:\Users\KDT21\.cache\huggingface\hub\models--docling-project--docling-models\snapshots\fc0f2d45e2218ea24bce5045f58a389aed16dc23
+2026-11-03 18:49:25,232 INFO Accelerator device: 'cpu'
+2026-11-03 18:49:25,517 INFO Processing document 5직급 운영규정(2025년도 07월 개정).pdf
+2026-11-03 18:50:02,209 INFO Finished converting document 5직급 운영규정(2025년도 07월 개정).pdf in 41.88 sec.
+2026-11-03 18:50:02,863 INFO   임베딩 / Chroma 저장: 86개 청크
+2026-11-03 18:51:01,163 INFO [2/59] 한전KDN_59/ESG위원회 운영세칙(2025년도 07월 개정).pdf
+2026-11-03 18:51:01,170 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 18:51:01,171 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 18:51:01,471 INFO Going to convert document batch...
+2026-11-03 18:51:01,472 INFO Processing document ESG위원회 운영세칙(2025년도 07월 개정).pdf
+2026-11-03 18:51:48,590 INFO Finished converting document ESG위원회 운영세칙(2025년도 07월 개정).pdf in 47.42 sec.
+2026-11-03 18:51:48,717 INFO   임베딩 / Chroma 저장: 49개 청크
+2026-11-03 18:52:01,716 INFO [3/59] 한전KDN_59/감사규정(2024년도 07월 개정).pdf
+2026-11-03 18:52:01,737 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 18:52:01,737 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 18:52:01,852 INFO Going to convert document batch...
+2026-11-03 18:52:01,853 INFO Processing document 감사규정(2024년도 07월 개정).pdf
+2026-11-03 18:52:53,693 INFO Finished converting document 감사규정(2024년도 07월 개정).pdf in 51.96 sec.
+2026-11-03 18:52:54,294 INFO   임베딩 / Chroma 저장: 149개 청크
+2026-11-03 18:54:52,794 INFO [4/59] 한전KDN_59/계약규정(2025년도 07월 개정).pdf
+2026-11-03 18:54:52,800 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 18:54:52,801 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 18:54:53,157 INFO Going to convert document batch...
+2026-11-03 18:54:53,158 INFO Processing document 계약규정(2025년도 07월 개정).pdf
+2026-11-03 18:58:07,972 INFO Finished converting document 계약규정(2025년도 07월 개정).pdf in 195.17 sec.
+2026-11-03 18:58:09,546 INFO   임베딩 / Chroma 저장: 338개 청크
+2026-11-03 18:59:33,041 INFO [5/59] 한전KDN_59/계약직 운영규정(2025년도 07월 개정).pdf
+2026-11-03 18:59:33,043 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 18:59:33,044 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 18:59:33,140 INFO Going to convert document batch...
+2026-11-03 18:59:33,141 INFO Processing document 계약직 운영규정(2025년도 07월 개정).pdf
+2026-11-03 19:00:28,943 INFO Finished converting document 계약직 운영규정(2025년도 07월 개정).pdf in 55.90 sec.
+2026-11-03 19:00:29,313 INFO   임베딩 / Chroma 저장: 104개 청크
+2026-11-03 19:00:57,451 INFO [6/59] 한전KDN_59/고충처리 지침(2025년도 07월 개정).pdf
+2026-11-03 19:00:57,452 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:00:57,453 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:00:57,525 INFO Going to convert document batch...
+2026-11-03 19:00:57,526 INFO Processing document 고충처리 지침(2025년도 07월 개정).pdf
+2026-11-03 19:01:31,629 INFO Finished converting document 고충처리 지침(2025년도 07월 개정).pdf in 34.18 sec.
+2026-11-03 19:01:31,728 INFO   임베딩 / Chroma 저장: 36개 청크
+2026-11-03 19:01:44,879 INFO [7/59] 한전KDN_59/공정거래 자율준수프로그램 운영지침(2025년 07월 개정).pdf
+2026-11-03 19:01:44,883 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:01:44,884 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:01:44,959 INFO Going to convert document batch...
+2026-11-03 19:01:44,960 INFO Processing document 공정거래 자율준수프로그램 운영지침(2025년 07월 개정).pdf
+2026-11-03 19:03:38,578 INFO Finished converting document 공정거래 자율준수프로그램 운영지침(2025년 07월 개정).pdf in 113.69 sec.
+2026-11-03 19:03:38,760 INFO   임베딩 / Chroma 저장: 49개 청크
+2026-11-03 19:03:55,464 INFO [8/59] 한전KDN_59/기록물관리지침(2025년 07월 개정).pdf
+2026-11-03 19:03:55,486 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:03:55,487 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:03:56,235 INFO Going to convert document batch...
+2026-11-03 19:03:56,237 INFO Processing document 기록물관리지침(2025년 07월 개정).pdf
+2026-11-03 19:05:22,212 WARNING Skipping page separator extraction on page 21: 6313 separator candidates exceed the limit of 5000. Such dense vector geometry cannot yield trustworthy page separators; reading order falls back to the pre-separator behavior.
+2026-11-03 19:05:22,309 INFO Finished converting document 기록물관리지침(2025년 07월 개정).pdf in 86.82 sec.
+2026-11-03 19:05:22,886 INFO   임베딩 / Chroma 저장: 130개 청크
+2026-11-03 19:05:59,894 INFO [9/59] 한전KDN_59/내부통제 운영규정(2025년도 12월 23일 개정).pdf
+2026-11-03 19:05:59,918 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:05:59,918 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:06:00,014 INFO Going to convert document batch...
+2026-11-03 19:06:00,016 INFO Processing document 내부통제 운영규정(2025년도 12월 23일 개정).pdf
+2026-11-03 19:06:28,272 INFO Finished converting document 내부통제 운영규정(2025년도 12월 23일 개정).pdf in 28.35 sec.
+2026-11-03 19:06:28,464 INFO   임베딩 / Chroma 저장: 51개 청크
+2026-11-03 19:06:48,001 INFO [10/59] 한전KDN_59/내부회계관리규정(2025년도 07월 개정).pdf
+2026-11-03 19:06:48,005 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:06:48,005 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:06:48,082 INFO Going to convert document batch...
+2026-11-03 19:06:48,083 INFO Processing document 내부회계관리규정(2025년도 07월 개정).pdf
+2026-11-03 19:07:13,218 INFO Finished converting document 내부회계관리규정(2025년도 07월 개정).pdf in 25.21 sec.
+2026-11-03 19:07:13,388 INFO   임베딩 / Chroma 저장: 45개 청크
+2026-11-03 19:07:29,295 INFO [11/59] 한전KDN_59/노사협의회 운영규정(2025년도 07월 개정).pdf
+2026-11-03 19:07:29,315 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:07:29,315 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:07:29,404 INFO Going to convert document batch...
+2026-11-03 19:07:29,404 INFO Processing document 노사협의회 운영규정(2025년도 07월 개정).pdf
+2026-11-03 19:07:50,154 INFO Finished converting document 노사협의회 운영규정(2025년도 07월 개정).pdf in 20.84 sec.
+2026-11-03 19:07:50,288 INFO   임베딩 / Chroma 저장: 33개 청크
+2026-11-03 19:08:03,417 INFO [12/59] 한전KDN_59/명예퇴직운영지침(2025년도 08월 개정).pdf
+2026-11-03 19:08:03,420 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:08:03,420 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:08:03,504 INFO Going to convert document batch...
+2026-11-03 19:08:03,505 INFO Processing document 명예퇴직운영지침(2025년도 08월 개정).pdf
+2026-11-03 19:08:27,051 INFO Finished converting document 명예퇴직운영지침(2025년도 08월 개정).pdf in 23.63 sec.
+2026-11-03 19:08:27,212 INFO   임베딩 / Chroma 저장: 60개 청크
+2026-11-03 19:08:42,117 INFO [13/59] 한전KDN_59/문서관리지침(2025년 07월 개정).pdf
+2026-11-03 19:08:42,139 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:08:42,140 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:08:42,242 INFO Going to convert document batch...
+2026-11-03 19:08:42,243 INFO Processing document 문서관리지침(2025년 07월 개정).pdf
+2026-11-03 19:09:14,751 INFO Finished converting document 문서관리지침(2025년 07월 개정).pdf in 32.61 sec.
+2026-11-03 19:09:14,941 INFO   임베딩 / Chroma 저장: 64개 청크
+2026-11-03 19:09:31,754 INFO [14/59] 한전KDN_59/법무규정(2025년도 07월 개정).pdf
+2026-11-03 19:09:31,756 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:09:31,756 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:09:31,829 INFO Going to convert document batch...
+2026-11-03 19:09:31,830 INFO Processing document 법무규정(2025년도 07월 개정).pdf
+2026-11-03 19:10:38,883 INFO Finished converting document 법무규정(2025년도 07월 개정).pdf in 67.13 sec.
+2026-11-03 19:10:38,961 INFO   임베딩 / Chroma 저장: 14개 청크
+2026-11-03 19:10:47,285 INFO [15/59] 한전KDN_59/별정직 운영규정(2026년도 6월 10일 개정).pdf
+2026-11-03 19:10:47,307 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:10:47,308 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:10:47,407 INFO Going to convert document batch...
+2026-11-03 19:10:47,408 INFO Processing document 별정직 운영규정(2026년도 6월 10일 개정).pdf
+2026-11-03 19:11:49,138 INFO Finished converting document 별정직 운영규정(2026년도 6월 10일 개정).pdf in 61.83 sec.
+2026-11-03 19:11:49,540 INFO   임베딩 / Chroma 저장: 132개 청크
+2026-11-03 19:12:19,076 INFO [16/59] 한전KDN_59/보상 및 배상규정(2025년도 07월 개정).pdf
+2026-11-03 19:12:19,079 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:12:19,079 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:12:19,152 INFO Going to convert document batch...
+2026-11-03 19:12:19,153 INFO Processing document 보상 및 배상규정(2025년도 07월 개정).pdf
+2026-11-03 19:12:50,929 INFO Finished converting document 보상 및 배상규정(2025년도 07월 개정).pdf in 31.85 sec.
+2026-11-03 19:12:51,187 INFO   임베딩 / Chroma 저장: 74개 청크
+2026-11-03 19:13:18,416 INFO [17/59] 한전KDN_59/보안규정(2026년도 1월 27일 개정).pdf
+2026-11-03 19:13:18,436 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:13:18,437 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:13:18,524 INFO Going to convert document batch...
+2026-11-03 19:13:18,524 INFO Processing document 보안규정(2026년도 1월 27일 개정).pdf
+2026-11-03 19:13:48,638 INFO Finished converting document 보안규정(2026년도 1월 27일 개정).pdf in 30.20 sec.
+2026-11-03 19:13:48,824 INFO   임베딩 / Chroma 저장: 55개 청크
+2026-11-03 19:14:05,816 INFO [18/59] 한전KDN_59/복리후생규정(2025년도 07월 개정).pdf
+2026-11-03 19:14:05,839 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:14:05,840 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:14:05,928 INFO Going to convert document batch...
+2026-11-03 19:14:05,929 INFO Processing document 복리후생규정(2025년도 07월 개정).pdf
+2026-11-03 19:14:42,709 INFO Finished converting document 복리후생규정(2025년도 07월 개정).pdf in 36.87 sec.
+2026-11-03 19:14:42,856 INFO   임베딩 / Chroma 저장: 33개 청크
+2026-11-03 19:14:56,207 INFO [19/59] 한전KDN_59/비상근무 운영지침(2025년 07월 개정).pdf
+2026-11-03 19:14:56,228 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:14:56,228 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:14:56,316 INFO Going to convert document batch...
+2026-11-03 19:14:56,317 INFO Processing document 비상근무 운영지침(2025년 07월 개정).pdf
+2026-11-03 19:16:18,399 WARNING 42 of 65 pdf cells matched neither a row nor a column band of the 2x3 grid and were dropped from the table
+2026-11-03 19:16:25,359 WARNING 2 of 40 pdf cells matched neither a row nor a column band of the 17x9 grid and were dropped from the table
+2026-11-03 19:16:40,476 WARNING 2 of 12 pdf cells matched neither a row nor a column band of the 17x7 grid and were dropped from the table
+2026-11-03 19:16:44,389 INFO Finished converting document 비상근무 운영지침(2025년 07월 개정).pdf in 108.16 sec.
+2026-11-03 19:16:44,998 INFO   임베딩 / Chroma 저장: 144개 청크
+2026-11-03 19:17:19,429 INFO [20/59] 한전KDN_59/사규관리규정(2025년도 07월 개정).pdf
+2026-11-03 19:17:19,432 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:17:19,432 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:17:19,509 INFO Going to convert document batch...
+2026-11-03 19:17:19,510 INFO Processing document 사규관리규정(2025년도 07월 개정).pdf
+2026-11-03 19:18:57,698 INFO Finished converting document 사규관리규정(2025년도 07월 개정).pdf in 98.27 sec.
+2026-11-03 19:18:58,333 INFO   임베딩 / Chroma 저장: 180개 청크
+2026-11-03 19:19:39,779 INFO [21/59] 한전KDN_59/사택 운영업무 기준(2025년도 07월 개정).pdf
+2026-11-03 19:19:39,800 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:19:39,800 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:19:39,892 INFO Going to convert document batch...
+2026-11-03 19:19:39,894 INFO Processing document 사택 운영업무 기준(2025년도 07월 개정).pdf
+2026-11-03 19:20:08,935 INFO Finished converting document 사택 운영업무 기준(2025년도 07월 개정).pdf in 29.13 sec.
+2026-11-03 19:20:09,219 INFO   임베딩 / Chroma 저장: 53개 청크
+2026-11-03 19:20:29,681 INFO [22/59] 한전KDN_59/상벌규정(2026년도 8월 3일 개정).pdf
+2026-11-03 19:20:29,683 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:20:29,683 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:20:29,781 INFO Going to convert document batch...
+2026-11-03 19:20:29,782 INFO Processing document 상벌규정(2026년도 8월 3일 개정).pdf
+2026-11-03 19:21:46,077 WARNING 2 of 25 pdf cells matched neither a row nor a column band of the 10x4 grid and were dropped from the table
+2026-11-03 19:21:46,579 INFO Finished converting document 상벌규정(2026년도 8월 3일 개정).pdf in 76.90 sec.
+2026-11-03 19:21:47,040 INFO   임베딩 / Chroma 저장: 145개 청크
+2026-11-03 19:22:21,128 INFO [23/59] 한전KDN_59/상임임원 복무규정(2026년도 6월 25일 개정).pdf
+2026-11-03 19:22:21,153 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:22:21,153 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:22:21,244 INFO Going to convert document batch...
+2026-11-03 19:22:21,245 INFO Processing document 상임임원 복무규정(2026년도 6월 25일 개정).pdf
+2026-11-03 19:23:06,700 INFO Finished converting document 상임임원 복무규정(2026년도 6월 25일 개정).pdf in 45.55 sec.
+2026-11-03 19:23:06,779 INFO   임베딩 / Chroma 저장: 34개 청크
+2026-11-03 19:23:19,362 INFO [24/59] 한전KDN_59/안전보건관리규정(2026년도 6월 18일 개정).pdf
+2026-11-03 19:23:19,366 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:23:19,367 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:23:19,462 INFO Going to convert document batch...
+2026-11-03 19:23:19,463 INFO Processing document 안전보건관리규정(2026년도 6월 18일 개정).pdf
+2026-11-03 19:24:21,921 WARNING Skipping page separator extraction on page 29: 5822 separator candidates exceed the limit of 5000. Such dense vector geometry cannot yield trustworthy page separators; reading order falls back to the pre-separator behavior.
+2026-11-03 19:24:22,358 INFO Finished converting document 안전보건관리규정(2026년도 6월 18일 개정).pdf in 62.99 sec.
+2026-11-03 19:24:23,466 INFO   임베딩 / Chroma 저장: 152개 청크
+2026-11-03 19:25:25,975 INFO [25/59] 한전KDN_59/안전사고에 대한 임원 책임규정(Rev.0).pdf
+2026-11-03 19:25:25,978 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:25:25,978 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:25:26,053 INFO Going to convert document batch...
+2026-11-03 19:25:26,054 INFO Processing document 안전사고에 대한 임원 책임규정(Rev.0).pdf
+2026-11-03 19:25:43,915 INFO Finished converting document 안전사고에 대한 임원 책임규정(Rev.0).pdf in 17.94 sec.
+2026-11-03 19:25:44,046 INFO   임베딩 / Chroma 저장: 28개 청크
+2026-11-03 19:25:56,276 INFO [26/59] 한전KDN_59/여비규정(2025년도 07월 개정).pdf
+2026-11-03 19:25:56,296 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:25:56,297 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:25:56,380 INFO Going to convert document batch...
+2026-11-03 19:25:56,381 INFO Processing document 여비규정(2025년도 07월 개정).pdf
+2026-11-03 19:26:50,575 INFO Finished converting document 여비규정(2025년도 07월 개정).pdf in 54.28 sec.
+2026-11-03 19:26:51,107 INFO   임베딩 / Chroma 저장: 115개 청크
+2026-11-03 19:27:28,152 INFO [27/59] 한전KDN_59/연구개발관리규정(2026년도 9월 23일 개정).pdf
+2026-11-03 19:27:28,173 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:27:28,174 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:27:28,270 INFO Going to convert document batch...
+2026-11-03 19:27:28,271 INFO Processing document 연구개발관리규정(2026년도 9월 23일 개정).pdf
+2026-11-03 19:29:57,653 INFO Finished converting document 연구개발관리규정(2026년도 9월 23일 개정).pdf in 149.48 sec.
+2026-11-03 19:29:57,957 INFO   임베딩 / Chroma 저장: 62개 청크
+2026-11-03 19:30:20,103 INFO [28/59] 한전KDN_59/이사회 운영규정(2026년 5월 20일 개정).pdf
+2026-11-03 19:30:20,106 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:30:20,106 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:30:20,205 INFO Going to convert document batch...
+2026-11-03 19:30:20,207 INFO Processing document 이사회 운영규정(2026년 5월 20일 개정).pdf
+2026-11-03 19:31:16,364 INFO Finished converting document 이사회 운영규정(2026년 5월 20일 개정).pdf in 56.26 sec.
+2026-11-03 19:31:16,575 INFO   임베딩 / Chroma 저장: 77개 청크
+2026-11-03 19:31:35,689 INFO [29/59] 한전KDN_59/이해충돌방지제도 운영세칙(2026년도 9월 28일 개정).pdf
+2026-11-03 19:31:35,693 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:31:35,693 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:31:35,801 INFO Going to convert document batch...
+2026-11-03 19:31:35,802 INFO Processing document 이해충돌방지제도 운영세칙(2026년도 9월 28일 개정).pdf
+2026-11-03 19:33:26,173 WARNING 4 of 5 pdf cells matched neither a row nor a column band of the 4x4 grid and were dropped from the table
+2026-11-03 19:34:58,782 INFO Finished converting document 이해충돌방지제도 운영세칙(2026년도 9월 28일 개정).pdf in 203.09 sec.
+2026-11-03 19:35:00,412 INFO   임베딩 / Chroma 저장: 756개 청크
+2026-11-03 19:36:44,450 INFO [30/59] 한전KDN_59/인권경영규정(2026년도 8월 24일 개정).pdf
+2026-11-03 19:36:44,452 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:36:44,452 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:36:44,530 INFO Going to convert document batch...
+2026-11-03 19:36:44,531 INFO Processing document 인권경영규정(2026년도 8월 24일 개정).pdf
+2026-11-03 19:37:13,637 INFO Finished converting document 인권경영규정(2026년도 8월 24일 개정).pdf in 29.18 sec.
+2026-11-03 19:37:13,842 INFO   임베딩 / Chroma 저장: 49개 청크
+2026-11-03 19:37:32,761 INFO [31/59] 한전KDN_59/인권경영규정세칙(2026년도 6월 22일 개정).pdf
+2026-11-03 19:37:32,782 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:37:32,782 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:37:32,877 INFO Going to convert document batch...
+2026-11-03 19:37:32,878 INFO Processing document 인권경영규정세칙(2026년도 6월 22일 개정).pdf
+2026-11-03 19:39:25,518 WARNING 2 of 64 pdf cells matched neither a row nor a column band of the 11x7 grid and were dropped from the table
+2026-11-03 19:39:28,029 INFO Finished converting document 인권경영규정세칙(2026년도 6월 22일 개정).pdf in 115.25 sec.
+2026-11-03 19:39:29,161 INFO   임베딩 / Chroma 저장: 174개 청크
+2026-11-03 19:40:00,058 INFO [32/59] 한전KDN_59/인사규정 시행세칙(2026년도 3월 24일 개정).pdf
+2026-11-03 19:40:00,081 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:40:00,082 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:40:00,177 INFO Going to convert document batch...
+2026-11-03 19:40:00,178 INFO Processing document 인사규정 시행세칙(2026년도 3월 24일 개정).pdf
+2026-11-03 19:42:16,718 WARNING 2 of 48 pdf cells matched neither a row nor a column band of the 9x5 grid and were dropped from the table
+2026-11-03 19:42:21,116 WARNING 3 of 18 pdf cells matched neither a row nor a column band of the 5x3 grid and were dropped from the table
+2026-11-03 19:43:03,151 INFO Finished converting document 인사규정 시행세칙(2026년도 3월 24일 개정).pdf in 183.07 sec.
+2026-11-03 19:43:06,287 INFO   임베딩 / Chroma 저장: 244개 청크
+2026-11-03 19:44:47,940 INFO [33/59] 한전KDN_59/인사규정(2025년도 07월 개정).pdf
+2026-11-03 19:44:47,948 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:44:47,948 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:44:48,230 INFO Going to convert document batch...
+2026-11-03 19:44:48,232 INFO Processing document 인사규정(2025년도 07월 개정).pdf
+2026-11-03 19:50:02,606 INFO Finished converting document 인사규정(2025년도 07월 개정).pdf in 314.66 sec.
+2026-11-03 19:50:09,599 INFO   임베딩 / Chroma 저장: 220개 청크
+2026-11-03 19:53:24,344 INFO [34/59] 한전KDN_59/인사평가지침(2025년도 12월 16일 개정).pdf
+2026-11-03 19:53:24,355 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:53:24,356 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:53:24,658 INFO Going to convert document batch...
+2026-11-03 19:53:24,659 INFO Processing document 인사평가지침(2025년도 12월 16일 개정).pdf
+2026-11-03 19:56:51,321 WARNING 1 of 30 pdf cells matched neither a row nor a column band of the 4x7 grid and were dropped from the table
+2026-11-03 19:56:52,226 INFO Finished converting document 인사평가지침(2025년도 12월 16일 개정).pdf in 207.87 sec.
+2026-11-03 19:56:57,588 INFO   임베딩 / Chroma 저장: 198개 청크
+2026-11-03 19:58:23,496 INFO [35/59] 한전KDN_59/일용근로자 관리 기준(2026년도 7월 21일 개정).pdf
+2026-11-03 19:58:23,515 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:58:23,516 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:58:23,613 INFO Going to convert document batch...
+2026-11-03 19:58:23,614 INFO Processing document 일용근로자 관리 기준(2026년도 7월 21일 개정).pdf
+2026-11-03 19:59:18,464 INFO Finished converting document 일용근로자 관리 기준(2026년도 7월 21일 개정).pdf in 54.95 sec.
+2026-11-03 19:59:18,995 INFO   임베딩 / Chroma 저장: 196개 청크
+2026-11-03 19:59:51,629 INFO [36/59] 한전KDN_59/임금피크제 운영규정(2025년도 06월 개정).pdf
+2026-11-03 19:59:51,651 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 19:59:51,652 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 19:59:51,758 INFO Going to convert document batch...
+2026-11-03 19:59:51,759 INFO Processing document 임금피크제 운영규정(2025년도 06월 개정).pdf
+2026-11-03 20:00:19,234 INFO Finished converting document 임금피크제 운영규정(2025년도 06월 개정).pdf in 27.58 sec.
+2026-11-03 20:00:19,519 INFO   임베딩 / Chroma 저장: 86개 청크
+2026-11-03 20:00:39,025 INFO [37/59] 한전KDN_59/임시조직 운영지침(2026년도 7월 3일 개정).pdf
+2026-11-03 20:00:39,046 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 20:00:39,047 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 20:00:39,136 INFO Going to convert document batch...
+2026-11-03 20:00:39,137 INFO Processing document 임시조직 운영지침(2026년도 7월 3일 개정).pdf
+2026-11-03 20:01:12,314 INFO Finished converting document 임시조직 운영지침(2026년도 7월 3일 개정).pdf in 33.27 sec.
+2026-11-03 20:01:12,422 INFO   임베딩 / Chroma 저장: 33개 청크
+2026-11-03 20:01:24,098 INFO [38/59] 한전KDN_59/임원연봉규정(2026년도 4월 16일 개정).pdf
+2026-11-03 20:01:24,120 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 20:01:24,120 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 20:01:24,215 INFO Going to convert document batch...
+2026-11-03 20:01:24,216 INFO Processing document 임원연봉규정(2026년도 4월 16일 개정).pdf
+2026-11-03 20:02:11,708 INFO Finished converting document 임원연봉규정(2026년도 4월 16일 개정).pdf in 47.59 sec.
+2026-11-03 20:02:12,049 INFO   임베딩 / Chroma 저장: 81개 청크
+2026-11-03 20:02:34,672 INFO [39/59] 한전KDN_59/임원직무청렴계약 운영규정(2025년도 07월 개정).pdf
+2026-11-03 20:02:34,692 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 20:02:34,693 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 20:02:34,786 INFO Going to convert document batch...
+2026-11-03 20:02:34,787 INFO Processing document 임원직무청렴계약 운영규정(2025년도 07월 개정).pdf
+2026-11-03 20:03:10,549 INFO Finished converting document 임원직무청렴계약 운영규정(2025년도 07월 개정).pdf in 35.86 sec.
+2026-11-03 20:03:10,727 INFO   임베딩 / Chroma 저장: 63개 청크
+2026-11-03 20:03:59,644 INFO [40/59] 한전KDN_59/임원추천위원회 운영규정(2026년도 4월 7일 개정).pdf
+2026-11-03 20:03:59,667 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 20:03:59,668 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 20:04:00,007 INFO Going to convert document batch...
+2026-11-03 20:04:00,009 INFO Processing document 임원추천위원회 운영규정(2026년도 4월 7일 개정).pdf
+2026-11-03 20:05:28,527 INFO Finished converting document 임원추천위원회 운영규정(2026년도 4월 7일 개정).pdf in 88.86 sec.
+2026-11-03 20:05:29,230 INFO   임베딩 / Chroma 저장: 79개 청크
+2026-11-03 20:06:32,594 INFO [41/59] 한전KDN_59/임직원 행동강령(2026년도 8월 6일 개정).pdf
+2026-11-03 20:06:32,619 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 20:06:32,620 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 20:06:32,933 INFO Going to convert document batch...
+2026-11-03 20:06:32,935 INFO Processing document 임직원 행동강령(2026년도 8월 6일 개정).pdf
+2026-11-03 20:09:27,095 WARNING 3 of 34 pdf cells matched neither a row nor a column band of the 8x4 grid and were dropped from the table
+2026-11-03 20:11:27,100 WARNING 3 of 13 pdf cells matched neither a row nor a column band of the 4x3 grid and were dropped from the table
+2026-11-03 20:11:27,514 INFO Finished converting document 임직원 행동강령(2026년도 8월 6일 개정).pdf in 294.89 sec.
+2026-11-03 20:11:29,895 INFO   임베딩 / Chroma 저장: 194개 청크
+2026-11-03 20:13:57,947 INFO [42/59] 한전KDN_59/자녀학자금 운영업무 기준(2025년도 07월 개정).pdf
+2026-11-03 20:13:57,957 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 20:13:57,958 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 20:13:58,347 INFO Going to convert document batch...
+2026-11-03 20:13:58,348 INFO Processing document 자녀학자금 운영업무 기준(2025년도 07월 개정).pdf
+2026-11-03 20:15:21,748 INFO Finished converting document 자녀학자금 운영업무 기준(2025년도 07월 개정).pdf in 83.79 sec.
+2026-11-03 20:15:22,340 INFO   임베딩 / Chroma 저장: 54개 청크
+2026-11-03 20:16:12,593 INFO [43/59] 한전KDN_59/적극행정운영지침(2025년 07월 개정).pdf
+2026-11-03 20:16:12,616 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 20:16:12,617 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 20:16:12,916 INFO Going to convert document batch...
+2026-11-03 20:16:12,918 INFO Processing document 적극행정운영지침(2025년 07월 개정).pdf
+2026-11-03 20:17:08,805 INFO Finished converting document 적극행정운영지침(2025년 07월 개정).pdf in 56.19 sec.
+2026-11-03 20:17:09,129 INFO   임베딩 / Chroma 저장: 37개 청크
+2026-11-03 20:17:50,771 INFO [44/59] 한전KDN_59/주택융자 운영업무 기준(2025년도 07월 개정).pdf
+2026-11-03 20:17:50,797 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 20:17:50,798 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 20:17:51,142 INFO Going to convert document batch...
+2026-11-03 20:17:51,144 INFO Processing document 주택융자 운영업무 기준(2025년도 07월 개정).pdf
+2026-11-03 20:18:59,600 WARNING 1 of 162 pdf cells matched neither a row nor a column band of the 20x5 grid and were dropped from the table
+2026-11-03 20:19:08,089 INFO Finished converting document 주택융자 운영업무 기준(2025년도 07월 개정).pdf in 77.29 sec.
+2026-11-03 20:19:09,373 INFO   임베딩 / Chroma 저장: 116개 청크
+2026-11-03 20:20:35,579 INFO [45/59] 한전KDN_59/지식재산권 관리규정(2026년도 9월 3일 개정).pdf
+2026-11-03 20:20:35,605 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 20:20:35,606 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 20:20:35,897 INFO Going to convert document batch...
+2026-11-03 20:20:35,898 INFO Processing document 지식재산권 관리규정(2026년도 9월 3일 개정).pdf
+2026-11-03 20:23:28,754 WARNING 3 of 56 pdf cells matched neither a row nor a column band of the 12x5 grid and were dropped from the table
+2026-11-03 20:24:13,952 INFO Finished converting document 지식재산권 관리규정(2026년도 9월 3일 개정).pdf in 218.35 sec.
+2026-11-03 20:24:16,880 INFO   임베딩 / Chroma 저장: 278개 청크
+2026-11-03 20:26:16,305 INFO [46/59] 한전KDN_59/직무관리지침(2026년도 4월 6일 제정).pdf
+2026-11-03 20:26:16,327 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 20:26:16,328 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 20:26:16,433 INFO Going to convert document batch...
+2026-11-03 20:26:16,434 INFO Processing document 직무관리지침(2026년도 4월 6일 제정).pdf
+2026-11-03 20:28:33,188 WARNING 8 of 45 pdf cells matched neither a row nor a column band of the 8x3 grid and were dropped from the table
+2026-11-03 20:28:45,748 INFO Finished converting document 직무관리지침(2026년도 4월 6일 제정).pdf in 149.42 sec.
+2026-11-03 20:28:46,014 INFO   임베딩 / Chroma 저장: 67개 청크
+2026-11-03 20:29:03,197 INFO [47/59] 한전KDN_59/직무권한세칙(2026년도 09월 15일 개정).pdf
+2026-11-03 20:29:03,218 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 20:29:03,218 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 20:29:03,302 INFO Going to convert document batch...
+2026-11-03 20:29:03,303 INFO Processing document 직무권한세칙(2026년도 09월 15일 개정).pdf
+2026-11-03 20:35:01,966 WARNING Skipping page separator extraction on page 25: 5300 separator candidates exceed the limit of 5000. Such dense vector geometry cannot yield trustworthy page separators; reading order falls back to the pre-separator behavior.
+2026-11-03 20:35:02,075 WARNING Skipping page separator extraction on page 32: 5875 separator candidates exceed the limit of 5000. Such dense vector geometry cannot yield trustworthy page separators; reading order falls back to the pre-separator behavior.
+2026-11-03 20:35:02,131 WARNING Skipping page separator extraction on page 34: 6924 separator candidates exceed the limit of 5000. Such dense vector geometry cannot yield trustworthy page separators; reading order falls back to the pre-separator behavior.
+2026-11-03 20:35:02,200 INFO Finished converting document 직무권한세칙(2026년도 09월 15일 개정).pdf in 358.98 sec.
+2026-11-03 20:35:05,389 INFO   임베딩 / Chroma 저장: 198개 청크
+2026-11-03 20:38:00,574 INFO [48/59] 한전KDN_59/직원연봉규정 시행세칙(2026년도 10월 7일 개정).pdf
+2026-11-03 20:38:00,577 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 20:38:00,578 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 20:38:00,672 INFO Going to convert document batch...
+2026-11-03 20:38:00,672 INFO Processing document 직원연봉규정 시행세칙(2026년도 10월 7일 개정).pdf
+2026-11-03 20:39:46,383 INFO Finished converting document 직원연봉규정 시행세칙(2026년도 10월 7일 개정).pdf in 105.81 sec.
+2026-11-03 20:39:47,881 INFO   임베딩 / Chroma 저장: 223개 청크
+2026-11-03 20:41:25,065 WARNING   검색 청크에 연결되지 않은 PDF 페이지: [4] (빈 페이지/이미지/추출 누락 확인)
+2026-11-03 20:41:25,420 INFO [49/59] 한전KDN_59/직원연봉규정(2025년도 12월 23일 개정).pdf
+2026-11-03 20:41:25,426 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 20:41:25,427 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 20:41:25,508 INFO Going to convert document batch...
+2026-11-03 20:41:25,509 INFO Processing document 직원연봉규정(2025년도 12월 23일 개정).pdf
+2026-11-03 20:42:47,185 INFO Finished converting document 직원연봉규정(2025년도 12월 23일 개정).pdf in 81.76 sec.
+2026-11-03 20:42:47,868 INFO   임베딩 / Chroma 저장: 109개 청크
+2026-11-03 20:43:46,779 INFO [50/59] 한전KDN_59/직제규정(2026년도 10월 8일 개정).pdf
+2026-11-03 20:43:46,782 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 20:43:46,782 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 20:43:46,861 INFO Going to convert document batch...
+2026-11-03 20:43:46,862 INFO Processing document 직제규정(2026년도 10월 8일 개정).pdf
+2026-11-03 20:44:46,506 INFO Finished converting document 직제규정(2026년도 10월 8일 개정).pdf in 59.72 sec.
+2026-11-03 20:44:46,930 INFO   임베딩 / Chroma 저장: 100개 청크
+2026-11-03 20:45:19,383 INFO [51/59] 한전KDN_59/직제규정세칙(2026년도 10월 8일 개정).pdf
+2026-11-03 20:45:19,387 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 20:45:19,387 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 20:45:19,482 INFO Going to convert document batch...
+2026-11-03 20:45:19,483 INFO Processing document 직제규정세칙(2026년도 10월 8일 개정).pdf
+2026-11-03 20:47:54,296 WARNING 1 of 164 pdf cells matched neither a row nor a column band of the 3x2 grid and were dropped from the table
+2026-11-03 20:48:59,925 WARNING Skipping page separator extraction on page 24: 11853 separator candidates exceed the limit of 5000. Such dense vector geometry cannot yield trustworthy page separators; reading order falls back to the pre-separator behavior.
+2026-11-03 20:49:00,501 WARNING Skipping page separator extraction on page 25: 16405 separator candidates exceed the limit of 5000. Such dense vector geometry cannot yield trustworthy page separators; reading order falls back to the pre-separator behavior.
+2026-11-03 20:49:00,567 WARNING Skipping page separator extraction on page 26: 15625 separator candidates exceed the limit of 5000. Such dense vector geometry cannot yield trustworthy page separators; reading order falls back to the pre-separator behavior.
+2026-11-03 20:49:00,598 WARNING Skipping page separator extraction on page 27: 6267 separator candidates exceed the limit of 5000. Such dense vector geometry cannot yield trustworthy page separators; reading order falls back to the pre-separator behavior.
+2026-11-03 20:49:00,625 WARNING Skipping page separator extraction on page 28: 6659 separator candidates exceed the limit of 5000. Such dense vector geometry cannot yield trustworthy page separators; reading order falls back to the pre-separator behavior.
+2026-11-03 20:49:01,318 INFO Finished converting document 직제규정세칙(2026년도 10월 8일 개정).pdf in 221.93 sec.
+2026-11-03 20:49:08,322 INFO   임베딩 / Chroma 저장: 279개 청크
+2026-11-03 20:52:05,221 INFO [52/59] 한전KDN_59/출자회사 관리규정(2026년도 3월 27일 제정).pdf
+2026-11-03 20:52:05,242 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 20:52:05,243 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 20:52:05,317 INFO Going to convert document batch...
+2026-11-03 20:52:05,317 INFO Processing document 출자회사 관리규정(2026년도 3월 27일 제정).pdf
+2026-11-03 20:52:33,574 INFO Finished converting document 출자회사 관리규정(2026년도 3월 27일 제정).pdf in 28.33 sec.
+2026-11-03 20:52:33,753 INFO   임베딩 / Chroma 저장: 38개 청크
+2026-11-03 20:52:54,848 INFO [53/59] 한전KDN_59/취업규칙 시행세칙(2025년도 07월 개정).pdf
+2026-11-03 20:52:54,851 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 20:52:54,852 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 20:52:54,943 INFO Going to convert document batch...
+2026-11-03 20:52:54,943 INFO Processing document 취업규칙 시행세칙(2025년도 07월 개정).pdf
+2026-11-03 20:53:48,542 INFO Finished converting document 취업규칙 시행세칙(2025년도 07월 개정).pdf in 53.69 sec.
+2026-11-03 20:53:48,883 INFO   임베딩 / Chroma 저장: 51개 청크
+2026-11-03 20:54:20,072 INFO [54/59] 한전KDN_59/취업규칙(2026년도 8울 13일 개정).pdf
+2026-11-03 20:54:20,078 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 20:54:20,079 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 20:54:20,187 INFO Going to convert document batch...
+2026-11-03 20:54:20,188 INFO Processing document 취업규칙(2026년도 8울 13일 개정).pdf
+2026-11-03 20:55:19,830 INFO Finished converting document 취업규칙(2026년도 8울 13일 개정).pdf in 59.75 sec.
+2026-11-03 20:55:20,482 INFO   임베딩 / Chroma 저장: 133개 청크
+2026-11-03 20:56:21,655 INFO [55/59] 한전KDN_59/품질경영규정(2025년도 07월 개정).pdf
+2026-11-03 20:56:21,678 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 20:56:21,679 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 20:56:21,760 INFO Going to convert document batch...
+2026-11-03 20:56:21,760 INFO Processing document 품질경영규정(2025년도 07월 개정).pdf
+2026-11-03 20:56:57,833 INFO Finished converting document 품질경영규정(2025년도 07월 개정).pdf in 36.15 sec.
+2026-11-03 20:56:58,084 INFO   임베딩 / Chroma 저장: 59개 청크
+2026-11-03 20:57:25,265 INFO [56/59] 한전KDN_59/프로젝트 계약근로자 관리 기준(2026년도 7월 21일 개정).pdf
+2026-11-03 20:57:25,287 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 20:57:25,287 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 20:57:25,373 INFO Going to convert document batch...
+2026-11-03 20:57:25,374 INFO Processing document 프로젝트 계약근로자 관리 기준(2026년도 7월 21일 개정).pdf
+2026-11-03 20:58:15,601 INFO Finished converting document 프로젝트 계약근로자 관리 기준(2026년도 7월 21일 개정).pdf in 50.31 sec.
+2026-11-03 20:58:16,189 INFO   임베딩 / Chroma 저장: 223개 청크
+2026-11-03 20:59:31,366 INFO [57/59] 한전KDN_59/한전KDN주식회사 정관(2026년도 09월 21일 개정).pdf
+2026-11-03 20:59:31,391 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 20:59:31,392 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 20:59:31,494 INFO Going to convert document batch...
+2026-11-03 20:59:31,494 INFO Processing document 한전KDN주식회사 정관(2026년도 09월 21일 개정).pdf
+2026-11-03 21:00:07,252 INFO Finished converting document 한전KDN주식회사 정관(2026년도 09월 21일 개정).pdf in 35.86 sec.
+2026-11-03 21:00:07,585 INFO   임베딩 / Chroma 저장: 126개 청크
+2026-11-03 21:00:45,779 INFO [58/59] 한전KDN_59/해외근무관리규정(2025년도 07월 개정).pdf
+2026-11-03 21:00:45,782 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 21:00:45,782 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 21:00:45,887 INFO Going to convert document batch...
+2026-11-03 21:00:45,888 INFO Processing document 해외근무관리규정(2025년도 07월 개정).pdf
+2026-11-03 21:01:21,868 INFO Finished converting document 해외근무관리규정(2025년도 07월 개정).pdf in 36.09 sec.
+2026-11-03 21:01:22,190 INFO   임베딩 / Chroma 저장: 58개 청크
+2026-11-03 21:01:46,845 INFO [59/59] 한전KDN_59/회계규정(2025년도 07월 개정).pdf
+2026-11-03 21:01:46,865 INFO   PDF 읽기 / 레이아웃·표·OCR 분석
+2026-11-03 21:01:46,866 INFO detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-03 21:01:46,972 INFO Going to convert document batch...
+2026-11-03 21:01:46,973 INFO Processing document 회계규정(2025년도 07월 개정).pdf
+2026-11-03 21:02:33,145 INFO Finished converting document 회계규정(2025년도 07월 개정).pdf in 46.28 sec.
+2026-11-03 21:02:33,533 INFO   임베딩 / Chroma 저장: 103개 청크
+2026-11-03 21:03:10,554 INFO 완료: 신규/갱신 59, 건너뜀 0, 실패 0 / 전체 컬렉션 7117개 청크
+2026-11-04 09:20:21,846 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 09:20:21,846 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-04 09:20:21,859 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-04 09:20:22,078 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 09:20:22,092 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-04 09:20:22,095 INFO Loading SentenceTransformer model from BAAI/bge-m3.
+2026-11-04 09:20:22,291 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 09:20:22,304 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-04 09:20:22,506 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 09:20:22,519 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/README.md "HTTP/1.1 200 OK"
+2026-11-04 09:20:22,727 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 09:20:22,739 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-04 09:20:22,934 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 09:20:22,948 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-11-04 09:20:23,152 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 09:20:23,350 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 09:20:23,365 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 09:20:23,602 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-11-04 09:20:23,814 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 09:20:24,048 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/main "HTTP/1.1 200 OK"
+2026-11-04 09:20:24,051 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 09:20:24,250 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 09:20:24,289 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/discussions?p=0 "HTTP/1.1 200 OK"
+2026-11-04 09:20:24,456 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 09:20:24,521 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/refs%2Fpr%2F130 "HTTP/1.1 200 OK"
+2026-11-04 09:20:24,664 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 09:20:24,718 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-11-04 09:20:24,873 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 09:20:24,889 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-04 09:20:24,929 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors "HTTP/1.1 302 Found"
+2026-11-04 09:20:25,089 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 09:20:25,103 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 09:20:25,309 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 09:20:25,322 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 09:20:25,528 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 09:20:25,543 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-04 09:20:25,788 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-11-04 09:20:25,992 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-11-04 09:20:27,694 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 09:20:27,928 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 09:20:27,946 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-11-04 09:20:28,174 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 10:48:16,673 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 10:48:16,689 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-04 10:48:16,890 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 10:48:16,903 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-04 10:48:16,907 INFO Loading SentenceTransformer model from BAAI/bge-m3.
+2026-11-04 10:48:17,186 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 10:48:17,187 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-04 10:48:17,199 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-04 10:48:17,403 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 10:48:17,418 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/README.md "HTTP/1.1 200 OK"
+2026-11-04 10:48:17,618 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 10:48:17,633 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-04 10:48:17,901 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 10:48:17,914 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-11-04 10:48:18,209 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 10:48:18,516 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 10:48:18,530 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 10:48:18,767 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-11-04 10:48:18,977 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 10:48:19,202 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/main "HTTP/1.1 200 OK"
+2026-11-04 10:48:19,222 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 10:48:19,540 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/discussions?p=0 "HTTP/1.1 200 OK"
+2026-11-04 10:48:19,541 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 10:48:19,747 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 10:48:19,759 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/refs%2Fpr%2F130 "HTTP/1.1 200 OK"
+2026-11-04 10:48:19,942 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 10:48:19,974 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-11-04 10:48:20,258 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 10:48:20,259 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors "HTTP/1.1 302 Found"
+2026-11-04 10:48:20,274 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-04 10:48:20,481 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 10:48:20,495 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 10:48:20,769 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 10:48:20,782 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 10:48:20,986 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 10:48:21,000 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-04 10:48:21,214 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-11-04 10:48:21,418 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-11-04 10:48:24,456 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 10:48:24,763 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 10:48:24,780 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-11-04 10:48:24,990 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 11:18:22,775 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:18:22,784 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-04 11:18:22,800 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-04 11:18:23,028 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:18:23,043 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-04 11:18:23,046 INFO Loading SentenceTransformer model from BAAI/bge-m3.
+2026-11-04 11:18:23,336 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:18:23,357 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-04 11:18:23,644 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:18:23,661 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/README.md "HTTP/1.1 200 OK"
+2026-11-04 11:18:23,950 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:18:23,964 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-04 11:18:24,168 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:18:24,181 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-11-04 11:18:24,462 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:18:24,685 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:18:24,705 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 11:18:25,077 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-11-04 11:18:25,307 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 11:18:25,539 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/main "HTTP/1.1 200 OK"
+2026-11-04 11:18:25,644 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:18:25,768 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/discussions?p=0 "HTTP/1.1 200 OK"
+2026-11-04 11:18:25,846 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:18:26,100 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/refs%2Fpr%2F130 "HTTP/1.1 200 OK"
+2026-11-04 11:18:26,101 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:18:26,408 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:18:26,409 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:18:26,709 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:18:26,710 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors "HTTP/1.1 302 Found"
+2026-11-04 11:18:26,725 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-04 11:18:27,022 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:18:27,039 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 11:18:27,253 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:18:27,269 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 11:18:27,536 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:18:27,551 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-04 11:18:27,789 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-11-04 11:18:28,048 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-11-04 11:18:31,119 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 11:18:31,427 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:18:31,442 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-11-04 11:18:31,713 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 11:19:39,112 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:19:39,113 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-04 11:19:39,126 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-04 11:19:39,333 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:19:39,345 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-04 11:19:39,347 INFO Loading SentenceTransformer model from BAAI/bge-m3.
+2026-11-04 11:19:39,625 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:19:39,636 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-04 11:19:39,840 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:19:39,851 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/README.md "HTTP/1.1 200 OK"
+2026-11-04 11:19:40,136 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:19:40,149 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-04 11:19:40,444 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:19:40,455 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-11-04 11:19:40,751 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:19:41,058 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:19:41,073 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 11:19:41,365 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-11-04 11:19:41,568 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 11:19:41,775 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:19:41,792 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/main "HTTP/1.1 200 OK"
+2026-11-04 11:19:41,983 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:19:42,025 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/discussions?p=0 "HTTP/1.1 200 OK"
+2026-11-04 11:19:42,288 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:19:42,288 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/refs%2Fpr%2F130 "HTTP/1.1 200 OK"
+2026-11-04 11:19:42,593 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:19:42,594 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:19:42,799 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:19:42,811 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-04 11:19:42,813 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors "HTTP/1.1 302 Found"
+2026-11-04 11:19:43,106 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:19:43,118 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 11:19:43,319 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:19:43,331 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 11:19:43,618 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:19:43,629 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-04 11:19:43,832 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-11-04 11:19:44,121 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-11-04 11:19:46,279 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 11:19:46,587 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:19:46,599 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-11-04 11:19:46,803 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 11:22:19,549 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:22:19,552 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-04 11:22:19,567 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-04 11:22:19,777 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:22:19,792 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-04 11:22:19,795 INFO Loading SentenceTransformer model from BAAI/bge-m3.
+2026-11-04 11:22:19,998 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:22:20,013 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-04 11:22:20,291 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:22:20,306 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/README.md "HTTP/1.1 200 OK"
+2026-11-04 11:22:20,509 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:22:20,524 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-04 11:22:20,730 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:22:20,745 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-11-04 11:22:20,956 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:22:21,162 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:22:21,179 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 11:22:21,522 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-11-04 11:22:21,760 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 11:22:21,990 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/main "HTTP/1.1 200 OK"
+2026-11-04 11:22:22,211 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:22:22,221 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/discussions?p=0 "HTTP/1.1 200 OK"
+2026-11-04 11:22:22,411 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:22:22,448 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/refs%2Fpr%2F130 "HTTP/1.1 200 OK"
+2026-11-04 11:22:22,614 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:22:22,657 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:22:22,820 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:22:22,870 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors "HTTP/1.1 302 Found"
+2026-11-04 11:22:23,022 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:22:23,037 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-04 11:22:23,246 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:22:23,260 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 11:22:23,569 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:22:23,584 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 11:22:23,795 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:22:23,808 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-04 11:22:24,024 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-11-04 11:22:24,239 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-11-04 11:22:28,588 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 11:22:28,894 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:22:28,911 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-11-04 11:22:29,200 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 11:24:17,034 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:24:17,035 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-04 11:24:17,064 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-04 11:24:17,432 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:24:17,481 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-04 11:24:17,482 INFO Loading SentenceTransformer model from BAAI/bge-m3.
+2026-11-04 11:24:17,759 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:24:17,779 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-04 11:24:18,013 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:24:18,039 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/README.md "HTTP/1.1 200 OK"
+2026-11-04 11:24:18,370 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:24:18,400 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-04 11:24:18,814 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:24:18,879 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-11-04 11:24:19,082 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:24:19,353 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:24:19,412 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 11:24:19,692 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-11-04 11:24:19,932 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 11:24:20,172 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/main "HTTP/1.1 200 OK"
+2026-11-04 11:24:20,189 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:24:20,398 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:24:20,427 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/discussions?p=0 "HTTP/1.1 200 OK"
+2026-11-04 11:24:20,610 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:24:20,652 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/refs%2Fpr%2F130 "HTTP/1.1 200 OK"
+2026-11-04 11:24:20,851 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:24:20,973 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:24:21,084 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:24:21,112 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-04 11:24:21,196 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors "HTTP/1.1 302 Found"
+2026-11-04 11:24:21,366 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:24:21,387 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 11:24:21,641 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:24:21,687 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 11:24:21,916 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:24:21,937 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-04 11:24:22,174 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-11-04 11:24:22,419 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-11-04 11:24:25,017 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 11:24:25,238 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:24:25,268 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-11-04 11:24:25,537 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 11:25:04,133 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:25:04,134 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-04 11:25:04,147 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-04 11:25:04,431 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:25:04,444 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-04 11:25:04,447 INFO Loading SentenceTransformer model from BAAI/bge-m3.
+2026-11-04 11:25:04,653 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:25:04,667 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-04 11:25:04,953 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:25:04,965 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/README.md "HTTP/1.1 200 OK"
+2026-11-04 11:25:05,177 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:25:05,190 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-04 11:25:05,395 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:25:05,409 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-11-04 11:25:05,668 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:25:05,874 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:25:05,888 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 11:25:06,126 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-11-04 11:25:06,326 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 11:25:06,590 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:25:06,591 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/main "HTTP/1.1 200 OK"
+2026-11-04 11:25:06,797 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:25:06,826 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/discussions?p=0 "HTTP/1.1 200 OK"
+2026-11-04 11:25:07,034 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:25:07,057 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/refs%2Fpr%2F130 "HTTP/1.1 200 OK"
+2026-11-04 11:25:07,244 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:25:07,267 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:25:07,512 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:25:07,513 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors "HTTP/1.1 302 Found"
+2026-11-04 11:25:07,527 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-04 11:25:07,735 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:25:07,748 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 11:25:07,958 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:25:07,970 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 11:25:08,181 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:25:08,193 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-04 11:25:08,433 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-11-04 11:25:08,633 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-11-04 11:25:12,121 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 11:25:12,429 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:25:12,446 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-11-04 11:25:12,736 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 11:33:03,472 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:33:03,474 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-04 11:33:03,488 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-04 11:33:03,695 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:33:03,709 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-04 11:33:03,711 INFO Loading SentenceTransformer model from BAAI/bge-m3.
+2026-11-04 11:33:03,920 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:33:03,933 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-04 11:33:04,191 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:33:04,204 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/README.md "HTTP/1.1 200 OK"
+2026-11-04 11:33:04,410 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:33:04,426 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-04 11:33:04,646 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:33:04,661 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-11-04 11:33:04,906 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:33:05,202 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:33:05,221 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 11:33:05,456 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-11-04 11:33:05,666 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 11:33:05,931 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:33:05,932 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/main "HTTP/1.1 200 OK"
+2026-11-04 11:33:06,193 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:33:06,194 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/discussions?p=0 "HTTP/1.1 200 OK"
+2026-11-04 11:33:06,442 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:33:06,443 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/refs%2Fpr%2F130 "HTTP/1.1 200 OK"
+2026-11-04 11:33:06,645 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:33:06,652 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-04 11:33:06,848 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors "HTTP/1.1 302 Found"
+2026-11-04 11:33:06,852 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:33:06,867 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-04 11:33:07,160 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:33:07,175 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 11:33:07,380 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:33:07,392 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-04 11:33:07,595 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:33:07,610 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-04 11:33:07,824 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-11-04 11:33:08,033 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-11-04 11:33:10,027 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-04 11:33:10,270 INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-04 11:33:10,284 INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-11-04 11:33:10,498 INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"

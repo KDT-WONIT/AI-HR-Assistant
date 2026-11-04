@@ -1,0 +1,26 @@
+erDiagram
+    departments ||--o{ employee_assignments : includes
+    employees ||--o{ employee_assignments : assigned
+    employees ||--|| employee_contacts : has
+    employees ||--o{ employee_roles : granted
+    duty_roles ||--o{ employee_roles : describes
+    business_topics ||--o{ topic_keywords : keywords
+    business_topics ||--o{ topic_ownerships : responsible
+    departments ||--o{ topic_ownerships : owns
+    employees ||--o{ topic_ownerships : primary_backup_approver
+    regulations ||--o{ regulation_versions : revised
+    regulation_versions ||--o{ regulation_articles : contains
+    regulation_articles ||--o{ regulation_chunks : split
+    regulation_articles ||--o{ topic_regulations : referenced
+    business_topics ||--o{ topic_regulations : cites
+    employees ||--o{ leave_balances : tracks
+    employees ||--o{ leave_transactions : books
+    leave_types ||--o{ leave_transactions : category
+    employees ||--o{ chat_sessions : initiates
+    chat_sessions ||--o{ chat_messages : contains
+    chat_sessions ||--o{ support_tickets : creates
+    business_topics ||--o{ support_tickets : classified
+    support_tickets ||--o{ ticket_events : events
+    support_tickets ||--o| satisfaction_surveys : feedback
+    chat_sessions ||--o{ routing_logs : routes
+    business_topics ||--o{ routing_logs : classified

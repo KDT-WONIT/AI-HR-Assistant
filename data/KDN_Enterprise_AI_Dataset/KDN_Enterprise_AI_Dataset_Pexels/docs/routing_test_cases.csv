@@ -1,0 +1,639 @@
+﻿test_id,question,expected_topic_id,expected_dept_id,expected_employee_id,expected_action,scenario,source_type
+Q0001,5직급 운영규정 전반 문의에 대한 규정이나 절차 알려줘,TP0001,D001,KDN0002,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0002,5직급 운영규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0001,D001,KDN0002,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0003,5직급 운영규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0001,D001,KDN0002,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0004,5직급 운영규정 - 5직급의 운영에 대한 규정이나 절차 알려줘,TP0002,D001,KDN0003,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0005,5직급 운영규정 - 5직급의 운영 관련된 담당자와 전화번호를 알려줘,TP0002,D001,KDN0003,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0006,5직급 운영규정 - 5직급의 운영 문제는 어느 부서에서 처리하나요?,TP0002,D001,KDN0003,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0007,5직급 운영규정 - 표준직무에 대한 규정이나 절차 알려줘,TP0003,D001,KDN0004,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0008,5직급 운영규정 - 표준직무 관련된 담당자와 전화번호를 알려줘,TP0003,D001,KDN0004,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0009,5직급 운영규정 - 표준직무 문제는 어느 부서에서 처리하나요?,TP0003,D001,KDN0004,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0010,ESG위원회 운영세칙 전반 문의에 대한 규정이나 절차 알려줘,TP0004,D005,KDN0030,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0011,ESG위원회 운영세칙 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0004,D005,KDN0030,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0012,ESG위원회 운영세칙 전반 문의 문제는 어느 부서에서 처리하나요?,TP0004,D005,KDN0030,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0013,ESG위원회 운영세칙 - 다른 사규 등과의 관계에 대한 규정이나 절차 알려줘,TP0005,D005,KDN0031,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0014,ESG위원회 운영세칙 - 다른 사규 등과의 관계 관련된 담당자와 전화번호를 알려줘,TP0005,D005,KDN0031,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0015,ESG위원회 운영세칙 - 다른 사규 등과의 관계 문제는 어느 부서에서 처리하나요?,TP0005,D005,KDN0031,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0016,ESG위원회 운영세칙 - 설치에 대한 규정이나 절차 알려줘,TP0006,D005,KDN0027,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0017,ESG위원회 운영세칙 - 설치 관련된 담당자와 전화번호를 알려줘,TP0006,D005,KDN0027,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0018,ESG위원회 운영세칙 - 설치 문제는 어느 부서에서 처리하나요?,TP0006,D005,KDN0027,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0019,감사규정 전반 문의에 대한 규정이나 절차 알려줘,TP0007,D009,KDN0049,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0020,감사규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0007,D009,KDN0049,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0021,감사규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0007,D009,KDN0049,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0022,감사규정 - 본문 (비정형 규정)에 대한 규정이나 절차 알려줘,TP0008,D009,KDN0050,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0023,감사규정 - 본문 (비정형 규정) 관련된 담당자와 전화번호를 알려줘,TP0008,D009,KDN0050,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0024,감사규정 - 본문 (비정형 규정) 문제는 어느 부서에서 처리하나요?,TP0008,D009,KDN0050,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0025,계약규정 전반 문의에 대한 규정이나 절차 알려줘,TP0009,D006,KDN0036,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0026,계약규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0009,D006,KDN0036,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0027,계약규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0009,D006,KDN0036,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0028,계약규정 - 적용범위에 대한 규정이나 절차 알려줘,TP0010,D006,KDN0037,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0029,계약규정 - 적용범위 관련된 담당자와 전화번호를 알려줘,TP0010,D006,KDN0037,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0030,계약규정 - 적용범위 문제는 어느 부서에서 처리하나요?,TP0010,D006,KDN0037,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0031,계약규정 - 다른 법령 등과의 관계에 대한 규정이나 절차 알려줘,TP0011,D006,KDN0033,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0032,계약규정 - 다른 법령 등과의 관계 관련된 담당자와 전화번호를 알려줘,TP0011,D006,KDN0033,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0033,계약규정 - 다른 법령 등과의 관계 문제는 어느 부서에서 처리하나요?,TP0011,D006,KDN0033,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0034,계약직 운영규정 전반 문의에 대한 규정이나 절차 알려줘,TP0012,D001,KDN0007,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0035,계약직 운영규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0012,D001,KDN0007,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0036,계약직 운영규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0012,D001,KDN0007,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0037,계약직 운영규정 - 적용범위에 대한 규정이나 절차 알려줘,TP0013,D001,KDN0002,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0038,계약직 운영규정 - 적용범위 관련된 담당자와 전화번호를 알려줘,TP0013,D001,KDN0002,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0039,계약직 운영규정 - 적용범위 문제는 어느 부서에서 처리하나요?,TP0013,D001,KDN0002,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0040,계약직 운영규정 - 계약직의 운영에 대한 규정이나 절차 알려줘,TP0014,D001,KDN0003,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0041,계약직 운영규정 - 계약직의 운영 관련된 담당자와 전화번호를 알려줘,TP0014,D001,KDN0003,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0042,계약직 운영규정 - 계약직의 운영 문제는 어느 부서에서 처리하나요?,TP0014,D001,KDN0003,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0043,고충처리 지침 전반 문의에 대한 규정이나 절차 알려줘,TP0015,D002,KDN0013,HANDOFF_OR_AUTH,direct,SYNTHETIC
+Q0044,고충처리 지침 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0015,D002,KDN0013,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0045,고충처리 지침 전반 문의 문제는 어느 부서에서 처리하나요?,TP0015,D002,KDN0013,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0046,고충처리 지침 - 다른 법령과의 관계에 대한 규정이나 절차 알려줘,TP0016,D002,KDN0009,HANDOFF_OR_AUTH,direct,SYNTHETIC
+Q0047,고충처리 지침 - 다른 법령과의 관계 관련된 담당자와 전화번호를 알려줘,TP0016,D002,KDN0009,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0048,고충처리 지침 - 다른 법령과의 관계 문제는 어느 부서에서 처리하나요?,TP0016,D002,KDN0009,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0049,고충처리 지침 - 고충처리위원의 구성에 대한 규정이나 절차 알려줘,TP0017,D002,KDN0010,HANDOFF_OR_AUTH,direct,SYNTHETIC
+Q0050,고충처리 지침 - 고충처리위원의 구성 관련된 담당자와 전화번호를 알려줘,TP0017,D002,KDN0010,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0051,고충처리 지침 - 고충처리위원의 구성 문제는 어느 부서에서 처리하나요?,TP0017,D002,KDN0010,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0052,공정거래 자율준수프로그램 운영지침 전반 문의에 대한 규정이나 절차 알려줘,TP0018,D006,KDN0035,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0053,공정거래 자율준수프로그램 운영지침 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0018,D006,KDN0035,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0054,공정거래 자율준수프로그램 운영지침 전반 문의 문제는 어느 부서에서 처리하나요?,TP0018,D006,KDN0035,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0055,공정거래 자율준수프로그램 운영지침 - 적용범위에 대한 규정이나 절차 알려줘,TP0019,D006,KDN0036,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0056,공정거래 자율준수프로그램 운영지침 - 적용범위 관련된 담당자와 전화번호를 알려줘,TP0019,D006,KDN0036,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0057,공정거래 자율준수프로그램 운영지침 - 적용범위 문제는 어느 부서에서 처리하나요?,TP0019,D006,KDN0036,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0058,공정거래 자율준수프로그램 운영지침 - 최고경영자의 자율준수의지 선언에 대한 규정이나 절차 알려줘,TP0020,D006,KDN0037,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0059,공정거래 자율준수프로그램 운영지침 - 최고경영자의 자율준수의지 선언 관련된 담당자와 전화번호를 알려줘,TP0020,D006,KDN0037,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0060,공정거래 자율준수프로그램 운영지침 - 최고경영자의 자율준수의지 선언 문제는 어느 부서에서 처리하나요?,TP0020,D006,KDN0037,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0061,기록물관리지침 전반 문의에 대한 규정이나 절차 알려줘,TP0021,D015,KDN0091,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0062,기록물관리지침 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0021,D015,KDN0091,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0063,기록물관리지침 전반 문의 문제는 어느 부서에서 처리하나요?,TP0021,D015,KDN0091,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0064,기록물관리지침 - 적용 범위에 대한 규정이나 절차 알려줘,TP0022,D015,KDN0092,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0065,기록물관리지침 - 적용 범위 관련된 담당자와 전화번호를 알려줘,TP0022,D015,KDN0092,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0066,기록물관리지침 - 적용 범위 문제는 어느 부서에서 처리하나요?,TP0022,D015,KDN0092,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0067,기록물관리지침 - 다른 사규 등과의 관계에 대한 규정이나 절차 알려줘,TP0023,D015,KDN0093,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0068,기록물관리지침 - 다른 사규 등과의 관계 관련된 담당자와 전화번호를 알려줘,TP0023,D015,KDN0093,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0069,기록물관리지침 - 다른 사규 등과의 관계 문제는 어느 부서에서 처리하나요?,TP0023,D015,KDN0093,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0070,내부통제 운영규정 전반 문의에 대한 규정이나 절차 알려줘,TP0024,D005,KDN0030,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0071,내부통제 운영규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0024,D005,KDN0030,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0072,내부통제 운영규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0024,D005,KDN0030,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0073,내부통제 운영규정 - 적용범위에 대한 규정이나 절차 알려줘,TP0025,D005,KDN0031,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0074,내부통제 운영규정 - 적용범위 관련된 담당자와 전화번호를 알려줘,TP0025,D005,KDN0031,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0075,내부통제 운영규정 - 적용범위 문제는 어느 부서에서 처리하나요?,TP0025,D005,KDN0031,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0076,내부통제 운영규정 - 내부통제체계 구축 및 운영원칙에 대한 규정이나 절차 알려줘,TP0026,D005,KDN0027,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0077,내부통제 운영규정 - 내부통제체계 구축 및 운영원칙 관련된 담당자와 전화번호를 알려줘,TP0026,D005,KDN0027,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0078,내부통제 운영규정 - 내부통제체계 구축 및 운영원칙 문제는 어느 부서에서 처리하나요?,TP0026,D005,KDN0027,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0079,내부회계관리규정 전반 문의에 대한 규정이나 절차 알려줘,TP0027,D004,KDN0022,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0080,내부회계관리규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0027,D004,KDN0022,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0081,내부회계관리규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0027,D004,KDN0022,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0082,내부회계관리규정 - 회계정보처리의 일반원칙에 대한 규정이나 절차 알려줘,TP0028,D004,KDN0023,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0083,내부회계관리규정 - 회계정보처리의 일반원칙 관련된 담당자와 전화번호를 알려줘,TP0028,D004,KDN0023,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0084,내부회계관리규정 - 회계정보처리의 일반원칙 문제는 어느 부서에서 처리하나요?,TP0028,D004,KDN0023,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0085,내부회계관리규정 - 회계정보의 식별·측정·분류·기록 및 보고에 관한 기준에 대한 규정이나 절차 알려줘,TP0029,D004,KDN0024,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0086,내부회계관리규정 - 회계정보의 식별·측정·분류·기록 및 보고에 관한 기준 관련된 담당자와 전화번호를 알려줘,TP0029,D004,KDN0024,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0087,내부회계관리규정 - 회계정보의 식별·측정·분류·기록 및 보고에 관한 기준 문제는 어느 부서에서 처리하나요?,TP0029,D004,KDN0024,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0088,노사협의회 운영규정 전반 문의에 대한 규정이나 절차 알려줘,TP0030,D002,KDN0013,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0089,노사협의회 운영규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0030,D002,KDN0013,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0090,노사협의회 운영규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0030,D002,KDN0013,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0091,노사협의회 운영규정 - 다른 법령과의 관계에 대한 규정이나 절차 알려줘,TP0031,D002,KDN0009,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0092,노사협의회 운영규정 - 다른 법령과의 관계 관련된 담당자와 전화번호를 알려줘,TP0031,D002,KDN0009,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0093,노사협의회 운영규정 - 다른 법령과의 관계 문제는 어느 부서에서 처리하나요?,TP0031,D002,KDN0009,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0094,노사협의회 운영규정 - 설치 및 구성에 대한 규정이나 절차 알려줘,TP0032,D002,KDN0010,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0095,노사협의회 운영규정 - 설치 및 구성 관련된 담당자와 전화번호를 알려줘,TP0032,D002,KDN0010,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0096,노사협의회 운영규정 - 설치 및 구성 문제는 어느 부서에서 처리하나요?,TP0032,D002,KDN0010,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0097,명예퇴직운영지침 전반 문의에 대한 규정이나 절차 알려줘,TP0033,D001,KDN0004,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0098,명예퇴직운영지침 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0033,D001,KDN0004,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0099,명예퇴직운영지침 전반 문의 문제는 어느 부서에서 처리하나요?,TP0033,D001,KDN0004,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0100,명예퇴직운영지침 - 대상자격에 대한 규정이나 절차 알려줘,TP0034,D001,KDN0005,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0101,명예퇴직운영지침 - 대상자격 관련된 담당자와 전화번호를 알려줘,TP0034,D001,KDN0005,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0102,명예퇴직운영지침 - 대상자격 문제는 어느 부서에서 처리하나요?,TP0034,D001,KDN0005,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0103,명예퇴직운영지침 - 명예퇴직금 지급에 대한 규정이나 절차 알려줘,TP0035,D001,KDN0006,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0104,명예퇴직운영지침 - 명예퇴직금 지급 관련된 담당자와 전화번호를 알려줘,TP0035,D001,KDN0006,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0105,명예퇴직운영지침 - 명예퇴직금 지급 문제는 어느 부서에서 처리하나요?,TP0035,D001,KDN0006,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0106,문서관리지침 전반 문의에 대한 규정이나 절차 알려줘,TP0036,D015,KDN0091,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0107,문서관리지침 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0036,D015,KDN0091,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0108,문서관리지침 전반 문의 문제는 어느 부서에서 처리하나요?,TP0036,D015,KDN0091,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0109,문서관리지침 - 다른 사규 등과의 관계에 대한 규정이나 절차 알려줘,TP0037,D015,KDN0092,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0110,문서관리지침 - 다른 사규 등과의 관계 관련된 담당자와 전화번호를 알려줘,TP0037,D015,KDN0092,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0111,문서관리지침 - 다른 사규 등과의 관계 문제는 어느 부서에서 처리하나요?,TP0037,D015,KDN0092,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0112,문서관리지침 - 문서의 종류에 대한 규정이나 절차 알려줘,TP0038,D015,KDN0093,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0113,문서관리지침 - 문서의 종류 관련된 담당자와 전화번호를 알려줘,TP0038,D015,KDN0093,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0114,문서관리지침 - 문서의 종류 문제는 어느 부서에서 처리하나요?,TP0038,D015,KDN0093,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0115,법무규정 전반 문의에 대한 규정이나 절차 알려줘,TP0039,D007,KDN0041,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0116,법무규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0039,D007,KDN0041,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0117,법무규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0039,D007,KDN0041,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0118,법무규정 - 법률고문 위촉 및 운용에 대한 규정이나 절차 알려줘,TP0040,D007,KDN0042,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0119,법무규정 - 법률고문 위촉 및 운용 관련된 담당자와 전화번호를 알려줘,TP0040,D007,KDN0042,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0120,법무규정 - 법률고문 위촉 및 운용 문제는 어느 부서에서 처리하나요?,TP0040,D007,KDN0042,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0121,법무규정 - 법령 자문에 대한 규정이나 절차 알려줘,TP0041,D007,KDN0039,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0122,법무규정 - 법령 자문 관련된 담당자와 전화번호를 알려줘,TP0041,D007,KDN0039,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0123,법무규정 - 법령 자문 문제는 어느 부서에서 처리하나요?,TP0041,D007,KDN0039,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0124,별정직 운영규정 전반 문의에 대한 규정이나 절차 알려줘,TP0042,D001,KDN0007,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0125,별정직 운영규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0042,D001,KDN0007,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0126,별정직 운영규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0042,D001,KDN0007,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0127,별정직 운영규정 - 운영정원에 대한 규정이나 절차 알려줘,TP0043,D001,KDN0002,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0128,별정직 운영규정 - 운영정원 관련된 담당자와 전화번호를 알려줘,TP0043,D001,KDN0002,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0129,별정직 운영규정 - 운영정원 문제는 어느 부서에서 처리하나요?,TP0043,D001,KDN0002,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0130,별정직 운영규정 - 표준직무 및 직무등급에 대한 규정이나 절차 알려줘,TP0044,D001,KDN0003,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0131,별정직 운영규정 - 표준직무 및 직무등급 관련된 담당자와 전화번호를 알려줘,TP0044,D001,KDN0003,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0132,별정직 운영규정 - 표준직무 및 직무등급 문제는 어느 부서에서 처리하나요?,TP0044,D001,KDN0003,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0133,보상 및 배상규정 전반 문의에 대한 규정이나 절차 알려줘,TP0045,D004,KDN0025,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0134,보상 및 배상규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0045,D004,KDN0025,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0135,보상 및 배상규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0045,D004,KDN0025,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0136,보상 및 배상규정 - 업무상 재해 인정에 대한 규정이나 절차 알려줘,TP0046,D004,KDN0021,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0137,보상 및 배상규정 - 업무상 재해 인정 관련된 담당자와 전화번호를 알려줘,TP0046,D004,KDN0021,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0138,보상 및 배상규정 - 업무상 재해 인정 문제는 어느 부서에서 처리하나요?,TP0046,D004,KDN0021,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0139,보상 및 배상규정 - 업무상 재해에 대한 보상에 대한 규정이나 절차 알려줘,TP0047,D004,KDN0022,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0140,보상 및 배상규정 - 업무상 재해에 대한 보상 관련된 담당자와 전화번호를 알려줘,TP0047,D004,KDN0022,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0141,보상 및 배상규정 - 업무상 재해에 대한 보상 문제는 어느 부서에서 처리하나요?,TP0047,D004,KDN0022,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0142,보안규정 전반 문의에 대한 규정이나 절차 알려줘,TP0048,D010,KDN0058,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0143,보안규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0048,D010,KDN0058,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0144,보안규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0048,D010,KDN0058,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0145,보안규정 - 적용 범위에 대한 규정이나 절차 알려줘,TP0049,D010,KDN0053,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0146,보안규정 - 적용 범위 관련된 담당자와 전화번호를 알려줘,TP0049,D010,KDN0053,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0147,보안규정 - 적용 범위 문제는 어느 부서에서 처리하나요?,TP0049,D010,KDN0053,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0148,보안규정 - 다른 법령 등과의 관계에 대한 규정이나 절차 알려줘,TP0050,D010,KDN0054,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0149,보안규정 - 다른 법령 등과의 관계 관련된 담당자와 전화번호를 알려줘,TP0050,D010,KDN0054,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0150,보안규정 - 다른 법령 등과의 관계 문제는 어느 부서에서 처리하나요?,TP0050,D010,KDN0054,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0151,복리후생규정 전반 문의에 대한 규정이나 절차 알려줘,TP0051,D005,KDN0027,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0152,복리후생규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0051,D005,KDN0027,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0153,복리후생규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0051,D005,KDN0027,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0154,복리후생규정 - 복리후생 제도에 대한 규정이나 절차 알려줘,TP0052,D005,KDN0028,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0155,복리후생규정 - 복리후생 제도 관련된 담당자와 전화번호를 알려줘,TP0052,D005,KDN0028,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0156,복리후생규정 - 복리후생 제도 문제는 어느 부서에서 처리하나요?,TP0052,D005,KDN0028,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0157,복리후생규정 - 건강진단에 대한 규정이나 절차 알려줘,TP0053,D005,KDN0029,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0158,복리후생규정 - 건강진단 관련된 담당자와 전화번호를 알려줘,TP0053,D005,KDN0029,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0159,복리후생규정 - 건강진단 문제는 어느 부서에서 처리하나요?,TP0053,D005,KDN0029,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0160,비상근무 운영지침 전반 문의에 대한 규정이나 절차 알려줘,TP0054,D012,KDN0068,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0161,비상근무 운영지침 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0054,D012,KDN0068,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0162,비상근무 운영지침 전반 문의 문제는 어느 부서에서 처리하나요?,TP0054,D012,KDN0068,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0163,비상근무 운영지침 - 적용 범위에 대한 규정이나 절차 알려줘,TP0055,D012,KDN0069,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0164,비상근무 운영지침 - 적용 범위 관련된 담당자와 전화번호를 알려줘,TP0055,D012,KDN0069,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0165,비상근무 운영지침 - 적용 범위 문제는 어느 부서에서 처리하나요?,TP0055,D012,KDN0069,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0166,비상근무 운영지침 - 비상의 구분에 대한 규정이나 절차 알려줘,TP0056,D012,KDN0070,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0167,비상근무 운영지침 - 비상의 구분 관련된 담당자와 전화번호를 알려줘,TP0056,D012,KDN0070,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0168,비상근무 운영지침 - 비상의 구분 문제는 어느 부서에서 처리하나요?,TP0056,D012,KDN0070,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0169,사규관리규정 전반 문의에 대한 규정이나 절차 알려줘,TP0057,D005,KDN0028,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0170,사규관리규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0057,D005,KDN0028,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0171,사규관리규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0057,D005,KDN0028,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0172,사규관리규정 - 사규화에 대한 규정이나 절차 알려줘,TP0058,D005,KDN0029,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0173,사규관리규정 - 사규화 관련된 담당자와 전화번호를 알려줘,TP0058,D005,KDN0029,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0174,사규관리규정 - 사규화 문제는 어느 부서에서 처리하나요?,TP0058,D005,KDN0029,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0175,사규관리규정 - 체계에 대한 규정이나 절차 알려줘,TP0059,D005,KDN0030,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0176,사규관리규정 - 체계 관련된 담당자와 전화번호를 알려줘,TP0059,D005,KDN0030,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0177,사규관리규정 - 체계 문제는 어느 부서에서 처리하나요?,TP0059,D005,KDN0030,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0178,사택 운영업무 기준 전반 문의에 대한 규정이나 절차 알려줘,TP0060,D001,KDN0007,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0179,사택 운영업무 기준 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0060,D001,KDN0007,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0180,사택 운영업무 기준 전반 문의 문제는 어느 부서에서 처리하나요?,TP0060,D001,KDN0007,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0181,사택 운영업무 기준 - 사택관리부서에 대한 규정이나 절차 알려줘,TP0061,D001,KDN0002,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0182,사택 운영업무 기준 - 사택관리부서 관련된 담당자와 전화번호를 알려줘,TP0061,D001,KDN0002,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0183,사택 운영업무 기준 - 사택관리부서 문제는 어느 부서에서 처리하나요?,TP0061,D001,KDN0002,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0184,사택 운영업무 기준 - 사택운영위원회의 구성 및 운영에 대한 규정이나 절차 알려줘,TP0062,D001,KDN0003,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0185,사택 운영업무 기준 - 사택운영위원회의 구성 및 운영 관련된 담당자와 전화번호를 알려줘,TP0062,D001,KDN0003,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0186,사택 운영업무 기준 - 사택운영위원회의 구성 및 운영 문제는 어느 부서에서 처리하나요?,TP0062,D001,KDN0003,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0187,상벌규정 전반 문의에 대한 규정이나 절차 알려줘,TP0063,D001,KDN0004,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0188,상벌규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0063,D001,KDN0004,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0189,상벌규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0063,D001,KDN0004,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0190,상벌규정 - 상벌의 기록관리에 대한 규정이나 절차 알려줘,TP0064,D001,KDN0005,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0191,상벌규정 - 상벌의 기록관리 관련된 담당자와 전화번호를 알려줘,TP0064,D001,KDN0005,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0192,상벌규정 - 상벌의 기록관리 문제는 어느 부서에서 처리하나요?,TP0064,D001,KDN0005,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0193,상벌규정 - 이중 상벌의 금지에 대한 규정이나 절차 알려줘,TP0065,D001,KDN0006,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0194,상벌규정 - 이중 상벌의 금지 관련된 담당자와 전화번호를 알려줘,TP0065,D001,KDN0006,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0195,상벌규정 - 이중 상벌의 금지 문제는 어느 부서에서 처리하나요?,TP0065,D001,KDN0006,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0196,상임임원 복무규정 전반 문의에 대한 규정이나 절차 알려줘,TP0066,D005,KDN0027,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0197,상임임원 복무규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0066,D005,KDN0027,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0198,상임임원 복무규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0066,D005,KDN0027,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0199,상임임원 복무규정 - 적용범위 등에 대한 규정이나 절차 알려줘,TP0067,D005,KDN0028,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0200,상임임원 복무규정 - 적용범위 등 관련된 담당자와 전화번호를 알려줘,TP0067,D005,KDN0028,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0201,상임임원 복무규정 - 적용범위 등 문제는 어느 부서에서 처리하나요?,TP0067,D005,KDN0028,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0202,상임임원 복무규정 - 성실의무에 대한 규정이나 절차 알려줘,TP0068,D005,KDN0029,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0203,상임임원 복무규정 - 성실의무 관련된 담당자와 전화번호를 알려줘,TP0068,D005,KDN0029,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0204,상임임원 복무규정 - 성실의무 문제는 어느 부서에서 처리하나요?,TP0068,D005,KDN0029,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0205,안전보건관리규정 전반 문의에 대한 규정이나 절차 알려줘,TP0069,D012,KDN0069,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0206,안전보건관리규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0069,D012,KDN0069,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0207,안전보건관리규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0069,D012,KDN0069,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0208,안전보건관리규정 - 적용 범위에 대한 규정이나 절차 알려줘,TP0070,D012,KDN0070,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0209,안전보건관리규정 - 적용 범위 관련된 담당자와 전화번호를 알려줘,TP0070,D012,KDN0070,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0210,안전보건관리규정 - 적용 범위 문제는 어느 부서에서 처리하나요?,TP0070,D012,KDN0070,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0211,안전보건관리규정 - 단체협약 등과의 관계에 대한 규정이나 절차 알려줘,TP0071,D012,KDN0064,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0212,안전보건관리규정 - 단체협약 등과의 관계 관련된 담당자와 전화번호를 알려줘,TP0071,D012,KDN0064,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0213,안전보건관리규정 - 단체협약 등과의 관계 문제는 어느 부서에서 처리하나요?,TP0071,D012,KDN0064,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0214,안전사고에 대한 임원 책임규정 전반 문의에 대한 규정이나 절차 알려줘,TP0072,D012,KDN0065,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0215,안전사고에 대한 임원 책임규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0072,D012,KDN0065,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0216,안전사고에 대한 임원 책임규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0072,D012,KDN0065,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0217,안전사고에 대한 임원 책임규정 - 본문 (비정형 규정)에 대한 규정이나 절차 알려줘,TP0073,D012,KDN0066,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0218,안전사고에 대한 임원 책임규정 - 본문 (비정형 규정) 관련된 담당자와 전화번호를 알려줘,TP0073,D012,KDN0066,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0219,안전사고에 대한 임원 책임규정 - 본문 (비정형 규정) 문제는 어느 부서에서 처리하나요?,TP0073,D012,KDN0066,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0220,여비규정 전반 문의에 대한 규정이나 절차 알려줘,TP0074,D003,KDN0018,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0221,여비규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0074,D003,KDN0018,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0222,여비규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0074,D003,KDN0018,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0223,여비규정 - 여비의 종류에 대한 규정이나 절차 알려줘,TP0075,D003,KDN0019,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0224,여비규정 - 여비의 종류 관련된 담당자와 전화번호를 알려줘,TP0075,D003,KDN0019,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0225,여비규정 - 여비의 종류 문제는 어느 부서에서 처리하나요?,TP0075,D003,KDN0019,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0226,여비규정 - 여비의 계산에 대한 규정이나 절차 알려줘,TP0076,D003,KDN0015,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0227,여비규정 - 여비의 계산 관련된 담당자와 전화번호를 알려줘,TP0076,D003,KDN0015,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0228,여비규정 - 여비의 계산 문제는 어느 부서에서 처리하나요?,TP0076,D003,KDN0015,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0229,연구개발관리규정 전반 문의에 대한 규정이나 절차 알려줘,TP0077,D013,KDN0076,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0230,연구개발관리규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0077,D013,KDN0076,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0231,연구개발관리규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0077,D013,KDN0076,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0232,연구개발관리규정 - 연구개발 구분에 대한 규정이나 절차 알려줘,TP0078,D013,KDN0077,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0233,연구개발관리규정 - 연구개발 구분 관련된 담당자와 전화번호를 알려줘,TP0078,D013,KDN0077,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0234,연구개발관리규정 - 연구개발 구분 문제는 어느 부서에서 처리하나요?,TP0078,D013,KDN0077,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0235,연구개발관리규정 - 연구개발 기본계획 수립에 대한 규정이나 절차 알려줘,TP0079,D013,KDN0078,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0236,연구개발관리규정 - 연구개발 기본계획 수립 관련된 담당자와 전화번호를 알려줘,TP0079,D013,KDN0078,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0237,연구개발관리규정 - 연구개발 기본계획 수립 문제는 어느 부서에서 처리하나요?,TP0079,D013,KDN0078,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0238,이사회 운영규정 전반 문의에 대한 규정이나 절차 알려줘,TP0080,D005,KDN0031,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0239,이사회 운영규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0080,D005,KDN0031,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0240,이사회 운영규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0080,D005,KDN0031,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0241,이사회 운영규정 - 다른 법령과의 관계에 대한 규정이나 절차 알려줘,TP0081,D005,KDN0027,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0242,이사회 운영규정 - 다른 법령과의 관계 관련된 담당자와 전화번호를 알려줘,TP0081,D005,KDN0027,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0243,이사회 운영규정 - 다른 법령과의 관계 문제는 어느 부서에서 처리하나요?,TP0081,D005,KDN0027,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0244,이사회 운영규정 - 소집에 대한 규정이나 절차 알려줘,TP0082,D005,KDN0028,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0245,이사회 운영규정 - 소집 관련된 담당자와 전화번호를 알려줘,TP0082,D005,KDN0028,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0246,이사회 운영규정 - 소집 문제는 어느 부서에서 처리하나요?,TP0082,D005,KDN0028,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0247,이해충돌방지제도 운영세칙 전반 문의에 대한 규정이나 절차 알려줘,TP0083,D008,KDN0046,HANDOFF_OR_AUTH,direct,SYNTHETIC
+Q0248,이해충돌방지제도 운영세칙 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0083,D008,KDN0046,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0249,이해충돌방지제도 운영세칙 전반 문의 문제는 어느 부서에서 처리하나요?,TP0083,D008,KDN0046,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0250,이해충돌방지제도 운영세칙 - 사적이해관계자의 신고와 회피·기피 신청에 대한 규정이나 절차 알려줘,TP0084,D008,KDN0047,HANDOFF_OR_AUTH,direct,SYNTHETIC
+Q0251,이해충돌방지제도 운영세칙 - 사적이해관계자의 신고와 회피·기피 신청 관련된 담당자와 전화번호를 알려줘,TP0084,D008,KDN0047,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0252,이해충돌방지제도 운영세칙 - 사적이해관계자의 신고와 회피·기피 신청 문제는 어느 부서에서 처리하나요?,TP0084,D008,KDN0047,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0253,이해충돌방지제도 운영세칙 - 사적이해관계자의 신고 등에 대한 조치에 대한 규정이나 절차 알려줘,TP0085,D008,KDN0044,HANDOFF_OR_AUTH,direct,SYNTHETIC
+Q0254,이해충돌방지제도 운영세칙 - 사적이해관계자의 신고 등에 대한 조치 관련된 담당자와 전화번호를 알려줘,TP0085,D008,KDN0044,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0255,이해충돌방지제도 운영세칙 - 사적이해관계자의 신고 등에 대한 조치 문제는 어느 부서에서 처리하나요?,TP0085,D008,KDN0044,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0256,인권경영규정 전반 문의에 대한 규정이나 절차 알려줘,TP0086,D007,KDN0040,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0257,인권경영규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0086,D007,KDN0040,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0258,인권경영규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0086,D007,KDN0040,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0259,인권경영규정 - 고용상의 비차별 등에 대한 규정이나 절차 알려줘,TP0087,D007,KDN0041,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0260,인권경영규정 - 고용상의 비차별 등 관련된 담당자와 전화번호를 알려줘,TP0087,D007,KDN0041,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0261,인권경영규정 - 고용상의 비차별 등 문제는 어느 부서에서 처리하나요?,TP0087,D007,KDN0041,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0262,인권경영규정 - 직장 내 인권 보호에 대한 규정이나 절차 알려줘,TP0088,D007,KDN0042,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0263,인권경영규정 - 직장 내 인권 보호 관련된 담당자와 전화번호를 알려줘,TP0088,D007,KDN0042,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0264,인권경영규정 - 직장 내 인권 보호 문제는 어느 부서에서 처리하나요?,TP0088,D007,KDN0042,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0265,인권경영규정세칙 전반 문의에 대한 규정이나 절차 알려줘,TP0089,D007,KDN0039,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0266,인권경영규정세칙 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0089,D007,KDN0039,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0267,인권경영규정세칙 전반 문의 문제는 어느 부서에서 처리하나요?,TP0089,D007,KDN0039,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0268,인권경영규정세칙 - 회사의 책무에 대한 규정이나 절차 알려줘,TP0090,D007,KDN0040,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0269,인권경영규정세칙 - 회사의 책무 관련된 담당자와 전화번호를 알려줘,TP0090,D007,KDN0040,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0270,인권경영규정세칙 - 회사의 책무 문제는 어느 부서에서 처리하나요?,TP0090,D007,KDN0040,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0271,인권경영규정세칙 - 인권침해 행위의 금지 원칙에 대한 규정이나 절차 알려줘,TP0091,D007,KDN0041,HANDOFF_OR_AUTH,direct,SYNTHETIC
+Q0272,인권경영규정세칙 - 인권침해 행위의 금지 원칙 관련된 담당자와 전화번호를 알려줘,TP0091,D007,KDN0041,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0273,인권경영규정세칙 - 인권침해 행위의 금지 원칙 문제는 어느 부서에서 처리하나요?,TP0091,D007,KDN0041,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0274,인사규정 시행세칙 전반 문의에 대한 규정이나 절차 알려줘,TP0092,D001,KDN0003,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0275,인사규정 시행세칙 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0092,D001,KDN0003,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0276,인사규정 시행세칙 전반 문의 문제는 어느 부서에서 처리하나요?,TP0092,D001,KDN0003,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0277,인사규정 시행세칙 - 용어의 정의에 대한 규정이나 절차 알려줘,TP0093,D001,KDN0004,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0278,인사규정 시행세칙 - 용어의 정의 관련된 담당자와 전화번호를 알려줘,TP0093,D001,KDN0004,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0279,인사규정 시행세칙 - 용어의 정의 문제는 어느 부서에서 처리하나요?,TP0093,D001,KDN0004,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0280,인사규정 시행세칙 - 위원의 제척·기피 및 회피 사항에 대한 규정이나 절차 알려줘,TP0094,D001,KDN0005,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0281,인사규정 시행세칙 - 위원의 제척·기피 및 회피 사항 관련된 담당자와 전화번호를 알려줘,TP0094,D001,KDN0005,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0282,인사규정 시행세칙 - 위원의 제척·기피 및 회피 사항 문제는 어느 부서에서 처리하나요?,TP0094,D001,KDN0005,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0283,인사규정 전반 문의에 대한 규정이나 절차 알려줘,TP0095,D001,KDN0006,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0284,인사규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0095,D001,KDN0006,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0285,인사규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0095,D001,KDN0006,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0286,인사규정 - 용어의 정의에 대한 규정이나 절차 알려줘,TP0096,D001,KDN0007,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0287,인사규정 - 용어의 정의 관련된 담당자와 전화번호를 알려줘,TP0096,D001,KDN0007,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0288,인사규정 - 용어의 정의 문제는 어느 부서에서 처리하나요?,TP0096,D001,KDN0007,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0289,인사규정 - 적용범위에 대한 규정이나 절차 알려줘,TP0097,D001,KDN0002,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0290,인사규정 - 적용범위 관련된 담당자와 전화번호를 알려줘,TP0097,D001,KDN0002,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0291,인사규정 - 적용범위 문제는 어느 부서에서 처리하나요?,TP0097,D001,KDN0002,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0292,인사평가지침 전반 문의에 대한 규정이나 절차 알려줘,TP0098,D001,KDN0003,HANDOFF_OR_AUTH,direct,SYNTHETIC
+Q0293,인사평가지침 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0098,D001,KDN0003,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0294,인사평가지침 전반 문의 문제는 어느 부서에서 처리하나요?,TP0098,D001,KDN0003,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0295,인사평가지침 - 평가대상에 대한 규정이나 절차 알려줘,TP0099,D001,KDN0004,HANDOFF_OR_AUTH,direct,SYNTHETIC
+Q0296,인사평가지침 - 평가대상 관련된 담당자와 전화번호를 알려줘,TP0099,D001,KDN0004,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0297,인사평가지침 - 평가대상 문제는 어느 부서에서 처리하나요?,TP0099,D001,KDN0004,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0298,인사평가지침 - 평가의 종류 및 시기 등에 대한 규정이나 절차 알려줘,TP0100,D001,KDN0005,HANDOFF_OR_AUTH,direct,SYNTHETIC
+Q0299,인사평가지침 - 평가의 종류 및 시기 등 관련된 담당자와 전화번호를 알려줘,TP0100,D001,KDN0005,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0300,인사평가지침 - 평가의 종류 및 시기 등 문제는 어느 부서에서 처리하나요?,TP0100,D001,KDN0005,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0301,일용근로자 관리 기준 전반 문의에 대한 규정이나 절차 알려줘,TP0101,D001,KDN0006,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0302,일용근로자 관리 기준 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0101,D001,KDN0006,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0303,일용근로자 관리 기준 전반 문의 문제는 어느 부서에서 처리하나요?,TP0101,D001,KDN0006,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0304,일용근로자 관리 기준 - 적용범위에 대한 규정이나 절차 알려줘,TP0102,D001,KDN0007,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0305,일용근로자 관리 기준 - 적용범위 관련된 담당자와 전화번호를 알려줘,TP0102,D001,KDN0007,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0306,일용근로자 관리 기준 - 적용범위 문제는 어느 부서에서 처리하나요?,TP0102,D001,KDN0007,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0307,일용근로자 관리 기준 - 일용근로자의 사용에 대한 규정이나 절차 알려줘,TP0103,D001,KDN0002,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0308,일용근로자 관리 기준 - 일용근로자의 사용 관련된 담당자와 전화번호를 알려줘,TP0103,D001,KDN0002,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0309,일용근로자 관리 기준 - 일용근로자의 사용 문제는 어느 부서에서 처리하나요?,TP0103,D001,KDN0002,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0310,임금피크제 운영규정 전반 문의에 대한 규정이나 절차 알려줘,TP0104,D003,KDN0018,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0311,임금피크제 운영규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0104,D003,KDN0018,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0312,임금피크제 운영규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0104,D003,KDN0018,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0313,임금피크제 운영규정 - 본문 (비정형 규정)에 대한 규정이나 절차 알려줘,TP0105,D003,KDN0019,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0314,임금피크제 운영규정 - 본문 (비정형 규정) 관련된 담당자와 전화번호를 알려줘,TP0105,D003,KDN0019,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0315,임금피크제 운영규정 - 본문 (비정형 규정) 문제는 어느 부서에서 처리하나요?,TP0105,D003,KDN0019,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0316,임시조직 운영지침 전반 문의에 대한 규정이나 절차 알려줘,TP0106,D005,KDN0027,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0317,임시조직 운영지침 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0106,D005,KDN0027,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0318,임시조직 운영지침 전반 문의 문제는 어느 부서에서 처리하나요?,TP0106,D005,KDN0027,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0319,임시조직 운영지침 - 설치에 대한 규정이나 절차 알려줘,TP0107,D005,KDN0028,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0320,임시조직 운영지침 - 설치 관련된 담당자와 전화번호를 알려줘,TP0107,D005,KDN0028,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0321,임시조직 운영지침 - 설치 문제는 어느 부서에서 처리하나요?,TP0107,D005,KDN0028,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0322,임시조직 운영지침 - 정원에 대한 규정이나 절차 알려줘,TP0108,D005,KDN0029,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0323,임시조직 운영지침 - 정원 관련된 담당자와 전화번호를 알려줘,TP0108,D005,KDN0029,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0324,임시조직 운영지침 - 정원 문제는 어느 부서에서 처리하나요?,TP0108,D005,KDN0029,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0325,임원연봉규정 전반 문의에 대한 규정이나 절차 알려줘,TP0109,D003,KDN0018,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0326,임원연봉규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0109,D003,KDN0018,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0327,임원연봉규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0109,D003,KDN0018,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0328,임원연봉규정 - 적용대상 등에 대한 규정이나 절차 알려줘,TP0110,D003,KDN0019,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0329,임원연봉규정 - 적용대상 등 관련된 담당자와 전화번호를 알려줘,TP0110,D003,KDN0019,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0330,임원연봉규정 - 적용대상 등 문제는 어느 부서에서 처리하나요?,TP0110,D003,KDN0019,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0331,임원연봉규정 - 보수의 종류에 대한 규정이나 절차 알려줘,TP0111,D003,KDN0015,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0332,임원연봉규정 - 보수의 종류 관련된 담당자와 전화번호를 알려줘,TP0111,D003,KDN0015,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0333,임원연봉규정 - 보수의 종류 문제는 어느 부서에서 처리하나요?,TP0111,D003,KDN0015,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0334,임원직무청렴계약 운영규정 전반 문의에 대한 규정이나 절차 알려줘,TP0112,D008,KDN0047,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0335,임원직무청렴계약 운영규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0112,D008,KDN0047,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0336,임원직무청렴계약 운영규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0112,D008,KDN0047,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0337,임원직무청렴계약 운영규정 - 적용범위에 대한 규정이나 절차 알려줘,TP0113,D008,KDN0044,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0338,임원직무청렴계약 운영규정 - 적용범위 관련된 담당자와 전화번호를 알려줘,TP0113,D008,KDN0044,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0339,임원직무청렴계약 운영규정 - 적용범위 문제는 어느 부서에서 처리하나요?,TP0113,D008,KDN0044,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0340,임원직무청렴계약 운영규정 - 임원청렴계약체결 및 성립에 대한 규정이나 절차 알려줘,TP0114,D008,KDN0045,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0341,임원직무청렴계약 운영규정 - 임원청렴계약체결 및 성립 관련된 담당자와 전화번호를 알려줘,TP0114,D008,KDN0045,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0342,임원직무청렴계약 운영규정 - 임원청렴계약체결 및 성립 문제는 어느 부서에서 처리하나요?,TP0114,D008,KDN0045,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0343,임원추천위원회 운영규정 전반 문의에 대한 규정이나 절차 알려줘,TP0115,D005,KDN0031,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0344,임원추천위원회 운영규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0115,D005,KDN0031,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0345,임원추천위원회 운영규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0115,D005,KDN0031,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0346,임원추천위원회 운영규정 - 임무에 대한 규정이나 절차 알려줘,TP0116,D005,KDN0027,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0347,임원추천위원회 운영규정 - 임무 관련된 담당자와 전화번호를 알려줘,TP0116,D005,KDN0027,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0348,임원추천위원회 운영규정 - 임무 문제는 어느 부서에서 처리하나요?,TP0116,D005,KDN0027,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0349,임원추천위원회 운영규정 - 구성에 대한 규정이나 절차 알려줘,TP0117,D005,KDN0028,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0350,임원추천위원회 운영규정 - 구성 관련된 담당자와 전화번호를 알려줘,TP0117,D005,KDN0028,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0351,임원추천위원회 운영규정 - 구성 문제는 어느 부서에서 처리하나요?,TP0117,D005,KDN0028,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0352,임직원 행동강령 전반 문의에 대한 규정이나 절차 알려줘,TP0118,D008,KDN0045,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0353,임직원 행동강령 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0118,D008,KDN0045,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0354,임직원 행동강령 전반 문의 문제는 어느 부서에서 처리하나요?,TP0118,D008,KDN0045,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0355,임직원 행동강령 - 적용범위에 대한 규정이나 절차 알려줘,TP0119,D008,KDN0046,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0356,임직원 행동강령 - 적용범위 관련된 담당자와 전화번호를 알려줘,TP0119,D008,KDN0046,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0357,임직원 행동강령 - 적용범위 문제는 어느 부서에서 처리하나요?,TP0119,D008,KDN0046,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0358,임직원 행동강령 - 공정한 직무수행을 해치는 지시 등에 대한 처리에 대한 규정이나 절차 알려줘,TP0120,D008,KDN0047,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0359,임직원 행동강령 - 공정한 직무수행을 해치는 지시 등에 대한 처리 관련된 담당자와 전화번호를 알려줘,TP0120,D008,KDN0047,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0360,임직원 행동강령 - 공정한 직무수행을 해치는 지시 등에 대한 처리 문제는 어느 부서에서 처리하나요?,TP0120,D008,KDN0047,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0361,자녀학자금 운영업무 기준 전반 문의에 대한 규정이나 절차 알려줘,TP0121,D003,KDN0015,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0362,자녀학자금 운영업무 기준 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0121,D003,KDN0015,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0363,자녀학자금 운영업무 기준 전반 문의 문제는 어느 부서에서 처리하나요?,TP0121,D003,KDN0015,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0364,자녀학자금 운영업무 기준 - 학자금 대부 대상직원에 대한 규정이나 절차 알려줘,TP0122,D003,KDN0016,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0365,자녀학자금 운영업무 기준 - 학자금 대부 대상직원 관련된 담당자와 전화번호를 알려줘,TP0122,D003,KDN0016,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0366,자녀학자금 운영업무 기준 - 학자금 대부 대상직원 문제는 어느 부서에서 처리하나요?,TP0122,D003,KDN0016,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0367,자녀학자금 운영업무 기준 - 학자금 지급 대상직원에 대한 규정이나 절차 알려줘,TP0123,D003,KDN0017,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0368,자녀학자금 운영업무 기준 - 학자금 지급 대상직원 관련된 담당자와 전화번호를 알려줘,TP0123,D003,KDN0017,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0369,자녀학자금 운영업무 기준 - 학자금 지급 대상직원 문제는 어느 부서에서 처리하나요?,TP0123,D003,KDN0017,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0370,적극행정운영지침 전반 문의에 대한 규정이나 절차 알려줘,TP0124,D005,KDN0030,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0371,적극행정운영지침 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0124,D005,KDN0030,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0372,적극행정운영지침 전반 문의 문제는 어느 부서에서 처리하나요?,TP0124,D005,KDN0030,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0373,적극행정운영지침 - 적극행정 총괄부서 및 지원부서 지정에 대한 규정이나 절차 알려줘,TP0125,D005,KDN0031,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0374,적극행정운영지침 - 적극행정 총괄부서 및 지원부서 지정 관련된 담당자와 전화번호를 알려줘,TP0125,D005,KDN0031,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0375,적극행정운영지침 - 적극행정 총괄부서 및 지원부서 지정 문제는 어느 부서에서 처리하나요?,TP0125,D005,KDN0031,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0376,적극행정운영지침 - 적극행정 실행 계획 수립 등에 대한 규정이나 절차 알려줘,TP0126,D005,KDN0027,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0377,적극행정운영지침 - 적극행정 실행 계획 수립 등 관련된 담당자와 전화번호를 알려줘,TP0126,D005,KDN0027,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0378,적극행정운영지침 - 적극행정 실행 계획 수립 등 문제는 어느 부서에서 처리하나요?,TP0126,D005,KDN0027,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0379,주택융자 운영업무 기준 전반 문의에 대한 규정이나 절차 알려줘,TP0127,D002,KDN0010,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0380,주택융자 운영업무 기준 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0127,D002,KDN0010,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0381,주택융자 운영업무 기준 전반 문의 문제는 어느 부서에서 처리하나요?,TP0127,D002,KDN0010,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0382,주택융자 운영업무 기준 - 대부대상자에 대한 규정이나 절차 알려줘,TP0128,D002,KDN0011,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0383,주택융자 운영업무 기준 - 대부대상자 관련된 담당자와 전화번호를 알려줘,TP0128,D002,KDN0011,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0384,주택융자 운영업무 기준 - 대부대상자 문제는 어느 부서에서 처리하나요?,TP0128,D002,KDN0011,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0385,주택융자 운영업무 기준 - 대부대상 제외에 대한 규정이나 절차 알려줘,TP0129,D002,KDN0012,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0386,주택융자 운영업무 기준 - 대부대상 제외 관련된 담당자와 전화번호를 알려줘,TP0129,D002,KDN0012,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0387,주택융자 운영업무 기준 - 대부대상 제외 문제는 어느 부서에서 처리하나요?,TP0129,D002,KDN0012,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0388,지식재산권 관리규정 전반 문의에 대한 규정이나 절차 알려줘,TP0130,D013,KDN0075,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0389,지식재산권 관리규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0130,D013,KDN0075,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0390,지식재산권 관리규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0130,D013,KDN0075,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0391,지식재산권 관리규정 - 다른 사규 등과의 관계에 대한 규정이나 절차 알려줘,TP0131,D013,KDN0076,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0392,지식재산권 관리규정 - 다른 사규 등과의 관계 관련된 담당자와 전화번호를 알려줘,TP0131,D013,KDN0076,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0393,지식재산권 관리규정 - 다른 사규 등과의 관계 문제는 어느 부서에서 처리하나요?,TP0131,D013,KDN0076,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0394,지식재산권 관리규정 - 권리의 승계에 대한 규정이나 절차 알려줘,TP0132,D013,KDN0077,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0395,지식재산권 관리규정 - 권리의 승계 관련된 담당자와 전화번호를 알려줘,TP0132,D013,KDN0077,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0396,지식재산권 관리규정 - 권리의 승계 문제는 어느 부서에서 처리하나요?,TP0132,D013,KDN0077,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0397,직무관리지침 전반 문의에 대한 규정이나 절차 알려줘,TP0133,D001,KDN0002,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0398,직무관리지침 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0133,D001,KDN0002,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0399,직무관리지침 전반 문의 문제는 어느 부서에서 처리하나요?,TP0133,D001,KDN0002,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0400,직무관리지침 - 적용범위에 대한 규정이나 절차 알려줘,TP0134,D001,KDN0003,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0401,직무관리지침 - 적용범위 관련된 담당자와 전화번호를 알려줘,TP0134,D001,KDN0003,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0402,직무관리지침 - 적용범위 문제는 어느 부서에서 처리하나요?,TP0134,D001,KDN0003,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0403,직무관리지침 - 주관부서에 대한 규정이나 절차 알려줘,TP0135,D001,KDN0004,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0404,직무관리지침 - 주관부서 관련된 담당자와 전화번호를 알려줘,TP0135,D001,KDN0004,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0405,직무관리지침 - 주관부서 문제는 어느 부서에서 처리하나요?,TP0135,D001,KDN0004,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0406,직무권한세칙 전반 문의에 대한 규정이나 절차 알려줘,TP0136,D005,KDN0027,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0407,직무권한세칙 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0136,D005,KDN0027,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0408,직무권한세칙 전반 문의 문제는 어느 부서에서 처리하나요?,TP0136,D005,KDN0027,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0409,직무권한세칙 - 직무권한 및 책임에 대한 규정이나 절차 알려줘,TP0137,D005,KDN0028,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0410,직무권한세칙 - 직무권한 및 책임 관련된 담당자와 전화번호를 알려줘,TP0137,D005,KDN0028,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0411,직무권한세칙 - 직무권한 및 책임 문제는 어느 부서에서 처리하나요?,TP0137,D005,KDN0028,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0412,직무권한세칙 - 전결권의 제한에 대한 규정이나 절차 알려줘,TP0138,D005,KDN0029,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0413,직무권한세칙 - 전결권의 제한 관련된 담당자와 전화번호를 알려줘,TP0138,D005,KDN0029,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0414,직무권한세칙 - 전결권의 제한 문제는 어느 부서에서 처리하나요?,TP0138,D005,KDN0029,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0415,직원연봉규정 시행세칙 전반 문의에 대한 규정이나 절차 알려줘,TP0139,D003,KDN0018,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0416,직원연봉규정 시행세칙 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0139,D003,KDN0018,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0417,직원연봉규정 시행세칙 전반 문의 문제는 어느 부서에서 처리하나요?,TP0139,D003,KDN0018,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0418,직원연봉규정 시행세칙 - 일할계산에 대한 규정이나 절차 알려줘,TP0140,D003,KDN0019,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0419,직원연봉규정 시행세칙 - 일할계산 관련된 담당자와 전화번호를 알려줘,TP0140,D003,KDN0019,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0420,직원연봉규정 시행세칙 - 일할계산 문제는 어느 부서에서 처리하나요?,TP0140,D003,KDN0019,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0421,직원연봉규정 시행세칙 - 보수의 선지급에 대한 규정이나 절차 알려줘,TP0141,D003,KDN0015,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0422,직원연봉규정 시행세칙 - 보수의 선지급 관련된 담당자와 전화번호를 알려줘,TP0141,D003,KDN0015,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0423,직원연봉규정 시행세칙 - 보수의 선지급 문제는 어느 부서에서 처리하나요?,TP0141,D003,KDN0015,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0424,직원연봉규정 전반 문의에 대한 규정이나 절차 알려줘,TP0142,D003,KDN0016,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0425,직원연봉규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0142,D003,KDN0016,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0426,직원연봉규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0142,D003,KDN0016,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0427,직원연봉규정 - 용어의 정의에 대한 규정이나 절차 알려줘,TP0143,D003,KDN0017,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0428,직원연봉규정 - 용어의 정의 관련된 담당자와 전화번호를 알려줘,TP0143,D003,KDN0017,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0429,직원연봉규정 - 용어의 정의 문제는 어느 부서에서 처리하나요?,TP0143,D003,KDN0017,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0430,직원연봉규정 - 적용범위에 대한 규정이나 절차 알려줘,TP0144,D003,KDN0018,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0431,직원연봉규정 - 적용범위 관련된 담당자와 전화번호를 알려줘,TP0144,D003,KDN0018,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0432,직원연봉규정 - 적용범위 문제는 어느 부서에서 처리하나요?,TP0144,D003,KDN0018,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0433,직제규정 전반 문의에 대한 규정이나 절차 알려줘,TP0145,D005,KDN0031,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0434,직제규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0145,D005,KDN0031,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0435,직제규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0145,D005,KDN0031,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0436,직제규정 - 임원에 대한 규정이나 절차 알려줘,TP0146,D005,KDN0027,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0437,직제규정 - 임원 관련된 담당자와 전화번호를 알려줘,TP0146,D005,KDN0027,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0438,직제규정 - 임원 문제는 어느 부서에서 처리하나요?,TP0146,D005,KDN0027,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0439,직제규정 - 직원에 대한 규정이나 절차 알려줘,TP0147,D005,KDN0028,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0440,직제규정 - 직원 관련된 담당자와 전화번호를 알려줘,TP0147,D005,KDN0028,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0441,직제규정 - 직원 문제는 어느 부서에서 처리하나요?,TP0147,D005,KDN0028,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0442,직제규정세칙 전반 문의에 대한 규정이나 절차 알려줘,TP0148,D005,KDN0029,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0443,직제규정세칙 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0148,D005,KDN0029,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0444,직제규정세칙 전반 문의 문제는 어느 부서에서 처리하나요?,TP0148,D005,KDN0029,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0445,직제규정세칙 - 기구에 대한 규정이나 절차 알려줘,TP0149,D005,KDN0030,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0446,직제규정세칙 - 기구 관련된 담당자와 전화번호를 알려줘,TP0149,D005,KDN0030,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0447,직제규정세칙 - 기구 문제는 어느 부서에서 처리하나요?,TP0149,D005,KDN0030,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0448,직제규정세칙 - 직급별 직위 및 직책에 대한 규정이나 절차 알려줘,TP0150,D005,KDN0031,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0449,직제규정세칙 - 직급별 직위 및 직책 관련된 담당자와 전화번호를 알려줘,TP0150,D005,KDN0031,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0450,직제규정세칙 - 직급별 직위 및 직책 문제는 어느 부서에서 처리하나요?,TP0150,D005,KDN0031,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0451,출자회사 관리규정 전반 문의에 대한 규정이나 절차 알려줘,TP0151,D006,KDN0033,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0452,출자회사 관리규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0151,D006,KDN0033,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0453,출자회사 관리규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0151,D006,KDN0033,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0454,출자회사 관리규정 - 적용범위에 대한 규정이나 절차 알려줘,TP0152,D006,KDN0034,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0455,출자회사 관리규정 - 적용범위 관련된 담당자와 전화번호를 알려줘,TP0152,D006,KDN0034,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0456,출자회사 관리규정 - 적용범위 문제는 어느 부서에서 처리하나요?,TP0152,D006,KDN0034,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0457,출자회사 관리규정 - 출자 사전협의에 대한 규정이나 절차 알려줘,TP0153,D006,KDN0035,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0458,출자회사 관리규정 - 출자 사전협의 관련된 담당자와 전화번호를 알려줘,TP0153,D006,KDN0035,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0459,출자회사 관리규정 - 출자 사전협의 문제는 어느 부서에서 처리하나요?,TP0153,D006,KDN0035,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0460,취업규칙 시행세칙 전반 문의에 대한 규정이나 절차 알려줘,TP0154,D001,KDN0005,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0461,취업규칙 시행세칙 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0154,D001,KDN0005,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0462,취업규칙 시행세칙 전반 문의 문제는 어느 부서에서 처리하나요?,TP0154,D001,KDN0005,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0463,취업규칙 시행세칙 - 근무시간 및 근로단축의 신청 등에 대한 규정이나 절차 알려줘,TP0155,D001,KDN0006,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0464,취업규칙 시행세칙 - 근무시간 및 근로단축의 신청 등 관련된 담당자와 전화번호를 알려줘,TP0155,D001,KDN0006,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0465,취업규칙 시행세칙 - 근무시간 및 근로단축의 신청 등 문제는 어느 부서에서 처리하나요?,TP0155,D001,KDN0006,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0466,취업규칙 시행세칙 - 근태관리에 대한 규정이나 절차 알려줘,TP0156,D001,KDN0007,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0467,취업규칙 시행세칙 - 근태관리 관련된 담당자와 전화번호를 알려줘,TP0156,D001,KDN0007,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0468,취업규칙 시행세칙 - 근태관리 문제는 어느 부서에서 처리하나요?,TP0156,D001,KDN0007,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0469,취업규칙 전반 문의에 대한 규정이나 절차 알려줘,TP0157,D001,KDN0002,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0470,취업규칙 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0157,D001,KDN0002,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0471,취업규칙 전반 문의 문제는 어느 부서에서 처리하나요?,TP0157,D001,KDN0002,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0472,취업규칙 - 적용범위에 대한 규정이나 절차 알려줘,TP0158,D001,KDN0003,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0473,취업규칙 - 적용범위 관련된 담당자와 전화번호를 알려줘,TP0158,D001,KDN0003,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0474,취업규칙 - 적용범위 문제는 어느 부서에서 처리하나요?,TP0158,D001,KDN0003,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0475,취업규칙 - 그 밖의 사항에 대한 규정이나 절차 알려줘,TP0159,D001,KDN0004,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0476,취업규칙 - 그 밖의 사항 관련된 담당자와 전화번호를 알려줘,TP0159,D001,KDN0004,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0477,취업규칙 - 그 밖의 사항 문제는 어느 부서에서 처리하나요?,TP0159,D001,KDN0004,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0478,품질경영규정 전반 문의에 대한 규정이나 절차 알려줘,TP0160,D012,KDN0069,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0479,품질경영규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0160,D012,KDN0069,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0480,품질경영규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0160,D012,KDN0069,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0481,품질경영규정 - 적용범위에 대한 규정이나 절차 알려줘,TP0161,D012,KDN0070,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0482,품질경영규정 - 적용범위 관련된 담당자와 전화번호를 알려줘,TP0161,D012,KDN0070,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0483,품질경영규정 - 적용범위 문제는 어느 부서에서 처리하나요?,TP0161,D012,KDN0070,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0484,품질경영규정 - 품질에 대한 책임에 대한 규정이나 절차 알려줘,TP0162,D012,KDN0064,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0485,품질경영규정 - 품질에 대한 책임 관련된 담당자와 전화번호를 알려줘,TP0162,D012,KDN0064,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0486,품질경영규정 - 품질에 대한 책임 문제는 어느 부서에서 처리하나요?,TP0162,D012,KDN0064,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0487,프로젝트 계약근로자 관리 기준 전반 문의에 대한 규정이나 절차 알려줘,TP0163,D014,KDN0084,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0488,프로젝트 계약근로자 관리 기준 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0163,D014,KDN0084,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0489,프로젝트 계약근로자 관리 기준 전반 문의 문제는 어느 부서에서 처리하나요?,TP0163,D014,KDN0084,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0490,프로젝트 계약근로자 관리 기준 - 용어의 정의에 대한 규정이나 절차 알려줘,TP0164,D014,KDN0085,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0491,프로젝트 계약근로자 관리 기준 - 용어의 정의 관련된 담당자와 전화번호를 알려줘,TP0164,D014,KDN0085,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0492,프로젝트 계약근로자 관리 기준 - 용어의 정의 문제는 어느 부서에서 처리하나요?,TP0164,D014,KDN0085,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0493,프로젝트 계약근로자 관리 기준 - 교육 및 운영에 대한 규정이나 절차 알려줘,TP0165,D014,KDN0086,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0494,프로젝트 계약근로자 관리 기준 - 교육 및 운영 관련된 담당자와 전화번호를 알려줘,TP0165,D014,KDN0086,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0495,프로젝트 계약근로자 관리 기준 - 교육 및 운영 문제는 어느 부서에서 처리하나요?,TP0165,D014,KDN0086,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0496,한전KDN주식회사 정관 전반 문의에 대한 규정이나 절차 알려줘,TP0166,D005,KDN0027,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0497,한전KDN주식회사 정관 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0166,D005,KDN0027,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0498,한전KDN주식회사 정관 전반 문의 문제는 어느 부서에서 처리하나요?,TP0166,D005,KDN0027,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0499,한전KDN주식회사 정관 - 명칭에 대한 규정이나 절차 알려줘,TP0167,D005,KDN0028,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0500,한전KDN주식회사 정관 - 명칭 관련된 담당자와 전화번호를 알려줘,TP0167,D005,KDN0028,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0501,한전KDN주식회사 정관 - 명칭 문제는 어느 부서에서 처리하나요?,TP0167,D005,KDN0028,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0502,한전KDN주식회사 정관 - 사무소의 소재지에 대한 규정이나 절차 알려줘,TP0168,D005,KDN0029,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0503,한전KDN주식회사 정관 - 사무소의 소재지 관련된 담당자와 전화번호를 알려줘,TP0168,D005,KDN0029,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0504,한전KDN주식회사 정관 - 사무소의 소재지 문제는 어느 부서에서 처리하나요?,TP0168,D005,KDN0029,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0505,해외근무관리규정 전반 문의에 대한 규정이나 절차 알려줘,TP0169,D014,KDN0082,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0506,해외근무관리규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0169,D014,KDN0082,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0507,해외근무관리규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0169,D014,KDN0082,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0508,해외근무관리규정 - 적용 범위에 대한 규정이나 절차 알려줘,TP0170,D014,KDN0083,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0509,해외근무관리규정 - 적용 범위 관련된 담당자와 전화번호를 알려줘,TP0170,D014,KDN0083,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0510,해외근무관리규정 - 적용 범위 문제는 어느 부서에서 처리하나요?,TP0170,D014,KDN0083,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0511,해외근무관리규정 - 다른 법령 등과의 관계에 대한 규정이나 절차 알려줘,TP0171,D014,KDN0084,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0512,해외근무관리규정 - 다른 법령 등과의 관계 관련된 담당자와 전화번호를 알려줘,TP0171,D014,KDN0084,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0513,해외근무관리규정 - 다른 법령 등과의 관계 문제는 어느 부서에서 처리하나요?,TP0171,D014,KDN0084,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0514,회계규정 전반 문의에 대한 규정이나 절차 알려줘,TP0172,D004,KDN0022,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0515,회계규정 전반 문의 관련된 담당자와 전화번호를 알려줘,TP0172,D004,KDN0022,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0516,회계규정 전반 문의 문제는 어느 부서에서 처리하나요?,TP0172,D004,KDN0022,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0517,회계규정 - 회계처리기준에 대한 규정이나 절차 알려줘,TP0173,D004,KDN0023,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0518,회계규정 - 회계처리기준 관련된 담당자와 전화번호를 알려줘,TP0173,D004,KDN0023,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0519,회계규정 - 회계처리기준 문제는 어느 부서에서 처리하나요?,TP0173,D004,KDN0023,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0520,회계규정 - 회계연도에 대한 규정이나 절차 알려줘,TP0174,D004,KDN0024,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0521,회계규정 - 회계연도 관련된 담당자와 전화번호를 알려줘,TP0174,D004,KDN0024,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0522,회계규정 - 회계연도 문제는 어느 부서에서 처리하나요?,TP0174,D004,KDN0024,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0523,연차 잔여일수 조회에 대한 규정이나 절차 알려줘,TP0175,D001,KDN0002,HANDOFF_OR_AUTH,direct,SYNTHETIC
+Q0524,연차 잔여일수 조회 관련된 담당자와 전화번호를 알려줘,TP0175,D001,KDN0002,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0525,연차 잔여일수 조회 문제는 어느 부서에서 처리하나요?,TP0175,D001,KDN0002,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0526,연차 사용 및 승인 문의에 대한 규정이나 절차 알려줘,TP0176,D001,KDN0003,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0527,연차 사용 및 승인 문의 관련된 담당자와 전화번호를 알려줘,TP0176,D001,KDN0003,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0528,연차 사용 및 승인 문의 문제는 어느 부서에서 처리하나요?,TP0176,D001,KDN0003,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0529,근무시간 및 지각 문의에 대한 규정이나 절차 알려줘,TP0177,D001,KDN0004,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0530,근무시간 및 지각 문의 관련된 담당자와 전화번호를 알려줘,TP0177,D001,KDN0004,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0531,근무시간 및 지각 문의 문제는 어느 부서에서 처리하나요?,TP0177,D001,KDN0004,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0532,휴직 신청 및 복직 문의에 대한 규정이나 절차 알려줘,TP0178,D001,KDN0005,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0533,휴직 신청 및 복직 문의 관련된 담당자와 전화번호를 알려줘,TP0178,D001,KDN0005,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0534,휴직 신청 및 복직 문의 문제는 어느 부서에서 처리하나요?,TP0178,D001,KDN0005,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0535,사택 입주 신청에 대한 규정이나 절차 알려줘,TP0179,D001,KDN0006,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0536,사택 입주 신청 관련된 담당자와 전화번호를 알려줘,TP0179,D001,KDN0006,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0537,사택 입주 신청 문제는 어느 부서에서 처리하나요?,TP0179,D001,KDN0006,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0538,사택 퇴거 및 반환에 대한 규정이나 절차 알려줘,TP0180,D001,KDN0007,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0539,사택 퇴거 및 반환 관련된 담당자와 전화번호를 알려줘,TP0180,D001,KDN0007,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0540,사택 퇴거 및 반환 문제는 어느 부서에서 처리하나요?,TP0180,D001,KDN0007,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0541,주택자금 융자 신청에 대한 규정이나 절차 알려줘,TP0181,D002,KDN0009,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0542,주택자금 융자 신청 관련된 담당자와 전화번호를 알려줘,TP0181,D002,KDN0009,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0543,주택자금 융자 신청 문제는 어느 부서에서 처리하나요?,TP0181,D002,KDN0009,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0544,노사협의회 운영 문의에 대한 규정이나 절차 알려줘,TP0182,D002,KDN0010,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0545,노사협의회 운영 문의 관련된 담당자와 전화번호를 알려줘,TP0182,D002,KDN0010,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0546,노사협의회 운영 문의 문제는 어느 부서에서 처리하나요?,TP0182,D002,KDN0010,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0547,고충 접수 및 비공개 상담에 대한 규정이나 절차 알려줘,TP0183,D002,KDN0011,HANDOFF_OR_AUTH,direct,SYNTHETIC
+Q0548,고충 접수 및 비공개 상담 관련된 담당자와 전화번호를 알려줘,TP0183,D002,KDN0011,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0549,고충 접수 및 비공개 상담 문제는 어느 부서에서 처리하나요?,TP0183,D002,KDN0011,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0550,자녀 학자금 신청에 대한 규정이나 절차 알려줘,TP0184,D003,KDN0018,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0551,자녀 학자금 신청 관련된 담당자와 전화번호를 알려줘,TP0184,D003,KDN0018,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0552,자녀 학자금 신청 문제는 어느 부서에서 처리하나요?,TP0184,D003,KDN0018,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0553,연봉 및 수당 문의에 대한 규정이나 절차 알려줘,TP0185,D003,KDN0019,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0554,연봉 및 수당 문의 관련된 담당자와 전화번호를 알려줘,TP0185,D003,KDN0019,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0555,연봉 및 수당 문의 문제는 어느 부서에서 처리하나요?,TP0185,D003,KDN0019,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0556,급여명세서 개인 조회에 대한 규정이나 절차 알려줘,TP0186,D003,KDN0015,HANDOFF_OR_AUTH,direct,SYNTHETIC
+Q0557,급여명세서 개인 조회 관련된 담당자와 전화번호를 알려줘,TP0186,D003,KDN0015,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0558,급여명세서 개인 조회 문제는 어느 부서에서 처리하나요?,TP0186,D003,KDN0015,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0559,출장비 지급 기준에 대한 규정이나 절차 알려줘,TP0187,D003,KDN0016,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0560,출장비 지급 기준 관련된 담당자와 전화번호를 알려줘,TP0187,D003,KDN0016,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0561,출장비 지급 기준 문제는 어느 부서에서 처리하나요?,TP0187,D003,KDN0016,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0562,해외출장 여비에 대한 규정이나 절차 알려줘,TP0188,D003,KDN0017,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0563,해외출장 여비 관련된 담당자와 전화번호를 알려줘,TP0188,D003,KDN0017,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0564,해외출장 여비 문제는 어느 부서에서 처리하나요?,TP0188,D003,KDN0017,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0565,법인카드 및 회계처리에 대한 규정이나 절차 알려줘,TP0189,D004,KDN0024,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0566,법인카드 및 회계처리 관련된 담당자와 전화번호를 알려줘,TP0189,D004,KDN0024,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0567,법인카드 및 회계처리 문제는 어느 부서에서 처리하나요?,TP0189,D004,KDN0024,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0568,이사회 및 회의자료에 대한 규정이나 절차 알려줘,TP0190,D005,KDN0031,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0569,이사회 및 회의자료 관련된 담당자와 전화번호를 알려줘,TP0190,D005,KDN0031,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0570,이사회 및 회의자료 문제는 어느 부서에서 처리하나요?,TP0190,D005,KDN0031,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0571,사규 제개정 절차에 대한 규정이나 절차 알려줘,TP0191,D005,KDN0027,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0572,사규 제개정 절차 관련된 담당자와 전화번호를 알려줘,TP0191,D005,KDN0027,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0573,사규 제개정 절차 문제는 어느 부서에서 처리하나요?,TP0191,D005,KDN0027,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0574,입찰 절차 및 계약 검토에 대한 규정이나 절차 알려줘,TP0192,D006,KDN0034,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0575,입찰 절차 및 계약 검토 관련된 담당자와 전화번호를 알려줘,TP0192,D006,KDN0034,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0576,입찰 절차 및 계약 검토 문제는 어느 부서에서 처리하나요?,TP0192,D006,KDN0034,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0577,수의계약 및 계약방법에 대한 규정이나 절차 알려줘,TP0193,D006,KDN0035,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0578,수의계약 및 계약방법 관련된 담당자와 전화번호를 알려줘,TP0193,D006,KDN0035,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0579,수의계약 및 계약방법 문제는 어느 부서에서 처리하나요?,TP0193,D006,KDN0035,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0580,공정거래 문의에 대한 규정이나 절차 알려줘,TP0194,D006,KDN0036,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0581,공정거래 문의 관련된 담당자와 전화번호를 알려줘,TP0194,D006,KDN0036,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0582,공정거래 문의 문제는 어느 부서에서 처리하나요?,TP0194,D006,KDN0036,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0583,법률 자문 및 법무검토에 대한 규정이나 절차 알려줘,TP0195,D007,KDN0041,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0584,법률 자문 및 법무검토 관련된 담당자와 전화번호를 알려줘,TP0195,D007,KDN0041,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0585,법률 자문 및 법무검토 문제는 어느 부서에서 처리하나요?,TP0195,D007,KDN0041,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0586,인권침해 신고에 대한 규정이나 절차 알려줘,TP0196,D007,KDN0042,HANDOFF_OR_AUTH,direct,SYNTHETIC
+Q0587,인권침해 신고 관련된 담당자와 전화번호를 알려줘,TP0196,D007,KDN0042,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0588,인권침해 신고 문제는 어느 부서에서 처리하나요?,TP0196,D007,KDN0042,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0589,이해충돌 신고에 대한 규정이나 절차 알려줘,TP0197,D008,KDN0044,HANDOFF_OR_AUTH,direct,SYNTHETIC
+Q0590,이해충돌 신고 관련된 담당자와 전화번호를 알려줘,TP0197,D008,KDN0044,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0591,이해충돌 신고 문제는 어느 부서에서 처리하나요?,TP0197,D008,KDN0044,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0592,행동강령 및 선물 신고에 대한 규정이나 절차 알려줘,TP0198,D008,KDN0045,HANDOFF_OR_AUTH,direct,SYNTHETIC
+Q0593,행동강령 및 선물 신고 관련된 담당자와 전화번호를 알려줘,TP0198,D008,KDN0045,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0594,행동강령 및 선물 신고 문제는 어느 부서에서 처리하나요?,TP0198,D008,KDN0045,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0595,감사 제보 및 감사절차에 대한 규정이나 절차 알려줘,TP0199,D009,KDN0049,HANDOFF_OR_AUTH,direct,SYNTHETIC
+Q0596,감사 제보 및 감사절차 관련된 담당자와 전화번호를 알려줘,TP0199,D009,KDN0049,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0597,감사 제보 및 감사절차 문제는 어느 부서에서 처리하나요?,TP0199,D009,KDN0049,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0598,정보보안 및 보안사고에 대한 규정이나 절차 알려줘,TP0200,D010,KDN0054,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0599,정보보안 및 보안사고 관련된 담당자와 전화번호를 알려줘,TP0200,D010,KDN0054,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0600,정보보안 및 보안사고 문제는 어느 부서에서 처리하나요?,TP0200,D010,KDN0054,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0601,개인정보 유출 신고에 대한 규정이나 절차 알려줘,TP0201,D011,KDN0062,HANDOFF_OR_AUTH,direct,SYNTHETIC
+Q0602,개인정보 유출 신고 관련된 담당자와 전화번호를 알려줘,TP0201,D011,KDN0062,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0603,개인정보 유출 신고 문제는 어느 부서에서 처리하나요?,TP0201,D011,KDN0062,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0604,산업재해 및 안전사고에 대한 규정이나 절차 알려줘,TP0202,D012,KDN0069,HANDOFF_OR_AUTH,direct,SYNTHETIC
+Q0605,산업재해 및 안전사고 관련된 담당자와 전화번호를 알려줘,TP0202,D012,KDN0069,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0606,산업재해 및 안전사고 문제는 어느 부서에서 처리하나요?,TP0202,D012,KDN0069,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0607,비상근무 및 재난 대응에 대한 규정이나 절차 알려줘,TP0203,D012,KDN0070,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0608,비상근무 및 재난 대응 관련된 담당자와 전화번호를 알려줘,TP0203,D012,KDN0070,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0609,비상근무 및 재난 대응 문제는 어느 부서에서 처리하나요?,TP0203,D012,KDN0070,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0610,품질 심사 및 개선에 대한 규정이나 절차 알려줘,TP0204,D012,KDN0064,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0611,품질 심사 및 개선 관련된 담당자와 전화번호를 알려줘,TP0204,D012,KDN0064,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0612,품질 심사 및 개선 문제는 어느 부서에서 처리하나요?,TP0204,D012,KDN0064,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0613,연구과제 기획 및 지원에 대한 규정이나 절차 알려줘,TP0205,D013,KDN0078,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0614,연구과제 기획 및 지원 관련된 담당자와 전화번호를 알려줘,TP0205,D013,KDN0078,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0615,연구과제 기획 및 지원 문제는 어느 부서에서 처리하나요?,TP0205,D013,KDN0078,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0616,특허 및 지식재산권에 대한 규정이나 절차 알려줘,TP0206,D013,KDN0079,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0617,특허 및 지식재산권 관련된 담당자와 전화번호를 알려줘,TP0206,D013,KDN0079,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0618,특허 및 지식재산권 문제는 어느 부서에서 처리하나요?,TP0206,D013,KDN0079,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0619,해외근무 신청 및 운영에 대한 규정이나 절차 알려줘,TP0207,D014,KDN0088,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0620,해외근무 신청 및 운영 관련된 담당자와 전화번호를 알려줘,TP0207,D014,KDN0088,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0621,해외근무 신청 및 운영 문제는 어느 부서에서 처리하나요?,TP0207,D014,KDN0088,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0622,프로젝트 근로계약 문의에 대한 규정이나 절차 알려줘,TP0208,D014,KDN0089,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0623,프로젝트 근로계약 문의 관련된 담당자와 전화번호를 알려줘,TP0208,D014,KDN0089,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0624,프로젝트 근로계약 문의 문제는 어느 부서에서 처리하나요?,TP0208,D014,KDN0089,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0625,기록물 보관 및 폐기에 대한 규정이나 절차 알려줘,TP0209,D015,KDN0094,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0626,기록물 보관 및 폐기 관련된 담당자와 전화번호를 알려줘,TP0209,D015,KDN0094,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0627,기록물 보관 및 폐기 문제는 어느 부서에서 처리하나요?,TP0209,D015,KDN0094,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0628,사무실 시설·자산 문의에 대한 규정이나 절차 알려줘,TP0210,D015,KDN0095,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0629,사무실 시설·자산 문의 관련된 담당자와 전화번호를 알려줘,TP0210,D015,KDN0095,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0630,사무실 시설·자산 문의 문제는 어느 부서에서 처리하나요?,TP0210,D015,KDN0095,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0631,직무교육 및 교육이력에 대한 규정이나 절차 알려줘,TP0211,D016,KDN0099,ANSWER_FROM_RAG,direct,SYNTHETIC
+Q0632,직무교육 및 교육이력 관련된 담당자와 전화번호를 알려줘,TP0211,D016,KDN0099,SHOW_CONTACT_CARD,contact,SYNTHETIC
+Q0633,직무교육 및 교육이력 문제는 어느 부서에서 처리하나요?,TP0211,D016,KDN0099,SHOW_CONTACT_CARD,routing,SYNTHETIC
+Q0634,이건 어디에 문의하면 되나요?,,,,ASK_CLARIFICATION,ambiguous,SYNTHETIC
+Q0635,그거는 어떻게 해요?,,,,ASK_CLARIFICATION,ambiguous,SYNTHETIC
+Q0636,뭐부터 해야 되죠?,,,,ASK_CLARIFICATION,ambiguous,SYNTHETIC
+Q0637,규정을 검색해줘,,,,ASK_CLARIFICATION,ambiguous,SYNTHETIC
+Q0638,신청 화면이 안 열려요,,,,ASK_CLARIFICATION,ambiguous,SYNTHETIC

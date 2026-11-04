@@ -1,0 +1,5 @@
+# 제공된 Vector DB 생성 환경과 동일한 버전입니다. Python 3.11+.
+chromadb==1.5.9
+sentence-transformers==5.6.0
+jsonschema>=4,<5
+huggingface-hub>=0.34,<2

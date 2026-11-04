@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABC Electronics · 사내 업무 도우미</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script type="module" src="/static/js/chat.js"></script>
+</head>
+<body>
+    <aside class="sidebar">
+        <a class="brand" href="/" aria-label="ABC Electronics 홈"><span class="brand-mark">A<span>·</span></span><span>ABC Electronics<small>WORKPLACE ASSISTANT</small></span></a>
+        <button id="new-chat" class="new-chat" type="button"><span>＋</span> 새 대화 시작</button>
+        <div class="sidebar-heading">업무 분야 <span id="tool-total">TOOLS</span></div>
+        <nav id="domain-list" aria-label="업무 분야"><p class="loading-note">분야 목록을 불러오는 중입니다.</p></nav>
+        <div class="sidebar-bottom">
+            <div class="local-label"><span class="status-dot"></span> LOCAL WORKSPACE</div>
+            <p>가상 기업 · 가상 데이터<br>사번은 테스트용 식별값입니다.</p>
+            <a href="/docs" target="_blank" rel="noopener">API 인터페이스 ↗</a>
+        </div>
+    </aside>
+
+    <div class="workspace">
+        <header class="topbar">
+            <div class="breadcrumb">WORKSPACE <span>/</span> 사내 업무 도우미</div>
+            <div class="topbar-actions"><span id="connection" class="connection">서버 확인 중</span><span id="mode-badge" class="mode-badge">DEMO</span></div>
+        </header>
+        <div class="demo-notice"><span class="notice-icon">i</span><p id="mode-notice"><strong>사내 규정 검색</strong> 등록된 규정 문서와 사용자 정보를 바탕으로 답변합니다.</p></div>
+
+        <div class="work-area">
+            <main class="chat-panel">
+                <div class="chat-toolbar">
+                    <div><h1>사내 업무 도우미</h1><p>규정을 찾고, 업무의 다음 단계를 확인하세요.</p></div>
+                    <button id="end-chat" class="button-secondary" type="button" disabled>대화 끝내기 ↗</button>
+                </div>
+                <div class="session-bar">
+                    <label for="employee-id">테스트 사번</label><input id="employee-id" value="KDN0001" maxlength="50" autocomplete="off">
+                    <span class="session-divider"></span><span id="session-label">새 대화</span>
+                    <button id="open-directory" class="directory-trigger" type="button">사원·부서 찾기</button>
+                </div>
+                <section id="user-card" class="user-card" aria-label="현재 사원 정보" hidden></section>
+
+                <div id="chat-scroll" class="chat-scroll">
+                    <section id="welcome" class="welcome">
+                        <div class="welcome-symbol" aria-hidden="true">✳</div>
+                        <span class="eyebrow">YOUR EVERYDAY WORK COMPANION</span>
+                        <h2>어떤 업무가 궁금하세요?</h2>
+                        <p>질문을 입력하거나 아래 예시로<br>도구가 연결되는 흐름을 살펴보세요.</p>
+                        <div class="suggestions">
+                            <button type="button" data-question="연차휴가는 어떻게 신청하나요?"><span>01 · 근무 및 노사관리</span><strong>연차 신청 방법이 궁금해요</strong><b>↗</b></button>
+                            <button type="button" data-question="자기계발 교육비 지원 기준을 알려주세요"><span>02 · 급여 및 복리후생</span><strong>교육비 지원을 확인하고 싶어요</strong><b>↗</b></button>
+                            <button type="button" data-question="국내 출장 여비 기준을 알려주세요"><span>03 · 출장 및 여비</span><strong>출장 여비 기준을 알려주세요</strong><b>↗</b></button>
+                            <button type="button" data-question="사내 보안 규정을 알려주세요"><span>04 · 보안 및 안전관리</span><strong>보안 규정을 찾고 있어요</strong><b>↗</b></button>
+                        </div>
+                    </section>
+                    <div id="messages" role="log" aria-live="polite" aria-relevant="additions" aria-label="채팅 메시지"></div>
+                </div>
+
+                <div class="composer-area">
+                    <div id="closed-notice" class="closed-notice" hidden></div>
+                    <form id="chat-form" class="composer">
+                        <label class="sr-only" for="user-input">질문</label>
+                        <textarea id="user-input" rows="2" maxlength="4000" placeholder="사내 규정이나 업무에 대해 질문해주세요" required></textarea>
+                        <div class="composer-bottom"><span id="selected-domain">분야 자동 선택 · Ollama</span><button id="send-button" type="submit" disabled><span>보내기</span> ↑</button></div>
+                    </form>
+                    <div class="composer-caption"><span>Enter 전송 · Shift + Enter 줄바꿈</span><span>실제 개인정보는 입력하지 마세요.</span></div>
+                </div>
+            </main>
+
+            <aside class="inspector" aria-label="처리 정보">
+                <div class="inspector-header"><span class="eyebrow">BEHIND THE ANSWER</span><h2>처리 흐름</h2><p>마지막 질문의 처리 정보를 확인합니다.</p></div>
+                <ol id="processing-steps" class="processing-steps"></ol>
+                <section class="inspector-section"><h3>호출한 도구 <span id="tool-count">0</span></h3><div id="tool-results"><p class="empty-note">질문을 보내면 선택된 분야가 표시됩니다.</p></div></section>
+                <section class="inspector-section"><h3>문서 근거</h3><div id="source-list"><p class="empty-note">아직 검색된 출처가 없습니다.</p></div></section>
+                <details class="context-details"><summary>컨텍스트 살펴보기</summary><pre id="context-output">질문·이전 대화·도구 결과가 이곳에 모입니다.</pre></details>
+                <div class="storage-note"><span>저장소</span><strong id="storage-label">확인 중</strong><p id="storage-description">서버의 저장 설정을 확인합니다.</p></div>
+            </aside>
+        </div>
+    </div>
+
+    <dialog id="employee-dialog" class="directory-dialog" aria-labelledby="employee-title">
+        <div class="directory-header"><div><span class="eyebrow">PEOPLE</span><h2 id="employee-title">사원·부서 찾기</h2></div><button id="close-directory" class="button-secondary" type="button">닫기</button></div>
+        <form id="employee-search-form" class="directory-search">
+            <label class="sr-only" for="employee-query">사원 검색</label><input id="employee-query" type="search" maxlength="100" placeholder="이름, 사번 또는 부서">
+            <label class="sr-only" for="employee-department">부서 선택</label><select id="employee-department"><option value="">전체 부서</option></select>
+            <button type="submit" class="button-primary">검색</button>
+        </form>
+        <p id="directory-count" class="directory-count" role="status"></p>
+        <div id="employee-results" class="employee-results"></div>
+        <button id="directory-more" type="button" class="button-secondary" hidden>더 보기</button>
+    </dialog>
+
+    <dialog id="feedback-dialog" aria-labelledby="feedback-title">
+        <form id="feedback-form">
+            <span class="eyebrow">BEFORE YOU GO</span><h2 id="feedback-title">이번 대화는 어떠셨나요?</h2>
+            <p class="dialog-description">평가는 선택사항입니다. 제출하면 대화를 종료하고,<br>설정된 n8n 주소로 평가와 대화 정보를 전송합니다.</p>
+            <fieldset class="rating-options"><legend class="sr-only">만족도 선택</legend>
+                <label><input type="radio" name="rating" value="helpful"><span>☺<small>도움이 됐어요</small></span></label>
+                <label><input type="radio" name="rating" value="neutral"><span>◉<small>보통이에요</small></span></label>
+                <label><input type="radio" name="rating" value="unhelpful"><span>☹<small>아쉬웠어요</small></span></label>
+            </fieldset>
+            <label class="comment-label" for="feedback-comment">의견 <span>선택</span></label>
+            <textarea id="feedback-comment" maxlength="1000" rows="3" placeholder="개선할 점을 남겨주세요"></textarea>
+            <p id="feedback-storage-note" class="feedback-note">평가와 대화를 저장합니다. 웹훅 주소는 서버 설정에서 관리합니다.</p>
+            <p id="feedback-error" class="error-text" role="alert"></p>
+            <div class="dialog-actions"><button id="cancel-feedback" class="button-secondary" type="button">계속 대화하기</button><button id="submit-feedback" class="button-primary" type="submit">제출하고 대화 종료</button></div>
+        </form>
+    </dialog>
+</body>
+</html>

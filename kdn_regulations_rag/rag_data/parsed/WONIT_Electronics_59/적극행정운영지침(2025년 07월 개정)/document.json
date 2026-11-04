@@ -1,0 +1,7089 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "적극행정운영지침(2025년 07월 개정)",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 13148812428242851470,
+    "filename": "적극행정운영지침(2025년 07월 개정).pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/tables/0"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/tables/1"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/tables/2"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/35"
+      },
+      {
+        "$ref": "#/texts/36"
+      },
+      {
+        "$ref": "#/texts/37"
+      },
+      {
+        "$ref": "#/groups/4"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/42"
+      },
+      {
+        "$ref": "#/tables/3"
+      },
+      {
+        "$ref": "#/groups/5"
+      },
+      {
+        "$ref": "#/texts/45"
+      },
+      {
+        "$ref": "#/groups/6"
+      },
+      {
+        "$ref": "#/texts/48"
+      },
+      {
+        "$ref": "#/groups/7"
+      },
+      {
+        "$ref": "#/texts/54"
+      },
+      {
+        "$ref": "#/groups/8"
+      },
+      {
+        "$ref": "#/pictures/3"
+      },
+      {
+        "$ref": "#/texts/61"
+      },
+      {
+        "$ref": "#/tables/4"
+      },
+      {
+        "$ref": "#/groups/9"
+      },
+      {
+        "$ref": "#/texts/64"
+      },
+      {
+        "$ref": "#/groups/10"
+      },
+      {
+        "$ref": "#/texts/73"
+      },
+      {
+        "$ref": "#/texts/74"
+      },
+      {
+        "$ref": "#/texts/75"
+      },
+      {
+        "$ref": "#/groups/11"
+      },
+      {
+        "$ref": "#/pictures/4"
+      },
+      {
+        "$ref": "#/texts/82"
+      },
+      {
+        "$ref": "#/tables/5"
+      },
+      {
+        "$ref": "#/groups/13"
+      },
+      {
+        "$ref": "#/texts/87"
+      },
+      {
+        "$ref": "#/texts/88"
+      },
+      {
+        "$ref": "#/texts/89"
+      },
+      {
+        "$ref": "#/texts/90"
+      },
+      {
+        "$ref": "#/texts/91"
+      },
+      {
+        "$ref": "#/texts/92"
+      },
+      {
+        "$ref": "#/texts/93"
+      },
+      {
+        "$ref": "#/texts/94"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        },
+        {
+          "$ref": "#/texts/32"
+        },
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/texts/39"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/46"
+        },
+        {
+          "$ref": "#/texts/47"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/49"
+        },
+        {
+          "$ref": "#/texts/50"
+        },
+        {
+          "$ref": "#/texts/51"
+        },
+        {
+          "$ref": "#/texts/52"
+        },
+        {
+          "$ref": "#/texts/53"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/55"
+        },
+        {
+          "$ref": "#/texts/56"
+        },
+        {
+          "$ref": "#/texts/57"
+        },
+        {
+          "$ref": "#/texts/58"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/62"
+        },
+        {
+          "$ref": "#/texts/63"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/65"
+        },
+        {
+          "$ref": "#/texts/66"
+        },
+        {
+          "$ref": "#/texts/67"
+        },
+        {
+          "$ref": "#/texts/68"
+        },
+        {
+          "$ref": "#/texts/69"
+        },
+        {
+          "$ref": "#/texts/70"
+        },
+        {
+          "$ref": "#/texts/71"
+        },
+        {
+          "$ref": "#/texts/72"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/12"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    },
+    {
+      "self_ref": "#/groups/12",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/76"
+        },
+        {
+          "$ref": "#/texts/77"
+        },
+        {
+          "$ref": "#/texts/78"
+        },
+        {
+          "$ref": "#/texts/79"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/83"
+        },
+        {
+          "$ref": "#/texts/84"
+        },
+        {
+          "$ref": "#/texts/85"
+        },
+        {
+          "$ref": "#/texts/86"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 68.33333333333333,
+            "t": 785.0,
+            "r": 93.66666666666666,
+            "b": 771.6666666666666,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 66.66666666666667,
+            "t": 767.3333333333334,
+            "r": 100.33333333333334,
+            "b": 754.6666666666666,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 188.29795,
+            "t": 782.05441925,
+            "r": 308.23295,
+            "b": 767.085777875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "적극행정운영지침",
+      "text": "적극행정운영지침",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 266.73544,
+            "t": 706.2432702,
+            "r": 328.14216,
+            "b": 694.2683571,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "제1장 총칙",
+      "text": "제1장 총칙",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.60932,
+            "t": 664.904767384,
+            "r": 538.26828,
+            "b": 614.331077332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            113
+          ]
+        }
+      ],
+      "orig": "제1조(목적) 이 지침은 WONIT Electronics 직원의 적극적인 업무처리를 장려하고, 소극적인 업 무처리를 예방하는 등 회사의 적극행정 문화를 조성함으로써 회사 경쟁력 확보와 국민 편익 증진을 목적으로 한다.",
+      "text": "제1조(목적) 이 지침은 WONIT Electronics 직원의 적극적인 업무처리를 장려하고, 소극적인 업 무처리를 예방하는 등 회사의 적극행정 문화를 조성함으로써 회사 경쟁력 확보와 국민 편익 증진을 목적으로 한다."
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.60932,
+            "t": 585.791227384,
+            "r": 367.93323482,
+            "b": 574.774307332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "제2조(정의) 이 지침에서 사용하는 용어의 뜻은 다음과 같다.",
+      "text": "제2조(정의) 이 지침에서 사용하는 용어의 뜻은 다음과 같다."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 67.523405,
+            "t": 566.012842384,
+            "r": 538.26828,
+            "b": 515.439152332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            105
+          ]
+        }
+      ],
+      "orig": "1. \"적극행정\"이란 직원이 불합리한 규제의 개선 등 WONIT Electronics(이하 \"회사\"라 한 다)와 공공의 이익을 위하여 창의성과 전문성을 바탕으로 적극적으로 업무를 처리하는 행위를 말한다.",
+      "text": "\"적극행정\"이란 직원이 불합리한 규제의 개선 등 WONIT Electronics(이하 \"회사\"라 한 다)와 공공의 이익을 위하여 창의성과 전문성을 바탕으로 적극적으로 업무를 처리하는 행위를 말한다.",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 67.523405,
+            "t": 506.677687384,
+            "r": 538.26828,
+            "b": 475.88238233199996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            83
+          ]
+        }
+      ],
+      "orig": "2. \"소극행정\"이란 직원의 부작위 또는 직무태만 등 소극적 업무행태로 회사와 공공의 이 익을 침해하거나 재정상 손실을 발생하게 하는 행위를 말한다.",
+      "text": "\"소극행정\"이란 직원의 부작위 또는 직무태만 등 소극적 업무행태로 회사와 공공의 이 익을 침해하거나 재정상 손실을 발생하게 하는 행위를 말한다.",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 67.523405,
+            "t": 467.120917384,
+            "r": 538.26828,
+            "b": 396.76884233199996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            148
+          ]
+        }
+      ],
+      "orig": "3. \"사전컨설팅\"이란 직원이 불명확한 규정 등으로 인해 적극적인 업무추진이 어려운 경 우 「감사규정 시행세칙」 제37조부터 제44조까지에서 정하는 바에 따라 사전에 회사의 자체감사기구에 신청하여 업무처리 방향 및 방법 등에 대하여 미리 의견을 받는 것을 말 한다.",
+      "text": "\"사전컨설팅\"이란 직원이 불명확한 규정 등으로 인해 적극적인 업무추진이 어려운 경 우 「감사규정 시행세칙」 제37조부터 제44조까지에서 정하는 바에 따라 사전에 회사의 자체감사기구에 신청하여 업무처리 방향 및 방법 등에 대하여 미리 의견을 받는 것을 말 한다.",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 67.523405,
+            "t": 388.007377384,
+            "r": 538.26828,
+            "b": 337.43368733200003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            130
+          ]
+        }
+      ],
+      "orig": "4. \"적극업무 면책\"이란 적극행정에 따른 업무처리 과정에서 발생한 부분적인 절차상 하 자 또는 비효율, 손실 등과 관련하여 그 업무를 처리한 직원에 대한 인사상의 불이익한 처분 요구 등을 하지 않거나 감경하여 처분하는 것을 말한다.",
+      "text": "\"적극업무 면책\"이란 적극행정에 따른 업무처리 과정에서 발생한 부분적인 절차상 하 자 또는 비효율, 손실 등과 관련하여 그 업무를 처리한 직원에 대한 인사상의 불이익한 처분 요구 등을 하지 않거나 감경하여 처분하는 것을 말한다.",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 67.523405,
+            "t": 328.67222238399995,
+            "r": 538.26828,
+            "b": 297.87691733200006,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            52
+          ]
+        }
+      ],
+      "orig": "5. \"적극행정 총괄부서\"란 적극행정 추진에 관한 제반 사항을 총괄ᆞ주관하는 부서를 말 한다.",
+      "text": "\"적극행정 총괄부서\"란 적극행정 추진에 관한 제반 사항을 총괄ᆞ주관하는 부서를 말 한다.",
+      "enumerated": true,
+      "marker": "5."
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 67.523405,
+            "t": 289.1154523839999,
+            "r": 538.26828,
+            "b": 258.32014733200003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            90
+          ]
+        }
+      ],
+      "orig": "6. \"적극행정 지원부서\"란 적극행정 업무의 효율적 추진을 위한 사항을 지원하는 부서로 서 회사의 감사ᆞ홍보ᆞ법무ᆞ인사ᆞ교육 등의 업무를 담당하는 부서를 말한다.",
+      "text": "\"적극행정 지원부서\"란 적극행정 업무의 효율적 추진을 위한 사항을 지원하는 부서로 서 회사의 감사ᆞ홍보ᆞ법무ᆞ인사ᆞ교육 등의 업무를 담당하는 부서를 말한다.",
+      "enumerated": true,
+      "marker": "6."
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.60932,
+            "t": 229.78029738399994,
+            "r": 538.26828,
+            "b": 179.20660733199998,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            144
+          ]
+        }
+      ],
+      "orig": "제3조(적극행정 총괄부서 및 지원부서 지정) 회사는 적극행정을 체계적ᆞ효율적으로 추진하기 위하여 적극행정 총괄부서 및 지원부서를 지정하여 운영해야 하며, 적극행정 총괄부서 상위 조직의 부서장을 적극행정 책임관(이하 \"책임관\"이라 한다)으로 지정하여 운영한다.",
+      "text": "제3조(적극행정 총괄부서 및 지원부서 지정) 회사는 적극행정을 체계적ᆞ효율적으로 추진하기 위하여 적극행정 총괄부서 및 지원부서를 지정하여 운영해야 하며, 적극행정 총괄부서 상위 조직의 부서장을 적극행정 책임관(이하 \"책임관\"이라 한다)으로 지정하여 운영한다."
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.60932,
+            "t": 150.666757384,
+            "r": 538.26828,
+            "b": 119.87145233199999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "제4조(적극행정 실행 계획 수립 등) ① 적극행정 총괄부서는 회사의 적극행정 실행 계획을 수 립하여 시행하여야 한다.",
+      "text": "제4조(적극행정 실행 계획 수립 등) ① 적극행정 총괄부서는 회사의 적극행정 실행 계획을 수 립하여 시행하여야 한다."
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 67.523405,
+            "t": 111.10998738399996,
+            "r": 451.28805982,
+            "b": 100.09306733200003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            41
+          ]
+        }
+      ],
+      "orig": "② 제1항에 따라 수립하는 계획에는 다음 각 호의 사항이 포함되어야 한다.",
+      "text": "② 제1항에 따라 수립하는 계획에는 다음 각 호의 사항이 포함되어야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 67.523405,
+            "t": 91.3316023839999,
+            "r": 242.50857,
+            "b": 80.31468233199996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "1. 적극행정 추진체계에 관한 사항",
+      "text": "적극행정 추진체계에 관한 사항",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 68.66666666666667,
+            "t": 784.3333333333334,
+            "r": 94.0,
+            "b": 771.6666666666666,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.66666666666667,
+            "t": 766.6666666666666,
+            "r": 99.66666666666666,
+            "b": 756.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 188.29795,
+            "t": 782.05441925,
+            "r": 308.23295,
+            "b": 767.085777875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "적극행정운영지침",
+      "text": "적극행정운영지침",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.523405,
+            "t": 727.8359923840001,
+            "r": 313.869559182,
+            "b": 716.819072332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "2. 적극행정 우수사례 선발 및 보상에 관한 사항",
+      "text": "적극행정 우수사례 선발 및 보상에 관한 사항",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.523405,
+            "t": 708.057607384,
+            "r": 264.456675,
+            "b": 697.0406873320001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "3. 적극행정 교육 및 확산에 관한 사항",
+      "text": "적극행정 교육 및 확산에 관한 사항",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.523405,
+            "t": 688.2792223839999,
+            "r": 346.851684182,
+            "b": 677.262302332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "4. 사전컨설팅 및 적극행정 면책제도 운영에 관한 사항",
+      "text": "사전컨설팅 및 적극행정 면책제도 운영에 관한 사항",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.523405,
+            "t": 668.500837384,
+            "r": 264.456675,
+            "b": 657.483917332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "5. 소극행정 예방 및 점검에 관한 사항",
+      "text": "소극행정 예방 및 점검에 관한 사항",
+      "enumerated": true,
+      "marker": "5."
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.523405,
+            "t": 648.722452384,
+            "r": 368.92006,
+            "b": 637.705532332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "6. 적극행정을 공유ᆞ확산하기 위한 소통 채널에 관한 사항",
+      "text": "적극행정을 공유ᆞ확산하기 위한 소통 채널에 관한 사항",
+      "enumerated": true,
+      "marker": "6."
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.523405,
+            "t": 628.9440673839999,
+            "r": 302.95581,
+            "b": 617.927147332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "7. 그 밖에 적극행정 장려를 위해 필요한 사항",
+      "text": "그 밖에 적극행정 장려를 위해 필요한 사항",
+      "enumerated": true,
+      "marker": "7."
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.283535,
+            "t": 609.165682384,
+            "r": 538.26828,
+            "b": 538.813607332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            159
+          ]
+        }
+      ],
+      "orig": "③ 책임관은 우수사례 발굴 및 전파 등 적극행정 활성화를 위해 필요하다고 인정하는 경우 본사 각 처, 실, 원, 센터장 및 사업소장에게 적극행정 추진계획과 그 성과에 대한 자료의 제출 등을 요구할 수 있다. 이 경우 그 요구를 받은 부서장은 특별한 사정이 없으면 이에 응 하여야 한다.",
+      "text": "③ 책임관은 우수사례 발굴 및 전파 등 적극행정 활성화를 위해 필요하다고 인정하는 경우 본사 각 처, 실, 원, 센터장 및 사업소장에게 적극행정 추진계획과 그 성과에 대한 자료의 제출 등을 요구할 수 있다. 이 경우 그 요구를 받은 부서장은 특별한 사정이 없으면 이에 응 하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.283535,
+            "t": 530.052142384,
+            "r": 538.267944182,
+            "b": 499.256837332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            64
+          ]
+        }
+      ],
+      "orig": "④ 책임관은 본사 및 사업소에서 시행한 적극행정의 내용ᆞ방법 및 성과 등을 정기적으로 또는 수시로 평가할 수 있다.",
+      "text": "④ 책임관은 본사 및 사업소에서 시행한 적극행정의 내용ᆞ방법 및 성과 등을 정기적으로 또는 수시로 평가할 수 있다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.60932,
+            "t": 470.716987384,
+            "r": 538.148009182,
+            "b": 439.921682332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            97
+          ]
+        }
+      ],
+      "orig": "제5조(적극행정 교육) ① 사장은 회사 임직원을 대상으로 적극행정 관련 교육을 연 1회 이상 실시하여야 하며 다음 각 호의 어느 하나에 해당하는 교육 방법을 활용할 수 있다.",
+      "text": "제5조(적극행정 교육) ① 사장은 회사 임직원을 대상으로 적극행정 관련 교육을 연 1회 이상 실시하여야 하며 다음 각 호의 어느 하나에 해당하는 교육 방법을 활용할 수 있다."
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.523405,
+            "t": 431.160217384,
+            "r": 379.95408,
+            "b": 420.143297332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "1. 직장교육 형태의 집합교육(외부전문강사 교육을 포함한다)",
+      "text": "직장교육 형태의 집합교육(외부전문강사 교육을 포함한다)",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.523405,
+            "t": 411.381832384,
+            "r": 443.51963,
+            "b": 400.36491233199996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": "2. 이러닝(자체 개발, 타 기관 및 정부 교육프로그램 활용 등을 포함한다)",
+      "text": "이러닝(자체 개발, 타 기관 및 정부 교육프로그램 활용 등을 포함한다)",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.523405,
+            "t": 391.603447384,
+            "r": 335.937935,
+            "b": 380.58652733199995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "3. 그 밖에 사장이 효과적이라 판단하여 정하는 방법",
+      "text": "그 밖에 사장이 효과적이라 판단하여 정하는 방법",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.523405,
+            "t": 371.825062384,
+            "r": 538.2676083639999,
+            "b": 360.808142332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            48
+          ]
+        }
+      ],
+      "orig": "② 적극행정 총괄부서는 회사 업무 특성을 반영한 적극행정 관련 교육 실시를 교육담당부서",
+      "text": "② 적극행정 총괄부서는 회사 업무 특성을 반영한 적극행정 관련 교육 실시를 교육담당부서",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.283535,
+            "t": 352.046677384,
+            "r": 372.61069982,
+            "b": 341.02975733200003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "의 연간 교육훈련 계획 수립 시 반영하도록 요구할 수 있다.",
+      "text": "의 연간 교육훈련 계획 수립 시 반영하도록 요구할 수 있다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.283535,
+            "t": 332.26829238399995,
+            "r": 538.26828,
+            "b": 301.472987332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            92
+          ]
+        }
+      ],
+      "orig": "③ 교육담당부서는 적극행정 교육 실시에 필요한 사항을 계획하여 회사 임직원 전원 또는 직급별ᆞ직군별 임직원, 승진자, 신입사원 등에게 적절한 교육을 시행할 수 있다.",
+      "text": "③ 교육담당부서는 적극행정 교육 실시에 필요한 사항을 계획하여 회사 임직원 전원 또는 직급별ᆞ직군별 임직원, 승진자, 신입사원 등에게 적절한 교육을 시행할 수 있다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.283535,
+            "t": 292.711522384,
+            "r": 538.26828,
+            "b": 261.916217332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "④ 그 밖에 적극행정 교육 실시에 필요한 사항은 교육담당부서에서 수립한 계획 및 지침에 따른다.",
+      "text": "④ 그 밖에 적극행정 교육 실시에 필요한 사항은 교육담당부서에서 수립한 계획 및 지침에 따른다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 236.75169,
+            "t": 233.3600652,
+            "r": 358.12591,
+            "b": 221.3851520999999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "제2장 적극행정위원회",
+      "text": "제2장 적극행정위원회",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.60932,
+            "t": 192.02156238399994,
+            "r": 538.26828,
+            "b": 161.22625733200005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            74
+          ]
+        }
+      ],
+      "orig": "제6조(설치) 회사는 적극행정 추진에 관한 사항을 심의ᆞ의결하기 위하여 적극행정위원회(이 하 \"위원회\"라 한다)를 설치하여 운영한다.",
+      "text": "제6조(설치) 회사는 적극행정 추진에 관한 사항을 심의ᆞ의결하기 위하여 적극행정위원회(이 하 \"위원회\"라 한다)를 설치하여 운영한다."
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.60932,
+            "t": 132.68640738399995,
+            "r": 362.53615981999997,
+            "b": 121.66948733200002,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "제7조(기능) 위원회는 다음 각 호의 사항을 심의ᆞ의결한다.",
+      "text": "제7조(기능) 위원회는 다음 각 호의 사항을 심의ᆞ의결한다."
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.523405,
+            "t": 112.90802238399999,
+            "r": 313.869559182,
+            "b": 101.89110233200006,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "1. 회사의 적극행정 실행 계획 내용에 관한 사항",
+      "text": "회사의 적극행정 실행 계획 내용에 관한 사항",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.523405,
+            "t": 93.12963738399992,
+            "r": 313.869559182,
+            "b": 82.11271733199999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "2. 적극행정 우수사례 선발 및 보상에 관한 사항",
+      "text": "적극행정 우수사례 선발 및 보상에 관한 사항",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 68.66666666666667,
+            "t": 784.3333333333334,
+            "r": 94.0,
+            "b": 771.6666666666666,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.66666666666667,
+            "t": 766.6666666666666,
+            "r": 99.66666666666666,
+            "b": 756.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 188.29795,
+            "t": 782.05441925,
+            "r": 308.23295,
+            "b": 767.085777875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "적극행정운영지침",
+      "text": "적극행정운영지침",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.523405,
+            "t": 727.8359923840001,
+            "r": 538.267944182,
+            "b": 697.0406873320001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            96
+          ]
+        }
+      ],
+      "orig": "3. 자체감사기구의 사전컨설팅 내용이 국민 생활에 미치는 영향이 크거나 다수의 이해관계 자와 관련되는 등 신중한 검토가 필요하다고 판단되어 자체감사기구가 자문을 요청한 사항",
+      "text": "자체감사기구의 사전컨설팅 내용이 국민 생활에 미치는 영향이 크거나 다수의 이해관계 자와 관련되는 등 신중한 검토가 필요하다고 판단되어 자체감사기구가 자문을 요청한 사항",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.523405,
+            "t": 688.2792223839999,
+            "r": 429.24702918199995,
+            "b": 677.262302332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            39
+          ]
+        }
+      ],
+      "orig": "4. 그 밖에 적극행정 관련 사항 중 위원장이 필요하다고 인정하는 사항",
+      "text": "그 밖에 적극행정 관련 사항 중 위원장이 필요하다고 인정하는 사항",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.60932,
+            "t": 648.722452384,
+            "r": 475.15512481999997,
+            "b": 637.705532332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            46
+          ]
+        }
+      ],
+      "orig": "제8조(구성 등) ① 위원회는 위원장 1명을 포함한 8명 이내의 위원으로 구성한다.",
+      "text": "제8조(구성 등) ① 위원회는 위원장 1명을 포함한 8명 이내의 위원으로 구성한다."
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.283535,
+            "t": 628.9440673839999,
+            "r": 538.26828,
+            "b": 598.1487623319999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            80
+          ]
+        }
+      ],
+      "orig": "② 위원장은 책임관이 되고 위원은 외부 전문가 또는 회사의 부서장 중에서 책임관이 위촉 하거나 임명하되, 외부위원은 2명 이상 위촉하여야 한다.",
+      "text": "② 위원장은 책임관이 되고 위원은 외부 전문가 또는 회사의 부서장 중에서 책임관이 위촉 하거나 임명하되, 외부위원은 2명 이상 위촉하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.523405,
+            "t": 589.387297384,
+            "r": 513.5343248199999,
+            "b": 578.370377332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            47
+          ]
+        }
+      ],
+      "orig": "③ 위원회의 사무를 처리하기 위해 간사를 두되, 간사는 적극행정 총괄부서장으로 한다.",
+      "text": "③ 위원회의 사무를 처리하기 위해 간사를 두되, 간사는 적극행정 총괄부서장으로 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.60932,
+            "t": 549.830527384,
+            "r": 538.267944182,
+            "b": 519.035222332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            56
+          ]
+        }
+      ],
+      "orig": "제9조(위원회의 운영) ① 위원회 회의의 소집은 사장 또는 위원장이 필요한 경우에 위원장이 소집한다.",
+      "text": "제9조(위원회의 운영) ① 위원회 회의의 소집은 사장 또는 위원장이 필요한 경우에 위원장이 소집한다."
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.283535,
+            "t": 510.273757384,
+            "r": 538.26828,
+            "b": 459.70006733199995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            123
+          ]
+        }
+      ],
+      "orig": "② 위원장은 회의를 소집하려는 경우에는 회의 개최 3일 전까지 회의의 일시ᆞ장소 및 안건 을 위원에게 통보하여야 한다. 다만, 긴급히 개최하여야 하거나 부득이한 사유가 있는 경우 에는 회의 개최 전날까지 통보할 수 있다.",
+      "text": "② 위원장은 회의를 소집하려는 경우에는 회의 개최 3일 전까지 회의의 일시ᆞ장소 및 안건 을 위원에게 통보하여야 한다. 다만, 긴급히 개최하여야 하거나 부득이한 사유가 있는 경우 에는 회의 개최 전날까지 통보할 수 있다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.283535,
+            "t": 450.93860238400003,
+            "r": 538.26828,
+            "b": 420.143297332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            60
+          ]
+        }
+      ],
+      "orig": "③ 위원장이 부득이한 사유로 직무를 수행할 수 없을 때에는 위원장이 미리 지명한 위원이 그 직무를 대행한다.",
+      "text": "③ 위원장이 부득이한 사유로 직무를 수행할 수 없을 때에는 위원장이 미리 지명한 위원이 그 직무를 대행한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.283535,
+            "t": 411.381832384,
+            "r": 538.26828,
+            "b": 380.58652733199995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            54
+          ]
+        }
+      ],
+      "orig": "④ 위원회의 회의는 재적위원 과반수의 출석으로 개의하고, 출석 위원 과반수의 찬성으로 의 결한다.",
+      "text": "④ 위원회의 회의는 재적위원 과반수의 출석으로 개의하고, 출석 위원 과반수의 찬성으로 의 결한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.283535,
+            "t": 371.825062384,
+            "r": 538.26828,
+            "b": 341.02975733200003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            96
+          ]
+        }
+      ],
+      "orig": "⑤ 위원회는 안건 심의와 그 밖의 업무 수행을 위하여 필요하다고 인정하는 경우에는 이해 관계인 또는 관계 전문가를 출석하게 하여 의견을 듣거나 의견 제출을 요청할 수 있다.",
+      "text": "⑤ 위원회는 안건 심의와 그 밖의 업무 수행을 위하여 필요하다고 인정하는 경우에는 이해 관계인 또는 관계 전문가를 출석하게 하여 의견을 듣거나 의견 제출을 요청할 수 있다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.523405,
+            "t": 332.26829238399995,
+            "r": 471.79694481999996,
+            "b": 321.25137233199996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "⑥ 이 조에서 정한 것 외에 위원회의 운영에 필요한 사항은 위원회에서 정한다.",
+      "text": "⑥ 이 조에서 정한 것 외에 위원회의 운영에 필요한 사항은 위원회에서 정한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.60932,
+            "t": 292.711522384,
+            "r": 538.148345,
+            "b": 261.916217332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            76
+          ]
+        }
+      ],
+      "orig": "제10조(위원의 제척, 기피 및 회피) ① 위원회 위원이 다음 각 호의 어느 하나에 해당하는 경 우 해당 안건의 심의ᆞ의결에서 제척된다.",
+      "text": "제10조(위원의 제척, 기피 및 회피) ① 위원회 위원이 다음 각 호의 어느 하나에 해당하는 경 우 해당 안건의 심의ᆞ의결에서 제척된다."
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.523405,
+            "t": 253.15475238399995,
+            "r": 538.26828,
+            "b": 202.581062332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            109
+          ]
+        }
+      ],
+      "orig": "1. 위원 또는 그 배우자나 배우자였던 사람이 해당 안건의 당사자(당사자가 법인ᆞ단체 등 인 경우에는 그 임원 또는 직원을 포함한다)가 되거나 그 안건의 당사자와 공동권리자 또는 공동의무자인 경우",
+      "text": "위원 또는 그 배우자나 배우자였던 사람이 해당 안건의 당사자(당사자가 법인ᆞ단체 등 인 경우에는 그 임원 또는 직원을 포함한다)가 되거나 그 안건의 당사자와 공동권리자 또는 공동의무자인 경우",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.523405,
+            "t": 193.81959738399996,
+            "r": 538.26828,
+            "b": 163.02429233199996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        }
+      ],
+      "orig": "2. 위원이 해당 안건의 당사자(당사자가 법인ᆞ단체 등인 경우에는 그 임원 또는 직원을 포 함한다)와 친족이거나 친족이었던 경우",
+      "text": "위원이 해당 안건의 당사자(당사자가 법인ᆞ단체 등인 경우에는 그 임원 또는 직원을 포 함한다)와 친족이거나 친족이었던 경우",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.523405,
+            "t": 154.26282738399993,
+            "r": 538.26828,
+            "b": 123.46752233200004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            66
+          ]
+        }
+      ],
+      "orig": "3. 위원이 해당 안건에 대하여 증언, 진술, 자문, 연구, 용역 또는 감정 등의 업무를 수행하 고 있거나 수행한 경우",
+      "text": "위원이 해당 안건에 대하여 증언, 진술, 자문, 연구, 용역 또는 감정 등의 업무를 수행하 고 있거나 수행한 경우",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.523405,
+            "t": 114.7060573839999,
+            "r": 538.267944182,
+            "b": 83.91075233200002,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "4. 위원이나 위원이 속한 법인ᆞ단체 등이 해당 안건의 당사자의 대리인이거나 대리인이었 던 경우",
+      "text": "위원이나 위원이 속한 법인ᆞ단체 등이 해당 안건의 당사자의 대리인이거나 대리인이었 던 경우",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 68.66666666666667,
+            "t": 784.3333333333334,
+            "r": 94.0,
+            "b": 771.6666666666666,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.66666666666667,
+            "t": 766.6666666666666,
+            "r": 99.66666666666666,
+            "b": 756.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 188.29795,
+            "t": 782.05441925,
+            "r": 308.23295,
+            "b": 767.085777875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "적극행정운영지침",
+      "text": "적극행정운영지침",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.283535,
+            "t": 727.8359923840001,
+            "r": 538.267944182,
+            "b": 657.483917332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            155
+          ]
+        }
+      ],
+      "orig": "② 위원회 심의사항의 당사자는 제1항 각 호의 제척 사유가 있거나 위원에게 공정한 심의ᆞ 의결을 기대하기 어려운 사정이 있는 경우 위원회에 기피 신청을 할 수 있으며, 위원회는 의 결을 통해 기피 여부를 결정한다. 이 경우 기피 신청의 대상인 위원은 그 의결에 참여하지 못한다.",
+      "text": "② 위원회 심의사항의 당사자는 제1항 각 호의 제척 사유가 있거나 위원에게 공정한 심의ᆞ 의결을 기대하기 어려운 사정이 있는 경우 위원회에 기피 신청을 할 수 있으며, 위원회는 의 결을 통해 기피 여부를 결정한다. 이 경우 기피 신청의 대상인 위원은 그 의결에 참여하지 못한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.283535,
+            "t": 648.722452384,
+            "r": 538.26828,
+            "b": 617.927147332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            58
+          ]
+        }
+      ],
+      "orig": "③ 위원은 제1항 각 호의 제척 사유에 해당하는 경우 스스로 해당 안건의 심의ᆞ의결을 회 피하여야 한다.",
+      "text": "③ 위원은 제1항 각 호의 제척 사유에 해당하는 경우 스스로 해당 안건의 심의ᆞ의결을 회 피하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 188.77769,
+            "t": 589.3709952,
+            "r": 406.09991,
+            "b": 577.3960821000001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "제3장 적극행정 우수사례 선발 및 보상",
+      "text": "제3장 적극행정 우수사례 선발 및 보상",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.60932,
+            "t": 548.0324923840001,
+            "r": 538.26828,
+            "b": 517.237187332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            99
+          ]
+        }
+      ],
+      "orig": "제11조(적극행정 우수사례 선발) ① 책임관은 적극행정 우수사례를 지속 발굴ᆞ확산하기 위해 경진대회, 공모전 등을 개최하고 우수직원 또는 우수직원이 소속된 부서를 매년 선발한다.",
+      "text": "제11조(적극행정 우수사례 선발) ① 책임관은 적극행정 우수사례를 지속 발굴ᆞ확산하기 위해 경진대회, 공모전 등을 개최하고 우수직원 또는 우수직원이 소속된 부서를 매년 선발한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.283535,
+            "t": 508.475722384,
+            "r": 538.26828,
+            "b": 477.680417332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            62
+          ]
+        }
+      ],
+      "orig": "② 적극행정 우수사례는 다음 각 호의 어느 하나에 해당하는 직원 또는 해당 우수직원이 소 속된 부서를 선발한다.",
+      "text": "② 적극행정 우수사례는 다음 각 호의 어느 하나에 해당하는 직원 또는 해당 우수직원이 소 속된 부서를 선발한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.523405,
+            "t": 468.918952384,
+            "r": 330.420925,
+            "b": 457.902032332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            28
+          ]
+        }
+      ],
+      "orig": "1. 적극적으로 업무를 추진하여 성과를 창출한 경우",
+      "text": "적극적으로 업무를 추진하여 성과를 창출한 경우",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.523405,
+            "t": 449.140567384,
+            "r": 412.815934182,
+            "b": 438.12364733199996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "2. 불합리하거나 과도한 규제를 발굴ᆞ개선하여 성과를 창출한 경우",
+      "text": "불합리하거나 과도한 규제를 발굴ᆞ개선하여 성과를 창출한 경우",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.523405,
+            "t": 429.362182384,
+            "r": 407.29892418199995,
+            "b": 418.34526233199995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "3. 창의적ᆞ도전적 사업을 추진하고 성과 달성을 위해 노력한 경우",
+      "text": "창의적ᆞ도전적 사업을 추진하고 성과 달성을 위해 노력한 경우",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.523405,
+            "t": 409.583797384,
+            "r": 401.781914182,
+            "b": 398.566877332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "4. 그 밖에 적극적인 업무태도로 회사 직원에게 귀감이 되는 경우",
+      "text": "그 밖에 적극적인 업무태도로 회사 직원에게 귀감이 되는 경우",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.60932,
+            "t": 370.027027384,
+            "r": 538.147673364,
+            "b": 339.231722332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            86
+          ]
+        }
+      ],
+      "orig": "제12조(적극행정 우수사례 보상) ① 사장은 제11조에 따라 선발된 우수직원 또는 우수직원이 소속된 부서에 대해 포상금 지급 등의 보상을 제공하여야 한다.",
+      "text": "제12조(적극행정 우수사례 보상) ① 사장은 제11조에 따라 선발된 우수직원 또는 우수직원이 소속된 부서에 대해 포상금 지급 등의 보상을 제공하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/72",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.523405,
+            "t": 330.4702573839999,
+            "r": 460.88285981999996,
+            "b": 319.45333733200005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            41
+          ]
+        }
+      ],
+      "orig": "② 적극행정 우수직원으로 선발된 직원은 특별승진 대상자로 추천할 수 있다.",
+      "text": "② 적극행정 우수직원으로 선발된 직원은 특별승진 대상자로 추천할 수 있다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/73",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 170.78744,
+            "t": 290.89718519999997,
+            "r": 424.09016,
+            "b": 278.9222721,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "제4장 적극업무 면책 및 소극행정 예방ㆍ근절",
+      "text": "제4장 적극업무 면책 및 소극행정 예방ㆍ근절",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/74",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.60932,
+            "t": 249.5586823839999,
+            "r": 538.26828,
+            "b": 198.98499233200005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            114
+          ]
+        }
+      ],
+      "orig": "제13조(적극업무 면책) 위원회는 직원이 적극행정에 따른 업무처리 과정 및 결과에 대하여 감 사를 받게 되는 경우에는 해당 직원의 요청에 따라 「감사규정」 제36조에 따른 적극업무 면책을 건의할 수 있다.",
+      "text": "제13조(적극업무 면책) 위원회는 직원이 적극행정에 따른 업무처리 과정 및 결과에 대하여 감 사를 받게 되는 경우에는 해당 직원의 요청에 따라 「감사규정」 제36조에 따른 적극업무 면책을 건의할 수 있다."
+    },
+    {
+      "self_ref": "#/texts/75",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.60932,
+            "t": 170.44514238399995,
+            "r": 385.80354982,
+            "b": 159.42822233200002,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "제14조(소극행정의 유형) 소극행정의 유형은 다음 각 호와 같다.",
+      "text": "제14조(소극행정의 유형) 소극행정의 유형은 다음 각 호와 같다."
+    },
+    {
+      "self_ref": "#/texts/76",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.523405,
+            "t": 150.666757384,
+            "r": 482.37823418199997,
+            "b": 139.64983733200006,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            45
+          ]
+        }
+      ],
+      "orig": "1. 적당편의 : 문제해결 노력 없이 적당히 형식만 갖추어 부실하게 처리하는 경우",
+      "text": "적당편의 : 문제해결 노력 없이 적당히 형식만 갖추어 부실하게 처리하는 경우",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/77",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.523405,
+            "t": 130.88837238399992,
+            "r": 476.981495,
+            "b": 119.87145233199999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "2. 업무해태 : 합리적인 이유 없이 주어진 업무를 게을리하거나 불이행하는 경우",
+      "text": "업무해태 : 합리적인 이유 없이 주어진 업무를 게을리하거나 불이행하는 경우",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/78",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.523405,
+            "t": 111.10998738399996,
+            "r": 538.267944182,
+            "b": 100.09306733200003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "3. 탁상행정 : 법령이나 지침 등의 변화에도 불구하고 과거 규정에 따라 업무를 처리하거나",
+      "text": "탁상행정 : 법령이나 지침 등의 변화에도 불구하고 과거 규정에 따라 업무를 처리하거나",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/79",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 83.594695,
+            "t": 91.3316023839999,
+            "r": 347.451695,
+            "b": 80.31468233199996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "기존의 불합리한 업무 관행을 그대로 답습하는 경우",
+      "text": "기존의 불합리한 업무 관행을 그대로 답습하는 경우",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/80",
+      "parent": {
+        "$ref": "#/pictures/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 68.66666666666667,
+            "t": 784.3333333333334,
+            "r": 94.0,
+            "b": 771.6666666666666,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/81",
+      "parent": {
+        "$ref": "#/pictures/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 67.66666666666667,
+            "t": 766.6666666666666,
+            "r": 99.66666666666666,
+            "b": 756.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "WONIT Electronics",
+      "text": "WONIT Electronics"
+    },
+    {
+      "self_ref": "#/texts/82",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 188.29795,
+            "t": 782.05441925,
+            "r": 308.23295,
+            "b": 767.085777875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "적극행정운영지침",
+      "text": "적극행정운영지침",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/83",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 67.523405,
+            "t": 727.8359923840001,
+            "r": 538.26828,
+            "b": 697.0406873320001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            57
+          ]
+        }
+      ],
+      "orig": "4. 기관중심행정 : 자의적 판단 및 직무권한을 이용하여 국민 편익이 아닌 본인 편의를 중시 하는 경우",
+      "text": "기관중심행정 : 자의적 판단 및 직무권한을 이용하여 국민 편익이 아닌 본인 편의를 중시 하는 경우",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/84",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.60932,
+            "t": 668.500837384,
+            "r": 538.26828,
+            "b": 637.705532332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            85
+          ]
+        }
+      ],
+      "orig": "제15조(소극행정 예방 및 근절) ① 사장은 직원의 소극행정을 예방하기 위하여 노력하여야 하 고, 직원은 소극행정을 근절하기 위해 최선을 다하여야 한다.",
+      "text": "제15조(소극행정 예방 및 근절) ① 사장은 직원의 소극행정을 예방하기 위하여 노력하여야 하 고, 직원은 소극행정을 근절하기 위해 최선을 다하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/85",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 67.283535,
+            "t": 628.9440673839999,
+            "r": 538.267944182,
+            "b": 598.1487623319999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            55
+          ]
+        }
+      ],
+      "orig": "② 감사부서는 적극적으로 일하는 조직문화 조성을 위하여 소극행정에 대하여 필요 조치를 하여야 한다.",
+      "text": "② 감사부서는 적극적으로 일하는 조직문화 조성을 위하여 소극행정에 대하여 필요 조치를 하여야 한다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/86",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 67.283535,
+            "t": 589.387297384,
+            "r": 538.267944182,
+            "b": 558.591992332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            84
+          ]
+        }
+      ],
+      "orig": "③ 적극행정 총괄부서장은 임직원을 대상으로 소극행정 예방 및 근절을 위한 교육과 홍보를 실시하고 소극행정 예방을 위한 자체점검 활동을 시행할 수 있다.",
+      "text": "③ 적극행정 총괄부서장은 임직원을 대상으로 소극행정 예방 및 근절을 위한 교육과 홍보를 실시하고 소극행정 예방을 위한 자체점검 활동을 시행할 수 있다.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/87",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 266.73544,
+            "t": 530.0358401999999,
+            "r": 328.14216,
+            "b": 518.0609271000001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "제5장 보칙",
+      "text": "제5장 보칙",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/88",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.60932,
+            "t": 488.69733738400004,
+            "r": 538.26828,
+            "b": 457.902032332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            91
+          ]
+        }
+      ],
+      "orig": "제16조(합동위원회의 운영) 위원회의 위원장은 다른 기관 등과 관련된 현안을 심의하는 등 필 요한 경우 관계기관의 적극행정위원회와 합동으로 회의를 개최할 수 있다.",
+      "text": "제16조(합동위원회의 운영) 위원회의 위원장은 다른 기관 등과 관련된 현안을 심의하는 등 필 요한 경우 관계기관의 적극행정위원회와 합동으로 회의를 개최할 수 있다."
+    },
+    {
+      "self_ref": "#/texts/89",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 227.63663,
+            "t": 424.3113822,
+            "r": 364.242595,
+            "b": 412.3364691,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "부 칙 〈2020. 10. 06.〉",
+      "text": "부 칙 〈2020. 10. 06.〉",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/90",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.60932,
+            "t": 397.83663538400003,
+            "r": 261.79075982,
+            "b": 386.819715332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "이 규정은 2020. 10. 06.부터 시행한다.",
+      "text": "이 규정은 2020. 10. 06.부터 시행한다."
+    },
+    {
+      "self_ref": "#/texts/91",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 230.03533,
+            "t": 373.0074502,
+            "r": 361.819908,
+            "b": 361.0325371,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "부 칙 〈2024. 03. 12.>",
+      "text": "부 칙 〈2024. 03. 12.>"
+    },
+    {
+      "self_ref": "#/texts/92",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.60932,
+            "t": 346.41283438399995,
+            "r": 261.79075982,
+            "b": 335.395914332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "이 규정은 2024. 03. 12.부터 시행한다.",
+      "text": "이 규정은 2024. 03. 12.부터 시행한다."
+    },
+    {
+      "self_ref": "#/texts/93",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 233.033705,
+            "t": 321.70351819999996,
+            "r": 358.822228623,
+            "b": 309.7286051,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "부 칙 <2025. 7. 28.>",
+      "text": "부 칙 <2025. 7. 28.>",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/94",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.60932,
+            "t": 295.108902384,
+            "r": 253.51524482,
+            "b": 284.09198233200004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "이 지침은 2025. 8. 4. 부터 시행한다.",
+      "text": "이 지침은 2025. 8. 4. 부터 시행한다."
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 66.50849151611328,
+            "t": 791.4518051147461,
+            "r": 99.54010772705078,
+            "b": 756.7040786743164,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 66.00053405761719,
+            "t": 791.0894813537598,
+            "r": 99.8189926147461,
+            "b": 756.7383041381836,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/40"
+        },
+        {
+          "$ref": "#/texts/41"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 65.69552612304688,
+            "t": 791.2054443359375,
+            "r": 100.22063446044922,
+            "b": 756.6041259765625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/59"
+        },
+        {
+          "$ref": "#/texts/60"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 65.92871856689453,
+            "t": 791.0479850769043,
+            "r": 99.98088836669922,
+            "b": 756.7186508178711,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/80"
+        },
+        {
+          "$ref": "#/texts/81"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 66.23407745361328,
+            "t": 790.7995376586914,
+            "r": 99.83655548095703,
+            "b": 756.6536560058594,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 55.77646255493164,
+            "t": 779.3246192932129,
+            "r": 538.7091674804688,
+            "b": 51.00933837890625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 313.530014201875,
+              "t": 79.16167793886132,
+              "r": 349.6881289818083,
+              "b": 97.46031454937497,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 10,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 12,
+            "text": "지침",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 219.6234728125,
+              "t": 126.71651662499994,
+              "r": 305.255188828125,
+              "b": 140.37221785937504,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 6,
+            "text": "적극행정운영",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 403.3368849496875,
+              "t": 128.45929201600006,
+              "r": 445.9191335645,
+              "b": 138.55675690349995,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 6,
+            "end_col_offset_idx": 8,
+            "text": "제정일자",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 468.83023266,
+              "t": 129.38563964800005,
+              "r": 519.9078146420001,
+              "b": 137.62351680400002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 4,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 8,
+            "end_col_offset_idx": 12,
+            "text": "2020.10.06.",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 169.92610993164064,
+              "t": 189.153282,
+              "r": 181.15739606811525,
+              "b": 202.87266364062498,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "제",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 198.267546875,
+              "t": 194.9669285,
+              "r": 200.52757203125,
+              "b": 197.13955412500002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "․",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 216.61318044311523,
+              "t": 189.25816737499997,
+              "r": 243.0407815625,
+              "b": 202.81319737890624,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "개정",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 255.995635546875,
+              "t": 189.19823287500003,
+              "r": 281.99716875,
+              "b": 202.90824974999998,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "이력",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 404.90056,
+              "t": 161.46354300000007,
+              "r": 416.534255,
+              "b": 230.98756300000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 6,
+            "end_col_offset_idx": 7,
+            "text": "관 리 구 분",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 61.60255792613281,
+              "t": 251.500025756,
+              "r": 99.41691608480618,
+              "b": 261.49858373487496,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "개정번호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 114.01415292613281,
+              "t": 251.47796986000003,
+              "r": 156.3960435645,
+              "b": 261.532701449,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "개정일자",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 236.18847524,
+              "t": 251.49054861318746,
+              "r": 327.575227255,
+              "b": 261.49821757253903,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "변 경 내 용",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 405.4003956714453,
+              "t": 251.5331096,
+              "r": 415.0961743825,
+              "b": 261.4816971895,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 6,
+            "end_col_offset_idx": 7,
+            "text": "작",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 427.1836153452344,
+              "t": 251.5331096,
+              "r": 435.407106665,
+              "b": 261.370039216,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 7,
+            "end_col_offset_idx": 8,
+            "text": "성",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 452.1581282775,
+              "t": 251.56619344399996,
+              "r": 460.29571802749996,
+              "b": 261.47480472200004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 8,
+            "end_col_offset_idx": 9,
+            "text": "검",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 473.85245081749997,
+              "t": 252.55870876400002,
+              "r": 483.66307385,
+              "b": 260.17764233850005,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 9,
+            "end_col_offset_idx": 10,
+            "text": "토",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 498.8247655660938,
+              "t": 251.64338908000002,
+              "r": 508.39582967999996,
+              "b": 261.01714487999993,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 10,
+            "end_col_offset_idx": 11,
+            "text": "승",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 521.480858115,
+              "t": 251.5331096,
+              "r": 529.719413458164,
+              "b": 261.061256672,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 11,
+            "end_col_offset_idx": 12,
+            "text": "인",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 77.86276148,
+              "t": 291.099948596,
+              "r": 82.87220656,
+              "b": 299.3267978040001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "0",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 109.02523266,
+              "t": 291.088920648,
+              "r": 160.102814642,
+              "b": 299.3267978040001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "2020.10.06.",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 169.04444127661134,
+              "t": 290.7641955270001,
+              "r": 186.5409622175,
+              "b": 299.6786133190001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "규정",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 194.31669495460937,
+              "t": 290.67465338400007,
+              "r": 211.4879219575,
+              "b": 299.78432279337494,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "제정",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 401.707965259375,
+              "t": 290.7045007649999,
+              "r": 425.230936744375,
+              "b": 299.5990203030001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 6,
+            "end_col_offset_idx": 7,
+            "text": "장 호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 431.55324514841794,
+              "t": 290.75424640000006,
+              "r": 438.97226449125,
+              "b": 299.62886768399994,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 7,
+            "end_col_offset_idx": 8,
+            "text": "성",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 448.6885511503125,
+              "t": 290.7641955270001,
+              "r": 455.834091051875,
+              "b": 299.63881681099997,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 8,
+            "end_col_offset_idx": 9,
+            "text": "김",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 463.608877426875,
+              "t": 290.694551638,
+              "r": 485.74193718875,
+              "b": 299.7089659291055,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 9,
+            "end_col_offset_idx": 10,
+            "text": "미 경",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 495.43070626125,
+              "t": 290.7045007649999,
+              "r": 517.64962449125,
+              "b": 299.62886768399994,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 10,
+            "end_col_offset_idx": 11,
+            "text": "박 성",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 525.465473611875,
+              "t": 290.7068325916406,
+              "r": 533.374407284375,
+              "b": 299.320444747,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 11,
+            "end_col_offset_idx": 12,
+            "text": "철",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 78.34825836,
+              "t": 334.121891648,
+              "r": 82.30947154,
+              "b": 342.194349584,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "1",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 109.02523266,
+              "t": 334.11086370000004,
+              "r": 160.102814642,
+              "b": 342.359768804,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "2024.03.12.",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 169.144045654375,
+              "t": 325.676401384,
+              "r": 362.606966445625,
+              "b": 350.86585003807033,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "공정성 제고를 위한 민간 위원수 제한기준 합동위원회 조항 신설 등",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 369.14412856375,
+              "t": 325.7161978920001,
+              "r": 425.26951083875,
+              "b": 342.84092297,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 6,
+            "end_col_offset_idx": 7,
+            "text": "완화, 이 용",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 432.284014256875,
+              "t": 333.7872174,
+              "r": 439.530966696875,
+              "b": 342.373314001,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 7,
+            "end_col_offset_idx": 8,
+            "text": "일",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 448.918129228125,
+              "t": 333.727522638,
+              "r": 456.08917780499996,
+              "b": 342.809831948125,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 8,
+            "end_col_offset_idx": 9,
+            "text": "백",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 463.33602014841796,
+              "t": 333.74742089200004,
+              "r": 486.469867679375,
+              "b": 342.66183868400003,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 9,
+            "end_col_offset_idx": 10,
+            "text": "성 필",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 495.5256444179199,
+              "t": 333.797166527,
+              "r": 518.9536777462499,
+              "b": 342.711584319,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 10,
+            "end_col_offset_idx": 11,
+            "text": "정 수",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 525.2564269068749,
+              "t": 333.70249436539063,
+              "r": 533.946797071875,
+              "b": 342.752624467875,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 11,
+            "end_col_offset_idx": 12,
+            "text": "옥",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 77.96206765999999,
+              "t": 377.154862648,
+              "r": 82.7839344,
+              "b": 385.216292636,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "2",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 107.46607766,
+              "t": 377.1438347,
+              "r": 161.66316896993197,
+              "b": 385.409281726,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "2025. 7. 28.",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 168.7408452666992,
+              "t": 368.73921976500003,
+              "r": 394.08095379625,
+              "b": 393.69352945546876,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "사규 정비등을 위한",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 194.42697331312502,
+              "t": 368.759118019,
+              "r": 212.7023837675,
+              "b": 393.65839660075,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "체계 전부",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 219.44393269422852,
+              "t": 368.798914527,
+              "r": 237.60550726500003,
+              "b": 393.72213319559376,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "전면 개정",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 244.99008769422852,
+              "t": 368.719321511,
+              "r": 347.5942377475,
+              "b": 377.83894004737505,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 5,
+            "end_col_offset_idx": 6,
+            "text": "개편에 따른 조항 형식",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 401.8564094179199,
+              "t": 376.83013752700003,
+              "r": 424.66875431551756,
+              "b": 385.744555319,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 6,
+            "end_col_offset_idx": 7,
+            "text": "정 연",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 431.55359511499995,
+              "t": 376.780391892,
+              "r": 440.329823748125,
+              "b": 385.7594790095,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 7,
+            "end_col_offset_idx": 8,
+            "text": "복",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 448.6310594179199,
+              "t": 376.83013752700003,
+              "r": 455.7955169575,
+              "b": 385.744555319,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 8,
+            "end_col_offset_idx": 9,
+            "text": "정",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 463.29406304375,
+              "t": 376.73546536539067,
+              "r": 487.052212071875,
+              "b": 385.785595467875,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 9,
+            "end_col_offset_idx": 10,
+            "text": "수 옥",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 495.43070626125,
+              "t": 376.770442765,
+              "r": 519.1502811949999,
+              "b": 385.625165795,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 10,
+            "end_col_offset_idx": 11,
+            "text": "박 상",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 525.627235943125,
+              "t": 376.8201884,
+              "r": 532.6439881425,
+              "b": 385.655013176,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 11,
+            "end_col_offset_idx": 12,
+            "text": "형",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 67.66666666666667,
+              "t": 86.33333333333334,
+              "r": 111.0,
+              "b": 111.66666666666666,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "WONIT Electronics",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 66.0,
+              "t": 125.33333333333333,
+              "r": 122.0,
+              "b": 146.66666666666669,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "WONIT Electronics",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 7,
+        "num_cols": 12,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 67.66666666666667,
+                "t": 86.33333333333334,
+                "r": 111.0,
+                "b": 111.66666666666666,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "WONIT Electronics",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 67.66666666666667,
+                "t": 86.33333333333334,
+                "r": 111.0,
+                "b": 111.66666666666666,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "WONIT Electronics",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 313.530014201875,
+                "t": 79.16167793886132,
+                "r": 349.6881289818083,
+                "b": 97.46031454937497,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 10,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 12,
+              "text": "지침",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 313.530014201875,
+                "t": 79.16167793886132,
+                "r": 349.6881289818083,
+                "b": 97.46031454937497,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 10,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 12,
+              "text": "지침",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 313.530014201875,
+                "t": 79.16167793886132,
+                "r": 349.6881289818083,
+                "b": 97.46031454937497,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 10,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 12,
+              "text": "지침",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 313.530014201875,
+                "t": 79.16167793886132,
+                "r": 349.6881289818083,
+                "b": 97.46031454937497,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 10,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 12,
+              "text": "지침",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 313.530014201875,
+                "t": 79.16167793886132,
+                "r": 349.6881289818083,
+                "b": 97.46031454937497,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 10,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 12,
+              "text": "지침",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 313.530014201875,
+                "t": 79.16167793886132,
+                "r": 349.6881289818083,
+                "b": 97.46031454937497,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 10,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 12,
+              "text": "지침",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 313.530014201875,
+                "t": 79.16167793886132,
+                "r": 349.6881289818083,
+                "b": 97.46031454937497,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 10,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 12,
+              "text": "지침",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 313.530014201875,
+                "t": 79.16167793886132,
+                "r": 349.6881289818083,
+                "b": 97.46031454937497,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 10,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 12,
+              "text": "지침",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 313.530014201875,
+                "t": 79.16167793886132,
+                "r": 349.6881289818083,
+                "b": 97.46031454937497,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 10,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 12,
+              "text": "지침",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 313.530014201875,
+                "t": 79.16167793886132,
+                "r": 349.6881289818083,
+                "b": 97.46031454937497,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 10,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 12,
+              "text": "지침",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 66.0,
+                "t": 125.33333333333333,
+                "r": 122.0,
+                "b": 146.66666666666669,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "WONIT Electronics",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 66.0,
+                "t": 125.33333333333333,
+                "r": 122.0,
+                "b": 146.66666666666669,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "WONIT Electronics",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 219.6234728125,
+                "t": 126.71651662499994,
+                "r": 305.255188828125,
+                "b": 140.37221785937504,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "적극행정운영",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 219.6234728125,
+                "t": 126.71651662499994,
+                "r": 305.255188828125,
+                "b": 140.37221785937504,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "적극행정운영",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 219.6234728125,
+                "t": 126.71651662499994,
+                "r": 305.255188828125,
+                "b": 140.37221785937504,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "적극행정운영",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 219.6234728125,
+                "t": 126.71651662499994,
+                "r": 305.255188828125,
+                "b": 140.37221785937504,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 6,
+              "text": "적극행정운영",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 403.3368849496875,
+                "t": 128.45929201600006,
+                "r": 445.9191335645,
+                "b": 138.55675690349995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 6,
+              "end_col_offset_idx": 8,
+              "text": "제정일자",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 403.3368849496875,
+                "t": 128.45929201600006,
+                "r": 445.9191335645,
+                "b": 138.55675690349995,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 6,
+              "end_col_offset_idx": 8,
+              "text": "제정일자",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 468.83023266,
+                "t": 129.38563964800005,
+                "r": 519.9078146420001,
+                "b": 137.62351680400002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 8,
+              "end_col_offset_idx": 12,
+              "text": "2020.10.06.",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 468.83023266,
+                "t": 129.38563964800005,
+                "r": 519.9078146420001,
+                "b": 137.62351680400002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 8,
+              "end_col_offset_idx": 12,
+              "text": "2020.10.06.",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 468.83023266,
+                "t": 129.38563964800005,
+                "r": 519.9078146420001,
+                "b": 137.62351680400002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 8,
+              "end_col_offset_idx": 12,
+              "text": "2020.10.06.",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 468.83023266,
+                "t": 129.38563964800005,
+                "r": 519.9078146420001,
+                "b": 137.62351680400002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 4,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 8,
+              "end_col_offset_idx": 12,
+              "text": "2020.10.06.",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 169.92610993164064,
+                "t": 189.153282,
+                "r": 181.15739606811525,
+                "b": 202.87266364062498,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "제",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 198.267546875,
+                "t": 194.9669285,
+                "r": 200.52757203125,
+                "b": 197.13955412500002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "․",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 216.61318044311523,
+                "t": 189.25816737499997,
+                "r": 243.0407815625,
+                "b": 202.81319737890624,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "개정",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 255.995635546875,
+                "t": 189.19823287500003,
+                "r": 281.99716875,
+                "b": 202.90824974999998,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "이력",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 404.90056,
+                "t": 161.46354300000007,
+                "r": 416.534255,
+                "b": 230.98756300000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 6,
+              "end_col_offset_idx": 7,
+              "text": "관 리 구 분",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 7,
+              "end_col_offset_idx": 8,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 8,
+              "end_col_offset_idx": 9,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 9,
+              "end_col_offset_idx": 10,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 10,
+              "end_col_offset_idx": 11,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 11,
+              "end_col_offset_idx": 12,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 61.60255792613281,
+                "t": 251.500025756,
+                "r": 99.41691608480618,
+                "b": 261.49858373487496,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "개정번호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 114.01415292613281,
+                "t": 251.47796986000003,
+                "r": 156.3960435645,
+                "b": 261.532701449,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "개정일자",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 236.18847524,
+                "t": 251.49054861318746,
+                "r": 327.575227255,
+                "b": 261.49821757253903,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "변 경 내 용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 405.4003956714453,
+                "t": 251.5331096,
+                "r": 415.0961743825,
+                "b": 261.4816971895,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 6,
+              "end_col_offset_idx": 7,
+              "text": "작",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 427.1836153452344,
+                "t": 251.5331096,
+                "r": 435.407106665,
+                "b": 261.370039216,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 7,
+              "end_col_offset_idx": 8,
+              "text": "성",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 452.1581282775,
+                "t": 251.56619344399996,
+                "r": 460.29571802749996,
+                "b": 261.47480472200004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 8,
+              "end_col_offset_idx": 9,
+              "text": "검",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 473.85245081749997,
+                "t": 252.55870876400002,
+                "r": 483.66307385,
+                "b": 260.17764233850005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 9,
+              "end_col_offset_idx": 10,
+              "text": "토",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 498.8247655660938,
+                "t": 251.64338908000002,
+                "r": 508.39582967999996,
+                "b": 261.01714487999993,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 10,
+              "end_col_offset_idx": 11,
+              "text": "승",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 521.480858115,
+                "t": 251.5331096,
+                "r": 529.719413458164,
+                "b": 261.061256672,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 11,
+              "end_col_offset_idx": 12,
+              "text": "인",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 77.86276148,
+                "t": 291.099948596,
+                "r": 82.87220656,
+                "b": 299.3267978040001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "0",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 109.02523266,
+                "t": 291.088920648,
+                "r": 160.102814642,
+                "b": 299.3267978040001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "2020.10.06.",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 169.04444127661134,
+                "t": 290.7641955270001,
+                "r": 186.5409622175,
+                "b": 299.6786133190001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "규정",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 194.31669495460937,
+                "t": 290.67465338400007,
+                "r": 211.4879219575,
+                "b": 299.78432279337494,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "제정",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 401.707965259375,
+                "t": 290.7045007649999,
+                "r": 425.230936744375,
+                "b": 299.5990203030001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 6,
+              "end_col_offset_idx": 7,
+              "text": "장 호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 431.55324514841794,
+                "t": 290.75424640000006,
+                "r": 438.97226449125,
+                "b": 299.62886768399994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 7,
+              "end_col_offset_idx": 8,
+              "text": "성",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 448.6885511503125,
+                "t": 290.7641955270001,
+                "r": 455.834091051875,
+                "b": 299.63881681099997,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 8,
+              "end_col_offset_idx": 9,
+              "text": "김",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 463.608877426875,
+                "t": 290.694551638,
+                "r": 485.74193718875,
+                "b": 299.7089659291055,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 9,
+              "end_col_offset_idx": 10,
+              "text": "미 경",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 495.43070626125,
+                "t": 290.7045007649999,
+                "r": 517.64962449125,
+                "b": 299.62886768399994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 10,
+              "end_col_offset_idx": 11,
+              "text": "박 성",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 525.465473611875,
+                "t": 290.7068325916406,
+                "r": 533.374407284375,
+                "b": 299.320444747,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 11,
+              "end_col_offset_idx": 12,
+              "text": "철",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 78.34825836,
+                "t": 334.121891648,
+                "r": 82.30947154,
+                "b": 342.194349584,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "1",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 109.02523266,
+                "t": 334.11086370000004,
+                "r": 160.102814642,
+                "b": 342.359768804,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "2024.03.12.",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 169.144045654375,
+                "t": 325.676401384,
+                "r": 362.606966445625,
+                "b": 350.86585003807033,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "공정성 제고를 위한 민간 위원수 제한기준 합동위원회 조항 신설 등",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 369.14412856375,
+                "t": 325.7161978920001,
+                "r": 425.26951083875,
+                "b": 342.84092297,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 6,
+              "end_col_offset_idx": 7,
+              "text": "완화, 이 용",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 432.284014256875,
+                "t": 333.7872174,
+                "r": 439.530966696875,
+                "b": 342.373314001,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 7,
+              "end_col_offset_idx": 8,
+              "text": "일",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 448.918129228125,
+                "t": 333.727522638,
+                "r": 456.08917780499996,
+                "b": 342.809831948125,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 8,
+              "end_col_offset_idx": 9,
+              "text": "백",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 463.33602014841796,
+                "t": 333.74742089200004,
+                "r": 486.469867679375,
+                "b": 342.66183868400003,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 9,
+              "end_col_offset_idx": 10,
+              "text": "성 필",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 495.5256444179199,
+                "t": 333.797166527,
+                "r": 518.9536777462499,
+                "b": 342.711584319,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 10,
+              "end_col_offset_idx": 11,
+              "text": "정 수",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 525.2564269068749,
+                "t": 333.70249436539063,
+                "r": 533.946797071875,
+                "b": 342.752624467875,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 11,
+              "end_col_offset_idx": 12,
+              "text": "옥",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 77.96206765999999,
+                "t": 377.154862648,
+                "r": 82.7839344,
+                "b": 385.216292636,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "2",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 107.46607766,
+                "t": 377.1438347,
+                "r": 161.66316896993197,
+                "b": 385.409281726,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "2025. 7. 28.",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 168.7408452666992,
+                "t": 368.73921976500003,
+                "r": 394.08095379625,
+                "b": 393.69352945546876,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "사규 정비등을 위한",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 194.42697331312502,
+                "t": 368.759118019,
+                "r": 212.7023837675,
+                "b": 393.65839660075,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "체계 전부",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 219.44393269422852,
+                "t": 368.798914527,
+                "r": 237.60550726500003,
+                "b": 393.72213319559376,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "전면 개정",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 244.99008769422852,
+                "t": 368.719321511,
+                "r": 347.5942377475,
+                "b": 377.83894004737505,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 5,
+              "end_col_offset_idx": 6,
+              "text": "개편에 따른 조항 형식",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 401.8564094179199,
+                "t": 376.83013752700003,
+                "r": 424.66875431551756,
+                "b": 385.744555319,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 6,
+              "end_col_offset_idx": 7,
+              "text": "정 연",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 431.55359511499995,
+                "t": 376.780391892,
+                "r": 440.329823748125,
+                "b": 385.7594790095,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 7,
+              "end_col_offset_idx": 8,
+              "text": "복",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 448.6310594179199,
+                "t": 376.83013752700003,
+                "r": 455.7955169575,
+                "b": 385.744555319,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 8,
+              "end_col_offset_idx": 9,
+              "text": "정",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 463.29406304375,
+                "t": 376.73546536539067,
+                "r": 487.052212071875,
+                "b": 385.785595467875,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 9,
+              "end_col_offset_idx": 10,
+              "text": "수 옥",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 495.43070626125,
+                "t": 376.770442765,
+                "r": 519.1502811949999,
+                "b": 385.625165795,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 10,
+              "end_col_offset_idx": 11,
+              "text": "박 상",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 525.627235943125,
+                "t": 376.8201884,
+                "r": 532.6439881425,
+                "b": 385.655013176,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 11,
+              "end_col_offset_idx": 12,
+              "text": "형",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 385.361328125,
+            "t": 797.7556457519531,
+            "r": 537.4703369140625,
+            "b": 751.9526519775391,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 396.8208829261328,
+              "t": 50.23997475600004,
+              "r": 438.9517496094999,
+              "b": 60.23853273487498,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "개정번호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 489.57898766,
+              "t": 51.111182647999954,
+              "r": 494.40085439999996,
+              "b": 59.17261263600005,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "2",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 396.64069651750003,
+              "t": 72.87315985999999,
+              "r": 437.55352339250004,
+              "b": 82.96373228000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "페 이 지",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 479.53083336,
+              "t": 73.06063497599996,
+              "r": 504.85870665999994,
+              "b": 82.68803358000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "1 / 5",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 2,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 396.8208829261328,
+                "t": 50.23997475600004,
+                "r": 438.9517496094999,
+                "b": 60.23853273487498,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "개정번호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 489.57898766,
+                "t": 51.111182647999954,
+                "r": 494.40085439999996,
+                "b": 59.17261263600005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "2",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 396.64069651750003,
+                "t": 72.87315985999999,
+                "r": 437.55352339250004,
+                "b": 82.96373228000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "페 이 지",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 479.53083336,
+                "t": 73.06063497599996,
+                "r": 504.85870665999994,
+                "b": 82.68803358000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "1 / 5",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 385.7348327636719,
+            "t": 797.7955932617188,
+            "r": 537.5736083984375,
+            "b": 751.9622955322266,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 396.8208829261328,
+              "t": 50.23997475600004,
+              "r": 438.9517496094999,
+              "b": 60.23853273487498,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "개정번호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 489.57898766,
+              "t": 51.111182647999954,
+              "r": 494.40085439999996,
+              "b": 59.17261263600005,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "2",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 396.64069651750003,
+              "t": 72.87315985999999,
+              "r": 437.55352339250004,
+              "b": 82.96373228000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "페 이 지",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 479.14464266,
+              "t": 73.06063497599996,
+              "r": 504.85870665999994,
+              "b": 82.68803358000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "2 / 5",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 2,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 396.8208829261328,
+                "t": 50.23997475600004,
+                "r": 438.9517496094999,
+                "b": 60.23853273487498,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "개정번호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 489.57898766,
+                "t": 51.111182647999954,
+                "r": 494.40085439999996,
+                "b": 59.17261263600005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "2",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 396.64069651750003,
+                "t": 72.87315985999999,
+                "r": 437.55352339250004,
+                "b": 82.96373228000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "페 이 지",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 479.14464266,
+                "t": 73.06063497599996,
+                "r": 504.85870665999994,
+                "b": 82.68803358000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "2 / 5",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 384.8440856933594,
+            "t": 797.8180198669434,
+            "r": 537.820068359375,
+            "b": 752.0192031860352,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 396.8208829261328,
+              "t": 50.23997475600004,
+              "r": 438.9517496094999,
+              "b": 60.23853273487498,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "개정번호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 489.57898766,
+              "t": 51.111182647999954,
+              "r": 494.40085439999996,
+              "b": 59.17261263600005,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "2",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 396.64069651750003,
+              "t": 72.87315985999999,
+              "r": 437.55352339250004,
+              "b": 82.96373228000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "페 이 지",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 479.02326844,
+              "t": 73.06063497599996,
+              "r": 504.85870665999994,
+              "b": 82.68803358000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "3 / 5",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 2,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 396.8208829261328,
+                "t": 50.23997475600004,
+                "r": 438.9517496094999,
+                "b": 60.23853273487498,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "개정번호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 489.57898766,
+                "t": 51.111182647999954,
+                "r": 494.40085439999996,
+                "b": 59.17261263600005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "2",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 396.64069651750003,
+                "t": 72.87315985999999,
+                "r": 437.55352339250004,
+                "b": 82.96373228000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "페 이 지",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 479.02326844,
+                "t": 73.06063497599996,
+                "r": 504.85870665999994,
+                "b": 82.68803358000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "3 / 5",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 384.2536315917969,
+            "t": 797.9182968139648,
+            "r": 537.6702880859375,
+            "b": 751.8901519775391,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 396.8208829261328,
+              "t": 50.23997475600004,
+              "r": 438.9517496094999,
+              "b": 60.23853273487498,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "개정번호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 489.57898766,
+              "t": 51.111182647999954,
+              "r": 494.40085439999996,
+              "b": 59.17261263600005,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "2",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 396.64069651750003,
+              "t": 72.87315985999999,
+              "r": 437.55352339250004,
+              "b": 82.96373228000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "페 이 지",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 478.93499628,
+              "t": 73.06063497599996,
+              "r": 504.85870665999994,
+              "b": 82.68803358000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "4 / 5",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 2,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 396.8208829261328,
+                "t": 50.23997475600004,
+                "r": 438.9517496094999,
+                "b": 60.23853273487498,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "개정번호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 489.57898766,
+                "t": 51.111182647999954,
+                "r": 494.40085439999996,
+                "b": 59.17261263600005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "2",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 396.64069651750003,
+                "t": 72.87315985999999,
+                "r": 437.55352339250004,
+                "b": 82.96373228000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "페 이 지",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 478.93499628,
+                "t": 73.06063497599996,
+                "r": 504.85870665999994,
+                "b": 82.68803358000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "4 / 5",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 384.88092041015625,
+            "t": 797.6892967224121,
+            "r": 537.73681640625,
+            "b": 752.1088790893555,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 396.8208829261328,
+              "t": 50.23997475600004,
+              "r": 438.9517496094999,
+              "b": 60.23853273487498,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "개정번호",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 489.57898766,
+              "t": 51.111182647999954,
+              "r": 494.40085439999996,
+              "b": 59.17261263600005,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "2",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 396.64069651750003,
+              "t": 72.87315985999999,
+              "r": 437.55352339250004,
+              "b": 82.96373228000004,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "페 이 지",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 478.96809834,
+              "t": 73.06063497599996,
+              "r": 504.85870665999994,
+              "b": 82.68803358000002,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "5 / 5",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 2,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 396.8208829261328,
+                "t": 50.23997475600004,
+                "r": 438.9517496094999,
+                "b": 60.23853273487498,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "개정번호",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 489.57898766,
+                "t": 51.111182647999954,
+                "r": 494.40085439999996,
+                "b": 59.17261263600005,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "2",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 396.64069651750003,
+                "t": 72.87315985999999,
+                "r": 437.55352339250004,
+                "b": 82.96373228000004,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "페 이 지",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 478.96809834,
+                "t": 73.06063497599996,
+                "r": 504.85870665999994,
+                "b": 82.68803358000002,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "5 / 5",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 4
+    },
+    "5": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 5
+    },
+    "6": {
+      "size": {
+        "width": 595.0,
+        "height": 841.0
+      },
+      "page_no": 6
+    }
+  }
+}

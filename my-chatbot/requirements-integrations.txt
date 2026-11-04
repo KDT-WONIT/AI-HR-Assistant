@@ -1,0 +1,5 @@
+# 실제 연동을 구현할 때 설치합니다. 현재 뼈대 실행에는 필요하지 않습니다.
+-r requirements.txt
+ollama
+mysql-connector-python>=9.2,<10
+pymupdf

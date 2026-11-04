@@ -1,0 +1,1591 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "ABC Electronics AI HR Assistant",
+    "description": "SQLite 직원·대화 기록, MCP 도구 서버·클라이언트, ChromaDB 검색과 Ollama 답변.",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/api/health": {
+      "get": {
+        "tags": [
+          "system"
+        ],
+        "summary": "Health",
+        "operationId": "health_api_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/tools": {
+      "get": {
+        "tags": [
+          "tools"
+        ],
+        "summary": "List Tools",
+        "operationId": "list_tools_api_tools_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/ToolDefinition"
+                  },
+                  "type": "array",
+                  "title": "Response List Tools Api Tools Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/users/{employee_id}": {
+      "get": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Resolve User",
+        "operationId": "resolve_user_api_users__employee_id__get",
+        "parameters": [
+          {
+            "name": "employee_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 50,
+              "title": "Employee Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserLookupResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/users/{employee_id}/photo": {
+      "get": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Employee Photo",
+        "operationId": "employee_photo_api_users__employee_id__photo_get",
+        "parameters": [
+          {
+            "name": "employee_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 50,
+              "title": "Employee Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/employees": {
+      "get": {
+        "tags": [
+          "directory"
+        ],
+        "summary": "Employees",
+        "operationId": "employees_api_employees_get",
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "maxLength": 100,
+              "default": "",
+              "title": "Query"
+            }
+          },
+          {
+            "name": "department_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "maxLength": 50
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Department Id"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 50,
+              "minimum": 1,
+              "default": 20,
+              "title": "Limit"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0,
+              "title": "Offset"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EmployeePage"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/departments": {
+      "get": {
+        "tags": [
+          "directory"
+        ],
+        "summary": "Departments",
+        "operationId": "departments_api_departments_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/DepartmentProfile"
+                  },
+                  "type": "array",
+                  "title": "Response Departments Api Departments Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/conversations": {
+      "post": {
+        "tags": [
+          "conversations"
+        ],
+        "summary": "Create Conversation",
+        "operationId": "create_conversation_api_conversations_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConversationCreate"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Conversation"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/conversations/{conversation_id}": {
+      "get": {
+        "tags": [
+          "conversations"
+        ],
+        "summary": "Read Conversation",
+        "operationId": "read_conversation_api_conversations__conversation_id__get",
+        "parameters": [
+          {
+            "name": "conversation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Conversation Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Conversation"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/chat": {
+      "post": {
+        "tags": [
+          "chat"
+        ],
+        "summary": "Chat",
+        "operationId": "chat_api_chat_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChatRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChatResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/conversations/{conversation_id}/end": {
+      "post": {
+        "tags": [
+          "conversations"
+        ],
+        "summary": "End Conversation",
+        "operationId": "end_conversation_api_conversations__conversation_id__end_post",
+        "parameters": [
+          {
+            "name": "conversation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Conversation Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EndRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EndResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/conversations/{conversation_id}/webhook/retry": {
+      "post": {
+        "tags": [
+          "conversations"
+        ],
+        "summary": "Retry Webhook",
+        "operationId": "retry_webhook_api_conversations__conversation_id__webhook_retry_post",
+        "parameters": [
+          {
+            "name": "conversation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Conversation Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EndResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AnswerContext": {
+        "properties": {
+          "question": {
+            "type": "string",
+            "title": "Question"
+          },
+          "employee_id": {
+            "type": "string",
+            "title": "Employee Id"
+          },
+          "user_profile": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/UserProfile"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "user_profile_status": {
+            "type": "string",
+            "enum": [
+              "found",
+              "not_found"
+            ],
+            "title": "User Profile Status",
+            "default": "not_found"
+          },
+          "history": {
+            "items": {
+              "additionalProperties": {
+                "type": "string"
+              },
+              "type": "object"
+            },
+            "type": "array",
+            "title": "History"
+          },
+          "tool_results": {
+            "items": {
+              "$ref": "#/components/schemas/ToolResult"
+            },
+            "type": "array",
+            "title": "Tool Results"
+          },
+          "sources": {
+            "items": {
+              "$ref": "#/components/schemas/Source"
+            },
+            "type": "array",
+            "title": "Sources"
+          },
+          "answer_coverage": {
+            "type": "string",
+            "enum": [
+              "unknown",
+              "direct",
+              "partial",
+              "missing"
+            ],
+            "title": "Answer Coverage",
+            "default": "unknown"
+          },
+          "contact_escalation": {
+            "$ref": "#/components/schemas/ContactEscalation"
+          }
+        },
+        "type": "object",
+        "required": [
+          "question",
+          "employee_id"
+        ],
+        "title": "AnswerContext"
+      },
+      "ChatRequest": {
+        "properties": {
+          "employee_id": {
+            "type": "string",
+            "maxLength": 50,
+            "minLength": 1,
+            "title": "Employee Id",
+            "default": "TEST-001"
+          },
+          "message": {
+            "type": "string",
+            "maxLength": 4000,
+            "minLength": 1,
+            "title": "Message"
+          },
+          "conversation_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uuid"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Conversation Id"
+          },
+          "tool_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Tool Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "message"
+        ],
+        "title": "ChatRequest"
+      },
+      "ChatResponse": {
+        "properties": {
+          "conversation_id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Conversation Id"
+          },
+          "message_id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Message Id"
+          },
+          "answer": {
+            "type": "string",
+            "title": "Answer"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "needs_implementation",
+              "answered",
+              "no_result",
+              "needs_input",
+              "needs_review"
+            ],
+            "title": "Status",
+            "default": "answered"
+          },
+          "sources": {
+            "items": {
+              "$ref": "#/components/schemas/Source"
+            },
+            "type": "array",
+            "title": "Sources"
+          },
+          "tools_used": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Tools Used"
+          },
+          "tool_results": {
+            "items": {
+              "$ref": "#/components/schemas/ToolResult"
+            },
+            "type": "array",
+            "title": "Tool Results"
+          },
+          "context": {
+            "$ref": "#/components/schemas/AnswerContext"
+          },
+          "steps": {
+            "items": {
+              "$ref": "#/components/schemas/Step"
+            },
+            "type": "array",
+            "title": "Steps"
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "demo",
+              "live"
+            ],
+            "title": "Mode",
+            "default": "demo"
+          },
+          "answer_provider": {
+            "type": "string",
+            "enum": [
+              "demo",
+              "ollama"
+            ],
+            "title": "Answer Provider",
+            "default": "demo"
+          },
+          "contact_escalation": {
+            "$ref": "#/components/schemas/ContactEscalation"
+          },
+          "webhook_events": {
+            "items": {
+              "$ref": "#/components/schemas/WebhookDelivery"
+            },
+            "type": "array",
+            "title": "Webhook Events"
+          }
+        },
+        "type": "object",
+        "required": [
+          "conversation_id",
+          "message_id",
+          "answer",
+          "context",
+          "steps"
+        ],
+        "title": "ChatResponse"
+      },
+      "ContactEscalation": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "not_needed",
+              "recommended",
+              "not_found",
+              "unavailable"
+            ],
+            "title": "Status",
+            "default": "not_needed"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message",
+            "default": ""
+          },
+          "contacts": {
+            "items": {
+              "$ref": "#/components/schemas/ContactRecommendation"
+            },
+            "type": "array",
+            "title": "Contacts"
+          }
+        },
+        "type": "object",
+        "title": "ContactEscalation"
+      },
+      "ContactRecommendation": {
+        "properties": {
+          "employee": {
+            "$ref": "#/components/schemas/UserProfile"
+          },
+          "reason": {
+            "type": "string",
+            "title": "Reason"
+          },
+          "matched_terms": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Matched Terms"
+          },
+          "duty_description": {
+            "type": "string",
+            "title": "Duty Description",
+            "default": ""
+          },
+          "match_type": {
+            "type": "string",
+            "const": "related_duties",
+            "title": "Match Type",
+            "default": "related_duties"
+          }
+        },
+        "type": "object",
+        "required": [
+          "employee",
+          "reason"
+        ],
+        "title": "ContactRecommendation"
+      },
+      "Conversation": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Id"
+          },
+          "employee_id": {
+            "type": "string",
+            "title": "Employee Id"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "open",
+              "closed"
+            ],
+            "title": "Status",
+            "default": "open"
+          },
+          "messages": {
+            "items": {
+              "$ref": "#/components/schemas/Message"
+            },
+            "type": "array",
+            "title": "Messages"
+          },
+          "end_result": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/EndResponse"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "webhook_events": {
+            "items": {
+              "$ref": "#/components/schemas/WebhookDelivery"
+            },
+            "type": "array",
+            "title": "Webhook Events"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "employee_id",
+          "created_at"
+        ],
+        "title": "Conversation"
+      },
+      "ConversationCreate": {
+        "properties": {
+          "employee_id": {
+            "type": "string",
+            "maxLength": 50,
+            "minLength": 1,
+            "title": "Employee Id",
+            "default": "TEST-001"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "ConversationCreate"
+      },
+      "DepartmentProfile": {
+        "properties": {
+          "dept_id": {
+            "type": "string",
+            "title": "Dept Id"
+          },
+          "dept_name": {
+            "type": "string",
+            "title": "Dept Name"
+          },
+          "parent_dept_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Parent Dept Id"
+          },
+          "dept_function": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Dept Function"
+          },
+          "location": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Location"
+          },
+          "main_extension": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Main Extension"
+          },
+          "employee_count": {
+            "type": "integer",
+            "title": "Employee Count",
+            "default": 0
+          }
+        },
+        "type": "object",
+        "required": [
+          "dept_id",
+          "dept_name"
+        ],
+        "title": "DepartmentProfile"
+      },
+      "EmployeePage": {
+        "properties": {
+          "items": {
+            "items": {
+              "$ref": "#/components/schemas/UserProfile"
+            },
+            "type": "array",
+            "title": "Items"
+          },
+          "total": {
+            "type": "integer",
+            "title": "Total"
+          },
+          "limit": {
+            "type": "integer",
+            "title": "Limit"
+          },
+          "offset": {
+            "type": "integer",
+            "title": "Offset"
+          }
+        },
+        "type": "object",
+        "required": [
+          "items",
+          "total",
+          "limit",
+          "offset"
+        ],
+        "title": "EmployeePage"
+      },
+      "EndRequest": {
+        "properties": {
+          "rating": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "helpful",
+                  "neutral",
+                  "unhelpful"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Rating"
+          },
+          "comment": {
+            "type": "string",
+            "maxLength": 1000,
+            "title": "Comment",
+            "default": ""
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "EndRequest"
+      },
+      "EndResponse": {
+        "properties": {
+          "conversation_id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Conversation Id"
+          },
+          "status": {
+            "type": "string",
+            "const": "closed",
+            "title": "Status",
+            "default": "closed"
+          },
+          "ended_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Ended At"
+          },
+          "rating": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "helpful",
+                  "neutral",
+                  "unhelpful"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Rating"
+          },
+          "comment": {
+            "type": "string",
+            "title": "Comment"
+          },
+          "event_id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Event Id"
+          },
+          "webhook_status": {
+            "type": "string",
+            "enum": [
+              "not_configured",
+              "not_implemented",
+              "pending",
+              "sending",
+              "sent",
+              "failed"
+            ],
+            "title": "Webhook Status"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          }
+        },
+        "type": "object",
+        "required": [
+          "conversation_id",
+          "ended_at",
+          "rating",
+          "comment",
+          "event_id",
+          "webhook_status",
+          "message"
+        ],
+        "title": "EndResponse"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "Message": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Id"
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "user",
+              "assistant"
+            ],
+            "title": "Role"
+          },
+          "content": {
+            "type": "string",
+            "title": "Content"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "sources": {
+            "items": {
+              "$ref": "#/components/schemas/Source"
+            },
+            "type": "array",
+            "title": "Sources"
+          },
+          "tools_used": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Tools Used"
+          },
+          "contact_escalation": {
+            "$ref": "#/components/schemas/ContactEscalation"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "role",
+          "content",
+          "created_at"
+        ],
+        "title": "Message"
+      },
+      "Source": {
+        "properties": {
+          "document": {
+            "type": "string",
+            "title": "Document"
+          },
+          "page": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Page"
+          },
+          "section": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Section"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text",
+            "default": ""
+          },
+          "chunk_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Chunk Id"
+          },
+          "pages": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Pages"
+          },
+          "distance": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Distance"
+          }
+        },
+        "type": "object",
+        "required": [
+          "document"
+        ],
+        "title": "Source"
+      },
+      "Step": {
+        "properties": {
+          "key": {
+            "type": "string",
+            "title": "Key"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "detail": {
+            "type": "string",
+            "title": "Detail"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "done",
+              "demo",
+              "skipped"
+            ],
+            "title": "Status"
+          }
+        },
+        "type": "object",
+        "required": [
+          "key",
+          "label",
+          "detail",
+          "status"
+        ],
+        "title": "Step"
+      },
+      "ToolDefinition": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "description": {
+            "type": "string",
+            "title": "Description"
+          },
+          "data_path": {
+            "type": "string",
+            "title": "Data Path"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "ready",
+              "not_implemented"
+            ],
+            "title": "Status",
+            "default": "ready"
+          },
+          "source_patterns": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Source Patterns"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "description",
+          "data_path"
+        ],
+        "title": "ToolDefinition"
+      },
+      "ToolResult": {
+        "properties": {
+          "tool_id": {
+            "type": "string",
+            "title": "Tool Id"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "ok",
+              "no_result",
+              "needs_input",
+              "not_implemented",
+              "error"
+            ],
+            "title": "Status"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          },
+          "data": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Data"
+          },
+          "sources": {
+            "items": {
+              "$ref": "#/components/schemas/Source"
+            },
+            "type": "array",
+            "title": "Sources"
+          }
+        },
+        "type": "object",
+        "required": [
+          "tool_id",
+          "status",
+          "message"
+        ],
+        "title": "ToolResult"
+      },
+      "UserLookupResponse": {
+        "properties": {
+          "employee_id": {
+            "type": "string",
+            "title": "Employee Id"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "found",
+              "not_found"
+            ],
+            "title": "Status"
+          },
+          "profile": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/UserProfile"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "employee_id",
+          "status"
+        ],
+        "title": "UserLookupResponse"
+      },
+      "UserProfile": {
+        "properties": {
+          "employee_id": {
+            "type": "string",
+            "maxLength": 50,
+            "minLength": 1,
+            "title": "Employee Id"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Name"
+          },
+          "department": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 100
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Department"
+          },
+          "job_title": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 100
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Job Title"
+          },
+          "hired_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hired At"
+          },
+          "grade": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Grade"
+          },
+          "employment_type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Employment Type"
+          },
+          "employment_status": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Employment Status"
+          },
+          "dept_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Dept Id"
+          },
+          "department_function": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Department Function"
+          },
+          "department_location": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Department Location"
+          },
+          "department_extension": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Department Extension"
+          },
+          "work_email": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Work Email"
+          },
+          "extension_number": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Extension Number"
+          },
+          "work_location": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Work Location"
+          },
+          "roles": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Roles"
+          },
+          "image_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Image Url"
+          },
+          "photo_alt": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Photo Alt"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "employee_id",
+          "name"
+        ],
+        "title": "UserProfile",
+        "description": "사용자 DB에서 컨텍스트에 전달하는 기본 프로필 필드."
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "WebhookDelivery": {
+        "properties": {
+          "event": {
+            "type": "string",
+            "title": "Event"
+          },
+          "event_id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Event Id"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "sent",
+              "failed",
+              "not_configured"
+            ],
+            "title": "Status"
+          },
+          "error": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Error"
+          }
+        },
+        "type": "object",
+        "required": [
+          "event",
+          "event_id",
+          "status"
+        ],
+        "title": "WebhookDelivery"
+      }
+    }
+  }
+}

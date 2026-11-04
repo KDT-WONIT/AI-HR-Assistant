@@ -1,0 +1,9 @@
+# API compatibility versions checked against the current bigdata environment.
+# Use Python 3.11+; leave an existing CUDA-enabled PyTorch installation in place.
+docling==2.146.0
+docling-core[chunking]==2.105.0
+sentence-transformers==5.6.0
+chromadb==1.5.9
+transformers==5.17.0
+sentencepiece>=0.2.0
+easyocr>=1.7.2

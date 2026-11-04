@@ -1,0 +1,31 @@
+{
+  "created_at_utc": "2026-11-04 02:29:56.896710",
+  "database": "employee_directory",
+  "fictional_data": true,
+  "counts": {
+    "departments": 16,
+    "duty_roles": 5,
+    "employees": 100,
+    "employee_assignments": 100,
+    "employee_roles": 100,
+    "employee_contacts": 100
+  },
+  "sources": {
+    "01_create_schema.sql": "70844ab28732df23295603b2255e3ba10597c8561cffe1f9f352e24e0c9edac5",
+    "02_seed_data.sql": "9897ba4d4f3477231094ecb2b7e1a6547f46c15ce912d3f35c95c05ee2b17bca",
+    "03_example_queries.sql": "a1db7ab6a87fc7e134b93b8da22e7c9eb274428cba0b3ded4ccdc191279decf8",
+    "04_load_csv.py": "aa890c9e217fa4a47fd5bfd7318039bd94610809bca5d8ce843dd33f035e73fd",
+    "04_OLD_randomuser_do_not_run.sql": "6bb8baf147d4104c08463ea205fc9ffd36caa4711b32d072b2114956f3805660",
+    "04_update_100_pexels_photos.sql": "61671e0b3ebdbde7b05903c249086d232d2078377c4917c88832186a6cee5ed6"
+  },
+  "selection": "사원, 부서, 소속 이력, 업무 역할, 사원별 역할, 연락처/사진",
+  "excluded": [
+    "규정/문서",
+    "급여/복지",
+    "근태/휴가",
+    "대화/상담",
+    "구버전 RandomUser 사진"
+  ],
+  "photo_originals": "NOT_DOWNLOADED",
+  "photo_review": "REVIEW_PENDING"
+}

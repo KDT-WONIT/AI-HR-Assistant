@@ -1,0 +1,293 @@
+﻿table,column,mysql_type,key_role,references,description
+departments,dept_id,VARCHAR(12),PK,,가상 샘플 데이터
+departments,dept_name,VARCHAR(80),,,가상 샘플 데이터
+departments,parent_dept_id,VARCHAR(12),FK,departments.dept_id,가상 샘플 데이터
+departments,dept_function,VARCHAR(200),,,가상 샘플 데이터
+departments,location,VARCHAR(80),,,가상 샘플 데이터
+departments,main_extension,VARCHAR(12),,,가상 샘플 데이터
+departments,is_active,TINYINT,,,가상 샘플 데이터
+employees,employee_id,VARCHAR(12),PK,,가상 샘플 데이터
+employees,employee_name,VARCHAR(40),,,가상 샘플 데이터
+employees,grade,VARCHAR(25),,,가상 샘플 데이터
+employees,hire_date,DATE,,,가상 샘플 데이터
+employees,employment_type,VARCHAR(30),,,가상 샘플 데이터
+employees,employment_status,VARCHAR(20),,,가상 샘플 데이터
+employee_assignments,assignment_id,VARCHAR(14),PK,,가상 샘플 데이터
+employee_assignments,employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+employee_assignments,dept_id,VARCHAR(12),FK,departments.dept_id,가상 샘플 데이터
+employee_assignments,position_title,VARCHAR(60),,,가상 샘플 데이터
+employee_assignments,start_date,DATE,,,가상 샘플 데이터
+employee_assignments,end_date,DATE,,,가상 샘플 데이터
+employee_assignments,is_primary,TINYINT,,,가상 샘플 데이터
+employee_contacts,employee_id,VARCHAR(12),PK,employees.employee_id,가상 샘플 데이터
+employee_contacts,work_email,VARCHAR(130),,,가상 샘플 데이터
+employee_contacts,extension_number,VARCHAR(12),,,가상 샘플 데이터
+employee_contacts,work_location,VARCHAR(100),,,가상 샘플 데이터
+employee_contacts,contact_visibility,VARCHAR(25),,,가상 샘플 데이터
+employee_contacts,photo_path,VARCHAR(260),,,가상 샘플 데이터
+employee_contacts,photo_url,VARCHAR(500),,,가상 샘플 데이터
+employee_contacts,photo_status,VARCHAR(30),,,가상 샘플 데이터
+employee_contacts,photo_source,VARCHAR(40),,,가상 샘플 데이터
+employee_contacts,photo_alt,VARCHAR(150),,,가상 샘플 데이터
+duty_roles,role_id,VARCHAR(12),PK,,가상 샘플 데이터
+duty_roles,role_name,VARCHAR(60),,,가상 샘플 데이터
+duty_roles,role_category,VARCHAR(30),,,가상 샘플 데이터
+duty_roles,description,VARCHAR(250),,,가상 샘플 데이터
+duty_roles,security_level,VARCHAR(20),,,가상 샘플 데이터
+employee_roles,employee_role_id,VARCHAR(14),PK,,가상 샘플 데이터
+employee_roles,employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+employee_roles,role_id,VARCHAR(12),FK,duty_roles.role_id,가상 샘플 데이터
+employee_roles,start_date,DATE,,,가상 샘플 데이터
+employee_roles,end_date,DATE,,,가상 샘플 데이터
+business_topics,topic_id,VARCHAR(12),PK,,가상 샘플 데이터
+business_topics,topic_name,VARCHAR(200),,,가상 샘플 데이터
+business_topics,category,VARCHAR(40),,,가상 샘플 데이터
+business_topics,description,TEXT,,,가상 샘플 데이터
+business_topics,intent_type,VARCHAR(30),,,가상 샘플 데이터
+business_topics,security_level,VARCHAR(25),,,가상 샘플 데이터
+business_topics,auto_answer_allowed,TINYINT,,,가상 샘플 데이터
+topic_keywords,keyword_id,VARCHAR(14),PK,,가상 샘플 데이터
+topic_keywords,topic_id,VARCHAR(12),FK,business_topics.topic_id,가상 샘플 데이터
+topic_keywords,keyword,VARCHAR(100),,,가상 샘플 데이터
+topic_keywords,synonym,VARCHAR(100),,,가상 샘플 데이터
+topic_keywords,match_weight,"DECIMAL(4,2)",,,가상 샘플 데이터
+topic_ownerships,ownership_id,VARCHAR(14),PK,,가상 샘플 데이터
+topic_ownerships,topic_id,VARCHAR(12),FK,business_topics.topic_id,가상 샘플 데이터
+topic_ownerships,dept_id,VARCHAR(12),FK,departments.dept_id,가상 샘플 데이터
+topic_ownerships,primary_employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+topic_ownerships,backup_employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+topic_ownerships,approver_employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+topic_ownerships,priority,TINYINT,,,가상 샘플 데이터
+topic_ownerships,effective_from,DATE,,,가상 샘플 데이터
+topic_ownerships,effective_to,DATE,,,가상 샘플 데이터
+topic_regulations,topic_regulation_id,VARCHAR(14),PK,,가상 샘플 데이터
+topic_regulations,topic_id,VARCHAR(12),FK,business_topics.topic_id,가상 샘플 데이터
+topic_regulations,article_id,VARCHAR(18),FK,regulation_articles.article_id,가상 샘플 데이터
+topic_regulations,relevance_type,VARCHAR(25),,,가상 샘플 데이터
+topic_regulations,priority,TINYINT,,,가상 샘플 데이터
+duty_delegations,delegation_id,VARCHAR(14),PK,,가상 샘플 데이터
+duty_delegations,original_employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+duty_delegations,substitute_employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+duty_delegations,start_date,DATE,,,가상 샘플 데이터
+duty_delegations,end_date,DATE,,,가상 샘플 데이터
+duty_delegations,reason,VARCHAR(160),,,가상 샘플 데이터
+routing_logs,routing_id,VARCHAR(14),PK,,가상 샘플 데이터
+routing_logs,session_id,VARCHAR(14),FK,chat_sessions.session_id,가상 샘플 데이터
+routing_logs,topic_id,VARCHAR(12),FK,business_topics.topic_id,가상 샘플 데이터
+routing_logs,confidence_score,"DECIMAL(4,3)",,,가상 샘플 데이터
+routing_logs,selected_dept_id,VARCHAR(12),FK,departments.dept_id,가상 샘플 데이터
+routing_logs,assigned_employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+routing_logs,routing_status,VARCHAR(30),,,가상 샘플 데이터
+routing_logs,routed_at,DATETIME,,,가상 샘플 데이터
+regulations,regulation_id,VARCHAR(12),PK,,PDF 메타데이터·추출 본문 (검증 필요)
+regulations,title,VARCHAR(200),,,PDF 메타데이터·추출 본문 (검증 필요)
+regulations,category,VARCHAR(40),,,PDF 메타데이터·추출 본문 (검증 필요)
+regulations,regulation_type,VARCHAR(30),,,PDF 메타데이터·추출 본문 (검증 필요)
+regulations,owner_dept_id,VARCHAR(12),FK,departments.dept_id,PDF 메타데이터·추출 본문 (검증 필요)
+regulations,access_level,VARCHAR(25),,,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_versions,version_id,VARCHAR(14),PK,,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_versions,regulation_id,VARCHAR(12),FK,regulations.regulation_id,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_versions,revision_number,VARCHAR(20),,,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_versions,revision_date,DATE,,,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_versions,revision_label,VARCHAR(100),,,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_versions,effective_date,DATE,,,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_versions,file_path,VARCHAR(400),,,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_versions,file_hash,VARCHAR(64),,,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_versions,status,VARCHAR(35),,,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_versions,page_count,INT,,,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_articles,article_id,VARCHAR(18),PK,,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_articles,version_id,VARCHAR(14),FK,regulation_versions.version_id,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_articles,chapter_number,VARCHAR(20),,,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_articles,article_number,VARCHAR(35),,,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_articles,article_title,VARCHAR(200),,,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_articles,article_text,LONGTEXT,,,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_articles,page_number,INT,,,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_articles,extraction_status,VARCHAR(30),,,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_chunks,chunk_id,VARCHAR(20),PK,,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_chunks,article_id,VARCHAR(18),FK,regulation_articles.article_id,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_chunks,chunk_order,INT,,,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_chunks,chunk_text,TEXT,,,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_chunks,embedding_ref,VARCHAR(200),,,PDF 메타데이터·추출 본문 (검증 필요)
+regulation_chunks,source_page,INT,,,PDF 메타데이터·추출 본문 (검증 필요)
+leave_types,leave_type_id,VARCHAR(12),PK,,가상 샘플 데이터
+leave_types,type_name,VARCHAR(60),,,가상 샘플 데이터
+leave_types,paid_flag,TINYINT,,,가상 샘플 데이터
+leave_types,deducts_annual_leave,TINYINT,,,가상 샘플 데이터
+leave_types,minimum_unit,"DECIMAL(4,2)",,,가상 샘플 데이터
+leave_types,regulation_article_id,VARCHAR(18),FK,regulation_articles.article_id,가상 샘플 데이터
+leave_balances,balance_id,VARCHAR(14),PK,,가상 샘플 데이터
+leave_balances,employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+leave_balances,year,INT,,,가상 샘플 데이터
+leave_balances,granted_days,"DECIMAL(5,2)",,,가상 샘플 데이터
+leave_balances,carryover_days,"DECIMAL(5,2)",,,가상 샘플 데이터
+leave_balances,adjusted_days,"DECIMAL(5,2)",,,가상 샘플 데이터
+leave_balances,updated_at,DATETIME,,,가상 샘플 데이터
+leave_transactions,transaction_id,VARCHAR(14),PK,,가상 샘플 데이터
+leave_transactions,employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+leave_transactions,leave_type_id,VARCHAR(12),FK,leave_types.leave_type_id,가상 샘플 데이터
+leave_transactions,start_date,DATE,,,가상 샘플 데이터
+leave_transactions,end_date,DATE,,,가상 샘플 데이터
+leave_transactions,days,"DECIMAL(5,2)",,,가상 샘플 데이터
+leave_transactions,status,VARCHAR(25),,,가상 샘플 데이터
+leave_transactions,requested_at,DATETIME,,,가상 샘플 데이터
+leave_transactions,approved_by,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+leave_adjustments,adjustment_id,VARCHAR(14),PK,,가상 샘플 데이터
+leave_adjustments,employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+leave_adjustments,year,INT,,,가상 샘플 데이터
+leave_adjustments,adjustment_days,"DECIMAL(5,2)",,,가상 샘플 데이터
+leave_adjustments,reason,VARCHAR(160),,,가상 샘플 데이터
+leave_adjustments,approved_by,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+leave_adjustments,created_at,DATETIME,,,가상 샘플 데이터
+absences,absence_id,VARCHAR(14),PK,,가상 샘플 데이터
+absences,employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+absences,absence_type,VARCHAR(60),,,가상 샘플 데이터
+absences,start_date,DATE,,,가상 샘플 데이터
+absences,end_date,DATE,,,가상 샘플 데이터
+absences,status,VARCHAR(30),,,가상 샘플 데이터
+absences,restricted_detail_ref,VARCHAR(150),,,가상 샘플 데이터
+attendance_records,attendance_id,VARCHAR(14),PK,,가상 샘플 데이터
+attendance_records,employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+attendance_records,work_date,DATE,,,가상 샘플 데이터
+attendance_records,scheduled_hours,"DECIMAL(4,1)",,,가상 샘플 데이터
+attendance_records,worked_hours,"DECIMAL(4,1)",,,가상 샘플 데이터
+attendance_records,attendance_status,VARCHAR(25),,,가상 샘플 데이터
+personnel_actions,action_id,VARCHAR(14),PK,,가상 샘플 데이터
+personnel_actions,employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+personnel_actions,action_type,VARCHAR(35),,,가상 샘플 데이터
+personnel_actions,from_dept_id,VARCHAR(12),FK,departments.dept_id,가상 샘플 데이터
+personnel_actions,to_dept_id,VARCHAR(12),FK,departments.dept_id,가상 샘플 데이터
+personnel_actions,effective_date,DATE,,,가상 샘플 데이터
+performance_reviews,review_id,VARCHAR(14),PK,,가상 샘플 데이터
+performance_reviews,employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+performance_reviews,review_year,INT,,,가상 샘플 데이터
+performance_reviews,review_type,VARCHAR(40),,,가상 샘플 데이터
+performance_reviews,result_code,VARCHAR(20),,,가상 샘플 데이터
+performance_reviews,visibility,VARCHAR(30),,,가상 샘플 데이터
+training_history,training_id,VARCHAR(14),PK,,가상 샘플 데이터
+training_history,employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+training_history,course_name,VARCHAR(100),,,가상 샘플 데이터
+training_history,provider,VARCHAR(80),,,가상 샘플 데이터
+training_history,start_date,DATE,,,가상 샘플 데이터
+training_history,end_date,DATE,,,가상 샘플 데이터
+training_history,completion_status,VARCHAR(25),,,가상 샘플 데이터
+payroll_monthly,payroll_id,VARCHAR(14),PK,,가상 샘플 데이터
+payroll_monthly,employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+payroll_monthly,pay_month,CHAR(7),,,가상 샘플 데이터
+payroll_monthly,base_pay,INT,,,가상 샘플 데이터
+payroll_monthly,allowance_total,INT,,,가상 샘플 데이터
+payroll_monthly,deduction_total,INT,,,가상 샘플 데이터
+payroll_monthly,net_pay,INT,,,가상 샘플 데이터
+benefit_programs,benefit_id,VARCHAR(14),PK,,가상 샘플 데이터
+benefit_programs,benefit_name,VARCHAR(120),,,가상 샘플 데이터
+benefit_programs,eligibility_rule,VARCHAR(250),,,가상 샘플 데이터
+benefit_programs,annual_limit,INT,,,가상 샘플 데이터
+benefit_programs,owner_topic_id,VARCHAR(12),FK,business_topics.topic_id,가상 샘플 데이터
+benefit_programs,regulation_id,VARCHAR(12),FK,regulations.regulation_id,가상 샘플 데이터
+benefit_applications,application_id,VARCHAR(14),PK,,가상 샘플 데이터
+benefit_applications,employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+benefit_applications,benefit_id,VARCHAR(14),FK,benefit_programs.benefit_id,가상 샘플 데이터
+benefit_applications,requested_amount,INT,,,가상 샘플 데이터
+benefit_applications,application_date,DATE,,,가상 샘플 데이터
+benefit_applications,status,VARCHAR(25),,,가상 샘플 데이터
+travel_requests,travel_id,VARCHAR(14),PK,,가상 샘플 데이터
+travel_requests,employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+travel_requests,travel_type,VARCHAR(30),,,가상 샘플 데이터
+travel_requests,destination,VARCHAR(100),,,가상 샘플 데이터
+travel_requests,start_date,DATE,,,가상 샘플 데이터
+travel_requests,end_date,DATE,,,가상 샘플 데이터
+travel_requests,approval_status,VARCHAR(25),,,가상 샘플 데이터
+expense_claims,claim_id,VARCHAR(14),PK,,가상 샘플 데이터
+expense_claims,employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+expense_claims,expense_type,VARCHAR(35),,,가상 샘플 데이터
+expense_claims,amount,INT,,,가상 샘플 데이터
+expense_claims,currency,VARCHAR(5),,,가상 샘플 데이터
+expense_claims,receipt_ref,VARCHAR(180),,,가상 샘플 데이터
+expense_claims,approval_status,VARCHAR(25),,,가상 샘플 데이터
+procurement_contracts,contract_id,VARCHAR(14),PK,,가상 샘플 데이터
+procurement_contracts,contract_type,VARCHAR(45),,,가상 샘플 데이터
+procurement_contracts,owner_dept_id,VARCHAR(12),FK,departments.dept_id,가상 샘플 데이터
+procurement_contracts,vendor_alias,VARCHAR(90),,,가상 샘플 데이터
+procurement_contracts,contract_amount,BIGINT,,,가상 샘플 데이터
+procurement_contracts,start_date,DATE,,,가상 샘플 데이터
+procurement_contracts,end_date,DATE,,,가상 샘플 데이터
+procurement_contracts,status,VARCHAR(25),,,가상 샘플 데이터
+asset_registry,asset_id,VARCHAR(14),PK,,가상 샘플 데이터
+asset_registry,asset_name,VARCHAR(100),,,가상 샘플 데이터
+asset_registry,asset_type,VARCHAR(45),,,가상 샘플 데이터
+asset_registry,serial_number,VARCHAR(40),,,가상 샘플 데이터
+asset_registry,owner_dept_id,VARCHAR(12),FK,departments.dept_id,가상 샘플 데이터
+asset_registry,location,VARCHAR(80),,,가상 샘플 데이터
+asset_registry,status,VARCHAR(25),,,가상 샘플 데이터
+asset_assignments,assignment_id,VARCHAR(14),PK,,가상 샘플 데이터
+asset_assignments,asset_id,VARCHAR(14),FK,asset_registry.asset_id,가상 샘플 데이터
+asset_assignments,employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+asset_assignments,issued_at,DATE,,,가상 샘플 데이터
+asset_assignments,returned_at,DATE,,,가상 샘플 데이터
+asset_assignments,status,VARCHAR(25),,,가상 샘플 데이터
+safety_incidents,incident_id,VARCHAR(14),PK,,가상 샘플 데이터
+safety_incidents,reported_at,DATETIME,,,가상 샘플 데이터
+safety_incidents,location,VARCHAR(100),,,가상 샘플 데이터
+safety_incidents,incident_type,VARCHAR(70),,,가상 샘플 데이터
+safety_incidents,severity,VARCHAR(20),,,가상 샘플 데이터
+safety_incidents,owner_employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+safety_incidents,status,VARCHAR(30),,,가상 샘플 데이터
+rd_projects,project_id,VARCHAR(14),PK,,가상 샘플 데이터
+rd_projects,project_name,VARCHAR(150),,,가상 샘플 데이터
+rd_projects,lead_employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+rd_projects,owner_dept_id,VARCHAR(12),FK,departments.dept_id,가상 샘플 데이터
+rd_projects,budget,BIGINT,,,가상 샘플 데이터
+rd_projects,start_date,DATE,,,가상 샘플 데이터
+rd_projects,end_date,DATE,,,가상 샘플 데이터
+rd_projects,status,VARCHAR(30),,,가상 샘플 데이터
+ip_records,ip_id,VARCHAR(14),PK,,가상 샘플 데이터
+ip_records,project_id,VARCHAR(14),FK,rd_projects.project_id,가상 샘플 데이터
+ip_records,ip_type,VARCHAR(45),,,가상 샘플 데이터
+ip_records,ip_title,VARCHAR(150),,,가상 샘플 데이터
+ip_records,filing_number,VARCHAR(50),,,가상 샘플 데이터
+ip_records,status,VARCHAR(30),,,가상 샘플 데이터
+compliance_cases,case_id,VARCHAR(14),PK,,가상 샘플 데이터
+compliance_cases,case_type,VARCHAR(60),,,가상 샘플 데이터
+compliance_cases,received_at,DATETIME,,,가상 샘플 데이터
+compliance_cases,owner_dept_id,VARCHAR(12),FK,departments.dept_id,가상 샘플 데이터
+compliance_cases,case_status,VARCHAR(30),,,가상 샘플 데이터
+compliance_cases,restricted_detail_ref,VARCHAR(150),,,가상 샘플 데이터
+chat_sessions,session_id,VARCHAR(14),PK,,가상 샘플 데이터
+chat_sessions,employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+chat_sessions,started_at,DATETIME,,,가상 샘플 데이터
+chat_sessions,ended_at,DATETIME,,,가상 샘플 데이터
+chat_sessions,channel,VARCHAR(30),,,가상 샘플 데이터
+chat_sessions,auth_level,VARCHAR(40),,,가상 샘플 데이터
+chat_messages,message_id,VARCHAR(14),PK,,가상 샘플 데이터
+chat_messages,session_id,VARCHAR(14),FK,chat_sessions.session_id,가상 샘플 데이터
+chat_messages,sender_role,VARCHAR(20),,,가상 샘플 데이터
+chat_messages,message_text,TEXT,,,가상 샘플 데이터
+chat_messages,created_at,DATETIME,,,가상 샘플 데이터
+support_tickets,ticket_id,VARCHAR(14),PK,,가상 샘플 데이터
+support_tickets,session_id,VARCHAR(14),FK,chat_sessions.session_id,가상 샘플 데이터
+support_tickets,employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+support_tickets,topic_id,VARCHAR(12),FK,business_topics.topic_id,가상 샘플 데이터
+support_tickets,owner_employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+support_tickets,priority,VARCHAR(20),,,가상 샘플 데이터
+support_tickets,status,VARCHAR(30),,,가상 샘플 데이터
+support_tickets,created_at,DATETIME,,,가상 샘플 데이터
+support_tickets,closed_at,DATETIME,,,가상 샘플 데이터
+ticket_events,event_id,VARCHAR(14),PK,,가상 샘플 데이터
+ticket_events,ticket_id,VARCHAR(14),FK,support_tickets.ticket_id,가상 샘플 데이터
+ticket_events,actor_employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+ticket_events,event_type,VARCHAR(35),,,가상 샘플 데이터
+ticket_events,previous_status,VARCHAR(25),,,가상 샘플 데이터
+ticket_events,new_status,VARCHAR(25),,,가상 샘플 데이터
+ticket_events,occurred_at,DATETIME,,,가상 샘플 데이터
+satisfaction_surveys,survey_id,VARCHAR(14),PK,,가상 샘플 데이터
+satisfaction_surveys,ticket_id,VARCHAR(14),FK,support_tickets.ticket_id,가상 샘플 데이터
+satisfaction_surveys,score,TINYINT,,,가상 샘플 데이터
+satisfaction_surveys,reason_code,VARCHAR(40),,,가상 샘플 데이터
+satisfaction_surveys,comment,VARCHAR(250),,,가상 샘플 데이터
+satisfaction_surveys,submitted_at,DATETIME,,,가상 샘플 데이터
+access_audit_logs,log_id,VARCHAR(14),PK,,가상 샘플 데이터
+access_audit_logs,actor_employee_id,VARCHAR(12),FK,employees.employee_id,가상 샘플 데이터
+access_audit_logs,action_type,VARCHAR(40),,,가상 샘플 데이터
+access_audit_logs,resource_type,VARCHAR(40),,,가상 샘플 데이터
+access_audit_logs,resource_id,VARCHAR(30),,,가상 샘플 데이터
+access_audit_logs,access_result,VARCHAR(25),,,가상 샘플 데이터
+access_audit_logs,created_at,DATETIME,,,가상 샘플 데이터

@@ -1,0 +1,22 @@
+{
+  "layout": "employee_tools_project",
+  "relative_paths": {
+    "employee_db": "data/employee/employee.sqlite3",
+    "rag_data": "data/rag_data",
+    "embedding_model": "models/bge-m3",
+    "runtime_cache": ".runtime",
+    "sql_queries": "employee_tools/sql_queries.json"
+  },
+  "employee_db_included": false,
+  "rag_data_included": true,
+  "embedding_model_included": false,
+  "embedding_model_setup": "python -m employee_tools.prepare_model",
+  "regulation_documents": 59,
+  "regulation_chunks": 7117,
+  "validation": {
+    "tests_passed": 44,
+    "zip_extraction_checked": true,
+    "renamed_folder_checked": true,
+    "foreign_working_directory_checked": true
+  }
+}

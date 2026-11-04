@@ -1,0 +1,60 @@
+﻿regulation_id,title,category,regulation_type,owner_dept_id,access_level
+RG001,5직급 운영규정,인사·근태,규정,D001,INTERNAL
+RG002,ESG위원회 운영세칙,조직·경영,세칙,D005,INTERNAL
+RG003,감사규정,감사·준법,규정,D009,INTERNAL
+RG004,계약규정,계약·재무,규정,D006,INTERNAL
+RG005,계약직 운영규정,인사·근태,규정,D001,INTERNAL
+RG006,고충처리 지침,조직·경영,지침,D002,INTERNAL
+RG007,공정거래 자율준수프로그램 운영지침,계약·재무,지침,D006,INTERNAL
+RG008,기록물관리지침,조직·경영,지침,D015,INTERNAL
+RG009,내부통제 운영규정,조직·경영,규정,D005,INTERNAL
+RG010,내부회계관리규정,계약·재무,규정,D004,INTERNAL
+RG011,노사협의회 운영규정,조직·경영,규정,D002,INTERNAL
+RG012,명예퇴직운영지침,인사·근태,지침,D001,INTERNAL
+RG013,문서관리지침,조직·경영,지침,D015,INTERNAL
+RG014,법무규정,감사·준법,규정,D007,INTERNAL
+RG015,별정직 운영규정,인사·근태,규정,D001,INTERNAL
+RG016,보상 및 배상규정,보안·안전,규정,D004,INTERNAL
+RG017,보안규정,보안·안전,규정,D010,INTERNAL
+RG018,복리후생규정,급여·복지·출장,규정,D005,INTERNAL
+RG019,비상근무 운영지침,보안·안전,지침,D012,INTERNAL
+RG020,사규관리규정,조직·경영,규정,D005,INTERNAL
+RG021,사택 운영업무 기준,인사·근태,기준,D001,INTERNAL
+RG022,상벌규정,인사·근태,규정,D001,INTERNAL
+RG023,상임임원 복무규정,조직·경영,규정,D005,INTERNAL
+RG024,안전보건관리규정,보안·안전,규정,D012,INTERNAL
+RG025,안전사고에 대한 임원 책임규정,보안·안전,규정,D012,INTERNAL
+RG026,여비규정,급여·복지·출장,규정,D003,INTERNAL
+RG027,연구개발관리규정,연구·품질,규정,D013,INTERNAL
+RG028,이사회 운영규정,조직·경영,규정,D005,INTERNAL
+RG029,이해충돌방지제도 운영세칙,감사·준법,세칙,D008,INTERNAL
+RG030,인권경영규정,감사·준법,규정,D007,INTERNAL
+RG031,인권경영규정세칙,감사·준법,세칙,D007,INTERNAL
+RG032,인사규정 시행세칙,인사·근태,세칙,D001,INTERNAL
+RG033,인사규정,인사·근태,규정,D001,INTERNAL
+RG034,인사평가지침,인사·근태,지침,D001,INTERNAL
+RG035,일용근로자 관리 기준,인사·근태,기준,D001,INTERNAL
+RG036,임금피크제 운영규정,급여·복지·출장,규정,D003,INTERNAL
+RG037,임시조직 운영지침,조직·경영,지침,D005,INTERNAL
+RG038,임원연봉규정,급여·복지·출장,규정,D003,INTERNAL
+RG039,임원직무청렴계약 운영규정,계약·재무,규정,D008,INTERNAL
+RG040,임원추천위원회 운영규정,조직·경영,규정,D005,INTERNAL
+RG041,임직원 행동강령,감사·준법,규정,D008,INTERNAL
+RG042,자녀학자금 운영업무 기준,급여·복지·출장,기준,D003,INTERNAL
+RG043,적극행정운영지침,조직·경영,지침,D005,INTERNAL
+RG044,주택융자 운영업무 기준,급여·복지·출장,기준,D002,INTERNAL
+RG045,지식재산권 관리규정,연구·품질,규정,D013,INTERNAL
+RG046,직무관리지침,조직·경영,지침,D001,INTERNAL
+RG047,직무권한세칙,조직·경영,세칙,D005,INTERNAL
+RG048,직원연봉규정 시행세칙,급여·복지·출장,세칙,D003,INTERNAL
+RG049,직원연봉규정,급여·복지·출장,규정,D003,INTERNAL
+RG050,직제규정,조직·경영,규정,D005,INTERNAL
+RG051,직제규정세칙,조직·경영,세칙,D005,INTERNAL
+RG052,출자회사 관리규정,계약·재무,규정,D006,INTERNAL
+RG053,취업규칙 시행세칙,인사·근태,세칙,D001,INTERNAL
+RG054,취업규칙,인사·근태,규정,D001,INTERNAL
+RG055,품질경영규정,연구·품질,규정,D012,INTERNAL
+RG056,프로젝트 계약근로자 관리 기준,인사·근태,기준,D014,INTERNAL
+RG057,한전KDN주식회사 정관,조직·경영,규정,D005,INTERNAL
+RG058,해외근무관리규정,조직·경영,규정,D014,INTERNAL
+RG059,회계규정,계약·재무,규정,D004,INTERNAL

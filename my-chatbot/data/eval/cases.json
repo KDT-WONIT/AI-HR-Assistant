@@ -1,0 +1,209 @@
+{
+  "employee_id": "KDN0001",
+  "cases": [
+    {
+      "id": "pay-salary",
+      "question": "나 연봉 얼마야",
+      "expect_any": [
+        [
+          "직급",
+          "등급"
+        ],
+        [
+          "원"
+        ]
+      ],
+      "expect_sources": [
+        "연봉규정"
+      ],
+      "forbid": [
+        "이전 문의"
+      ]
+    },
+    {
+      "id": "benefit-self-dev",
+      "question": "자기계발 교육비 지원 기준을 알려주세요",
+      "expect_sources": [
+        "복리후생",
+        "학자금",
+        "교육"
+      ],
+      "forbid": [
+        "이전 문의"
+      ]
+    },
+    {
+      "id": "records-security",
+      "question": "기록물 보안 관리는 어떻게 하나요?",
+      "expect_any": [
+        [
+          "외부인",
+          "출입",
+          "허가"
+        ]
+      ],
+      "expect_sources": [
+        "기록물관리지침"
+      ],
+      "min_answer_chars": 150
+    },
+    {
+      "id": "leave-apply",
+      "question": "연차휴가는 어떻게 신청하나요?",
+      "expect_any": [
+        [
+          "신청",
+          "제출",
+          "근태계"
+        ]
+      ],
+      "expect_sources": [
+        "취업규칙"
+      ],
+      "forbid": [
+        "이전 문의"
+      ]
+    },
+    {
+      "id": "leave-days",
+      "question": "내 연차는 며칠이야?",
+      "expect_any": [
+        [
+          "일"
+        ],
+        [
+          "부여",
+          "발생",
+          "연차"
+        ]
+      ],
+      "forbid": [
+        "데이터가 없습니다",
+        "이전 문의"
+      ]
+    },
+    {
+      "id": "benefit-contact-hr",
+      "question": "복리후생에 초콜릿 구매 건의하고 싶다",
+      "expect_contact_depts": [
+        "인사부",
+        "급여부"
+      ],
+      "forbid_contact_depts": [
+        "공정계약실"
+      ]
+    },
+    {
+      "id": "pantry-contact",
+      "question": "나 배고픈데 탕비실에 라면 먹어도 될까?",
+      "expect_contact_depts": [
+        "총무시설부"
+      ]
+    },
+    {
+      "id": "unrelated-general-chat",
+      "question": "오늘 저녁 메뉴 추천해줘",
+      "forbid": ["확실하게 정리하기 어렵"],
+      "min_answer_chars": 20
+    },
+    {
+      "id": "travel-lodging",
+      "question": "국내 출장 숙박비 한도가 얼마야?",
+      "expect_sources": [
+        "여비규정"
+      ],
+      "expect_any": [
+        [
+          "원"
+        ]
+      ]
+    },
+    {
+      "id": "travel-estimate",
+      "question": "부산 출장 2박 3일 여비 얼마나 받아?",
+      "expect_any": [
+        [
+          "원"
+        ]
+      ]
+    },
+    {
+      "id": "history-explicit",
+      "question": "이전 문의 이력 보여줘",
+      "expect_any": [
+        [
+          "이전 문의",
+          "문의"
+        ]
+      ]
+    },
+    {
+      "id": "school-fee",
+      "question": "자녀 학자금 지원 대상이 어떻게 돼?",
+      "expect_sources": [
+        "학자금"
+      ],
+      "forbid": [
+        "이전 문의"
+      ]
+    },
+    {
+      "id": "childcare-leave",
+      "question": "육아휴직은 얼마 동안 쓸 수 있어?",
+      "expect_sources": [
+        "취업규칙"
+      ],
+      "forbid": [
+        "이전 문의"
+      ]
+    },
+    {
+      "id": "severance",
+      "question": "퇴직금은 어떻게 계산돼?",
+      "expect_sources": [
+        "연봉규정",
+        "취업규칙"
+      ],
+      "forbid": [
+        "이전 문의"
+      ]
+    },
+    {
+      "id": "privacy-contact",
+      "question": "개인정보가 유출된 것 같은데 어디에 알려야 해?",
+      "expect_contact_depts": [
+        "개인정보보호부",
+        "정보보안부"
+      ]
+    },
+    {
+      "id": "housing",
+      "question": "사택 입주 자격이 어떻게 돼?",
+      "expect_sources": [
+        "사택"
+      ],
+      "forbid": [
+        "이전 문의"
+      ]
+    },
+    {
+      "id": "housing-loan",
+      "question": "주택융자는 얼마까지 받을 수 있어?",
+      "expect_sources": [
+        "주택융자"
+      ],
+      "forbid": [
+        "이전 문의"
+      ]
+    },
+    {
+      "id": "person-lookup",
+      "question": "인사부 담당자 연락처 알려줘",
+      "expect_any": [
+        [
+          "인사부"
+        ]
+      ]
+    }
+  ]
+}

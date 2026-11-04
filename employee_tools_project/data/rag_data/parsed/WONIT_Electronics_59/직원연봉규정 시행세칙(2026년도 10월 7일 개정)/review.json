@@ -1,0 +1,8 @@
+{
+  "warnings": [
+    "검색 청크에 연결되지 않은 PDF 페이지: [4] (빈 페이지/이미지/추출 누락 확인)"
+  ],
+  "over_target_chunks": [],
+  "pdf_page_count": 33,
+  "table_count": 43
+}

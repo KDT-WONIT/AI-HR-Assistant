@@ -1,0 +1,12 @@
+{
+  "employees": 100,
+  "distinct_photo_ids": 100,
+  "distinct_photo_urls": 100,
+  "departments": 16,
+  "source": "Pexels source pages",
+  "metadata_review": "search descriptions inspected",
+  "image_visual_review": "NOT COMPLETED",
+  "download_100_images": "NOT COMPLETED, use downloader on PC",
+  "license_policy": "pexels license checked; implied-employment/model release unverified",
+  "updated_sql": "04_update_100_pexels_photos.sql"
+}

@@ -1,0 +1,37 @@
+purpose:
+  stands_in_for: Local Ollama POST /api/chat HTTP boundary; no model inference.
+  unblocks: Validate DB-backed history serialization and model failure handling without downloading a model.
+assumptions:
+  - id: ollama-chat-message-envelope
+    status: supported
+    claim: The documented non-streaming chat endpoint accepts role/content messages and returns message.content.
+    reason: Official Ollama API documentation defines the request and response fields used by the adapter.
+    verification: Read official docs on 2026-11-04. The local mock validates this subset; real model behavior is unverified.
+    source: https://github.com/ollama/ollama/blob/main/docs/api.md
+    updated_at: '2026-11-04'
+  - id: caller-history-window
+    status: supported
+    claim: In the tested MySQL-backed path, the caller sends only its current session's last ten messages in chronological order, with the current question once.
+    reason: Integration tests inspected the request received by the real HTTP stand-in and the persisted records.
+    verification: On 2026-11-04 all 15 API/MySQL/Ollama tests passed against MySQL 8.4.11 and the local Postman simulation. POST requests were observed in simulation request logs.
+    source: tests/test_ollama.py; tests/test_mysql.py; app/agent/service.py
+    updated_at: '2026-11-04'
+  - id: real-model-answer-quality
+    status: unknown
+    claim: The user's chosen Ollama model provides accurate grounded Korean answers.
+    reason: No model was configured or downloaded; the stand-in cannot establish inference quality.
+    verification: Not tested against a real model. Configure OLLAMA_MODEL and test after RAG tools are implemented.
+    source: app/integrations/ollama.py; prompts/answer_system.txt
+    updated_at: '2026-11-04'
+  - id: caller-user-profile
+    status: supported
+    claim: In the tested path, the caller fetches the current ID's profile and includes it with the last ten session messages in the Ollama HTTP request.
+    reason: Tests inspected the actual received request and verified profile refresh, session isolation, MySQL lookup and stored context.
+    verification: On 2026-11-04 all 37 tests passed against MySQL 8.4.11 and the same local mock handler run directly with Node after CLI startup errors. Actual model inference was not tested.
+    source: tests/test_users.py; tests/test_mysql.py; tests/test_ollama.py; app/repositories/users.py
+    updated_at: '2026-11-04'
+fingerprints:
+  - id: local-scaffold-mysql-history
+    date: '2026-11-04'
+    commit: null
+    cli: '1.75.0'

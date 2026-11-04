@@ -1,0 +1,12 @@
+version: 1
+id: 90f111f6-bc78-475d-bfa6-44f0285b056f
+name: ollama-contract
+slug: ollama-contract
+protocol: http
+port: 14500
+interceptRequests: true
+origin: http://127.0.0.1:11434
+scenarios:
+  - name: default
+    path: ./default.js
+    default: true
