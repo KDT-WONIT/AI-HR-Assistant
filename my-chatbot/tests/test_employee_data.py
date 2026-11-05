@@ -21,12 +21,12 @@ class EmployeeDataTests(unittest.TestCase):
         self.rows = {
             "departments": [dict(dept_id="D001", dept_name="인사부", is_active="1")],
             "duty_roles": [dict(role_id="R001", role_name="부서장")],
-            "employees": [dict(employee_id="KDN0001", employee_name="김서연", grade="2직급",
+            "employees": [dict(employee_id="WON0001", employee_name="김서연", grade="2직급",
                                hire_date="2006-01-05", employment_type="정규직", employment_status="재직")],
-            "employee_assignments": [dict(assignment_id="EA0001", employee_id="KDN0001", dept_id="D001",
+            "employee_assignments": [dict(assignment_id="EA0001", employee_id="WON0001", dept_id="D001",
                                           position_title="부서장", start_date="2006-01-05", is_primary="1")],
-            "employee_roles": [dict(employee_role_id="ER0001", employee_id="KDN0001", role_id="R001", start_date="2006-01-05")],
-            "employee_contacts": [dict(employee_id="KDN0001", work_email="kdn0001@example.com",
+            "employee_roles": [dict(employee_role_id="ER0001", employee_id="WON0001", role_id="R001", start_date="2006-01-05")],
+            "employee_contacts": [dict(employee_id="WON0001", work_email="won0001@example.com",
                                        contact_visibility="INTERNAL", photo_path="assets/photos/KDN0001.jpg",
                                        photo_url="https://images.pexels.com/photos/1/test.jpeg",
                                        photo_status="REVIEW_PENDING", photo_source="PEXELS_STOCK_DEMO")],
@@ -35,9 +35,9 @@ class EmployeeDataTests(unittest.TestCase):
         with (self.dataset / "docs" / "employee_photo_manifest_100.csv").open("w", newline="", encoding="utf-8") as stream:
             writer = csv.writer(stream)
             writer.writerow(["employee_id", "source_page_url", "license_url"])
-            writer.writerow(["KDN0001", "https://www.pexels.com/photo/1/", "https://www.pexels.com/license/"])
+            writer.writerow(["WON0001", "https://www.pexels.com/photo/1/", "https://www.pexels.com/license/"])
         (self.dataset / "assets" / "profiles").mkdir(parents=True)
-        (self.dataset / "assets" / "profiles" / "KDN0001.svg").write_text("<svg/>", encoding="utf-8")
+        (self.dataset / "assets" / "profiles" / "WON0001.svg").write_text("<svg/>", encoding="utf-8")
 
     def load(self):
         (self.dataset / "csv").mkdir(exist_ok=True)
@@ -101,11 +101,11 @@ class EmployeeMySQLTests(unittest.TestCase):
 
     def test_profile_join_and_existing_user_lookup(self):
         from app.repositories.users import MySQLUserRepository
-        profile = MySQLUserRepository().get("KDN0001")
+        profile = MySQLUserRepository().get("WON0001")
         self.assertEqual((profile.name, profile.department, profile.job_title), ("김서연", "인사부", "부서장"))
         self.assertIsNone(MySQLUserRepository().get("NOT-A-USER"))
         with connection_scope() as connection, connection.cursor(dictionary=True) as cursor:
-            cursor.execute("SELECT * FROM v_employee_profiles WHERE employee_id = %s", ("KDN0001",))
+            cursor.execute("SELECT * FROM v_employee_profiles WHERE employee_id = %s", ("WON0001",))
             row = cursor.fetchone()
             self.assertEqual(row["photo_status"], "REVIEW_PENDING")
             self.assertTrue(row["source_page_url"].startswith("https://www.pexels.com/"))

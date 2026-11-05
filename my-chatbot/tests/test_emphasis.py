@@ -23,6 +23,12 @@ class EmphasisTests(unittest.TestCase):
         self.assertEqual(emphasize(once), once)
         self.assertEqual(strip_emphasis(once), '휴가는 15일입니다.')
 
+    def test_section_titles_are_unified_as_bold_braces(self):
+        out = emphasize('요약입니다.\n\n확인된 내용\n- 항목\n\n[참고 문서]\n- a.pdf · 1쪽\n\n추가 안내\n문의하세요.\n\n다음 단계\n확인하세요.')
+        for title in ('확인된 내용', '참고 문서', '추가 안내', '다음 단계'):
+            self.assertIn('**{' + title + '}**', out)
+        self.assertEqual(emphasize(out), out)
+
 
 if __name__ == '__main__':
     unittest.main()

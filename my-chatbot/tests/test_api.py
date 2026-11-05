@@ -61,7 +61,7 @@ class ApiTests(unittest.TestCase):
         self.assertEqual(len(context.history),2)
         self.assertEqual(context.sources[0].document,'fixture.pdf')
         self.assertEqual(context.tool_results[0].tool_id,'work_labor')
-        self.assertEqual(self.service.ollama.choose_tools.await_args.kwargs['history'],[])  # 도구 선택에는 이전 대화를 쓰지 않음
+        self.assertEqual(self.service.ollama.choose_tools.await_args.kwargs['history'],[{'role':'user','content':'연차 규정'}])
         stored = self.client.get('/api/conversations/'+conversation_id).json()['messages']
         self.assertEqual(len(stored),4)
         self.assertEqual(stored[-1]['content'],response.json()['answer'])

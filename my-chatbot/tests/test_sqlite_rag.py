@@ -47,6 +47,10 @@ class SQLiteTests(unittest.TestCase):
         self.assertEqual([m.content for m in recent if m.role=='user'], ['2','3','4','5','6'])
         self.assertEqual(len(fresh.get(first.id).messages), 14)
         self.assertNotIn('다른 세션', str(recent))
+        facts = fresh.user_messages(first.id)
+        self.assertEqual([m.content for m in facts], [str(n) for n in range(7)])
+        self.assertTrue(all(m.role == 'user' for m in facts))
+        self.assertEqual([m.content for m in fresh.user_messages(other.id)], ['다른 세션'])
 
     def test_atomic_turn_close_and_duplicate_end(self):
         conversation=self.repository.create('A'); context=AnswerContext(employee_id='A',question='q')
@@ -98,9 +102,9 @@ class RoutingAndSearchTests(unittest.TestCase):
             {'text':'500만원 지원됩니다.','source_id':'S1','evidence_id':'E1'},
         ]}))
         answer = asyncio.run(client.generate_answer(context))
-        self.assertNotIn('500만원',answer)
-        self.assertNotIn('교육비는 100만원까지 지원한다.',answer)
-        self.assertIn('다음 단계',answer)
+        self.assertNotIn('500만원',answer)  # 검증되지 않은 모델 주장은 쓰지 않고,
+        self.assertIn('교육비는 100만원까지 지원한다.',answer)  # 질문과 맞는 원문 문장을 그대로 정리해 '모르겠다'로 끝내지 않습니다.
+        self.assertIn('규정.pdf · 4쪽',answer)
 
     def test_broken_answer_json_is_a_readable_limit_notice(self):
         from app.schemas import Source

@@ -146,8 +146,8 @@ class TableRestorationTests(unittest.TestCase):
 class KeyContentTests(unittest.TestCase):
     def context(self, question='나 연봉 얼마야', coverage='unknown'):
         restored = expand_sources([source('doc:000003')], ['2직급'], fetch)
-        return AnswerContext(question=question, employee_id='KDN0001', answer_coverage=coverage, sources=restored,
-                             user_profile=UserProfile(employee_id='KDN0001', name='김서연', grade='2직급', department='인사부'),
+        return AnswerContext(question=question, employee_id='WON0001', answer_coverage=coverage, sources=restored,
+                             user_profile=UserProfile(employee_id='WON0001', name='김서연', grade='2직급', department='인사부'),
                              user_profile_status='found')
 
     def test_block_lists_the_users_grade_rows_with_page_and_caution(self):
@@ -245,8 +245,8 @@ class StreamingTests(unittest.TestCase):
                                 steps=[Step(key='a', label='a', detail='d', status='done')])
 
         with patch.object(routes.service, 'reply', side_effect=fake_reply), TestClient(app) as client:
-            created = client.post('/api/conversations', json={'employee_id': 'KDN0001'}).json()
-            with client.stream('POST', '/api/chat/stream', json={'employee_id': 'KDN0001', 'conversation_id': created['id'],
+            created = client.post('/api/conversations', json={'employee_id': 'WON0001'}).json()
+            with client.stream('POST', '/api/chat/stream', json={'employee_id': 'WON0001', 'conversation_id': created['id'],
                                                                 'message': '테스트'}) as response:
                 body = ''.join(response.iter_text())
         events = [(block.split('\n')[0][7:], json.loads(block.split('\n')[1][6:])) for block in body.strip().split('\n\n')]
@@ -294,7 +294,7 @@ class StreamingTests(unittest.TestCase):
             Source(document='기록물관리지침(2025년 07월 개정).pdf', page=9, text=text, section='제28조(보안관리)')])
         with patch('app.integrations.ollama.settings', replace(settings, answer_provider='ollama', ollama_model='fake')):
             answer = asyncio.run(client.generate_answer(context, on_preview=on_preview))
-        self.assertGreater(len(previews), 2)  # 토큰이 오는 동안 여러 번 갱신됩니다.
+        self.assertGreaterEqual(len(previews), 2)  # 검증된 미리보기와 최종본이 전달됩니다.
         self.assertTrue(previews[-1].startswith('외부인의 출입은 원칙적으로 금지되며'))
         self.assertIn('[참고 문서]', answer)  # 최종본은 검증·정리된 형식입니다.
 

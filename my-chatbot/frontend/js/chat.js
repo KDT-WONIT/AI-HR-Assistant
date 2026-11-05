@@ -331,7 +331,7 @@ $('chat-form').addEventListener('submit', async (event) => {
     const message = $('user-input').value.trim();
     const employeeId = $('employee-id').value.trim();
     if (!state.ready || !message || state.busy || state.closed) return;
-    if (!employeeId) { $('employee-id').focus(); return; }
+    if (!employeeId) { appendMessage('사번을 먼저 입력해주세요.', 'error'); $('employee-id').focus(); return; }
     state.busy = true;
     updateControls();
     const userRow = appendMessage(message, 'user');

@@ -7,7 +7,22 @@ def amount(value):
 
 
 def structured_answer(context):
+    from app.agent.leave_answers import spouse_leave_answer, leave_chain_answer
+    from app.agent.travel_answers import travel_payment_answer
+    from app.agent.leave_answers import leave_balance_answer
+    from app.agent.travel_calc_answers import travel_calc_answer
+    leave = (spouse_leave_answer(context) or leave_chain_answer(context) or travel_payment_answer(context)
+             or leave_balance_answer(context) or travel_calc_answer(context))
+    if leave is not None:
+        return leave
+    from app.agent.travel_estimate_answers import travel_estimate_answer
+    estimate = travel_estimate_answer(context)
+    if estimate is not None:
+        return estimate
     for result in context.tool_results:
+        if result.data.get('user_situation'):
+            context.answer_coverage = 'direct'
+            return '말씀하신 상황을 이번 대화에서 참고하겠습니다. 이어서 궁금한 휴가·지원금·출장비를 물어봐 주세요.'
         if 'inquiry_history' in result.data:
             record=result.data['inquiry_history']
             if record['status']!='success':

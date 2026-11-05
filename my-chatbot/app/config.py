@@ -49,6 +49,7 @@ class Settings:
     ollama_model: str = "qwen2.5:3b"
     ollama_answer_model: str = 'gemma3:4b'
     ollama_timeout: float = 60
+    ollama_think: bool = False
     # 표를 복원한 근거가 길어져도 시스템 프롬프트가 잘리지 않도록 기존 8192보다 넉넉히 둡니다.
     ollama_num_ctx: int = 12288
     ollama_keep_alive: str = '-1'  # 모델을 메모리에 유지하는 시간. -1은 서버를 끌 때까지 계속 유지(기본 5분이면 첫 질문이 매우 느립니다)
@@ -76,11 +77,13 @@ class Settings:
     n8n_event_session_start: str = 'session_start'
     n8n_event_question: str = 'question'
     n8n_event_answer: str = 'answer'
-    n8n_event_session_end: str = 'session_end'
+    n8n_event_session_end: str = 'end'  # 만족도 없이 종료
+    n8n_event_feedback: str = 'feedback'  # 만족도(1~5점)와 함께 종료
     vector_backend: str = "chroma"
     chroma_collection: str = "kdn_regulations_bge_m3_v1"
     user_data_source: str = "auto"
-    frontend_dir: Path = PROJECT_ROOT / "frontend"
+    frontend_dir: Path = PROJECT_ROOT / "frontend_v7"
+    ui_regulations_dir: Path = PROJECT_ROOT.parent / 'WONIT_HR_UI_v7_WONIT_59_TEST' / 'WONIT_HR_UI_v7_WONIT_59_TEST' / 'regulations' / 'wonit_preprocessed'
     prompts_dir: Path = PROJECT_ROOT / "prompts"
     logs_dir: Path = PROJECT_ROOT / "logs"
     database_schema_path: Path = PROJECT_ROOT / "database" / "schema.sql"
@@ -130,8 +133,8 @@ class Settings:
             parsed = urlparse(self.n8n_webhook_url)
             if parsed.scheme not in {'http', 'https'} or not parsed.netloc:
                 raise ValueError('N8N_WEBHOOK_URL은 http 또는 https 주소여야 합니다.')
-        event_names = [self.n8n_event_session_start,self.n8n_event_question,self.n8n_event_answer,self.n8n_event_session_end]
-        if any(not re.fullmatch(r'[A-Za-z][A-Za-z0-9_.-]{0,63}',name) for name in event_names) or len(set(event_names)) != 4:
+        event_names = [self.n8n_event_session_start,self.n8n_event_question,self.n8n_event_answer,self.n8n_event_session_end,self.n8n_event_feedback]
+        if any(not re.fullmatch(r'[A-Za-z][A-Za-z0-9_.-]{0,63}',name) for name in event_names) or len(set(event_names)) != 5:
             raise ValueError('n8n 이벤트 이름은 서로 달라야 하며 영문으로 시작하는 1~64자 영문·숫자·밑줄·점·하이픈이어야 합니다.')
         if not 1 <= self.mysql_port <= 65535:
             raise ValueError("MYSQL_PORT는 1~65535여야 합니다.")
@@ -159,6 +162,7 @@ class Settings:
             enabled_tools=tuple(item.strip() for item in env.get("ENABLED_TOOLS", "").split(",") if item.strip()),
             ollama_base_url=env.get("OLLAMA_BASE_URL", "http://127.0.0.1:11434"),
             ollama_model=env.get("OLLAMA_MODEL", "qwen2.5:3b"), ollama_timeout=timeout,
+            ollama_think=env_bool(env,'OLLAMA_THINK',False),
             ollama_num_ctx=env_int(env, 'OLLAMA_NUM_CTX', 12288),
             ollama_keep_alive=env.get('OLLAMA_KEEP_ALIVE', '-1').strip() or '-1',
             ollama_unload_on_exit=env_bool(env, 'OLLAMA_UNLOAD_ON_EXIT', True),
@@ -179,14 +183,16 @@ class Settings:
             n8n_event_session_start=env.get('N8N_EVENT_SESSION_START','session_start'),
             n8n_event_question=env.get('N8N_EVENT_QUESTION','question'),
             n8n_event_answer=env.get('N8N_EVENT_ANSWER','answer'),
-            n8n_event_session_end=env.get('N8N_EVENT_SESSION_END','session_end'),
+            n8n_event_session_end=env.get('N8N_EVENT_SESSION_END','end'),
+            n8n_event_feedback=env.get('N8N_EVENT_FEEDBACK','feedback'),
             embedding_revision=env.get("EMBEDDING_REVISION", "5617a9f61b028005a4858fdac845db406aefb181"),
             embedding_device=env.get("EMBEDDING_DEVICE", "cpu"),
             rag_top_k=env_int(env, "RAG_TOP_K", 5), rag_max_distance=float(env.get("RAG_MAX_DISTANCE", "0.60")),
             vector_backend=env.get("VECTOR_BACKEND", "chroma"),
             chroma_collection=env.get("CHROMA_COLLECTION", "kdn_regulations_bge_m3_v1"),
             user_data_source=env.get("USER_DATA_SOURCE", "auto"),
-            frontend_dir=env_path(env, "FRONTEND_DIR", PROJECT_ROOT / "frontend"),
+            frontend_dir=env_path(env, "FRONTEND_DIR", PROJECT_ROOT / "frontend_v7"),
+            ui_regulations_dir=env_path(env,'UI_REGULATIONS_DIR',PROJECT_ROOT.parent/'WONIT_HR_UI_v7_WONIT_59_TEST'/'WONIT_HR_UI_v7_WONIT_59_TEST'/'regulations'/'wonit_preprocessed'),
             prompts_dir=env_path(env, "PROMPTS_DIR", PROJECT_ROOT / "prompts"),
             logs_dir=env_path(env, "LOGS_DIR", PROJECT_ROOT / "logs"),
             database_schema_path=env_path(env, "DATABASE_SCHEMA_PATH", PROJECT_ROOT / "database" / "schema.sql"),

@@ -2,7 +2,7 @@ from datetime import date, datetime
 from typing import Any, Literal
 from uuid import UUID
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 
 class RequestModel(BaseModel):
@@ -12,16 +12,26 @@ class RequestModel(BaseModel):
 class ConversationCreate(RequestModel):
     employee_id: str = Field(default="TEST-001", min_length=1, max_length=50)
 
+    @field_validator('employee_id')
+    @classmethod
+    def canonical_id(cls, value):
+        from app.identity import canonical_employee_id
+        return canonical_employee_id(value)
+
 
 class ChatRequest(ConversationCreate):
     message: str = Field(min_length=1, max_length=4000)
     conversation_id: UUID | None = None
     tool_id: str | None = None
+    arguments: 'ToolArguments | None' = None
 
 
 class EndRequest(RequestModel):
     rating: Literal["helpful", "neutral", "unhelpful"] | None = None
     comment: str = Field(default="", max_length=1000)
+    score: int | None = Field(default=None,ge=1,le=5)
+    error_type: Literal['','incorrect_answer','wrong_source','calculation_error','technical_error'] = ''
+    message_id: UUID | None = None
 
 
 class Source(BaseModel):
@@ -112,6 +122,9 @@ class ToolInput(BaseModel):
     conversation_id: UUID
     user_profile: UserProfile | None = None
     arguments: dict[str, Any] = Field(default_factory=dict)
+    # 출장비 계산기가 앞선 대화에서 받은 값을 이어 쓰기 위한 같은 세션의 대화(규정 근거 아님)
+    recent_user_messages: list[str] = Field(default_factory=list)
+    last_assistant_message: str = ''
 
 
 class ToolArguments(RequestModel):
@@ -126,6 +139,7 @@ class ToolArguments(RequestModel):
 class ToolDecision(RequestModel):
     tool_id: str
     arguments: ToolArguments = Field(default_factory=ToolArguments)
+    resolved_question: str | None = Field(default=None, max_length=4000)
 
 
 class ToolResult(BaseModel):
@@ -152,6 +166,7 @@ class AnswerContext(BaseModel):
     tool_results: list[ToolResult] = Field(default_factory=list)
     sources: list[Source] = Field(default_factory=list)
     answer_coverage: Literal['unknown','direct','partial','missing'] = 'unknown'
+    processing_status: str = 'answered'
     contact_escalation: ContactEscalation = Field(default_factory=ContactEscalation)
 
 
@@ -186,6 +201,7 @@ class Message(BaseModel):
     sources: list[Source] = Field(default_factory=list)
     tools_used: list[str] = Field(default_factory=list)
     contact_escalation: ContactEscalation = Field(default_factory=ContactEscalation)
+    processing_status: str = 'answered'
 
 
 class EndResponse(BaseModel):
@@ -197,6 +213,9 @@ class EndResponse(BaseModel):
     event_id: UUID
     webhook_status: Literal["not_configured", "not_implemented", "pending", "sending", "sent", "failed"]
     message: str
+    score: int | None = None
+    error_type: str = ''
+    webhook_error: str | None = None
 
 
 class Conversation(BaseModel):

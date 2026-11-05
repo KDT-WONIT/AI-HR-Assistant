@@ -10,6 +10,7 @@ from app.repositories.directory import EmployeeDirectoryRepository
 from app.rag.pipeline import RagService
 from app.rag.retrieval import RetrievalHints
 from app.schemas import ToolArguments, ToolInput, ToolResult
+from app.integrations.leave_balance import load_balance
 from app.integrations.leave_policy import leave_entitlement
 from app.integrations.employee_tools import history_question,inquiry_history,travel_expense
 
@@ -18,13 +19,29 @@ def business_data(tool_id: str, request: ToolInput) -> tuple[dict, str | None]:
     """도구는 조회/계산만 수행합니다. 인사 변경이나 휴가 승인은 하지 않습니다."""
     data = {}
     missing = None
-    question = request.question
+    from app.agent.followups import current_question, situation_statement
+    question = current_question(request.question)
     args = ToolArguments.model_validate(request.arguments)
+    if situation_statement(question):
+        return {'user_situation': question}, None
     if history_question(question):
         return {'inquiry_history':inquiry_history(request,args)},None
     args.history_query = None  # 라우터가 일반 질문에도 채울 수 있어, 명시적인 이력 요청만 이력 모드로 처리합니다.
+    if tool_id == 'travel_expenses':
+        from app.integrations import travel_calc
+        if args.trip is None and travel_calc.should_run(question, request.recent_user_messages, request.last_assistant_message):
+            return travel_calc_data(request, question)
     if tool_id=='travel_expenses' and (args.trip is not None or any(word in question for word in ('계산','예상','견적','얼마','총액'))):
+        from app.agent.travel_estimate_answers import apply_defaults
+        if args.trip is not None:
+            args.trip,assumptions=apply_defaults(args.trip)
+        else:
+            assumptions=[]
         result=travel_expense(request,args)
+        if isinstance(result,dict) and assumptions:
+            result['assumptions']=[*assumptions,*result.get('assumptions',[])]
+        if isinstance(result,dict) and result.get('status')=='needs_review' and args.trip:
+            result['input']=dict(args.trip)
         return {'travel_expense':result},result.get('error',{}).get('message') if result['status']=='error' else None
     if args.requested_days is None:
         match = re.search(r'(\d+(?:\.\d+)?)\s*일\s*(?:을\s*)?(?:쓰|사용)', question)
@@ -43,12 +60,14 @@ def business_data(tool_id: str, request: ToolInput) -> tuple[dict, str | None]:
             missing = '등록된 사용자 정보가 없습니다. 사용자 ID를 확인해주세요.'
     leave_words = ('잔여', '남은', '남아', '일 남', '쓰면', '사용하면')
     entitlement_words = ('며칠', '몇 일', '몇일', '일수', '부여', '발생', '몇 개', '얼마나', '총 ')
-    if tool_id == 'work_labor' and (any(word in question for word in leave_words)
-                                    or (any(word in question for word in ('연차', '휴가')) and any(word in question for word in entitlement_words))):
+    compact_question = question.replace(' ', '')
+    annual_question = '연차' in question or (any(word in compact_question for word in ('남은휴가','잔여휴가'))
+        and not any(word in question for word in ('배우자','경조','출산','특별','질병')))
+    if tool_id == 'work_labor' and annual_question and (any(word in question for word in leave_words)
+                                    or any(word in question for word in entitlement_words)):
         year = args.year or datetime.now(timezone(timedelta(hours=9))).year
         with connection_scope() as connection:
-            row = connection.execute('SELECT granted_days,used_days,updated_at FROM leave_balances WHERE employee_id=? AND balance_year=?',
-                                     (request.employee_id, year)).fetchone()
+            row = load_balance(connection, request.employee_id, year)
         profile = request.user_profile
         today = datetime.now(timezone(timedelta(hours=9))).date()
         policy = leave_entitlement(profile.hired_at, today, profile.grade) if row is None and profile and profile.hired_at else None
@@ -64,10 +83,8 @@ def business_data(tool_id: str, request: ToolInput) -> tuple[dict, str | None]:
         elif row is None:
             missing = f'{year}년 연차 부여/사용 데이터가 없습니다. 데이터를 등록해야 잔여일수를 계산할 수 있습니다.'
         else:
-            granted, used = Decimal(str(row['granted_days'])), Decimal(str(row['used_days']))
-            balance = granted - used
-            data['leave_balance'] = dict(year=year, granted_days=float(granted), used_days=float(used),
-                                         remaining_days=float(balance), updated_at=row['updated_at'])
+            balance = Decimal(str(row['remaining_days']))
+            data['leave_balance'] = row
             if args.requested_days is not None:
                 requested = Decimal(str(args.requested_days))
                 data['leave_projection'] = dict(requested_days=float(requested), projected_remaining_days=float(balance-requested),
@@ -110,12 +127,33 @@ def business_data(tool_id: str, request: ToolInput) -> tuple[dict, str | None]:
     return data, missing
 
 
+def travel_calc_data(request: ToolInput, question: str) -> tuple[dict, str | None]:
+    """출장비 계산기: 4가지 입력이 모두 있어야 계산하고, 없으면 빠진 항목을 되묻습니다."""
+    import json
+    from app.integrations import travel_calc
+    inputs = travel_calc.merge_inputs(question, request.recent_user_messages)
+    if travel_calc.missing_items(inputs):
+        return {'calculator': 'travel_expenses'}, travel_calc.request_message(inputs)
+    problem = travel_calc.validate(inputs)
+    if problem:
+        return {'calculator': 'travel_expenses'}, travel_calc.request_message(inputs, problem)
+    grade = None
+    try:
+        mapping = json.loads(settings.travel_grade_mapping_path.read_text(encoding='utf-8'))
+        grade = mapping.get(request.user_profile.grade if request.user_profile else None)
+    except (OSError, ValueError):
+        pass
+    return {'travel_calc': travel_calc.calculate(inputs, grade)}, None
+
+
 async def execute_domain(tool_id: str, patterns: list[str], request: ToolInput) -> ToolResult:
     data, missing = await run_in_threadpool(business_data, tool_id, request)
     has_directory_data = any(data.get(key) for key in ('employee','hr_contacts','departments'))
     policy_question = any(word in request.question for word in ('규정','기준','절차','방법','자격','지원','신청'))
     # 사원 정보만 묻는 질문에 무관한 규정 검색/LLM 설명을 섞지 않습니다.
-    structured = any(data.get(key) for key in ('inquiry_history','travel_expense'))
+    from app.integrations.leave_balance import balance_only_question
+    structured = any(data.get(key) for key in ('inquiry_history','travel_expense','travel_calc','calculator','user_situation')) or (
+        bool(data.get('leave_balance')) and balance_only_question(request.question))
     profile = request.user_profile
     hints = RetrievalHints(grade=profile.grade, job_title=profile.job_title, department=profile.department,
                            location=profile.work_location) if profile else None

@@ -1,7 +1,7 @@
 USE `employee_directory`;
 
 -- 사원 한 명의 기본 정보 / 연락처 / 사진
-SELECT * FROM v_employee_profiles WHERE employee_id = 'KDN0001';
+SELECT * FROM v_employee_profiles WHERE employee_id = 'WON0001';
 
 -- 현재 부서별 직원 목록
 SELECT employee_id, name, department, job_title, extension_number, work_email
@@ -23,14 +23,14 @@ SELECT a.employee_id, e.name, d.dept_name, a.position_title, a.start_date, a.end
 FROM employee_assignments AS a
 JOIN employees AS e ON e.employee_id = a.employee_id
 JOIN departments AS d ON d.dept_id = a.dept_id
-WHERE a.employee_id = 'KDN0001' ORDER BY a.start_date DESC;
+WHERE a.employee_id = 'WON0001' ORDER BY a.start_date DESC;
 
 -- 사원별 역할 이력. 실제 로그인 권한과는 별개입니다.
 SELECT e.employee_id, e.name, r.role_name, r.role_category, er.start_date, er.end_date
 FROM employee_roles AS er
 JOIN employees AS e ON e.employee_id = er.employee_id
 JOIN duty_roles AS r ON r.role_id = er.role_id
-WHERE e.employee_id = 'KDN0001' ORDER BY er.start_date DESC;
+WHERE e.employee_id = 'WON0001' ORDER BY er.start_date DESC;
 
 -- 사내 공개 연락처 검색
 SELECT employee_id, name, department, job_title, extension_number, work_email

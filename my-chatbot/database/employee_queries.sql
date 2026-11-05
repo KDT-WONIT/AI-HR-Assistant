@@ -6,7 +6,7 @@ SELECT employee_id, name, grade, hired_at, employment_type, employment_status,
        photo_path, photo_url, photo_status, photo_file_status,
        fallback_photo_path, source_page_url, license_url
 FROM v_employee_profiles
-WHERE employee_id = 'KDN0001';
+WHERE employee_id = 'WON0001';
 
 -- 2. 인사부 현재 재직자와 사내 공개 연락처
 SELECT employee_id, name, department, job_title, extension_number, work_email
@@ -19,7 +19,7 @@ SELECT e.employee_id, e.name, r.role_name, r.role_category, r.description
 FROM employees AS e
 JOIN employee_roles AS er ON er.employee_id = e.employee_id
 JOIN duty_roles AS r ON r.role_id = er.role_id
-WHERE e.employee_id = 'KDN0001'
+WHERE e.employee_id = 'WON0001'
   AND er.start_date <= DATE(UTC_TIMESTAMP() + INTERVAL 9 HOUR)
   AND (er.end_date IS NULL OR er.end_date >= DATE(UTC_TIMESTAMP() + INTERVAL 9 HOUR));
 
@@ -27,7 +27,7 @@ WHERE e.employee_id = 'KDN0001'
 SELECT a.employee_id, d.dept_name, a.position_title, a.start_date, a.end_date, a.is_primary
 FROM employee_assignments AS a
 JOIN departments AS d ON d.dept_id = a.dept_id
-WHERE a.employee_id = 'KDN0001'
+WHERE a.employee_id = 'WON0001'
 ORDER BY a.start_date DESC;
 
 -- 5. 사용자와 기존 대화·평가 연결 (사번을 공통 키로 사용)
@@ -36,7 +36,7 @@ SELECT c.id AS conversation_id, c.employee_id, e.name, c.created_at,
 FROM conversations AS c
 LEFT JOIN employees AS e ON e.employee_id = c.employee_id
 LEFT JOIN feedback AS f ON f.conversation_id = c.id
-WHERE c.employee_id = 'KDN0001'
+WHERE c.employee_id = 'WON0001'
 ORDER BY c.created_at DESC;
 
 -- 6. 사진 검수/다운로드 진행 상태

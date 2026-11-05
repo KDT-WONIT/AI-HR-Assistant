@@ -1,0 +1,67 @@
+erDiagram
+    direction LR
+    departments {
+        string dept_id PK
+        string dept_name UK
+        string parent_dept_id FK
+        string dept_function
+        string location
+        string main_extension
+        int is_active
+    }
+    duty_roles {
+        string role_id PK
+        string role_name
+        string role_category
+        string description
+        string security_level
+    }
+    employee_assignments {
+        string assignment_id PK
+        string employee_id FK
+        string dept_id FK
+        string position_title
+        string start_date
+        string end_date
+        int is_primary
+    }
+    employee_contacts {
+        string employee_id PK, FK
+        string work_email UK
+        string extension_number
+        string work_location
+        string contact_visibility
+        string photo_path
+        string photo_url
+        string photo_status
+        string photo_source
+        string photo_alt
+        string source_page_url
+        string license_url
+        string fallback_photo_path
+        string photo_file_status
+    }
+    employee_roles {
+        string employee_role_id PK
+        string employee_id FK
+        string role_id FK
+        string start_date
+        string end_date
+    }
+    employees {
+        string employee_id PK
+        string name
+        string department
+        string job_title
+        string hired_at
+        string grade
+        string employment_type
+        string employment_status
+        string created_at
+    }
+    departments o|--o{ departments : "parent_dept_id"
+    departments ||--o{ employee_assignments : "dept_id"
+    employees ||--o{ employee_assignments : "employee_id"
+    employees ||--o| employee_contacts : "employee_id"
+    duty_roles ||--o{ employee_roles : "role_id"
+    employees ||--o{ employee_roles : "employee_id"

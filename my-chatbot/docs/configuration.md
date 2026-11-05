@@ -43,7 +43,7 @@
 | N8N_TIMEOUT_SECONDS | 웹훅 POST 제한, 기본 10초 |
 | N8N_MESSAGE_LIMIT / N8N_MESSAGE_MAX_CHARS | 전송할 최근 메시지 수(기본 10)·각 메시지 길이(기본 1000) |
 | N8N_EVENT_SESSION_START / N8N_EVENT_QUESTION | 시작·질문 이벤트 이름, 기본 session_start / question |
-| N8N_EVENT_ANSWER / N8N_EVENT_SESSION_END | 답변·만족도 종료 이벤트 이름, 기본 answer / session_end |
+| N8N_EVENT_ANSWER / N8N_EVENT_SESSION_END / N8N_EVENT_FEEDBACK | 답변 / 만족도 없는 종료 / 만족도 있는 종료 이벤트 이름, 기본 answer / end / feedback |
 | VECTOR_BACKEND | chroma |
 | DATA_DIR | ./data |
 | POLICY_DIR | DATA_DIR/raw/policies |
@@ -91,3 +91,8 @@ chroma_collection = settings.chroma_collection
 새 구현에서는 `.env`를 따로 읽거나 경로를 하드코딩하지 말고 `settings`를 사용하세요.
 프론트 폴더, 9개 분야의 자료 폴더, Ollama 시스템 프롬프트, MySQL 초기 SQL 파일,
 ChromaDB 인터페이스의 저장 위치와 컬렉션 이름이 이 설정에 연결되어 있습니다.
+
+
+## WONIT v7 UI
+
+FRONTEND_DIR 기본값은 ./frontend_v7입니다. UI_REGULATIONS_DIR은 제공받은 v7 UI 묶음의 regulations/wonit_preprocessed 폴더를 가리킵니다. OLLAMA_THINK=false는 구조화된 도구 선택과 답변의 내부 추론 출력을 끕니다. 경로를 옮기면 .env를 수정하고 재시작하세요. 상세 내용은 [v7 연결 안내](wonit-v7-integration.md)를 참고하세요.

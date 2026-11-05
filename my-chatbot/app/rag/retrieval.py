@@ -47,6 +47,18 @@ def procedure_question(question: str) -> bool:
 
 
 def search_queries(question: str, hints: RetrievalHints | None = None) -> list[str]:
+    if '출산' in question and re.search(r'지원금|경조금|경조사비|축하금|얼마|수당', question):
+        return [question, '복리후생규정 출산축하금 둘째 자녀 지급 신청 증명서류',
+                '출산축하금 지급액 공무원보수 업무지침 출산일 1년']
+    if '배우자' in question and '출산' in question:
+        if procedure_question(question):
+            return [question, '휴가 각종 근태계 제출 전산시스템 전자결재 소속 부서장 허가',
+                    '특별유급휴가 휴직 요청 사실을 증명할 서류 첨부',
+                    '제22조 특별유급휴가 사전에 소속 부서장의 허가']
+        return [question, '경조휴가의 종류 배우자 출산전후휴가 휴가일 별표',
+                '배우자 출산전후휴가 휴무일 토요일 휴일 산입 소속 부서장 허가']
+    if re.search(r'출장|여비', question) and re.search(r'언제|지급일|지급\s*시|입금|예정일', question):
+        return [question, '여비의 지급 및 정산 현금 법인카드 복명서 근무지 복귀 7일 이내']
     if pay_amount_question(question):
         # 짧은 질문만으로는 표 조각이 검색되지 않으므로 직급과 규정 표현을 붙여 여러 각도로 찾습니다.
         grade = (hints.grade or '') if hints else ''
@@ -92,11 +104,29 @@ def rank_sources(question: str, groups: list[list[Source]], limit: int,
     if procedure_question(question):
         for key,source in items.items():
             text = source.text
-            if '연차' in question:
+            if any(word in question for word in ('연차', '휴가', '근태')):
                 if '각종 근태계' in text and any(word in text for word in ('전자결재','제출','전산시스템')):
                     scores[key] += 0.10
                 elif '연차' in text and any(word in text for word in ('청구','반일','반반일','사용 시기')):
                     scores[key] += 0.025
+                if '특별유급휴가' in text and ('증명할 서류' in text or '사전에 소속 부서장의 허가' in text):
+                    scores[key] += 0.06
             if '개정일자' in text and '변 경 내 용' in text:
                 scores[key] -= 1  # 개정 이력 표는 현재 운영 절차의 근거로 우선하지 않습니다.
+    for key, source in items.items():
+        text = source.text
+        if revision_history(text) or re.search(r'^부\s*칙', source.section or ''):
+            scores[key] -= 0.2
+        if '출산' in question and re.search(r'지원금|경조금|경조사비|축하금|수당', question):
+            if re.search(r'출산(?:축하금|경조금)', re.sub(r'\s+', '', text)):
+                scores[key] += 0.15
+            if '행동강령' in source.document:
+                scores[key] -= 0.5
+        if '배우자' in question and '출산' in question:
+            if '해외근무' in source.document and not any(word in question for word in ('해외', '국외')):
+                scores[key] -= 0.5
+            if '배우자 출산전후휴가' in text and '휴가일' in text:
+                scores[key] += 0.1
+            if any(word in text for word in ('유산', '사산')) and not any(word in question for word in ('유산', '사산')):
+                scores[key] -= 0.08
     return [items[key] for key in sorted(scores,key=scores.get,reverse=True)[:limit]]

@@ -22,6 +22,9 @@ class MCPToolRequest(RequestModel):
     employee_id: str = Field(min_length=1, max_length=50)
     conversation_id: UUID
     arguments: ToolArguments = Field(default_factory=ToolArguments)
+    # 출장비 계산기가 앞서 받은 값을 이어 쓰기 위한 같은 세션의 대화
+    recent_user_messages: list[str] = Field(default_factory=list, max_length=10)
+    last_assistant_message: str = Field(default='', max_length=8000)
 
 
 def create_server(tools: dict[str, Tool] | None = None, users=None) -> MCPServer:
@@ -41,6 +44,8 @@ def create_server(tools: dict[str, Tool] | None = None, users=None) -> MCPServer
                 question=request.question, employee_id=request.employee_id,
                 conversation_id=request.conversation_id, user_profile=profile,
                 arguments=request.arguments.model_dump(),
+                recent_user_messages=[text[:2000] for text in request.recent_user_messages],
+                last_assistant_message=request.last_assistant_message,
             ))
             if spans.items:
                 result.data['_timings'] = {'items': dict(spans.items), 'notes': dict(spans.notes)}

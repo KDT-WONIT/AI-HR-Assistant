@@ -1,0 +1,4 @@
+test_storage/
+__pycache__/
+tests/__pycache__/
+*.pyc

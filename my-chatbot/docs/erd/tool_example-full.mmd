@@ -1,0 +1,46 @@
+erDiagram
+    direction LR
+    contacts {
+        int contact_id PK
+        string name
+        string department
+        string topic
+        string keywords_json
+        string phone
+        string email
+        int is_active
+    }
+    employees {
+        string employee_id PK
+        string name
+        string department
+        string job_title
+        string travel_grade
+    }
+    inquiries {
+        int inquiry_id PK
+        string employee_id
+        string question
+        string answer
+        string category
+        string created_at
+        string status
+    }
+    leave_balances {
+        string employee_id PK
+        string leave_type PK
+        string period_start PK
+        string period_end
+        decimal granted_days
+        decimal carried_days
+        decimal adjustment_days
+        decimal expired_days
+    }
+    leave_usage {
+        int usage_id PK
+        string employee_id
+        string leave_type
+        string used_on
+        decimal days
+        string status
+    }

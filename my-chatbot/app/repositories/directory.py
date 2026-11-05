@@ -63,6 +63,8 @@ class EmployeeDirectoryRepository:
         return output
 
     def get(self, employee_id: str) -> UserProfile | None:
+        from app.identity import canonical_employee_id
+        employee_id = canonical_employee_id(employee_id)
         with directory_connection() as connection:
             row = connection.execute(PROFILE_SQL + ' WHERE v.employee_id=?',(employee_id,)).fetchone()
             return self._profiles(connection,[row])[0] if row else None
@@ -126,6 +128,8 @@ class EmployeeDirectoryRepository:
             return [{'profile':profile,'role_details':details[profile.employee_id]} for profile in profiles]
 
     def photo(self, employee_id: str) -> Path | None:
+        from app.identity import canonical_employee_id
+        employee_id = canonical_employee_id(employee_id)
         with directory_connection() as connection:
             row = connection.execute('SELECT photo_path,fallback_photo_path,photo_status,photo_file_status '
                                      'FROM employee_contacts WHERE employee_id=?',(employee_id,)).fetchone()
@@ -149,6 +153,8 @@ class EmployeeDirectoryRepository:
 
     def remote_photo_url(self, employee_id: str) -> str | None:
         """로컬 사진이 없을 때 브라우저가 직접 불러올 사원 DB의 사진 주소. 허용된 https 호스트만 반환합니다."""
+        from app.identity import canonical_employee_id
+        employee_id = canonical_employee_id(employee_id)
         if not settings.employee_photo_remote:
             return None
         with directory_connection() as connection:

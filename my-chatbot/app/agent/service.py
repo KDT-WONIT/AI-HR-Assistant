@@ -13,7 +13,7 @@ from app.agent.router import select_tools
 from app.agent.escalation import ContactHints, ContactRecommender
 from app.config import settings
 from app import timing
-from app.integrations.n8n import HANDLER_BLANK, N8nClient, answer_sheet_fields, log_delivery, satisfaction_fields, sheet_time
+from app.integrations.n8n import HANDLER_BLANK, close_event_name, N8nClient, answer_sheet_fields, log_delivery, satisfaction_fields, sheet_time
 from app.integrations.ollama import OllamaClient
 from app.mcp.client import ToolGateway, tool_gateway
 from app.repositories.base import ConversationRepository
@@ -159,14 +159,27 @@ class ChatService:
         )
         marks = {'start': time.monotonic()}
         catalog = await self.tools.list_tools()
-        # 도구 선택은 현재 질문만 보고 합니다. 이전 대화가 섞이면 새 주제도 직전 주제의 도구로 가기 쉽습니다.
-        decision = await select_tools(request, data.tool_id, self.ollama, [], catalog)
+        # 규정 근거인 챗봇 답변과, 사용자가 직접 말한 상황을 분리합니다.
+        # 긴 대화의 첫 출장 조건도 같은 세션에서만 다시 참조할 수 있습니다.
+        user_messages = await run_in_threadpool(self.repository.user_messages, conversation.id, 30)
+        routing_history = [{'role': 'user', 'content': item.content} for item in user_messages]
+        request.recent_user_messages = [item.content for item in user_messages][-6:]
+        request.last_assistant_message = next((item.content for item in reversed(history) if item.role == 'assistant'), '')
+        from app.integrations import travel_calc
+        # 출장비 계산 요청이거나 계산기가 되물은 항목에 대한 답이면 라우터를 거치지 않고 계산기로 보냅니다.
+        forced_tool = data.tool_id or ('travel_expenses' if any(tool.id == 'travel_expenses' for tool in catalog) and travel_calc.should_run(
+            data.message, request.recent_user_messages, request.last_assistant_message) else None)
+        decision = await select_tools(request, forced_tool, self.ollama, routing_history, catalog)
+        if decision.resolved_question:
+            request.question = decision.resolved_question
         marks['routed'] = time.monotonic()
         if decision.tool_id == GENERAL_TOOL_ID:
             return await self._reply_general(conversation, data, question_id, question_at, request, history, profile,
                                              marks, data.tool_id is not None, progress)
         await say('status', '관련 규정을 검색하고 있습니다…')
         request.arguments = decision.arguments.model_dump()
+        if data.arguments is not None:
+            request.arguments.update(data.arguments.model_dump(exclude_unset=True))
         selected = [decision.tool_id]
         results = [await self.tools.execute(decision.tool_id, request)]
         marks['tools'] = time.monotonic()
@@ -186,8 +199,9 @@ class ChatService:
             answer = '제공된 사내 규정에서 관련 근거를 찾지 못했습니다. 질문을 구체적으로 입력하거나 담당 부서에 확인해주세요.'
         elif result.status == 'needs_input':
             status = 'needs_input'
-            context.answer_coverage = 'missing'
-            answer = result.message
+            # 출장비 계산기의 항목 재요청은 담당자 안내 대상이 아닙니다.
+            context.answer_coverage = 'direct' if result.data.get('calculator') else 'missing'
+            answer = emphasize(result.message) if result.data.get('calculator') else result.message
         elif settings.answer_provider == 'ollama':
             async def preview(text):
                 await say('delta', text)
@@ -223,6 +237,7 @@ class ChatService:
             active.add('도구 실행(그 외)', max(0.0, marks['tools']-marks['routed']-retrieval))
             active.add('답변 생성', marks['answered']-marks['tools'])
             active.add('담당자 조회', marks['contacts']-marks['answered'])
+        context.processing_status=status
         assistant_id = uuid4()
         messages = [
             Message(id=question_id, role="user", content=data.message, created_at=question_at),
@@ -230,6 +245,7 @@ class ChatService:
                 id=assistant_id, role="assistant", content=answer, created_at=datetime.now(timezone.utc),
                 sources=context.sources, tools_used=selected,
                 contact_escalation=context.contact_escalation,
+                processing_status=status,
             ),
         ]
         await run_in_threadpool(
@@ -271,6 +287,7 @@ class ChatService:
             generated = True
         else:
             answer = '업무 도구로 처리할 수 없는 일반 질문입니다. (답변 모델 미사용 모드)'
+        answer = emphasize(answer)
         marks['answered'] = time.monotonic()
         # 질문이 특정 업무 주제와 맞을 때만 담당자를 보여주고, 기본 창구는 붙이지 않습니다.
         context.contact_escalation = await run_in_threadpool(
@@ -309,18 +326,21 @@ class ChatService:
         )
 
     async def end(self, conversation: Conversation, data: EndRequest) -> EndResponse:
-        if conversation.end_result is not None:
+        from app.integrations.n8n import has_feedback
+        if conversation.end_result is not None and (has_feedback(conversation.end_result) or not has_feedback(data)):
             return conversation.end_result
         profile = await run_in_threadpool(self.users.get, conversation.employee_id)
-        ended_at = datetime.now(timezone.utc)
+        ended_at = conversation.end_result.ended_at if conversation.end_result else datetime.now(timezone.utc)
         event_id = uuid4()
         payload = {
-            "event": settings.n8n_event_session_end, "event_id": str(event_id),
+            "event": close_event_name(data.rating, data.score, settings), "event_id": str(event_id),
             "session_id": str(conversation.id), "session_status": "CLOSED",
             "occurred_at": sheet_time(ended_at),
             "conversation_id": str(conversation.id), "employee_id": conversation.employee_id,
             "ended_at": sheet_time(ended_at), "rating": data.rating, "comment": data.comment,
             **satisfaction_fields(data.rating, data.comment),
+            **({'satisfaction_score':data.score} if data.score is not None else {}),
+            'error_type':data.error_type,'message_id':str(data.message_id) if data.message_id else '',
             "started_at": sheet_time(conversation.created_at),
             "user": ({key: value for key,value in profile.model_dump(mode='json').items()
                       if key in {'employee_id','name','department','job_title'}} if profile else
@@ -331,6 +351,7 @@ class ChatService:
         result = EndResponse(
             conversation_id=conversation.id, ended_at=ended_at, rating=data.rating,
             comment=data.comment, event_id=event_id, webhook_status=webhook_status,
+            score=data.score,error_type=data.error_type,
             message=('대화와 평가를 저장했습니다. n8n 전송을 준비합니다.' if settings.n8n_webhook_url else
                      '대화와 평가를 저장했습니다. n8n 주소는 아직 설정되지 않았습니다.'),
         )
@@ -350,6 +371,14 @@ class ChatService:
         payload = await run_in_threadpool(self.repository.claim_webhook, conversation_id)
         if payload is None:
             return conversation.end_result
+        # 과거 conversation.ended payload도 현재 시트 계약으로 재전송합니다.
+        result=conversation.end_result
+        payload.update(event=close_event_name(result.rating,result.score,settings),session_id=str(conversation.id),
+                       conversation_id=str(conversation.id),employee_id=conversation.employee_id,session_status='CLOSED',
+                       event_id=str(result.event_id),started_at=sheet_time(conversation.created_at),ended_at=sheet_time(result.ended_at),
+                       **satisfaction_fields(result.rating,result.comment))
+        if result.score is not None:
+            payload['satisfaction_score']=result.score
         delivery = await self.n8n.send_conversation_ended(payload)
         log_delivery(payload,delivery)
         return await run_in_threadpool(self.repository.finish_webhook, conversation_id, delivery.status, delivery.error)

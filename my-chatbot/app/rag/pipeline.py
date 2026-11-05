@@ -56,10 +56,9 @@ class RagService:
                 groups = [store.search(vector,patterns,min(count*2,20)) for vector in vectors]
                 if patterns:
                     overall = [store.search(vector,None,min(count*2,20)) for vector in vectors]
-                    if prefer_global(best_distance(groups), best_distance(overall)):
-                        logger.info('도구 분야 밖 문서가 더 적합해 전체 문서 검색 결과를 사용합니다(분야 %s → 전체 %s)',
-                                    best_distance(groups), best_distance(overall))
-                        groups = overall
+                    # 확장 검색은 여러 의미(자격/절차/별표)를 다룹니다. 한 조각의 거리만으로
+                    # 전체 후보를 버리지 않고 분야·전사 검색을 함께 재정렬합니다.
+                    groups += overall
                 return rank_sources(question,groups,count,hints)
             sources = await run_in_threadpool(retrieve)
         searched = time.monotonic()
@@ -77,6 +76,8 @@ class RagService:
         explicit = focus_grades(question)
         focus = explicit if explicit and re.search(r'\d직급', question) else (
             focus_grades(question, hints.grade if hints else None) if pay_amount_question(question) else [])
+        if '배우자' in question and '출산' in question:
+            focus = ['배우자 출산', '*배우자 출산']
         def restore():
             try:
                 return expand_sources(sources, focus, ChromaVectorStore().fetch)

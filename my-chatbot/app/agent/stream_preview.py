@@ -5,6 +5,7 @@ summary와 각 point의 text를 읽어 `요약 + 확인된 내용` 형태로 보
 최종 답변이 이 미리보기를 대체합니다(근거 검증을 통과하지 못한 문장이 최종본에 남지 않도록)."""
 
 import re
+import json
 
 KEY = re.compile(r'(?<!\\)"(summary|text)"\s*:\s*"')
 ESCAPES = {'n': '\n', 't': '\t', 'r': '', '"': '"', '\\': '\\', '/': '/', 'b': '', 'f': ''}
@@ -54,3 +55,40 @@ def extract_preview(partial_json: str) -> str:
     if points:
         parts.append('확인된 내용\n' + '\n'.join('- ' + point for point in points))
     return '\n\n'.join(parts)
+
+
+def complete_draft(raw: str):
+    """완성된 point 객체만 복구합니다. 끊긴 문장이나 출처 ID 없는 문장은 보여주지 않습니다."""
+    from app.agent.answers import AnswerDraft, GroundedPoint
+    summary=''; points=[]
+    match=re.search(r'"summary"\s*:\s*"',raw)
+    if match:
+        value, complete=read_string(raw,match.end())
+        if complete:
+            summary=value
+    match=re.search(r'"points"\s*:\s*\[',raw)
+    if not match:
+        return None
+    decoder=json.JSONDecoder(); offset=match.end()
+    while offset<len(raw):
+        while offset<len(raw) and raw[offset] in ' \r\n\t,': offset+=1
+        if offset>=len(raw) or raw[offset]!='{': break
+        try:
+            value,length=decoder.raw_decode(raw[offset:]); offset+=length
+            points.append(GroundedPoint.model_validate(value))
+        except ValueError:
+            break
+    if not summary or not points:
+        return None
+    coverage=re.search(r'"coverage"\s*:\s*"(direct|partial|missing)"',raw)
+    return AnswerDraft(summary=summary,points=points[:6],coverage=coverage[1] if coverage else 'partial')
+
+
+def validated_preview(raw, context, facts):
+    from app.agent.answers import render_answer
+    draft=complete_draft(raw)
+    if draft is None:
+        return ''
+    preview_context=context.model_copy(deep=True)
+    answer=render_answer(preview_context,draft,facts)
+    return answer if preview_context.answer_coverage!='missing' else ''

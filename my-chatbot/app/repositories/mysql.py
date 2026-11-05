@@ -24,6 +24,7 @@ def read_message(row: dict) -> Message:
         created_at=row["created_at"].replace(tzinfo=timezone.utc),
         sources=decode(row["sources"], []), tools_used=decode(row["tools_used"], []),
         contact_escalation=decode(row.get('context_data'),{}).get('contact_escalation',{}),
+        processing_status=decode(row.get('context_data'),{}).get('processing_status','answered'),
     )
 
 
@@ -73,6 +74,14 @@ class MySQLConversationRepository:
             )
             return [read_message(row) for row in reversed(cursor.fetchall())]
 
+    def user_messages(self, conversation_id: UUID, limit: int = 30) -> list[Message]:
+        with connection_scope() as connection, connection.cursor(dictionary=True) as cursor:
+            cursor.execute(
+                "SELECT * FROM messages WHERE conversation_id=%s AND role='user' ORDER BY sequence_id DESC LIMIT %s",
+                (str(conversation_id), min(max(limit, 1), 30)),
+            )
+            return [read_message(row) for row in reversed(cursor.fetchall())]
+
     def append_turn(self, conversation_id: UUID, messages: list[Message],
                     context: AnswerContext, expected_last_id: UUID | None) -> None:
         with connection_scope() as connection, connection.cursor(dictionary=True) as cursor:
@@ -105,7 +114,11 @@ class MySQLConversationRepository:
             if row["status"] == "closed":
                 if row["end_result"] is None:
                     raise ConversationConflict("기존 대화가 이미 종료되었습니다.")
-                return EndResponse.model_validate(decode(row["end_result"], None))
+                from app.integrations.n8n import has_feedback
+                previous=EndResponse.model_validate(decode(row['end_result'],None))
+                if has_feedback(previous) or not has_feedback(result):
+                    return previous
+                payload['previous_event_id']=str(previous.event_id)
             cursor.execute("SELECT * FROM messages WHERE conversation_id = %s ORDER BY sequence_id", (str(conversation_id),))
             payload = compact_end_payload(payload, [read_message(item).model_dump(mode="json") for item in cursor.fetchall()])
             cursor.execute(
@@ -113,12 +126,14 @@ class MySQLConversationRepository:
                 (utc_naive(result.ended_at), result.model_dump_json(), str(conversation_id)),
             )
             cursor.execute(
-                "INSERT INTO feedback (conversation_id, rating, comment, created_at) VALUES (%s, %s, %s, %s)",
+                "INSERT INTO feedback (conversation_id, rating, comment, created_at) VALUES (%s, %s, %s, %s) "
+                "ON DUPLICATE KEY UPDATE rating=VALUES(rating),comment=VALUES(comment)",
                 (str(conversation_id), result.rating, result.comment, utc_naive(result.ended_at)),
             )
             cursor.execute(
                 "INSERT INTO webhook_events (event_id, conversation_id, event_type, payload, status, created_at) "
-                "VALUES (%s, %s, %s, %s, %s, %s)",
+                "VALUES (%s, %s, %s, %s, %s, %s) ON DUPLICATE KEY UPDATE event_id=VALUES(event_id),event_type=VALUES(event_type),"
+                "payload=VALUES(payload),status=VALUES(status),attempts=0,last_error=NULL,sent_at=NULL",
                 (str(result.event_id), str(conversation_id), payload.get('event','session_end'),
                  json.dumps(payload, ensure_ascii=False), result.webhook_status, utc_naive(result.ended_at)),
             )
@@ -138,8 +153,9 @@ class MySQLConversationRepository:
             cursor.execute('SELECT end_result FROM conversations WHERE id=%s FOR UPDATE', (str(conversation_id),))
             result = EndResponse.model_validate(decode(cursor.fetchone()['end_result'], None))
             result.webhook_status = status
-            result.message = {'sent':'대화와 평가를 저장하고 n8n에 전송했습니다.',
-                              'failed':'대화와 평가는 저장했지만 n8n 전송에 실패했습니다. 다시 전송할 수 있습니다.'}.get(status, '대화를 종료했습니다.')
+            result.webhook_error = error
+            result.message = {'sent':'대화가 종료되었습니다. 이용해 주셔서 감사합니다.',
+                              'failed':'대화와 평가는 저장했지만 n8n 전송에 실패했습니다. 다시 전송할 수 있습니다.'}.get(status, '대화가 종료되었습니다. 이용해 주셔서 감사합니다.')
             cursor.execute('UPDATE webhook_events SET status=%s,last_error=%s,sent_at=%s WHERE conversation_id=%s',
                            (status,error,utc_naive(datetime.now(timezone.utc)) if status=='sent' else None,str(conversation_id)))
             cursor.execute('UPDATE conversations SET end_result=%s WHERE id=%s', (result.model_dump_json(),str(conversation_id)))

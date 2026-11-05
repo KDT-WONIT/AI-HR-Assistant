@@ -30,7 +30,7 @@ def main():
     parser = argparse.ArgumentParser(description='실제 로컬 MCP 서버 연결/도구 실행 확인')
     parser.add_argument('--tool')
     parser.add_argument('--question')
-    parser.add_argument('--employee-id', default='KDN0001')
+    parser.add_argument('--employee-id', default='WON0001')
     asyncio.run(check(parser.parse_args()))
 
 

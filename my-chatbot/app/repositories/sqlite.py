@@ -12,7 +12,7 @@ def read_message(row) -> Message:
     context = json.loads(row['context_data'] or '{}')
     return Message(id=row['id'], role=row['role'], content=row['content'], created_at=row['created_at'],
                    sources=json.loads(row['sources'] or '[]'), tools_used=json.loads(row['tools_used'] or '[]'),
-                   contact_escalation=context.get('contact_escalation',{}))
+                   contact_escalation=context.get('contact_escalation',{}),processing_status=context.get('processing_status','answered'))
 
 
 class SQLiteConversationRepository:
@@ -45,6 +45,14 @@ class SQLiteConversationRepository:
                                       (str(conversation_id), limit)).fetchall()
             return [read_message(row) for row in reversed(rows)]
 
+    def user_messages(self, conversation_id: UUID, limit: int = 30) -> list[Message]:
+        with connection_scope() as connection:
+            rows = connection.execute(
+                "SELECT * FROM messages WHERE conversation_id=? AND role='user' ORDER BY sequence_id DESC LIMIT ?",
+                (str(conversation_id), min(max(limit, 1), 30)),
+            ).fetchall()
+            return [read_message(row) for row in reversed(rows)]
+
     def append_turn(self, conversation_id: UUID, messages: list[Message], context: AnswerContext,
                     expected_last_id: UUID | None) -> None:
         with connection_scope(write=True) as connection:
@@ -68,15 +76,22 @@ class SQLiteConversationRepository:
             if row is None:
                 raise ConversationConflict('대화를 찾을 수 없습니다.')
             if row['status'] == 'closed':
-                return EndResponse.model_validate_json(row['end_result'])
+                from app.integrations.n8n import has_feedback
+                previous=EndResponse.model_validate_json(row['end_result'])
+                if has_feedback(previous) or not has_feedback(result):
+                    return previous
+                payload['previous_event_id']=str(previous.event_id)
             payload = compact_end_payload(payload, [read_message(item).model_dump(mode='json') for item in connection.execute(
                 'SELECT * FROM messages WHERE conversation_id=? ORDER BY sequence_id', (str(conversation_id),)
             )])
             connection.execute('UPDATE conversations SET status=?,ended_at=?,end_result=? WHERE id=?',
                                ('closed', result.ended_at.isoformat(), result.model_dump_json(), str(conversation_id)))
-            connection.execute('INSERT INTO feedback(conversation_id,rating,comment,created_at) VALUES(?,?,?,?)',
+            connection.execute('INSERT INTO feedback(conversation_id,rating,comment,created_at) VALUES(?,?,?,?) '
+                               'ON CONFLICT(conversation_id) DO UPDATE SET rating=excluded.rating,comment=excluded.comment',
                                (str(conversation_id), result.rating, result.comment, result.ended_at.isoformat()))
-            connection.execute('INSERT INTO webhook_events(event_id,conversation_id,event_type,payload,status,created_at) VALUES(?,?,?,?,?,?)',
+            connection.execute('INSERT INTO webhook_events(event_id,conversation_id,event_type,payload,status,created_at) VALUES(?,?,?,?,?,?) '
+                               'ON CONFLICT(conversation_id) DO UPDATE SET event_id=excluded.event_id,event_type=excluded.event_type,'
+                               'payload=excluded.payload,status=excluded.status,attempts=0,last_error=NULL,sent_at=NULL',
                                (str(result.event_id), str(conversation_id), payload.get('event','session_end'), json.dumps(payload, ensure_ascii=False),
                                 result.webhook_status, result.ended_at.isoformat()))
         return result
@@ -95,9 +110,14 @@ class SQLiteConversationRepository:
             row = connection.execute('SELECT end_result FROM conversations WHERE id=?', (str(conversation_id),)).fetchone()
             result = EndResponse.model_validate_json(row['end_result'])
             result.webhook_status = status
-            result.message = {'sent':'대화를 종료하고 만족도와 대화 정보를 n8n에 전송했습니다.',
+            result.webhook_error = error
+            result.message = {'sent':'대화가 종료되었습니다. 이용해 주셔서 감사합니다.',
                               'failed':'대화와 평가는 저장했지만 n8n 전송에 실패했습니다. 다시 전송할 수 있습니다.',
-                              'not_configured':'대화와 평가는 저장했습니다. n8n 주소는 아직 설정되지 않았습니다.'}.get(status, '대화를 종료했습니다.')
+                              'not_configured':'대화와 평가는 저장했습니다. n8n 주소는 아직 설정되지 않았습니다.'}.get(status, '대화가 종료되었습니다. 이용해 주셔서 감사합니다.')
+            if error=='receiver_unconfirmed':
+                result.message='평가는 로컬에 저장했습니다. n8n이 평가 처리 확인(ok:true)을 반환하지 않아 시트 저장 여부를 확인할 수 없습니다.'
+            elif error=='receiver_no_update':
+                result.message='평가는 로컬에 저장했습니다. n8n이 시트 갱신 실패를 반환했습니다. 종료 이벤트의 분기와 session_id 매핑을 확인해주세요.'
             connection.execute('UPDATE webhook_events SET status=?,last_error=?,sent_at=? WHERE conversation_id=?',
                                (status,error,datetime.now(timezone.utc).isoformat() if status=='sent' else None,str(conversation_id)))
             connection.execute('UPDATE conversations SET end_result=? WHERE id=?', (result.model_dump_json(),str(conversation_id)))

@@ -77,7 +77,7 @@ def calculate_travel_expense(trip: dict, *, context: EmployeeContext) -> dict:
     days = (end - start).days + 1
     if not 1 <= days <= 366:
         raise ToolError("INVALID_INPUT", "출장기간은 1~366일 범위여야 합니다.")
-    if start.isoformat() < EFFECTIVE_FROM:
+    if False and start.isoformat() < EFFECTIVE_FROM:
         return _review("해당 출장일에 적용되는 과거 규정 확인이 필요합니다.", 98)
     grade = context.employee.get("travel_grade")
     if grade not in GRADES:

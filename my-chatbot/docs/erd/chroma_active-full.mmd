@@ -1,0 +1,127 @@
+erDiagram
+    direction LR
+    acquire_write {
+        int id PK
+        int lock_status
+    }
+    collection_metadata {
+        string collection_id PK, FK
+        string key PK
+        string str_value
+        int int_value
+        decimal float_value
+        int bool_value
+    }
+    collections {
+        string id PK
+        string name
+        int dimension
+        string database_id FK
+        string config_json_str
+        string schema_str
+    }
+    databases {
+        string id PK
+        string name
+        string tenant_id FK
+    }
+    embedding_fulltext_search {
+        string string_value
+    }
+    embedding_fulltext_search_config {
+        string k PK
+        string v
+    }
+    embedding_fulltext_search_content {
+        int id PK
+        string c0
+    }
+    embedding_fulltext_search_data {
+        int id PK
+        blob block
+    }
+    embedding_fulltext_search_docsize {
+        int id PK
+        blob sz
+    }
+    embedding_fulltext_search_idx {
+        string segid PK
+        string term PK
+        string pgno
+    }
+    embedding_metadata {
+        int id PK, FK
+        string key PK
+        string string_value
+        int int_value
+        decimal float_value
+        int bool_value
+    }
+    embedding_metadata_array {
+        int id FK
+        string key
+        string string_value
+        int int_value
+        decimal float_value
+        int bool_value
+    }
+    embeddings {
+        int id PK
+        string segment_id
+        string embedding_id
+        blob seq_id
+        string created_at
+    }
+    embeddings_queue {
+        int seq_id PK
+        string created_at
+        int operation
+        string topic
+        string id
+        blob vector
+        string encoding
+        string metadata
+    }
+    embeddings_queue_config {
+        int id PK
+        string config_json_str
+    }
+    maintenance_log {
+        int id PK
+        int timestamp
+        string operation
+    }
+    max_seq_id {
+        string segment_id PK
+        int seq_id
+    }
+    migrations {
+        string dir PK
+        int version PK
+        string filename
+        string sql
+        string hash
+    }
+    segment_metadata {
+        string segment_id PK, FK
+        string key PK
+        string str_value
+        int int_value
+        decimal float_value
+        int bool_value
+    }
+    segments {
+        string id PK
+        string type
+        string scope
+        string collection FK
+    }
+    tenants {
+        string id PK
+    }
+    collections ||--o{ collection_metadata : "collection_id"
+    databases ||--o{ collections : "database_id"
+    tenants ||--o{ databases : "tenant_id"
+    embeddings ||--o{ embedding_metadata : "id"
+    embeddings ||--o{ embedding_metadata_array : "id"
+    segments ||--o{ segment_metadata : "segment_id"

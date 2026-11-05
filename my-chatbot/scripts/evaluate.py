@@ -3,7 +3,7 @@
     python -m scripts.evaluate                      # 서버 없이 앱을 직접 실행(기본). n8n 전송은 끕니다.
     python -m scripts.evaluate --base-url http://127.0.0.1:8000   # 이미 떠 있는 서버에 요청
     python -m scripts.evaluate --only pay-salary --only leave-days
-    python -m scripts.evaluate --employee KDN0002 --cases data/eval/cases.json
+    python -m scripts.evaluate --employee WON0002 --cases data/eval/cases.json
 
 각 질문은 새 대화로 보내므로 앞선 질문이 영향을 주지 않습니다. 실제 Ollama·Chroma를 사용하므로 Ollama를 먼저 켜두세요.
 결과는 data/eval/results_<시각>.md / .csv 로 저장됩니다. 기대 조건은 data/eval/cases.json 에서 고칠 수 있습니다.
@@ -131,7 +131,7 @@ def main(argv=None) -> int:
     args = parser.parse_args(argv)
 
     spec = json.loads(args.cases.read_text(encoding='utf-8'))
-    employee = args.employee or spec.get('employee_id', 'KDN0001')
+    employee = args.employee or spec.get('employee_id', 'WON0001')
     cases = [case for case in spec['cases'] if not args.only or case['id'] in args.only]
     if not cases:
         print('실행할 질문이 없습니다. --only 값과 cases.json의 id를 확인하세요.')

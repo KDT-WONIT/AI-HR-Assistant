@@ -31,7 +31,7 @@ Content-Type은 `application/json; charset=utf-8`, Idempotency-Key는 event_id�
   "session_id": "대화 UUID",
   "conversation_id": "대화 UUID",
   "message_id": "질문 메시지 UUID",
-  "employee_id": "KDN0001",
+  "employee_id": "WON0001",
   "question": "연차를 신청하려면 어떻게 해야 하나요?",
   "answer_status": "PENDING",
   "asked_at": "2026-11-04T04:00:00+00:00",
@@ -60,7 +60,8 @@ N8N_TIMEOUT_SECONDS=10
 N8N_EVENT_SESSION_START=session_start
 N8N_EVENT_QUESTION=question
 N8N_EVENT_ANSWER=answer
-N8N_EVENT_SESSION_END=session_end
+N8N_EVENT_SESSION_END=end
+N8N_EVENT_FEEDBACK=feedback
 N8N_MESSAGE_LIMIT=10
 N8N_MESSAGE_MAX_CHARS=1000
 ```

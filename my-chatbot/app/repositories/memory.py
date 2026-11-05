@@ -39,6 +39,11 @@ class MemoryConversationRepository:
         with self._lock:
             return [item.model_copy(deep=True) for item in self._items[conversation_id].messages[-limit:]]
 
+    def user_messages(self, conversation_id: UUID, limit: int = 30) -> list[Message]:
+        with self._lock:
+            items = [item for item in self._items[conversation_id].messages if item.role == 'user']
+            return [item.model_copy(deep=True) for item in items[-min(max(limit, 1), 30):]]
+
     def append_turn(self, conversation_id: UUID, messages: list[Message],
                     context: AnswerContext, expected_last_id: UUID | None) -> None:
         with self._lock:
@@ -52,7 +57,10 @@ class MemoryConversationRepository:
         with self._lock:
             conversation = self._items[conversation_id]
             if conversation.end_result is not None:
-                return conversation.end_result.model_copy(deep=True)
+                from app.integrations.n8n import has_feedback
+                if has_feedback(conversation.end_result) or not has_feedback(result):
+                    return conversation.end_result.model_copy(deep=True)
+                payload['previous_event_id']=str(conversation.end_result.event_id)
             conversation.status = "closed"
             conversation.end_result = result.model_copy(deep=True)
             self._events[conversation_id] = {'status':result.webhook_status, 'payload':compact_end_payload(
@@ -72,7 +80,8 @@ class MemoryConversationRepository:
             self._events[conversation_id]['status'] = status
             result = self._items[conversation_id].end_result
             result.webhook_status = status
-            result.message = {'sent':'대화를 종료하고 n8n에 전송했습니다.', 'failed':'평가는 저장했지만 n8n 전송에 실패했습니다. 다시 전송할 수 있습니다.'}.get(status, '대화를 종료했습니다.')
+            result.webhook_error = error
+            result.message = {'sent':'대화가 종료되었습니다. 이용해 주셔서 감사합니다.', 'failed':'평가는 저장했지만 n8n 전송에 실패했습니다. 다시 전송할 수 있습니다.'}.get(status, '대화가 종료되었습니다. 이용해 주셔서 감사합니다.')
             return result.model_copy(deep=True)
 
     def ping(self) -> None:

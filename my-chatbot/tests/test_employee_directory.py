@@ -36,9 +36,9 @@ class EmployeeDirectoryTests(unittest.TestCase):
 
     def test_profile_and_department_totals(self):
         connection = self.connect()
-        row = connection.execute("SELECT * FROM v_employee_profiles WHERE employee_id='KDN0001'").fetchone()
+        row = connection.execute("SELECT * FROM v_employee_profiles WHERE employee_id='WON0001'").fetchone()
         self.assertEqual((row["name"], row["department"], row["job_title"]), ("김서연", "인사부", "부서장"))
-        self.assertEqual(row["work_email"], "kdn0001@example.com")
+        self.assertEqual(row["work_email"], "won0001@example.com")
         self.assertEqual(connection.execute("SELECT COUNT(*) FROM v_employee_profiles WHERE dept_id IS NOT NULL").fetchone()[0], 100)
         self.assertEqual(connection.execute("SELECT COUNT(*) FROM departments WHERE parent_dept_id IS NOT NULL").fetchone()[0], 0)
 

@@ -84,7 +84,7 @@ class WebhookTests(unittest.TestCase):
         path,key,payload=self.received[0]
         self.assertEqual(path,'/webhook/test-end')
         self.assertEqual(key,str(result.event_id))
-        self.assertEqual(payload['event'],'session_end')
+        self.assertEqual(payload['event'],'feedback' if payload.get('satisfaction_score') else 'end')
         self.assertEqual(payload['session_id'],str(self.conversation.id))
         self.assertEqual(payload['session_status'],'CLOSED')
         self.assertEqual(payload['user']['name'],'가상 직원')
@@ -182,7 +182,7 @@ class WebhookTests(unittest.TestCase):
         response=self.runner.run(self.service.reply(conversation,ChatRequest(employee_id='FAKE-001',message='연차 신청 절차는?')))
         self.runner.run(self.service.end(conversation,EndRequest(rating='helpful',comment='도움이 됐어요')))
         start,question,answer,end=[item[2] for item in self.received]
-        self.assertEqual([item['event'] for item in (start,question,answer,end)],['session_start','question','answer','session_end'])
+        self.assertEqual([item['event'] for item in (start,question,answer,end)],['session_start','question','answer','feedback'])
         self.assertTrue(all(item['session_id']==str(conversation.id) and item['employee_id']=='FAKE-001' for item in (start,question,answer,end)))
         self.assertEqual(start['session_status'],'OPEN')
         self.assertEqual(start['user']['name'],'가상 직원')
@@ -245,14 +245,14 @@ class WebhookTests(unittest.TestCase):
         self.assertTrue(all(item.status=='not_configured' for item in response.webhook_events))
 
     def test_event_names_are_configurable_including_saved_end_payload(self):
-        custom=replace(self.config,n8n_event_session_start='start',n8n_event_question='ask',n8n_event_answer='reply',n8n_event_session_end='feedback')
+        custom=replace(self.config,n8n_event_session_start='start',n8n_event_question='ask',n8n_event_answer='reply',n8n_event_session_end='finish',n8n_event_feedback='rating')
         with patch('app.agent.service.settings',custom):
             self.setup_chat()
             self.service.ollama.generate_answer=AsyncMock(return_value='가상 답변')
             conversation=self.runner.run(self.service.start_conversation('FAKE-001'))
             self.runner.run(self.service.reply(conversation,ChatRequest(employee_id='FAKE-001',message='연차?')))
             self.runner.run(self.service.end(conversation,EndRequest()))
-        self.assertEqual([item[2]['event'] for item in self.received],['start','ask','reply','feedback'])
+        self.assertEqual([item[2]['event'] for item in self.received],['start','ask','reply','finish'])
 
 
 class AsyncDeliveryTests(unittest.TestCase):

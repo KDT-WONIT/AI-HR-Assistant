@@ -87,7 +87,7 @@ CSV 적재 단계에서는 주 소속 기간 중복을 거절합니다. 이후 �
 ## 조회
 
 ```sql
-SELECT * FROM v_employee_profiles WHERE employee_id = 'KDN0001';
+SELECT * FROM v_employee_profiles WHERE employee_id = 'WON0001';
 ```
 
 `database/employee_queries.sql`에는 사번 조회, 부서별 직원, 업무 역할, 소속 이력, 대화·평가 연결,

@@ -76,6 +76,23 @@ def quote_position(text: str, quote: str) -> int:
 
 
 def relevant_to_question(question: str, quote: str, source: Source) -> bool:
+    from app.agent.followups import current_question
+    current=current_question(question)
+    if re.search(r'연봉|급여|월급|보수',current) and re.search(r'언제|인상일|승급일',current):
+        if not re.search(r'승급|승진|인상|조정|재산정|지급시기|지급일',quote+(source.section or '')):
+            return False
+    if re.search(r'출산.*(?:지원금|축하금|경조금)|(?:지원금|축하금|경조금).*출산',question):
+        if '행동강령' in source.document:
+            return False
+    if '배우자' in question and '출산' in question:
+        if not any(word in question for word in ('유산', '사산')) and any(word in quote for word in ('유산', '사산')):
+            return False
+        if '해외근무' in source.document and not any(word in question for word in ('해외', '국외')):
+            return False
+        if '휴가일' in quote and '배우자 출산' not in quote:
+            return False
+        if '임신 중의 여성' in quote or '출산 후에 45일' in quote:
+            return False
     if '연차' not in question:
         return True
     position = quote_position(source.text,quote)
@@ -141,6 +158,43 @@ def readable_fallback(context: AnswerContext, facts: list[str], *, procedure_mis
 
 
 MIN_BODY_POINTS, MAX_BODY_POINTS = 3, 5
+QUESTION_STOPWORDS = {'알려주세요', '알려줘', '어떻게', '무엇', '입니다', '있나요', '되나요', '가능한가요', '궁금합니다', '있어요', '해야'}
+
+
+def extractive_answer(context: AnswerContext, facts: list[str]) -> str | None:
+    """모델 답변이 검증을 통과하지 못했을 때, 검색된 원문 문장 중 질문과 가장 맞는 것을 그대로 정리합니다.
+    원문 그대로라 근거 검증이 필요 없고, 질문 단어와 겹치는 문장만 고르므로 엉뚱한 내용이 섞이지 않습니다.
+    질문과 겹치는 문장이 하나도 없으면 None을 돌려 기존 폴백(모름 안내)을 사용합니다."""
+    from app.agent.followups import current_question
+    current = current_question(context.question)
+    terms = {word for word in re.findall(r'[가-힣A-Za-z0-9]{2,}', current) if word not in QUESTION_STOPWORDS}
+    stems = {word[:-1] if len(word) > 2 else word for word in terms}
+    if not stems:
+        return None
+    ranked, seen = [], set()
+    for item in build_evidence(context):
+        text = clean_text(item.text)
+        compact = re.sub(r'\s+', '', text)
+        if not 12 <= len(text) <= 300 or text.startswith(('[', '|')) or compact in seen or re.fullmatch(r'[\d\s.,~\-]+', text):
+            continue
+        if not relevant_to_question(context.question, item.text, item.source):
+            continue
+        score = sum(1 for stem in stems if stem in text)
+        if score:
+            seen.add(compact)
+            ranked.append((-score, len(ranked), text, item))
+    if not ranked:
+        return None
+    chosen = sorted(ranked)[:MAX_BODY_POINTS]
+    body = [text for _, _, text, _ in chosen]
+    body.extend(item for item in facts if item not in body)
+    context.answer_coverage = 'partial'
+    return '\n\n'.join([
+        '질문과 관련된 규정 내용을 문서 원문 기준으로 정리했습니다.',
+        '확인된 내용\n' + '\n'.join('- ' + item for item in body),
+        reference_block([(item.source, item.text) for _, _, _, item in chosen]),
+        '추가 안내\n위 내용으로 확인되지 않는 세부사항(개인별 적용 여부 등)은 담당 부서에 확인해주세요.',
+    ])
 
 
 def supplement_points(context: AnswerContext, chosen: list, body: list[str], summary: str) -> list[str]:
@@ -212,10 +266,23 @@ def render_answer(context: AnswerContext, draft: AnswerDraft, facts: list[str]) 
             # 같은 근거 문장 안의 필수 승인 단계를 축약 과정에서 빠뜨리지 않습니다.
             summary = '공통 근태계 제출 기준에 따라, 전산시스템의 양식으로 작성하고 전자결재 승인을 받으면 됩니다.'
         partial = True
+    from app.agent.followups import current_question
+    current = current_question(context.question)
+    if re.search(r'연달아|이어서|연속|복귀하지|복귀\s*없이', current) and not any(
+            re.search(r'연달아|연속\s*사용|복귀\s*없이', quote) for quote in quotes):
+        summary = '말씀하신 일정대로 휴가를 이어 사용할 수 있는지는 현재 자료로 확정할 수 없으므로, 사용 일정을 사전에 확인해야 합니다.'
+        partial = True
+    if '출산' in context.question and re.search(r'지원금|축하금|경조금|얼마', current) and any(
+            '공무원보수' in quote and '준용' in quote for quote in quotes):
+        summary = '정확한 출산축하금 액수는 제공된 자료에서 확인할 수 없습니다. 지급 기준은 「공무원보수 등의 업무지침」을 준용합니다.'
+        partial = True
     body = list(dict.fromkeys(clean_text(point.text) for point,source in points
                              if clean_text(point.text) != summary and not (procedure and common and point is common[0])))
     body.extend(item for item in facts if item not in body and item != summary)
-    body = supplement_points(context, points, body, summary)
+    # 급여 구성처럼 같은 주제의 짧은 설명만 보완합니다. 휴가 답변에 다른 경조사
+    # 표의 행이나 긴 규정 원문을 채워 넣으면 질문의 핵심이 가려집니다.
+    if not any(word in context.question for word in ('휴가', '연차', '경조')):
+        body = supplement_points(context, points, body, summary)
     parts = [summary]
     if body:
         parts.append('확인된 내용\n' + '\n'.join('- ' + item for item in body))

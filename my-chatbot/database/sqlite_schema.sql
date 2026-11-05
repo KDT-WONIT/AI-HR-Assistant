@@ -86,6 +86,32 @@ CREATE TABLE IF NOT EXISTS leave_balances (
     FOREIGN KEY (employee_id) REFERENCES employees(employee_id)
 );
 
+-- 연차 원장 상세: leave_balances.granted_days = base_days + carryover_days + adjusted_days
+CREATE TABLE IF NOT EXISTS leave_balance_details (
+    employee_id TEXT NOT NULL,
+    balance_year SMALLINT NOT NULL,
+    base_days DECIMAL(6,2) NOT NULL DEFAULT 0,
+    carryover_days DECIMAL(6,2) NOT NULL DEFAULT 0,
+    adjusted_days DECIMAL(6,2) NOT NULL DEFAULT 0,
+    PRIMARY KEY (employee_id, balance_year),
+    FOREIGN KEY (employee_id) REFERENCES employees(employee_id)
+);
+
+-- 연차·휴가 사용/신청 내역 (status: USED 사용 완료, APPROVED 승인(예정), PENDING 결재 중, CANCELLED 취소)
+CREATE TABLE IF NOT EXISTS leave_transactions (
+    transaction_id TEXT PRIMARY KEY,
+    employee_id TEXT NOT NULL,
+    leave_type TEXT NOT NULL,
+    deducts_annual_leave SMALLINT NOT NULL DEFAULT 1,
+    start_date TEXT NOT NULL,
+    end_date TEXT NOT NULL,
+    days DECIMAL(6,2) NOT NULL,
+    status TEXT NOT NULL,
+    requested_at TEXT,
+    FOREIGN KEY (employee_id) REFERENCES employees(employee_id)
+);
+CREATE INDEX IF NOT EXISTS idx_leave_transactions_employee ON leave_transactions(employee_id, start_date);
+
 CREATE TABLE IF NOT EXISTS policy_documents (
     id TEXT PRIMARY KEY,
     domain TEXT NOT NULL,

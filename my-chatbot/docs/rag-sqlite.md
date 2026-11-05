@@ -24,7 +24,7 @@ python -m scripts.init_db
 python -m app --reload
 ```
 
-사원 배포본의 100명과 부서 16개를 직접 조회합니다. 화면 기본 사용자 ID는 KDN0001입니다.
+사원 배포본의 100명과 부서 16개를 직접 조회합니다. 화면 기본 사용자 ID는 WON0001입니다.
 사원 검색과 이미지 연결 방법은 employee-directory-integration.md를 참고하세요.
 이전 SQLite 직원 테이블과 TEST-001/TEST-002 샘플은 남아 있지만 directory 설정의 사용자 원본은 독립 사원 DB입니다.
 임베딩 모델은 `data/models`에 캐시합니다. 기존 모델의 이름·리비전·차원이 다르면 검색을 중단합니다.

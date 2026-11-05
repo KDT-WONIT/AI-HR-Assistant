@@ -38,6 +38,18 @@ def satisfaction_fields(rating, comment) -> dict:
     return {'satisfaction_score': SATISFACTION_SCORES.get(rating), 'satisfaction_comment': comment or ''}
 
 
+def close_event_name(rating, score=None, config=None) -> str:
+    """종료 이벤트 이름. 만족도 점수(1~5)가 있으면 feedback, 없으면 end로 보냅니다(n8n Switch 분기와 동일)."""
+    from app.config import settings as default_settings
+    settings = config or default_settings
+    value = score if score is not None else SATISFACTION_SCORES.get(rating)
+    return settings.n8n_event_feedback if value is not None else settings.n8n_event_session_end
+
+
+def has_feedback(value) -> bool:
+    return value is not None and (value.rating is not None or getattr(value,'score',None) is not None or bool(value.comment))
+
+
 def handler_fields(escalation) -> dict:
     """추천된 첫 번째 담당자를 시트의 handler_* 열로 바꿉니다. 없으면 모두 빈 값입니다."""
     contacts = getattr(escalation, 'contacts', None) or []
@@ -131,5 +143,5 @@ class N8nClient:
 def log_delivery(payload: dict, result: DeliveryResult) -> None:
     if result.status == 'failed':
         # URL·연락처·질문 내용은 로그에 남기지 않습니다.
-        logger.warning('n8n delivery failed: event=%s event_id=%s error=%s',
-                       payload['event'],payload['event_id'],result.error)
+        logger.warning('n8n delivery failed: event=%s event_id=%s error=%s%s',
+                       payload['event'],payload['event_id'],result.error,f' ({result.detail})' if result.detail else '')

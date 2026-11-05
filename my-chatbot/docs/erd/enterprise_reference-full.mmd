@@ -1,0 +1,444 @@
+erDiagram
+    direction LR
+    absences {
+        string absence_id PK
+        string employee_id FK
+        string absence_type
+        string start_date
+        string end_date
+        string status
+        string restricted_detail_ref
+    }
+    access_audit_logs {
+        string log_id PK
+        string actor_employee_id FK
+        string action_type
+        string resource_type
+        string resource_id
+        string access_result
+        string created_at
+    }
+    asset_assignments {
+        string assignment_id PK
+        string asset_id FK
+        string employee_id FK
+        string issued_at
+        string returned_at
+        string status
+    }
+    asset_registry {
+        string asset_id PK
+        string asset_name
+        string asset_type
+        string serial_number UK
+        string owner_dept_id FK
+        string location
+        string status
+    }
+    attendance_records {
+        string attendance_id PK
+        string employee_id FK
+        string work_date
+        decimal scheduled_hours
+        decimal worked_hours
+        string attendance_status
+    }
+    benefit_applications {
+        string application_id PK
+        string employee_id FK
+        string benefit_id FK
+        int requested_amount
+        string application_date
+        string status
+    }
+    benefit_programs {
+        string benefit_id PK
+        string benefit_name
+        string eligibility_rule
+        int annual_limit
+        string owner_topic_id FK
+        string regulation_id FK
+    }
+    business_topics {
+        string topic_id PK
+        string topic_name
+        string category
+        string description
+        string intent_type
+        string security_level
+        int auto_answer_allowed
+    }
+    chat_messages {
+        string message_id PK
+        string session_id FK
+        string sender_role
+        string message_text
+        string created_at
+    }
+    chat_sessions {
+        string session_id PK
+        string employee_id FK
+        string started_at
+        string ended_at
+        string channel
+        string auth_level
+    }
+    compliance_cases {
+        string case_id PK
+        string case_type
+        string received_at
+        string owner_dept_id FK
+        string case_status
+        string restricted_detail_ref
+    }
+    departments {
+        string dept_id PK
+        string dept_name UK
+        string parent_dept_id FK
+        string dept_function
+        string location
+        string main_extension
+        int is_active
+    }
+    duty_delegations {
+        string delegation_id PK
+        string original_employee_id FK
+        string substitute_employee_id FK
+        string start_date
+        string end_date
+        string reason
+    }
+    duty_roles {
+        string role_id PK
+        string role_name
+        string role_category
+        string description
+        string security_level
+    }
+    employee_assignments {
+        string assignment_id PK
+        string employee_id FK
+        string dept_id FK
+        string position_title
+        string start_date
+        string end_date
+        int is_primary
+    }
+    employee_contacts {
+        string employee_id PK, FK
+        string work_email UK
+        string extension_number
+        string work_location
+        string contact_visibility
+        string photo_path
+        string photo_url
+        string photo_status
+        string photo_source
+        string photo_alt
+    }
+    employee_roles {
+        string employee_role_id PK
+        string employee_id FK
+        string role_id FK
+        string start_date
+        string end_date
+    }
+    employees {
+        string employee_id PK
+        string employee_name
+        string grade
+        string hire_date
+        string employment_type
+        string employment_status
+    }
+    expense_claims {
+        string claim_id PK
+        string employee_id FK
+        string expense_type
+        int amount
+        string currency
+        string receipt_ref
+        string approval_status
+    }
+    ip_records {
+        string ip_id PK
+        string project_id FK
+        string ip_type
+        string ip_title
+        string filing_number
+        string status
+    }
+    leave_adjustments {
+        string adjustment_id PK
+        string employee_id FK
+        int year
+        decimal adjustment_days
+        string reason
+        string approved_by FK
+        string created_at
+    }
+    leave_balances {
+        string balance_id PK
+        string employee_id FK
+        int year
+        decimal granted_days
+        decimal carryover_days
+        decimal adjusted_days
+        string updated_at
+    }
+    leave_transactions {
+        string transaction_id PK
+        string employee_id FK
+        string leave_type_id FK
+        string start_date
+        string end_date
+        decimal days
+        string status
+        string requested_at
+        string approved_by FK
+    }
+    leave_types {
+        string leave_type_id PK
+        string type_name
+        int paid_flag
+        int deducts_annual_leave
+        decimal minimum_unit
+        string regulation_article_id FK
+    }
+    payroll_monthly {
+        string payroll_id PK
+        string employee_id FK
+        string pay_month
+        int base_pay
+        int allowance_total
+        int deduction_total
+        int net_pay
+    }
+    performance_reviews {
+        string review_id PK
+        string employee_id FK
+        int review_year
+        string review_type
+        string result_code
+        string visibility
+    }
+    personnel_actions {
+        string action_id PK
+        string employee_id FK
+        string action_type
+        string from_dept_id FK
+        string to_dept_id FK
+        string effective_date
+    }
+    procurement_contracts {
+        string contract_id PK
+        string contract_type
+        string owner_dept_id FK
+        string vendor_alias
+        int contract_amount
+        string start_date
+        string end_date
+        string status
+    }
+    rd_projects {
+        string project_id PK
+        string project_name
+        string lead_employee_id FK
+        string owner_dept_id FK
+        int budget
+        string start_date
+        string end_date
+        string status
+    }
+    regulation_articles {
+        string article_id PK
+        string version_id FK
+        string chapter_number
+        string article_number
+        string article_title
+        string article_text
+        int page_number
+        string extraction_status
+    }
+    regulation_chunks {
+        string chunk_id PK
+        string article_id FK
+        int chunk_order
+        string chunk_text
+        string embedding_ref
+        int source_page
+    }
+    regulation_versions {
+        string version_id PK
+        string regulation_id FK
+        string revision_number
+        string revision_date
+        string revision_label
+        string effective_date
+        string file_path
+        string file_hash
+        string status
+        int page_count
+    }
+    regulations {
+        string regulation_id PK
+        string title
+        string category
+        string regulation_type
+        string owner_dept_id FK
+        string access_level
+    }
+    routing_logs {
+        string routing_id PK
+        string session_id FK
+        string topic_id FK
+        decimal confidence_score
+        string selected_dept_id FK
+        string assigned_employee_id FK
+        string routing_status
+        string routed_at
+    }
+    safety_incidents {
+        string incident_id PK
+        string reported_at
+        string location
+        string incident_type
+        string severity
+        string owner_employee_id FK
+        string status
+    }
+    satisfaction_surveys {
+        string survey_id PK
+        string ticket_id FK, UK
+        int score
+        string reason_code
+        string comment
+        string submitted_at
+    }
+    support_tickets {
+        string ticket_id PK
+        string session_id FK
+        string employee_id FK
+        string topic_id FK
+        string owner_employee_id FK
+        string priority
+        string status
+        string created_at
+        string closed_at
+    }
+    ticket_events {
+        string event_id PK
+        string ticket_id FK
+        string actor_employee_id FK
+        string event_type
+        string previous_status
+        string new_status
+        string occurred_at
+    }
+    topic_keywords {
+        string keyword_id PK
+        string topic_id FK
+        string keyword
+        string synonym
+        decimal match_weight
+    }
+    topic_ownerships {
+        string ownership_id PK
+        string topic_id FK
+        string dept_id FK
+        string primary_employee_id FK
+        string backup_employee_id FK
+        string approver_employee_id FK
+        int priority
+        string effective_from
+        string effective_to
+    }
+    topic_regulations {
+        string topic_regulation_id PK
+        string topic_id FK
+        string article_id FK
+        string relevance_type
+        int priority
+    }
+    training_history {
+        string training_id PK
+        string employee_id FK
+        string course_name
+        string provider
+        string start_date
+        string end_date
+        string completion_status
+    }
+    travel_requests {
+        string travel_id PK
+        string employee_id FK
+        string travel_type
+        string destination
+        string start_date
+        string end_date
+        string approval_status
+    }
+    employees o|--o{ absences : "employee_id"
+    employees o|--o{ access_audit_logs : "actor_employee_id"
+    employees o|--o{ asset_assignments : "employee_id"
+    asset_registry o|--o{ asset_assignments : "asset_id"
+    departments o|--o{ asset_registry : "owner_dept_id"
+    employees o|--o{ attendance_records : "employee_id"
+    benefit_programs o|--o{ benefit_applications : "benefit_id"
+    employees o|--o{ benefit_applications : "employee_id"
+    regulations o|--o{ benefit_programs : "regulation_id"
+    business_topics o|--o{ benefit_programs : "owner_topic_id"
+    chat_sessions o|--o{ chat_messages : "session_id"
+    employees o|--o{ chat_sessions : "employee_id"
+    departments o|--o{ compliance_cases : "owner_dept_id"
+    departments o|--o{ departments : "parent_dept_id"
+    employees o|--o{ duty_delegations : "substitute_employee_id"
+    employees o|--o{ duty_delegations : "original_employee_id"
+    departments o|--o{ employee_assignments : "dept_id"
+    employees o|--o{ employee_assignments : "employee_id"
+    employees ||--o| employee_contacts : "employee_id"
+    duty_roles o|--o{ employee_roles : "role_id"
+    employees o|--o{ employee_roles : "employee_id"
+    employees o|--o{ expense_claims : "employee_id"
+    rd_projects o|--o{ ip_records : "project_id"
+    employees o|--o{ leave_adjustments : "approved_by"
+    employees o|--o{ leave_adjustments : "employee_id"
+    employees o|--o{ leave_balances : "employee_id"
+    employees o|--o{ leave_transactions : "approved_by"
+    leave_types o|--o{ leave_transactions : "leave_type_id"
+    employees o|--o{ leave_transactions : "employee_id"
+    regulation_articles o|--o{ leave_types : "regulation_article_id"
+    employees o|--o{ payroll_monthly : "employee_id"
+    employees o|--o{ performance_reviews : "employee_id"
+    departments o|--o{ personnel_actions : "to_dept_id"
+    departments o|--o{ personnel_actions : "from_dept_id"
+    employees o|--o{ personnel_actions : "employee_id"
+    departments o|--o{ procurement_contracts : "owner_dept_id"
+    departments o|--o{ rd_projects : "owner_dept_id"
+    employees o|--o{ rd_projects : "lead_employee_id"
+    regulation_versions o|--o{ regulation_articles : "version_id"
+    regulation_articles o|--o{ regulation_chunks : "article_id"
+    regulations o|--o{ regulation_versions : "regulation_id"
+    departments o|--o{ regulations : "owner_dept_id"
+    employees o|--o{ routing_logs : "assigned_employee_id"
+    departments o|--o{ routing_logs : "selected_dept_id"
+    business_topics o|--o{ routing_logs : "topic_id"
+    chat_sessions o|--o{ routing_logs : "session_id"
+    employees o|--o{ safety_incidents : "owner_employee_id"
+    support_tickets o|--o| satisfaction_surveys : "ticket_id"
+    employees o|--o{ support_tickets : "owner_employee_id"
+    business_topics o|--o{ support_tickets : "topic_id"
+    employees o|--o{ support_tickets : "employee_id"
+    chat_sessions o|--o{ support_tickets : "session_id"
+    employees o|--o{ ticket_events : "actor_employee_id"
+    support_tickets o|--o{ ticket_events : "ticket_id"
+    business_topics o|--o{ topic_keywords : "topic_id"
+    employees o|--o{ topic_ownerships : "approver_employee_id"
+    employees o|--o{ topic_ownerships : "backup_employee_id"
+    employees o|--o{ topic_ownerships : "primary_employee_id"
+    departments o|--o{ topic_ownerships : "dept_id"
+    business_topics o|--o{ topic_ownerships : "topic_id"
+    regulation_articles o|--o{ topic_regulations : "article_id"
+    business_topics o|--o{ topic_regulations : "topic_id"
+    employees o|--o{ training_history : "employee_id"
+    employees o|--o{ travel_requests : "employee_id"

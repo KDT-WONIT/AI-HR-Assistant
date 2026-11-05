@@ -12,6 +12,7 @@ from app.api.routes import router, service as chat_service
 from app.config import settings
 from app.errors import ConversationConflict, ModelUnavailable, StorageUnavailable, RagUnavailable, MCPUnavailable
 from app.mcp.client import tool_gateway
+from app.api.ui import router as ui_router
 
 
 logger = logging.getLogger('uvicorn.error')
@@ -106,7 +107,27 @@ app = FastAPI(
     lifespan=lifespan,
 )
 app.include_router(router, prefix="/api")
+app.include_router(ui_router,prefix='/api')
 app.mount("/static", StaticFiles(directory=settings.frontend_dir), name="static")
+if (settings.frontend_dir/'assets').is_dir():
+    app.mount('/assets',StaticFiles(directory=settings.frontend_dir/'assets'),name='ui-assets')
+if settings.ui_regulations_dir.is_dir():
+    app.mount('/regulations/wonit_preprocessed',StaticFiles(directory=settings.ui_regulations_dir),name='ui-regulations')
+
+
+@app.get('/app.js',include_in_schema=False)
+async def ui_script():
+    return FileResponse(settings.frontend_dir/'app.js',headers={'Cache-Control':'no-cache'})
+
+
+@app.get('/config.js',include_in_schema=False)
+async def ui_config():
+    return FileResponse(settings.frontend_dir/'config.js',headers={'Cache-Control':'no-cache'})
+
+
+@app.get('/styles.css',include_in_schema=False)
+async def ui_styles():
+    return FileResponse(settings.frontend_dir/'styles.css')
 
 
 async def storage_error(request, error):

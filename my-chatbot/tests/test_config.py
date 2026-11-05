@@ -55,7 +55,8 @@ class ConfigTests(unittest.TestCase):
             Settings.from_env({}).policy_path('../outside')
 
     def test_n8n_event_names_are_loaded_and_validated(self):
-        self.assertEqual(Settings.from_env({'N8N_EVENT_SESSION_END':'feedback'}).n8n_event_session_end,'feedback')
+        self.assertEqual(Settings.from_env({'N8N_EVENT_SESSION_END':'finish','N8N_EVENT_FEEDBACK':'rating'}).n8n_event_feedback,'rating')
+        self.assertEqual(Settings.from_env({}).n8n_event_session_end,'end')
         for fields in [{'N8N_EVENT_ANSWER':''},{'N8N_EVENT_ANSWER':'question'},{'N8N_EVENT_ANSWER':'bad name'}]:
             with self.subTest(fields=fields),self.assertRaises(ValueError):
                 Settings.from_env(fields)

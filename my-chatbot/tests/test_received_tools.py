@@ -48,7 +48,7 @@ class ReceivedToolsTests(unittest.TestCase):
         self.assertEqual(result['data']['estimated_total_krw'],'290000.00')
         context,text=self.answer(result)
         self.assertEqual(context.answer_coverage,'direct')
-        self.assertIn('290,000.00원',text)
+        self.assertIn('290,000원',text)
         self.assertIn('여비규정',text)
         self.assertIn('정산 확정액이 아닙니다',text)
 
@@ -59,13 +59,13 @@ class ReceivedToolsTests(unittest.TestCase):
         self.assertIsNone(result['data']['estimated_total_krw'])
         context,text=self.answer(result)
         self.assertEqual(context.answer_coverage,'partial')
-        self.assertIn('추가 입력: 교통비 예상액',text)
+        self.assertIn('입력이 더 필요합니다: 교통비 예정 금액',text)
 
-    def test_unknown_grade_is_not_inferred_from_job_title(self):
+    def test_unknown_grade_falls_back_to_assumed_grade(self):
         profile=self.request.user_profile.model_copy(update={'grade':'미분류','job_title':'부서장'})
         result=self.calculate(request=self.request.model_copy(update={'user_profile':profile}))
-        self.assertEqual(result['status'],'error')
-        self.assertIn('직급',result['error']['message'])
+        self.assertEqual(result['status'],'success')
+        self.assertTrue(any('가정' in note for note in result['assumptions']))
 
     def test_policy_mismatch_blocks_fixed_rate_calculation(self):
         with patch('app.integrations.employee_tools.travel_policy_matches',return_value=False):
@@ -95,7 +95,7 @@ class ReceivedToolsTests(unittest.TestCase):
         with patch('app.tools.execution.RagService.search',AsyncMock()) as rag:
             result=self.runner.run(execute_domain('travel_expenses',['여비'],self.request))
         self.assertEqual(result.status,'needs_input')
-        self.assertIn('출발일',result.message)
+        self.assertIn('4가지 정보',result.message)  # 출장비 계산기가 빠진 항목을 되묻습니다
         rag.assert_not_awaited()
 
     def populate(self,repository,employee,question,answer):

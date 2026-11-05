@@ -112,6 +112,18 @@
               "maxLength": 50,
               "title": "Employee Id"
             }
+          },
+          {
+            "name": "fallback",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "description": "true이면 외부 사진 없이 로컬 파일만 반환",
+              "default": false,
+              "title": "Fallback"
+            },
+            "description": "true이면 외부 사진 없이 로컬 파일만 반환"
           }
         ],
         "responses": {
@@ -370,6 +382,46 @@
         }
       }
     },
+    "/api/chat/stream": {
+      "post": {
+        "tags": [
+          "chat"
+        ],
+        "summary": "Chat Stream",
+        "description": "답변을 만드는 동안 진행 상황과 미리보기 문장을 SSE로 보내고, 마지막에 검증된 최종 답변(final)을 보냅니다.\n이벤트: status(진행 문구) · delta(미리보기, 매번 전체 교체) · final(/chat과 같은 응답) · error.",
+        "operationId": "chat_stream_api_chat_stream_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChatRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/conversations/{conversation_id}/end": {
       "post": {
         "tags": [
@@ -465,6 +517,358 @@
           }
         }
       }
+    },
+    "/api/hr/employee": {
+      "post": {
+        "tags": [
+          "ui"
+        ],
+        "summary": "Employee",
+        "operationId": "employee_api_hr_employee_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmployeeRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/hr/question": {
+      "post": {
+        "tags": [
+          "ui"
+        ],
+        "summary": "Question",
+        "operationId": "question_api_hr_question_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QuestionRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/hr/question/stream": {
+      "post": {
+        "tags": [
+          "ui"
+        ],
+        "summary": "Question Stream",
+        "operationId": "question_stream_api_hr_question_stream_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QuestionRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/hr/history": {
+      "post": {
+        "tags": [
+          "ui"
+        ],
+        "summary": "History",
+        "operationId": "history_api_hr_history_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HistoryRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/hr/conversation": {
+      "post": {
+        "tags": [
+          "ui"
+        ],
+        "summary": "Conversation",
+        "operationId": "conversation_api_hr_conversation_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SessionRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/hr/contact": {
+      "post": {
+        "tags": [
+          "ui"
+        ],
+        "summary": "Contacts",
+        "operationId": "contacts_api_hr_contact_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/hr/feedback": {
+      "post": {
+        "tags": [
+          "ui"
+        ],
+        "summary": "Feedback",
+        "operationId": "feedback_api_hr_feedback_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FeedbackRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/hr/retry": {
+      "post": {
+        "tags": [
+          "ui"
+        ],
+        "summary": "Retry",
+        "operationId": "retry_api_hr_retry_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SessionRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/hr/source/{document_id}": {
+      "get": {
+        "tags": [
+          "ui"
+        ],
+        "summary": "Source Pdf",
+        "operationId": "source_pdf_api_hr_source__document_id__get",
+        "parameters": [
+          {
+            "name": "document_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Document Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -533,6 +937,11 @@
             "title": "Answer Coverage",
             "default": "unknown"
           },
+          "processing_status": {
+            "type": "string",
+            "title": "Processing Status",
+            "default": "answered"
+          },
           "contact_escalation": {
             "$ref": "#/components/schemas/ContactEscalation"
           }
@@ -581,6 +990,16 @@
               }
             ],
             "title": "Tool Id"
+          },
+          "arguments": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ToolArguments"
+              },
+              {
+                "type": "null"
+              }
+            ]
           }
         },
         "additionalProperties": false,
@@ -752,6 +1171,28 @@
         ],
         "title": "ContactRecommendation"
       },
+      "ContactRequest": {
+        "properties": {
+          "employee_id": {
+            "type": "string",
+            "maxLength": 50,
+            "minLength": 1,
+            "title": "Employee Id"
+          },
+          "category_id": {
+            "type": "string",
+            "maxLength": 80,
+            "title": "Category Id",
+            "default": "hr_employment"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "employee_id"
+        ],
+        "title": "ContactRequest"
+      },
       "Conversation": {
         "properties": {
           "id": {
@@ -922,6 +1363,22 @@
         ],
         "title": "EmployeePage"
       },
+      "EmployeeRequest": {
+        "properties": {
+          "employee_id": {
+            "type": "string",
+            "maxLength": 50,
+            "minLength": 1,
+            "title": "Employee Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "employee_id"
+        ],
+        "title": "EmployeeRequest"
+      },
       "EndRequest": {
         "properties": {
           "rating": {
@@ -945,6 +1402,43 @@
             "maxLength": 1000,
             "title": "Comment",
             "default": ""
+          },
+          "score": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 5.0,
+                "minimum": 1.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Score"
+          },
+          "error_type": {
+            "type": "string",
+            "enum": [
+              "",
+              "incorrect_answer",
+              "wrong_source",
+              "calculation_error",
+              "technical_error"
+            ],
+            "title": "Error Type",
+            "default": ""
+          },
+          "message_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uuid"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Message Id"
           }
         },
         "additionalProperties": false,
@@ -1009,6 +1503,22 @@
           "message": {
             "type": "string",
             "title": "Message"
+          },
+          "score": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Score"
+          },
+          "error_type": {
+            "type": "string",
+            "title": "Error Type",
+            "default": ""
           }
         },
         "type": "object",
@@ -1023,6 +1533,70 @@
         ],
         "title": "EndResponse"
       },
+      "FeedbackRequest": {
+        "properties": {
+          "employee_id": {
+            "type": "string",
+            "maxLength": 50,
+            "minLength": 1,
+            "title": "Employee Id"
+          },
+          "session_id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Session Id"
+          },
+          "request_id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Request Id"
+          },
+          "rating": {
+            "type": "integer",
+            "maximum": 5.0,
+            "minimum": 1.0,
+            "title": "Rating"
+          },
+          "error_type": {
+            "type": "string",
+            "enum": [
+              "",
+              "incorrect_answer",
+              "wrong_source",
+              "calculation_error",
+              "technical_error"
+            ],
+            "title": "Error Type",
+            "default": ""
+          },
+          "comment": {
+            "type": "string",
+            "maxLength": 1000,
+            "title": "Comment",
+            "default": ""
+          },
+          "submitted_at": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Submitted At"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "employee_id",
+          "session_id",
+          "request_id",
+          "rating"
+        ],
+        "title": "FeedbackRequest"
+      },
       "HTTPValidationError": {
         "properties": {
           "detail": {
@@ -1035,6 +1609,28 @@
         },
         "type": "object",
         "title": "HTTPValidationError"
+      },
+      "HistoryRequest": {
+        "properties": {
+          "employee_id": {
+            "type": "string",
+            "maxLength": 50,
+            "minLength": 1,
+            "title": "Employee Id"
+          },
+          "search": {
+            "type": "string",
+            "maxLength": 100,
+            "title": "Search",
+            "default": ""
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "employee_id"
+        ],
+        "title": "HistoryRequest"
       },
       "Message": {
         "properties": {
@@ -1076,6 +1672,11 @@
           },
           "contact_escalation": {
             "$ref": "#/components/schemas/ContactEscalation"
+          },
+          "processing_status": {
+            "type": "string",
+            "title": "Processing Status",
+            "default": "answered"
           }
         },
         "type": "object",
@@ -1086,6 +1687,91 @@
           "created_at"
         ],
         "title": "Message"
+      },
+      "QuestionRequest": {
+        "properties": {
+          "employee_id": {
+            "type": "string",
+            "maxLength": 50,
+            "minLength": 1,
+            "title": "Employee Id"
+          },
+          "session_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uuid"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Session Id"
+          },
+          "question": {
+            "type": "string",
+            "maxLength": 4000,
+            "minLength": 1,
+            "title": "Question"
+          },
+          "category_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Category Id"
+          },
+          "previous_request_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uuid"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Previous Request Id"
+          },
+          "input_data": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Input Data"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "employee_id",
+          "question"
+        ],
+        "title": "QuestionRequest"
+      },
+      "SessionRequest": {
+        "properties": {
+          "employee_id": {
+            "type": "string",
+            "maxLength": 50,
+            "minLength": 1,
+            "title": "Employee Id"
+          },
+          "session_id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Session Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "employee_id",
+          "session_id"
+        ],
+        "title": "SessionRequest"
       },
       "Source": {
         "properties": {
@@ -1148,6 +1834,18 @@
               }
             ],
             "title": "Distance"
+          },
+          "caption": {
+            "type": "string",
+            "title": "Caption",
+            "default": ""
+          },
+          "highlights": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Highlights"
           }
         },
         "type": "object",
@@ -1188,6 +1886,82 @@
           "status"
         ],
         "title": "Step"
+      },
+      "ToolArguments": {
+        "properties": {
+          "year": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 2200.0,
+                "minimum": 1900.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Year"
+          },
+          "requested_days": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 366.0,
+                "exclusiveMinimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Requested Days"
+          },
+          "department": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 100
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Department"
+          },
+          "history_query": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 500
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "History Query"
+          },
+          "history_limit": {
+            "type": "integer",
+            "maximum": 10.0,
+            "minimum": 1.0,
+            "title": "History Limit",
+            "default": 5
+          },
+          "trip": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Trip"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "ToolArguments"
       },
       "ToolDefinition": {
         "properties": {
@@ -1562,7 +2336,8 @@
             "enum": [
               "sent",
               "failed",
-              "not_configured"
+              "not_configured",
+              "queued"
             ],
             "title": "Status"
           },
