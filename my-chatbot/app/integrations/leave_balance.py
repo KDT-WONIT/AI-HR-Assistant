@@ -69,3 +69,22 @@ def balance_only_question(question: str) -> bool:
     from app.agent.followups import current_question
     current = current_question(question)
     return bool(BALANCE_WORDS.search(current)) and not POLICY_WORDS.search(current)
+
+
+def load_directory_balance(employee_id: str, year: int) -> dict | None:
+    """연차 원장을 읽기 전용 사원 DB(database/employee_directory)에서 조회합니다.
+
+    연차 데이터는 계산에만 쓰고 앱이 갱신하지 않으므로, git으로 함께 배포되는 사원 DB에 두어
+    팀원이 별도 준비 없이 같은 값을 쓰게 합니다. 사원 DB를 쓰지 않거나 원장이 없으면 None을 돌려
+    호출한 쪽이 앱 DB(data/app.sqlite3)에서 다시 찾습니다.
+    """
+    from app.config import settings
+    if settings.user_data_source != 'directory':
+        return None
+    try:
+        from app.errors import StorageUnavailable
+        from app.repositories.directory import directory_connection
+        with directory_connection() as connection:
+            return load_balance(connection, employee_id, year)
+    except (StorageUnavailable, sqlite3.Error):
+        return None

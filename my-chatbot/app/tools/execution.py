@@ -11,7 +11,7 @@ from app.repositories.directory import EmployeeDirectoryRepository
 from app.rag.pipeline import RagService
 from app.rag.retrieval import RetrievalHints
 from app.schemas import ToolArguments, ToolInput, ToolResult
-from app.integrations.leave_balance import load_balance
+from app.integrations.leave_balance import load_balance, load_directory_balance
 from app.integrations.leave_policy import leave_entitlement
 from app.integrations.employee_tools import history_question,inquiry_history,travel_expense
 
@@ -81,8 +81,11 @@ def business_data(tool_id: str, request: ToolInput) -> tuple[dict, str | None]:
     if annual_question and tool_id != 'travel_expenses' and (any(word in question for word in leave_words)
                                     or any(word in question for word in entitlement_words)):
         year = args.year or datetime.now(timezone(timedelta(hours=9))).year
-        with connection_scope() as connection:
-            row = load_balance(connection, request.employee_id, year)
+        # 연차 원장은 사원 DB(읽기 전용)에서 먼저 찾고, 없으면 앱 DB에서 찾습니다.
+        row = load_directory_balance(request.employee_id, year)
+        if row is None:
+            with connection_scope() as connection:
+                row = load_balance(connection, request.employee_id, year)
         profile = request.user_profile
         today = datetime.now(timezone(timedelta(hours=9))).date()
         policy = leave_entitlement(profile.hired_at, today, profile.grade) if row is None and profile and profile.hired_at else None

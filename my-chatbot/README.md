@@ -31,7 +31,7 @@
 | AI 모델 | Ollama (`gemma4:e2b`, 도구 선택과 답변 생성 공용) |
 | 도구 호출 | MCP (stdio) |
 | 규정 검색(RAG) | ChromaDB · BAAI/bge-m3 임베딩 (59개 문서, 7,117개 조각) |
-| 데이터 | SQLite (`data/app.sqlite3` 대화·평가·연차, `database/employee_directory` 사원·부서) |
+| 데이터 | SQLite (`database/employee_directory` 사원·부서·연차 원장 읽기 전용, `data/app.sqlite3` 대화·평가 기록) |
 | 로그 자동화 | n8n → Google Sheets |
 
 ## 실행 방법
@@ -40,10 +40,14 @@
 
 ```console
 ollama pull gemma4:e2b
+cp .env.example .env
 python -m pip install -r requirements.txt
-python -m scripts.init_db
 python -m app --reload
 ```
+
+- `.env`는 비밀 값이 들어가므로 git에 올리지 않습니다(`.gitignore`). 처음에는 `.env.example`을 복사해 `.env`를 만들어 쓰면 됩니다. Windows 명령 프롬프트에서는 `cp` 대신 `copy .env.example .env`를 사용합니다.
+- DB 준비는 따로 하지 않아도 됩니다. 사원·조직·연차 데이터는 `database/employee_directory/employee_directory.sqlite3`에 들어 있어 git으로 함께 받고(읽기 전용), 대화 기록용 `data/app.sqlite3`는 처음 실행할 때 자동으로 만들어집니다.
+- 복사한 `.env`는 그대로 실행됩니다. 로그를 보낼 n8n 주소는 `N8N_WEBHOOK_URL`이며, 본인 n8n 주소로 바꾸거나 비워두면 전송 없이 챗봇만 동작합니다.
 
 - 화면: http://127.0.0.1:8000/
 - API 문서: http://127.0.0.1:8000/docs

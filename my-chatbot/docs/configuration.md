@@ -25,7 +25,7 @@
 | USER_DATA_SOURCE=directory | 독립 사원 DB를 현재 사용자 정보 원본으로 사용 |
 | EMPLOYEE_DIRECTORY_DIR | 기본 ./database/employee_directory, 사원 DB 묶음·로컬 이미지 경로 |
 | EMPLOYEE_DIRECTORY_DB | 선택 설정. DB 파일 경로를 별도 지정하며 기본값은 위 폴더의 employee_directory.sqlite3 |
-| SQLITE_PATH | DATA_DIR/app.sqlite3. 대화/평가/연차 원장 SQLite |
+| SQLITE_PATH | DATA_DIR/app.sqlite3. 대화/평가 SQLite (연차 원장은 employee_directory DB에서 읽기 전용 조회, 없으면 이 DB로 폴백) |
 | SQLITE_SCHEMA_PATH | ./database/sqlite_schema.sql |
 | TOOL_ROUTER | ollama (기본) 또는 manual |
 | ENABLED_TOOLS | 비우면 전체, 도구 ID를 쉼표로 지정하면 일부만 사용 |

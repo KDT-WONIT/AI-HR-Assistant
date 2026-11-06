@@ -3,7 +3,8 @@
 ## 현재 연결
 
 - 사원·부서·연락처·업무 역할: `database/employee_directory/employee_directory.sqlite3` (USER_DATA_SOURCE=directory)
-- 대화·평가·연차 원장: `data/app.sqlite3` (SQLITE_PATH)
+- 대화·평가: `data/app.sqlite3` (SQLITE_PATH, 런타임 생성·git 제외)
+- 사원·조직·연차 원장: `database/employee_directory/employee_directory.sqlite3` (읽기 전용, git 포함)
 - 규정 벡터 DB: `chroma_db` (CHROMA_DIR)
 - 컬렉션: `kdn_regulations_bge_m3_v1`, 59개 문서 / 7,117개 조각
 - 질문 임베딩: `BAAI/bge-m3`, 리비전 `5617a9f61b028005a4858fdac845db406aefb181`, 1,024차원, 정규화
