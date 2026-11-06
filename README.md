@@ -2,7 +2,7 @@
 
 사내 규정과 인사 정보를 자연어로 물어볼 수 있는 로컬 챗봇입니다. 질문에 맞는 업무 도구를 AI가 골라 규정 검색·연차·출장비 계산·담당자 조회를 수행하고, 근거와 함께 답합니다.
 
-![시스템 아키텍처](docs/architecture/WONIT_HR_AI_Assistant_architecture.png)
+![시스템 아키텍처](my-chatbot/docs/architecture/WONIT_HR_AI_Assistant_architecture.png)
 
 ## 주요 기능
 
