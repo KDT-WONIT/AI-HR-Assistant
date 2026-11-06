@@ -30,7 +30,8 @@ def sheet_time(value=None) -> str:
 
 
 SATISFACTION_SCORES = {'helpful': 5, 'neutral': 3, 'unhelpful': 1}
-HANDLER_BLANK = {'handler_id': '', 'handler_name': '', 'handler_department': '', 'handler_contact': ''}
+# 시트에 빈칸이 남지 않도록 담당자가 없을 때는 '-'를 기록합니다.
+HANDLER_BLANK = {'handler_id': '-', 'handler_name': '-', 'handler_department': '-', 'handler_contact': '-'}
 
 
 def satisfaction_fields(rating, comment) -> dict:
@@ -51,14 +52,14 @@ def has_feedback(value) -> bool:
 
 
 def handler_fields(escalation) -> dict:
-    """추천된 첫 번째 담당자를 시트의 handler_* 열로 바꿉니다. 없으면 모두 빈 값입니다."""
+    """추천된 첫 번째 담당자를 시트의 handler_* 열로 바꿉니다. 없으면 모두 '-'입니다."""
     contacts = getattr(escalation, 'contacts', None) or []
     if not contacts:
         return dict(HANDLER_BLANK)
     employee = contacts[0].employee
-    return {'handler_id': employee.employee_id or '', 'handler_name': employee.name or '',
-            'handler_department': employee.department or '',
-            'handler_contact': employee.work_email or employee.extension_number or ''}
+    return {'handler_id': employee.employee_id or '-', 'handler_name': employee.name or '-',
+            'handler_department': employee.department or '-',
+            'handler_contact': employee.work_email or employee.extension_number or '-'}
 
 
 def answer_sheet_fields(response, question_at: str, answer_at: str) -> dict:
@@ -71,7 +72,7 @@ def answer_sheet_fields(response, question_at: str, answer_at: str) -> dict:
     elif any(result.data for result in response.tool_results):
         source = 'TOOL'
     else:
-        source = ''
+        source = 'NORMAL'  # 규정 검색·업무 도구 없이 답한 일반 대화
     return {'question_at': question_at, 'answer_at': answer_at, 'answer_status': 'ESCALATED' if escalated else 'ANSWERED',
             'answer_source': source, **handler_fields(response.contact_escalation)}
 
@@ -125,7 +126,8 @@ class N8nClient:
             else:
                 detail = ''
             if not 200 <= response.status_code < 300:
-                return DeliveryResult('failed', f'HTTP {response.status_code}', detail)
+                snippet = ' '.join(response.text.split())[:300]
+                return DeliveryResult('failed', f'HTTP {response.status_code}', detail + (f' · 응답: {snippet}' if snippet else ''))
             # n8n이 HTTP 200으로 검증 실패를 응답하는 경우도 성공으로 숨기지 않습니다.
             try:
                 body = response.json()

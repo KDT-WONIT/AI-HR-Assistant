@@ -1,5 +1,6 @@
 from datetime import datetime, timezone, timedelta
 from decimal import Decimal
+import logging
 import re
 
 from starlette.concurrency import run_in_threadpool
@@ -52,7 +53,7 @@ def business_data(tool_id: str, request: ToolInput) -> tuple[dict, str | None]:
             args.requested_days = days
     own_contact = any(word in question for word in ('내 연락처','내 이메일','내 내선','내 근무지'))
     department_extension = '대표내선' in question.replace(' ','')
-    contact_question = not own_contact and not department_extension and any(word in question for word in ('담당자','내선','연락처','전화번호','이메일','부서 직원','팀원'))
+    contact_question = not own_contact and not department_extension and is_contact_lookup(question)
     if own_contact or (tool_id in {'hr_employment', 'organization_management'} and any(word in question for word in ('내 정보', '내정보', '내 부서', '내 직급', '입사일', '내 소속'))):
         if request.user_profile:
             data['employee'] = request.user_profile.model_dump(mode='json')
@@ -63,7 +64,8 @@ def business_data(tool_id: str, request: ToolInput) -> tuple[dict, str | None]:
     compact_question = question.replace(' ', '')
     annual_question = '연차' in question or (any(word in compact_question for word in ('남은휴가','잔여휴가'))
         and not any(word in question for word in ('배우자','경조','출산','특별','질병')))
-    if tool_id == 'work_labor' and annual_question and (any(word in question for word in leave_words)
+    # 라우터가 잔여 연차 질문을 다른 분야로 분류해도 연차 계산 도구는 항상 동작해야 합니다.
+    if annual_question and tool_id != 'travel_expenses' and (any(word in question for word in leave_words)
                                     or any(word in question for word in entitlement_words)):
         year = args.year or datetime.now(timezone(timedelta(hours=9))).year
         with connection_scope() as connection:
@@ -127,6 +129,9 @@ def business_data(tool_id: str, request: ToolInput) -> tuple[dict, str | None]:
     return data, missing
 
 
+from app.agent.intent_guard import is_contact_lookup, drop_unrelated_directory_data  # noqa: E402,F401
+
+
 def travel_calc_data(request: ToolInput, question: str) -> tuple[dict, str | None]:
     """출장비 계산기: 4가지 입력이 모두 있어야 계산하고, 없으면 빠진 항목을 되묻습니다."""
     import json
@@ -148,6 +153,8 @@ def travel_calc_data(request: ToolInput, question: str) -> tuple[dict, str | Non
 
 async def execute_domain(tool_id: str, patterns: list[str], request: ToolInput) -> ToolResult:
     data, missing = await run_in_threadpool(business_data, tool_id, request)
+    if drop_unrelated_directory_data(request.question, data):
+        logging.getLogger(__name__).info('조회 의도가 없어 사원·연락처 데이터를 제외했습니다: tool=%s', tool_id)
     has_directory_data = any(data.get(key) for key in ('employee','hr_contacts','departments'))
     policy_question = any(word in request.question for word in ('규정','기준','절차','방법','자격','지원','신청'))
     # 사원 정보만 묻는 질문에 무관한 규정 검색/LLM 설명을 섞지 않습니다.

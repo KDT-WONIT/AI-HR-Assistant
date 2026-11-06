@@ -34,11 +34,11 @@ python -m app --reload
 
 - API 문서: http://127.0.0.1:8000/docs
 
-- 기본 ID: WON0001. database/employee_directory의 가상 사원 100명·부서 16개·연락처·업무 역할을 직접 조회합니다.
+- 사번 입력칸에는 `WON`이 고정으로 표시되고 숫자만 입력합니다(예: `0001`, `1234`). 시작할 때 사번은 비어 있습니다. database/employee_directory의 가상 사원 105명(기본 100명 + 발표용 팀원 5명)·부서 16개·연락처·업무 역할을 직접 조회합니다.
 
 - 사원·부서 찾기에서 검색하고 프로필 사진을 확인할 수 있습니다. 사진은 로컬 파일 → 사원 DB의 사진 주소 → 로컬 아이콘 순서이며, 미리 받아두려면 `python -m scripts.download_employee_photos`를 실행합니다. 대화 기록은 기존 data/app.sqlite3에 보관합니다.
 
-- Ollama 도구 선택: qwen2.5:3b, 답변 생성: gemma3:4b. 이 PC에 설치된 모델을 사용합니다.
+- Ollama 모델은 .env의 OLLAMA_MODEL(도구 선택)과 OLLAMA_ANSWER_MODEL(답변 생성)로 정합니다. 코드 기본값은 qwen2.5:3b / gemma3:4b이고, 현재 .env에는 gemma4:e2b가 지정되어 있습니다.
 
 - 기존 chroma_db 컬렉션의 59개 문서 / 7,117개 조각을 사용합니다.
 
@@ -60,7 +60,7 @@ python -m app --reload
 
 답변 근거가 부족하면 질문에 관련된 부서의 실무 담당자 후보를 DB에서 찾아 사진·부서·내선·이메일·추천 이유를 카드로 표시합니다. 안내 결과는 대화 기록에 함께 저장됩니다.
 
-연차 데이터가 없으면 임의 부여 일수를 만들지 않고 필요한 정보를 안내합니다.
+연차 원장(부여·사용·예정·결재 대기)이 있으면 그 값으로 잔여 연차를 계산하고, 원장이 없으면 입사일·직급 기준 규정상 부여일수만 계산하며 잔여일수는 단정하지 않습니다. 출장비는 계산기 도구가 계산 과정·금액·관련 규정을 함께 보여줍니다([계산기 설명](docs/calculators.md)).
 
 신청 방법 질문은 규정 표현(근태계·청구·전자결재 등)으로 추가 검색합니다. Ollama가 문장 근거 ID를 선택하여 쉬운 설명을 작성하고, 서버가 근거·기본 수치·부정 표현과 출처를 확인합니다. 확인되는 관련 내용은 먼저 제공하고, 자료에 없는 세부사항만 추가 확인을 안내합니다. 원문은 필요할 때 펼쳐볼 수 있습니다. 계산값은 Python/DB 결과를 사용합니다.
 
@@ -80,7 +80,7 @@ python -m app --reload
 
 - EMPLOYEE_DIRECTORY_DIR: ./database/employee_directory
 
-- CHROMA_DIR: ./chroma_db
+- CHROMA_DIR: ../kdn_regulations_rag/rag_data/chroma_db (상위 폴더의 기존 규정 인덱스)
 
 - CHROMA_COLLECTION: kdn_regulations_bge_m3_v1
 
@@ -96,11 +96,19 @@ python -m app --reload
 
 - CONTACT_ROUTING_PATH: ./config/contact_topics.json, 업무별 문의 표현 연결
 
+- FRONTEND_DIR: ./frontend_v7 (기본 화면. 이전 화면은 ./frontend에 보존)
+
+- UI_REGULATIONS_DIR: ../WONIT_HR_UI_v7_WONIT_59_TEST/WONIT_HR_UI_v7_WONIT_59_TEST/regulations/wonit_preprocessed (화면의 규정집 PDF 원문 폴더)
+
+- N8N_EVENT_SESSION_START / QUESTION / ANSWER / SESSION_END / FEEDBACK: n8n으로 보내는 이벤트 이름(기본 session_start, question, answer, end, feedback). 서로 달라야 합니다.
+
+- N8N_ASYNC: 기본 true. 질문·답변 로그를 백그라운드로 보내 답변 속도에 영향을 주지 않습니다.
+
 
 
 기존 MySQL 데이터는 유지하며 자동 이관하지 않습니다.
 
-시작(session_start)·질문(question)·답변(answer)·만족도 종료(session_end) 단계에 n8n으로 POST합니다. N8N_WEBHOOK_URL에 사용할 주소를 설정한 뒤 서버를 다시 시작하세요. 기존 .env의 URL은 유지하며 공유 양식은 빈 값입니다. 답변은 질문과 같은 message_id를 전송합니다.
+시작(session_start)·질문(question)·답변(answer) 단계와 종료 시점에 n8n으로 POST합니다. 종료는 만족도 없이 끝나면 end, 만족도(1~5점)와 함께 끝나면 feedback 이벤트로 나뉩니다. N8N_WEBHOOK_URL에 사용할 주소를 설정한 뒤 서버를 다시 시작하세요. 기존 .env의 URL은 유지하며 공유 양식은 빈 값입니다. 답변은 질문과 같은 message_id를 전송합니다.
 
 주소 미설정/전송 실패에도 평가는 저장하며, 종료 화면에서 재전송할 수 있습니다.
 
@@ -136,7 +144,9 @@ Windows MCP 실행은 위의 `python -m app --reload` 명령을 사용하세요.
 
 | database/sqlite_schema.sql | SQLite 앱 DB 스키마 |
 
-| frontend | HTML·CSS·JS |
+| frontend_v7 | 기본 화면(WONIT v7 UI, HTML·CSS·JS) |
+
+| frontend | 이전 화면(보존용) |
 
 | scripts | DB 준비·직원/연차 데이터 적재·API 명세 |
 

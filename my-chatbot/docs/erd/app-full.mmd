@@ -74,12 +74,30 @@ erDiagram
         string comment
         string created_at
     }
+    leave_balance_details {
+        string employee_id PK, FK
+        int balance_year PK
+        decimal base_days
+        decimal carryover_days
+        decimal adjusted_days
+    }
     leave_balances {
         string employee_id PK, FK
         int balance_year PK
         decimal granted_days
         decimal used_days
         string updated_at
+    }
+    leave_transactions {
+        string transaction_id PK
+        string employee_id FK
+        string leave_type
+        int deducts_annual_leave
+        string start_date
+        string end_date
+        decimal days
+        string status
+        string requested_at
     }
     messages {
         int sequence_id PK
@@ -119,6 +137,8 @@ erDiagram
     duty_roles ||--o{ employee_roles : "role_id"
     employees ||--o{ employee_roles : "employee_id"
     conversations ||--o| feedback : "conversation_id"
+    employees ||--o{ leave_balance_details : "employee_id"
     employees ||--o{ leave_balances : "employee_id"
+    employees ||--o{ leave_transactions : "employee_id"
     conversations ||--o{ messages : "conversation_id"
     conversations ||--o| webhook_events : "conversation_id"

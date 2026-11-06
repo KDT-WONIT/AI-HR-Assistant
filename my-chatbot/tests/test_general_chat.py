@@ -45,3 +45,17 @@ class GeneralChatTests(unittest.IsolatedAsyncioTestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class IntentRuleTests(unittest.TestCase):
+    def test_chitchat_goes_to_general_but_business_does_not(self):
+        from app.agent.intent import is_chitchat, looks_business, should_fall_back_to_general
+        for text in ('안녕하세요', '고마워요!', '너는 누구야?', '너 뭘 할 수 있어', 'ㅎㅇ'):
+            self.assertTrue(is_chitchat(text), text)
+        for text in ('안녕하세요 연차 며칠 남았나요', '연차 신청 방법', '개인 이메일로 보내도 되나요?', '출장비 알려줘'):
+            self.assertFalse(is_chitchat(text), text)
+        self.assertTrue(should_fall_back_to_general('오늘 날씨 어때', {}))
+        self.assertFalse(should_fall_back_to_general('오늘 날씨 어때', {'leave_balance': {'x': 1}}))
+        self.assertFalse(should_fall_back_to_general('그럼 며칠이야', {}, history_has_business=True))
+        self.assertFalse(should_fall_back_to_general('야근 수당 알려줘', {}))
+        self.assertTrue(looks_business('복리후생 지원'))

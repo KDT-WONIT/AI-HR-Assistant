@@ -112,7 +112,7 @@ python -m unittest tests.test_api tests.test_webhook tests.test_config tests.tes
 
 - satisfaction_score: helpful=5, neutral=3, unhelpful=1, 미선택은 null. satisfaction_comment는 의견입니다.
 - answer_status: PENDING(질문 접수) → ANSWERED / ESCALATED(근거 부족으로 담당자 안내) / FAILED(처리 실패).
-- answer_source: RAG(규정 근거) / TOOL(업무 조회) / HR_ROUTING(담당자 안내), 없으면 빈 값.
+- answer_source: RAG(규정 근거) / TOOL(업무 조회) / HR_ROUTING(담당자 안내) / NORMAL(검색·도구 없이 답한 일반 대화) / PENDING(질문 접수) / ERROR(처리 실패). 담당자 열(handler_*)은 담당자가 없으면 "-"로 기록해 빈칸을 만들지 않습니다.
 - handler_*: 추천된 첫 번째 담당자의 사번·이름·부서·연락처(이메일, 없으면 내선). 없으면 빈 값.
 - 질문·답변 행은 message_id로 이어 붙이고 question 이벤트의 PENDING 행을 answer 이벤트로 갱신합니다.
 

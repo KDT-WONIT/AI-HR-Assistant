@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-11-05T19:25:15.615648+09:00",
+  "captured_at": "2026-11-05T21:37:30.689799+09:00",
   "settings": {
     "storage_backend": "sqlite",
     "user_data_source": "directory",
@@ -67,7 +67,7 @@
               "id"
             ]
           ],
-          "row_count": 103
+          "row_count": 178
         },
         "departments": {
           "name": "departments",
@@ -655,7 +655,72 @@
               "conversation_id"
             ]
           ],
-          "row_count": 8
+          "row_count": 16
+        },
+        "leave_balance_details": {
+          "name": "leave_balance_details",
+          "sql": "CREATE TABLE leave_balance_details (\n    employee_id TEXT NOT NULL,\n    balance_year SMALLINT NOT NULL,\n    base_days DECIMAL(6,2) NOT NULL DEFAULT 0,\n    carryover_days DECIMAL(6,2) NOT NULL DEFAULT 0,\n    adjusted_days DECIMAL(6,2) NOT NULL DEFAULT 0,\n    PRIMARY KEY (employee_id, balance_year),\n    FOREIGN KEY (employee_id) REFERENCES employees(employee_id)\n)",
+          "columns": [
+            {
+              "cid": 0,
+              "name": "employee_id",
+              "type": "TEXT",
+              "notnull": 1,
+              "dflt_value": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "balance_year",
+              "type": "SMALLINT",
+              "notnull": 1,
+              "dflt_value": null,
+              "pk": 2
+            },
+            {
+              "cid": 2,
+              "name": "base_days",
+              "type": "DECIMAL(6,2)",
+              "notnull": 1,
+              "dflt_value": "0",
+              "pk": 0
+            },
+            {
+              "cid": 3,
+              "name": "carryover_days",
+              "type": "DECIMAL(6,2)",
+              "notnull": 1,
+              "dflt_value": "0",
+              "pk": 0
+            },
+            {
+              "cid": 4,
+              "name": "adjusted_days",
+              "type": "DECIMAL(6,2)",
+              "notnull": 1,
+              "dflt_value": "0",
+              "pk": 0
+            }
+          ],
+          "foreign_keys": [
+            {
+              "id": 0,
+              "seq": 0,
+              "table": "employees",
+              "from": "employee_id",
+              "to": "employee_id",
+              "on_update": "NO ACTION",
+              "on_delete": "NO ACTION",
+              "match": "NONE"
+            }
+          ],
+          "unique_keys": [
+            [
+              "employee_id",
+              "balance_year"
+            ]
+          ],
+          "row_count": 100
         },
         "leave_balances": {
           "name": "leave_balances",
@@ -720,7 +785,103 @@
               "balance_year"
             ]
           ],
-          "row_count": 0
+          "row_count": 100
+        },
+        "leave_transactions": {
+          "name": "leave_transactions",
+          "sql": "CREATE TABLE leave_transactions (\n    transaction_id TEXT PRIMARY KEY,\n    employee_id TEXT NOT NULL,\n    leave_type TEXT NOT NULL,\n    deducts_annual_leave SMALLINT NOT NULL DEFAULT 1,\n    start_date TEXT NOT NULL,\n    end_date TEXT NOT NULL,\n    days DECIMAL(6,2) NOT NULL,\n    status TEXT NOT NULL,\n    requested_at TEXT,\n    FOREIGN KEY (employee_id) REFERENCES employees(employee_id)\n)",
+          "columns": [
+            {
+              "cid": 0,
+              "name": "transaction_id",
+              "type": "TEXT",
+              "notnull": 0,
+              "dflt_value": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "employee_id",
+              "type": "TEXT",
+              "notnull": 1,
+              "dflt_value": null,
+              "pk": 0
+            },
+            {
+              "cid": 2,
+              "name": "leave_type",
+              "type": "TEXT",
+              "notnull": 1,
+              "dflt_value": null,
+              "pk": 0
+            },
+            {
+              "cid": 3,
+              "name": "deducts_annual_leave",
+              "type": "SMALLINT",
+              "notnull": 1,
+              "dflt_value": "1",
+              "pk": 0
+            },
+            {
+              "cid": 4,
+              "name": "start_date",
+              "type": "TEXT",
+              "notnull": 1,
+              "dflt_value": null,
+              "pk": 0
+            },
+            {
+              "cid": 5,
+              "name": "end_date",
+              "type": "TEXT",
+              "notnull": 1,
+              "dflt_value": null,
+              "pk": 0
+            },
+            {
+              "cid": 6,
+              "name": "days",
+              "type": "DECIMAL(6,2)",
+              "notnull": 1,
+              "dflt_value": null,
+              "pk": 0
+            },
+            {
+              "cid": 7,
+              "name": "status",
+              "type": "TEXT",
+              "notnull": 1,
+              "dflt_value": null,
+              "pk": 0
+            },
+            {
+              "cid": 8,
+              "name": "requested_at",
+              "type": "TEXT",
+              "notnull": 0,
+              "dflt_value": null,
+              "pk": 0
+            }
+          ],
+          "foreign_keys": [
+            {
+              "id": 0,
+              "seq": 0,
+              "table": "employees",
+              "from": "employee_id",
+              "to": "employee_id",
+              "on_update": "NO ACTION",
+              "on_delete": "NO ACTION",
+              "match": "NONE"
+            }
+          ],
+          "unique_keys": [
+            [
+              "transaction_id"
+            ]
+          ],
+          "row_count": 499
         },
         "messages": {
           "name": "messages",
@@ -816,7 +977,7 @@
               "id"
             ]
           ],
-          "row_count": 304
+          "row_count": 414
         },
         "policy_documents": {
           "name": "policy_documents",
@@ -984,7 +1145,7 @@
               "event_id"
             ]
           ],
-          "row_count": 8
+          "row_count": 16
         }
       },
       "views": {
@@ -1177,7 +1338,7 @@
           ]
         }
       },
-      "path": "C:\\Users\\KDT\\Desktop\\KDT AI Agent\\my-chatbot\\data\\app.sqlite3",
+      "path": "/sessions/rcw-01rzf1rqzfzqgz95b2eylxrs/mnt/KDT AI Agent/my-chatbot/data/app.sqlite3",
       "kind": "live_sqlite",
       "active": true
     },
@@ -1898,7 +2059,7 @@
           ]
         }
       },
-      "path": "C:\\Users\\KDT\\Desktop\\KDT AI Agent\\my-chatbot\\database\\employee_directory\\employee_directory.sqlite3",
+      "path": "/sessions/rcw-01rzf1rqzfzqgz95b2eylxrs/mnt/KDT AI Agent/my-chatbot/database/employee_directory/employee_directory.sqlite3",
       "kind": "live_sqlite",
       "active": true
     },
@@ -1927,7 +2088,7 @@
           ],
           "foreign_keys": [],
           "unique_keys": [],
-          "row_count": 95
+          "row_count": 137
         },
         "collection_metadata": {
           "name": "collection_metadata",
@@ -2854,7 +3015,7 @@
         }
       },
       "views": {},
-      "path": "C:\\Users\\KDT\\Desktop\\KDT AI Agent\\kdn_regulations_rag\\rag_data\\chroma_db\\chroma.sqlite3",
+      "path": "/sessions/rcw-01rzf1rqzfzqgz95b2eylxrs/mnt/KDT AI Agent/kdn_regulations_rag/rag_data/chroma_db/chroma.sqlite3",
       "kind": "live_sqlite",
       "active": true,
       "source_count": 59,
@@ -3814,7 +3975,7 @@
         }
       },
       "views": {},
-      "path": "C:\\Users\\KDT\\Desktop\\KDT AI Agent\\my-chatbot\\chroma_db\\chroma.sqlite3",
+      "path": "/sessions/rcw-01rzf1rqzfzqgz95b2eylxrs/mnt/KDT AI Agent/my-chatbot/chroma_db/chroma.sqlite3",
       "kind": "live_sqlite",
       "active": false
     },
@@ -4770,7 +4931,7 @@
         }
       },
       "views": {},
-      "path": "C:\\Users\\KDT\\Desktop\\KDT AI Agent\\employee_tools_project\\data\\rag_data\\chroma_db\\chroma.sqlite3",
+      "path": "/sessions/rcw-01rzf1rqzfzqgz95b2eylxrs/mnt/KDT AI Agent/employee_tools_project/data/rag_data/chroma_db/chroma.sqlite3",
       "kind": "live_sqlite",
       "active": false
     },
@@ -8421,7 +8582,7 @@
           ]
         }
       },
-      "path": "C:\\Users\\KDT\\Desktop\\KDT AI Agent\\data\\KDN_Enterprise_AI_Dataset\\KDN_Enterprise_AI_Dataset_Pexels\\sql\\01_create_schema.sql",
+      "path": "/sessions/rcw-01rzf1rqzfzqgz95b2eylxrs/mnt/KDT AI Agent/data/KDN_Enterprise_AI_Dataset/KDN_Enterprise_AI_Dataset_Pexels/sql/01_create_schema.sql",
       "kind": "ddl_reference_only",
       "active": false
     },
@@ -8756,7 +8917,7 @@
         }
       },
       "views": {},
-      "path": "C:\\Users\\KDT\\Desktop\\KDT AI Agent\\employee_tools_project\\employee_tools\\schema.example.sql",
+      "path": "/sessions/rcw-01rzf1rqzfzqgz95b2eylxrs/mnt/KDT AI Agent/employee_tools_project/employee_tools/schema.example.sql",
       "kind": "ddl_reference_only",
       "active": false
     }

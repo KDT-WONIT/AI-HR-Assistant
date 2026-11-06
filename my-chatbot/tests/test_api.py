@@ -131,11 +131,15 @@ class ApiTests(unittest.TestCase):
 
     def test_unknown_question_does_not_default_to_fake_policy(self):
         self.rag.return_value = []
+        self.service.ollama.generate_general = AsyncMock(return_value='안녕하세요! 무엇을 도와드릴까요?')
         data = self.client.post("/api/chat", json={"message": "안녕하세요"}).json()
-        self.assertEqual(data["tools_used"], ['work_labor'])
+        self.assertEqual(data["tools_used"], ['general'])  # 인사말은 규정 검색 없이 일반 대화로 답합니다.
         self.assertEqual(data["sources"], [])
-        self.assertEqual(data["status"], "no_result")
         self.service.ollama.generate_answer.assert_not_awaited()
+        # 업무 단어가 있는데 근거가 없으면 지어내지 않고 no_result로 남깁니다.
+        data = self.client.post("/api/chat", json={"message": "연차 신청 규정 알려줘"}).json()
+        self.assertEqual(data["tools_used"], ['work_labor'])
+        self.assertEqual(data["status"], "no_result")
 
     def test_validation_and_missing_conversation(self):
         for payload in ({"message": "  "}, {"message": "a" * 4001}, {"message": "test", "tool_id": "missing"}, {"message": "test", "conversation_id": "bad"}):
@@ -175,13 +179,13 @@ class ApiTests(unittest.TestCase):
         first, other = self.create(), self.create()
         self.client.post('/api/chat', json={'conversation_id': other, 'message': '다른 세션의 비밀 질문'})
         for index in range(7):
-            self.client.post('/api/chat', json={'conversation_id': first, 'message': f'질문 {index}'})
-        response = self.client.post('/api/chat', json={'conversation_id': first, 'message': '현재 질문'})
+            self.client.post('/api/chat', json={'conversation_id': first, 'message': f'연차 질문 {index}'})
+        response = self.client.post('/api/chat', json={'conversation_id': first, 'message': '연차 현재 질문'})
         history = response.json()['context']['history']
         self.assertEqual(len(history), 10)
-        self.assertEqual([item['content'] for item in history if item['role'] == 'user'], [f'질문 {index}' for index in range(2, 7)])
+        self.assertEqual([item['content'] for item in history if item['role'] == 'user'], [f'연차 질문 {index}' for index in range(2, 7)])
         self.assertTrue(all('다른 세션의 비밀 질문' not in item['content'] for item in history))
-        self.assertTrue(all('현재 질문' != item['content'] for item in history))
+        self.assertTrue(all('연차 현재 질문' != item['content'] for item in history))
 
 
 if __name__ == "__main__":

@@ -71,6 +71,7 @@ class Settings:
     rag_max_distance: float = 0.60
     n8n_webhook_url: str = field(default="", repr=False)
     n8n_timeout: float = 10
+    n8n_answer_gap: float = 3.0  # 빠른 답변이 질문 행 저장보다 먼저 시트에 닿지 않도록 두는 최소 간격(초)
     n8n_async: bool = True  # 질문·답변 로그를 백그라운드로 보내 답변 속도에 영향을 주지 않습니다
     n8n_message_limit: int = 10
     n8n_message_max_chars: int = 1000
@@ -177,6 +178,7 @@ class Settings:
             mysql_user=env.get("MYSQL_USER", ""), mysql_password=env.get("MYSQL_PASSWORD", ""),
             embedding_model=env.get("EMBEDDING_MODEL", "BAAI/bge-m3"), n8n_webhook_url=env.get("N8N_WEBHOOK_URL", ""),
             n8n_timeout=float(env.get('N8N_TIMEOUT_SECONDS', '10')),
+            n8n_answer_gap=float(env.get('N8N_ANSWER_GAP_SECONDS', '3')),
             n8n_async=env_bool(env, 'N8N_ASYNC', True),
             n8n_message_limit=env_int(env, 'N8N_MESSAGE_LIMIT', 10),
             n8n_message_max_chars=env_int(env, 'N8N_MESSAGE_MAX_CHARS', 1000),

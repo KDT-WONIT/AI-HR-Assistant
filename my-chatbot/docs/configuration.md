@@ -41,6 +41,7 @@
 | MCP_TIMEOUT_SECONDS | 로컬 MCP 도구 호출 제한, 기본 180초 |
 | N8N_WEBHOOK_URL | n8n 웹훅 전체 주소. 기본 빈 값이면 외부 POST 없음 |
 | N8N_TIMEOUT_SECONDS | 웹훅 POST 제한, 기본 10초 |
+| N8N_ANSWER_GAP_SECONDS | 답변 이벤트를 질문 이벤트 뒤 최소 이 시간(기본 3초)이 지난 뒤 보냄. 빠른 답변이 시트 질문 행보다 먼저 닿는 문제를 막음 |
 | N8N_MESSAGE_LIMIT / N8N_MESSAGE_MAX_CHARS | 전송할 최근 메시지 수(기본 10)·각 메시지 길이(기본 1000) |
 | N8N_EVENT_SESSION_START / N8N_EVENT_QUESTION | 시작·질문 이벤트 이름, 기본 session_start / question |
 | N8N_EVENT_ANSWER / N8N_EVENT_SESSION_END / N8N_EVENT_FEEDBACK | 답변 / 만족도 없는 종료 / 만족도 있는 종료 이벤트 이름, 기본 answer / end / feedback |

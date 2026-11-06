@@ -7,9 +7,9 @@
   <meta name="description" content="WONIT Electronics 사내 규정 검색·휴가 조회·출장 여비·HR 문의 도우미">
   <title>WONIT Electronics | HR AI Assistant</title>
   <link rel="icon" href="assets/wonit-electronics-logo.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=202611060126">
   <script defer src="config.js"></script>
-  <script defer src="app.js"></script>
+  <script defer src="app.js?v=202611060146"></script>
 </head>
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" class="icons" aria-hidden="true">
@@ -122,7 +122,7 @@
 
       <section id="helpView" class="view inner-view hidden"><div class="page-head"><div><p class="eyebrow">이용 안내</p><h2>서비스 이용 방법</h2></div></div><div class="help-list"><article><b>1</b><div><strong>사번 및 질문 입력</strong><p>본인에게 부여된 사번으로 문의하세요. 실제 권한 확인은 회사 인증 시스템과 연계되어야 합니다.</p></div></article><article><b>2</b><div><strong>규정집 열람 / AI 질문 분야 구분</strong><p>WONIT 실습용 전처리 PDF 59개를 규정집에서 열람합니다. AI 질문 분야는 별도이며, 분야별 질문 예시를 선택하면 질문창에 입력할 수 있습니다.</p></div></article><article><b>3</b><div><strong>채팅방별 문의 이력</strong><p>여러 질문을 한 채팅으로 묶어서 보관합니다. 지난 채팅을 클릭하면 질문과 답변 전체를 복원하고 같은 채팅에서 이어서 대화할 수 있습니다.</p></div></article><article><b>4</b><div><strong>대화 종료 및 평가</strong><p>만족도와 오류 의견을 해당 문의 번호에 연결하여 제출할 수 있습니다.</p></div></article></div></section>
     </main>
-    <footer>WONIT Electronics · HR AI Assistant <span>문의 내용은 회사의 운영·보안 기준에 따라 관리됩니다.</span></footer>
+    <footer>Copyright © 2026 WONIT. All rights reserved. <span>문의 내용은 회사의 운영·보안 기준에 따라 관리됩니다.</span></footer>
   </div>
 
   <div id="feedbackOverlay" class="overlay hidden"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="feedbackTitle"><button id="closeFeedback" class="icon-btn" type="button" aria-label="닫기"><svg class="icon"><use href="#i-close"/></svg></button><h2 id="feedbackTitle">대화 종료 및 만족도 평가</h2><p>제출하면 대화를 종료하고 평가·기본 사용자 정보·최근 대화를 설정된 n8n 주소로 전송합니다.</p><form id="feedbackForm" novalidate><label>답변 만족도</label><div id="ratingButtons" class="rating-stars" role="group" aria-label="만족도 별점"><button type="button" data-score="1" aria-label="1점">★</button><button type="button" data-score="2" aria-label="2점">★</button><button type="button" data-score="3" aria-label="3점">★</button><button type="button" data-score="4" aria-label="4점">★</button><button type="button" data-score="5" aria-label="5점">★</button></div><label for="feedbackIssue">오류 신고 유형 (선택)</label><select id="feedbackIssue"><option value="">오류 없음</option><option value="incorrect_answer">답변 오류</option><option value="wrong_source">출처 오류</option><option value="calculation_error">계산 오류</option><option value="technical_error">기술 오류</option></select><label for="feedbackComment">추가 의견 (선택)</label><textarea id="feedbackComment" rows="3" maxlength="500" placeholder="개선이 필요한 내용을 작성해 주세요."></textarea><div id="feedbackError" class="inline-error hidden" role="alert"></div><button id="sendFeedback" type="submit" class="primary-btn wide">제출하고 대화 종료</button></form></div></div>

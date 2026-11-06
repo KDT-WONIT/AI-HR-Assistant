@@ -125,7 +125,7 @@ class WebhookTests(unittest.TestCase):
                                  'handler_id':'HR001','handler_name':'김담당','handler_department':'인사팀','handler_contact':'hr@example.com'})
         rag=Mock(status='answered',sources=[object()],tool_results=[],contact_escalation=ContactEscalation())
         fields=answer_sheet_fields(rag,'Q','A')
-        self.assertEqual((fields['answer_status'],fields['answer_source'],fields['handler_id']),('ANSWERED','RAG',''))
+        self.assertEqual((fields['answer_status'],fields['answer_source'],fields['handler_id']),('ANSWERED','RAG','-'))
 
     def test_failure_keeps_feedback_and_retry_reuses_the_same_event(self):
         type(self).status_code=503

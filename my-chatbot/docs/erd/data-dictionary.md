@@ -1,16 +1,16 @@
 # DB 컬럼 사전
 
-조사 시각: 2026-11-05T19:25:15.615648+09:00
+조사 시각: 2026-11-05T21:37:30.689799+09:00
 
 실제 DB의 PRAGMA 정보 및 참고 DDL에서 추출했습니다. 개인·대화 본문 데이터는 포함하지 않습니다.
 
 ## app
 
-원본: `C:\Users\KDT\Desktop\KDT AI Agent\my-chatbot\data\app.sqlite3`
+원본: `/sessions/rcw-01rzf1rqzfzqgz95b2eylxrs/mnt/KDT AI Agent/my-chatbot/data/app.sqlite3`
 
 ### conversations
 
-행 수: 103
+행 수: 178
 
 | 컬럼 | 형식 | 키 | 필수 | 참조 |
 | --- | --- | --- | --- | --- |
@@ -126,7 +126,7 @@
 
 ### feedback
 
-행 수: 8
+행 수: 16
 
 | 컬럼 | 형식 | 키 | 필수 | 참조 |
 | --- | --- | --- | --- | --- |
@@ -138,9 +138,23 @@
 
 복합/단일 유일 인덱스: (conversation_id)
 
+### leave_balance_details
+
+행 수: 100
+
+| 컬럼 | 형식 | 키 | 필수 | 참조 |
+| --- | --- | --- | --- | --- |
+| employee_id | TEXT | PK, FK | Y | employees.employee_id |
+| balance_year | SMALLINT | PK | Y |  |
+| base_days | DECIMAL(6,2) |  | Y |  |
+| carryover_days | DECIMAL(6,2) |  | Y |  |
+| adjusted_days | DECIMAL(6,2) |  | Y |  |
+
+복합/단일 유일 인덱스: (employee_id, balance_year)
+
 ### leave_balances
 
-행 수: 0
+행 수: 100
 
 | 컬럼 | 형식 | 키 | 필수 | 참조 |
 | --- | --- | --- | --- | --- |
@@ -152,9 +166,27 @@
 
 복합/단일 유일 인덱스: (employee_id, balance_year)
 
+### leave_transactions
+
+행 수: 499
+
+| 컬럼 | 형식 | 키 | 필수 | 참조 |
+| --- | --- | --- | --- | --- |
+| transaction_id | TEXT | PK | Y |  |
+| employee_id | TEXT | FK | Y | employees.employee_id |
+| leave_type | TEXT |  | Y |  |
+| deducts_annual_leave | SMALLINT |  | Y |  |
+| start_date | TEXT |  | Y |  |
+| end_date | TEXT |  | Y |  |
+| days | DECIMAL(6,2) |  | Y |  |
+| status | TEXT |  | Y |  |
+| requested_at | TEXT |  | N |  |
+
+복합/단일 유일 인덱스: (transaction_id)
+
 ### messages
 
-행 수: 304
+행 수: 414
 
 | 컬럼 | 형식 | 키 | 필수 | 참조 |
 | --- | --- | --- | --- | --- |
@@ -188,7 +220,7 @@
 
 ### webhook_events
 
-행 수: 8
+행 수: 16
 
 | 컬럼 | 형식 | 키 | 필수 | 참조 |
 | --- | --- | --- | --- | --- |
@@ -210,7 +242,7 @@
 
 ## directory
 
-원본: `C:\Users\KDT\Desktop\KDT AI Agent\my-chatbot\database\employee_directory\employee_directory.sqlite3`
+원본: `/sessions/rcw-01rzf1rqzfzqgz95b2eylxrs/mnt/KDT AI Agent/my-chatbot/database/employee_directory/employee_directory.sqlite3`
 
 ### departments
 
@@ -319,11 +351,11 @@
 
 ## chroma_active
 
-원본: `C:\Users\KDT\Desktop\KDT AI Agent\kdn_regulations_rag\rag_data\chroma_db\chroma.sqlite3`
+원본: `/sessions/rcw-01rzf1rqzfzqgz95b2eylxrs/mnt/KDT AI Agent/kdn_regulations_rag/rag_data/chroma_db/chroma.sqlite3`
 
 ### acquire_write
 
-행 수: 95
+행 수: 137
 
 | 컬럼 | 형식 | 키 | 필수 | 참조 |
 | --- | --- | --- | --- | --- |
@@ -589,7 +621,7 @@
 
 ## enterprise_reference
 
-원본: `C:\Users\KDT\Desktop\KDT AI Agent\data\KDN_Enterprise_AI_Dataset\KDN_Enterprise_AI_Dataset_Pexels\sql\01_create_schema.sql`
+원본: `/sessions/rcw-01rzf1rqzfzqgz95b2eylxrs/mnt/KDT AI Agent/data/KDN_Enterprise_AI_Dataset/KDN_Enterprise_AI_Dataset_Pexels/sql/01_create_schema.sql`
 
 ### absences
 
@@ -1284,7 +1316,7 @@
 
 ## tool_example
 
-원본: `C:\Users\KDT\Desktop\KDT AI Agent\employee_tools_project\employee_tools\schema.example.sql`
+원본: `/sessions/rcw-01rzf1rqzfzqgz95b2eylxrs/mnt/KDT AI Agent/employee_tools_project/employee_tools/schema.example.sql`
 
 ### contacts
 

@@ -164,3 +164,28 @@ class TravelGradeResolutionTests(unittest.TestCase):
         grade, note = resolve_travel_grade(SimpleNamespace(grade=None, job_title=None), {})
         self.assertEqual(grade, 'grade_3')
         self.assertIn('가정', note)
+
+
+class ContactLookupIntentTests(unittest.TestCase):
+    def test_policy_question_with_email_is_not_a_contact_lookup(self):
+        from app.tools.execution import is_contact_lookup
+        self.assertFalse(is_contact_lookup('업무 자료를 개인 이메일이나 개인 클라우드로 보내도 되나요?'))
+        self.assertFalse(is_contact_lookup('외부 이메일로 파일 전송해도 되나요'))
+        self.assertTrue(is_contact_lookup('인사팀 담당자 알려줘'))
+        self.assertTrue(is_contact_lookup('김서연 이메일 주소 알려줘'))
+        self.assertTrue(is_contact_lookup('인사팀 연락처 알려줘'))
+
+
+class IntentGuardTests(unittest.TestCase):
+    def test_guard_drops_directory_data_for_policy_questions(self):
+        from app.agent.intent_guard import drop_unrelated_directory_data, directory_lookup_intent
+        data = {'hr_contacts': [{'name': '김서연', 'work_email': 'won0001@example.com'}]}
+        self.assertTrue(drop_unrelated_directory_data('업무 자료를 개인 이메일로 보내도 되나요?', data))
+        self.assertNotIn('hr_contacts', data)
+        data = {'hr_contacts': [{'name': '김서연'}]}
+        self.assertFalse(drop_unrelated_directory_data('인사팀 담당자 알려줘', data))
+        self.assertIn('hr_contacts', data)
+        self.assertTrue(directory_lookup_intent('내 정보 알려줘'))
+        self.assertTrue(directory_lookup_intent('정보보안부 연락처 알려줘'))
+        self.assertFalse(directory_lookup_intent('직원 연락처를 외부에 공유해도 되나요?'))
+        self.assertFalse(directory_lookup_intent('부서 이동 시 인사 발령 절차가 어떻게 되나요?'))

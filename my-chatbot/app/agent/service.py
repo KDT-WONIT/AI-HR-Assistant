@@ -36,6 +36,7 @@ class ChatService:
         self.tools = tools if tools is not None else tool_gateway
         self.contacts = ContactRecommender()
         self._chains: dict[str, asyncio.Task] = {}  # 대화별 마지막 전송 작업(순서 보장)
+        self._question_sent: dict[str, float] = {}  # 대화별 질문 이벤트를 보낸 시각(답변 전송 간격 보장용)
         self._pending: set[asyncio.Task] = set()
 
     async def start_conversation(self, employee_id: str) -> Conversation:
@@ -68,9 +69,16 @@ class ChatService:
         async def deliver():
             if previous is not None:
                 await asyncio.wait({previous})
+            if payload.get('event') == settings.n8n_event_answer:
+                # 일반 대화·계산처럼 답변이 매우 빠르면 시트에 질문 행이 만들어지기 전에 답변 갱신이 도착합니다.
+                wait = settings.n8n_answer_gap - (time.monotonic() - self._question_sent.get(payload['session_id'], 0.0))
+                if wait > 0:
+                    await asyncio.sleep(min(wait, settings.n8n_answer_gap))
             try:
                 began = time.monotonic()
                 result = await self.n8n.send_event(payload)
+                if payload.get('event') == settings.n8n_event_question:
+                    self._question_sent[payload['session_id']] = time.monotonic()
                 logging.getLogger('uvicorn.error').info('  └ n8n 호출(%s) %6.1f초 · %s%s%s', payload.get('event'),
                                                       time.monotonic() - began, result.status, f' ({result.error})' if result.error else '',
                                                       f' · {result.detail}' if result.detail else '')
@@ -122,7 +130,7 @@ class ChatService:
         question_at = datetime.now(timezone.utc)
         question_payload = self.event_payload(conversation,settings.n8n_event_question,
             message_id=str(question_id),question=data.message,asked_at=sheet_time(question_at),question_at=sheet_time(question_at),
-            answer_at='',answer='',answer_status='PENDING',answer_source='',**HANDLER_BLANK)
+            answer_at='',answer='',answer_status='PENDING',answer_source='PENDING',**HANDLER_BLANK)
         deliveries = [*conversation.webhook_events,await self.send_log(question_payload)]
         try:
             response = await self._reply(conversation,data,question_id,question_at,progress)
@@ -130,7 +138,7 @@ class ChatService:
             # 질문이 PENDING에 남지 않도록 생성 실패도 같은 message_id로 알립니다.
             await self.send_log(self.event_payload(conversation,settings.n8n_event_answer,
                 message_id=str(question_id),question=data.message,answer='',answer_status='FAILED',answer_message_id='',processing_status='failed',category=None,tools_used=[],
-                question_at=sheet_time(question_at),answer_at=sheet_time(),answer_source='',**HANDLER_BLANK,
+                question_at=sheet_time(question_at),answer_at=sheet_time(),answer_source='ERROR',**HANDLER_BLANK,
                 error_code='chat_processing_failed',answered_at=sheet_time()))
             raise
         answered_at = sheet_time()
@@ -169,6 +177,17 @@ class ChatService:
         # 출장비 계산 요청이거나 계산기가 되물은 항목에 대한 답이면 라우터를 거치지 않고 계산기로 보냅니다.
         forced_tool = data.tool_id or ('travel_expenses' if any(tool.id == 'travel_expenses' for tool in catalog) and travel_calc.should_run(
             data.message, request.recent_user_messages, request.last_assistant_message) else None)
+        if forced_tool is None and any(tool.id == 'work_labor' for tool in catalog):
+            from app.integrations.leave_balance import balance_only_question
+            from app.agent.followups import current_question
+            current = current_question(data.message)
+            # 내 연차 잔여를 묻는 질문은 라우터 판단과 상관없이 연차 계산 도구로 보냅니다.
+            if '연차' in current and balance_only_question(data.message):
+                forced_tool = 'work_labor'
+        if forced_tool is None:
+            from app.agent.intent import is_chitchat
+            if is_chitchat(data.message):
+                forced_tool = GENERAL_TOOL_ID  # 인사·잡담은 라우터 판단 없이 일반 대화로 보냅니다.
         decision = await select_tools(request, forced_tool, self.ollama, routing_history, catalog)
         if decision.resolved_question:
             request.question = decision.resolved_question
@@ -187,6 +206,12 @@ class ChatService:
         for label, seconds in ((remote or {}).get('items') or {}).items():
             timing.record(label, seconds, ((remote or {}).get('notes') or {}).get(label, ''))
         await say('status', f'관련 문서 {len(results[0].sources)}개를 찾았습니다. 답변을 작성하고 있습니다…' if results[0].sources else '답변을 정리하고 있습니다…')
+        from app.agent.intent import should_fall_back_to_general, looks_business
+        previous_business = any(looks_business(turn['content']) for turn in routing_history[-3:])
+        if data.tool_id is None and should_fall_back_to_general(data.message, results[0].data, previous_business):
+            # 업무 단어도, 도구가 만든 조회·계산 데이터도 없으면 규정 검색 결과를 나열하지 않고 일반 대화로 답합니다.
+            return await self._reply_general(conversation, data, question_id, question_at, request, history, profile,
+                                             marks, False, progress)
         context = build_context(request, history, results)
         names = [tool.name for tool in catalog if tool.id == decision.tool_id]
         result = results[0]

@@ -152,3 +152,47 @@ body.home-active .topbar{background:#fcfcfb;border-bottom-color:transparent}
 .id-prefix{font-weight:700;font-size:12px;color:#164d92;margin-right:2px;letter-spacing:.5px}
 .home-view .employee-field{flex-basis:140px!important;width:140px!important}
 @media(max-width:600px){.home-view .employee-field{flex-basis:100%!important;width:100%!important}}
+
+.has-id-card{cursor:default}
+.has-id-card:focus-visible{outline:2px solid #1457bd;outline-offset:2px}
+.id-card{position:fixed;z-index:500;width:340px;border-radius:14px;background:linear-gradient(135deg,#f4f9ff,#e3eefc);border:1px solid #b9cfee;box-shadow:0 14px 40px rgba(8,29,62,.3);overflow:hidden;pointer-events:none;color:#112d53;font-size:12px}
+.id-card-head{display:flex;justify-content:space-between;align-items:center;padding:9px 14px;background:linear-gradient(90deg,#0a3478,#2569de);color:#fff}
+.id-card-head strong{font-size:13px;letter-spacing:.3px}.id-card-head span{font-size:9px;letter-spacing:1.2px;opacity:.85}
+.id-card-body{display:flex;gap:14px;padding:14px}
+.id-card-photo{flex:0 0 96px;height:128px;border-radius:8px;overflow:hidden;border:2px solid #fff;box-shadow:0 2px 8px rgba(8,29,62,.2);background:#dde7f3}
+.id-card-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.id-card-info{margin:0;display:grid;grid-template-columns:auto 1fr;column-gap:10px;row-gap:5px;align-content:start;min-width:0}
+.id-card-info dt{color:#5d759a;font-size:11px;white-space:nowrap}
+.id-card-info dd{margin:0;font-size:12px;overflow-wrap:anywhere}
+.id-card-info dd.id-card-name{font-size:16px;font-weight:800;color:#0a3478}
+
+/* 홈 화면도 사내 규정·문의 이력과 같은 푸른 계열로 통일합니다. */
+body.home-active .shell{background:linear-gradient(180deg,#e6f0ff 0,#eef5ff 260px,var(--canvas) 560px)}
+body.home-active .topbar{background:transparent;border-bottom-color:transparent}
+.home-view .home-greeting h1{color:var(--navy)}
+.home-view .search-form{border-color:#c9daf0;box-shadow:0 4px 18px #1457bd14}
+.home-view .search-form:focus-within{border-color:var(--bright);box-shadow:0 4px 20px #1457bd22}
+.home-view .employee-field input{color:var(--ink)}
+.home-view .search-sep{background:var(--line)}
+.home-view .question-field input{color:var(--ink)}
+.home-view .question-field .icon,.home-view .employee-field .icon{color:var(--blue)}
+.home-view .submit-circle{background:linear-gradient(135deg,var(--navy),var(--bright))}
+.home-view .submit-circle:hover{background:var(--navy)}
+.home-view .employee-summary{color:var(--ink)}
+.summary-person strong{color:var(--navy)}
+.summary-person-details{color:var(--muted)}
+.home-view .action-card{border-color:#c9daf0;background:#fff}
+.home-view .action-card:hover{border-color:var(--bright);background:var(--pale)}
+.home-view .suggestions button{border-color:#cfdcee;color:var(--blue);background:#fff}
+.home-view .suggestions button:hover{background:var(--pale);border-color:var(--bright)}
+.home-view .action-card .icon,.home-view .action-card .card-symbol{color:var(--blue)}
+.home-view .action-card strong,.home-view .action-card b{color:var(--navy)}
+.home-view .section-head h2{color:var(--navy)}
+.home-view .section-head .text-link{color:var(--blue)}
+.home-view .action-card small{color:var(--muted)}
+.home-view .suggestions>span{color:var(--muted)}
+.home-view .question-examples summary{color:var(--blue)}
+.home-view .question-examples summary span{color:var(--muted)}
+
+.chat-avatar.bot-avatar{width:42px;height:42px;flex:0 0 42px;border-radius:50%;padding:0;background:#fff;border:1px solid #d3e1f3;box-shadow:0 2px 8px rgba(20,87,189,.15);overflow:hidden}
+.chat-avatar.bot-avatar img{display:block;width:100%;height:100%;object-fit:cover}

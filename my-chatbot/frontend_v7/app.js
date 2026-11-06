@@ -80,7 +80,30 @@
       if(!image.dataset.localFallback&&resource.origin===location.origin&&/^\/api\/users\/[^/]+\/photo$/.test(resource.pathname)){
         image.dataset.localFallback='1';resource.searchParams.set('fallback','true');image.src=resource.href;
       }else fallback();
-    });avatar.append(image);return avatar;
+    });avatar.append(image);enablePhotoPreview(avatar,image,profile);return avatar;
+  }
+  /* 사원 사진에 마우스를 올리면 운전면허증 모양의 사원 정보 카드를 보여줍니다. */
+  let idCard=null;
+  function hideIdCard(){if(idCard){idCard.remove();idCard=null;}}
+  function showIdCard(avatar,image,profile){
+    hideIdCard();const card=el('div','id-card');card.setAttribute('role','tooltip');
+    const head=add(card,'div','id-card-head');add(head,'strong','','WONIT Electronics');add(head,'span','','EMPLOYEE ID CARD');
+    const body=add(card,'div','id-card-body');const photo=add(body,'div','id-card-photo');const img=add(photo,'img');img.src=image.currentSrc||image.src;img.alt='';
+    const info=add(body,'dl','id-card-info');
+    const roles=Array.isArray(profile?.roles)?profile.roles.join(', '):(profile?.roles||'');
+    const rows=[['이름',profile?.name],['사번',profile?.employee_id],['소속',profile?.department],['직급',[profile?.grade,profile?.job_title].filter(Boolean).join(' · ')],['업무',roles],['이메일',profile?.work_email],['전화번호',profile?.extension_number?'내선 '+profile.extension_number:''],['근무지',profile?.work_location],['입사일',profile?.hired_at]];
+    for(const [label,value] of rows){if(!value)continue;add(info,'dt','',label);add(info,'dd',label==='이름'?'id-card-name':'',String(value));}
+    document.body.append(card);idCard=card;
+    const r=avatar.getBoundingClientRect(),w=card.offsetWidth,h=card.offsetHeight;
+    let left=Math.min(Math.max(8,r.left),window.innerWidth-w-8),top=r.bottom+10;if(top+h>window.innerHeight-8)top=Math.max(8,r.top-h-10);
+    card.style.left=left+'px';card.style.top=top+'px';
+  }
+  function enablePhotoPreview(avatar,image,profile){
+    avatar.classList.add('has-id-card');avatar.tabIndex=0;
+    const show=()=>{if(image.isConnected&&image.naturalWidth)showIdCard(avatar,image,profile);};
+    avatar.addEventListener('mouseenter',show);avatar.addEventListener('focus',show);
+    avatar.addEventListener('mouseleave',hideIdCard);avatar.addEventListener('blur',hideIdCard);
+    avatar.addEventListener('click',e=>e.stopPropagation());
   }
   function renderEmployeeSummary(profile){
     const summary=$('employeeSummary');empty(summary);summary.append(profileAvatar(profile,'summary-avatar'));
@@ -174,14 +197,21 @@
   function onChatScroll(){state.stickToBottom=chatScrolledToBottom();show('jumpToLatest',!state.stickToBottom);}
   function scrollLatest(force=false){if(force||state.stickToBottom){const n=$('chatMessages');requestAnimationFrame(()=>n.scrollTo({top:n.scrollHeight,behavior:force?'instant':'smooth'}));}}
   function timestamp(dateString){const d=dateString?new Date(dateString):new Date();return (Number.isNaN(d.getTime())?new Date():d).toLocaleTimeString('ko-KR',{hour:'2-digit',minute:'2-digit'});}
-  function addBubble(role,content,cls=''){const row=el('div','chat-message '+role+(cls?' '+cls:''));const avatar=role==='user'?row.appendChild(profileAvatar(state.employee,'chat-avatar user-avatar')):add(row,'span','chat-avatar',role==='assistant'?'AI':'!');const bubble=el('div','chat-bubble');row.append(bubble);if(typeof content==='string')add(bubble,'div','chat-body',content);else if(content instanceof Node)bubble.append(content);$('chatMessages').append(row);scrollLatest();return {row,bubble,avatar};}
+  function botAvatar(row,role){
+    const span=add(row,'span','chat-avatar'+(role==='assistant'?' bot-avatar':''));
+    if(role!=='assistant'){span.textContent='!';return span;}
+    const img=document.createElement('img');img.src='assets/chatbot-icon.png';img.alt='AI 업무 도우미';img.decoding='async';
+    img.addEventListener('error',()=>{img.remove();span.classList.remove('bot-avatar');span.textContent='AI';});
+    span.append(img);return span;
+  }
+  function addBubble(role,content,cls=''){const row=el('div','chat-message '+role+(cls?' '+cls:''));const avatar=role==='user'?row.appendChild(profileAvatar(state.employee,'chat-avatar user-avatar')):botAvatar(row,role);const bubble=el('div','chat-bubble');row.append(bubble);if(typeof content==='string')add(bubble,'div','chat-body',content);else if(content instanceof Node)bubble.append(content);$('chatMessages').append(row);scrollLatest();return {row,bubble,avatar};}
   function addPending(){const b=addBubble('assistant','');const dots=el('div','typing-dots');for(let i=0;i<3;i++)dots.append(el('span'));b.bubble.append(dots);return b;}
   function renderSources(container,sources){const d=el('details','sources-details');const summary=add(d,'summary','','관련 규정 출처 '+sources.length+'건');const list=el('div','source-list');sources.forEach((s,i)=>{const entry=el('div','source-entry');add(entry,'span','source-num',String(i+1).padStart(2,'0'));add(entry,'strong','',s.document||s.document_name||'문서명 미확인');const detail=[s.article,s.page?'PDF '+s.page+'쪽':'',s.version||s.effective_date].filter(Boolean).join(' · ');if(detail)add(entry,'small','',detail);if(s.text){const raw=el('details','source-original');add(raw,'summary','','검색 원문 보기');add(raw,'p','',s.text);entry.append(raw);}const url=safeResource(s.url||s.source_url);if(url){const a=add(entry,'a','','원문 열기');a.href=url;a.target='_blank';a.rel='noopener noreferrer';}list.append(entry);});d.append(list);container.append(d);}
   function renderSections(container,sections){sections.forEach((s,i)=>{const part=el('section','answer-section');add(part,'h4','',s.title||'확인 항목 '+(i+1));add(part,'p','',s.body||s.answer||'');if(Array.isArray(s.source_ids)&&s.source_ids.length)add(part,'small','','관련 근거 '+s.source_ids.map(x=>'['+x+']').join(', '));container.append(part);});}
   function renderCalculation(container,calc){if(!calc)return;const part=el('div','detail-block');add(part,'h4','','계산 내역'+(calc.title?' · '+calc.title:''));(Array.isArray(calc.items)?calc.items:[]).forEach(item=>{const line=el('div','calc-row');add(line,'span','',item.label||'');add(line,'strong','',String(item.value??''));part.append(line);});if(calc.note)add(part,'small','calc-note',calc.note);container.append(part);}
-  function makeContactCard(p){
+  function makeContactCard(p,options={}){
     const card=el('div','person-card'),avatar=el('div','avatar');const url=safeResource(p.image_url);
-    if(url){const img=document.createElement('img');img.src=url;img.alt=(p.name||'담당자')+' 프로필';img.loading='lazy';img.onerror=()=>{if(!img.dataset.fallback&&url.includes('/api/users/')){img.dataset.fallback='1';img.src=url+'?fallback=true';}else avatar.textContent='HR';};avatar.append(img);}else avatar.textContent='HR';card.append(avatar);
+    if(url){const img=document.createElement('img');img.src=url;img.alt=(p.name||'담당자')+' 프로필';img.loading='lazy';img.onerror=()=>{if(!img.dataset.fallback&&url.includes('/api/users/')){img.dataset.fallback='1';img.src=url+'?fallback=true';}else avatar.textContent='HR';};avatar.append(img);if(options.idCard!==false)enablePhotoPreview(avatar,img,p);}else avatar.textContent='HR';card.append(avatar);
     const meta=el('div','person-meta');add(meta,'strong','',p.name||'담당자');add(meta,'p','',[p.employee_id,p.department,p.position||p.job_title,p.grade].filter(Boolean).join(' · '));
     const extension=p.extension||p.extension_number;if(extension)add(meta,'span','','내선 '+extension);
     const email=p.email||p.work_email;if(email&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){const link=add(meta,'a','',email);link.href='mailto:'+email;}
@@ -274,7 +304,7 @@
     if(['failed','pending','not_configured'].includes(result.webhook_status)){const retry=add(notice,'button','outline-btn','n8n 다시 전송');retry.type='button';retry.addEventListener('click',async()=>{retry.disabled=true;try{showEnded(await post('retryWebhookUrl',{employee_id:employeeId(),session_id:state.sessionId}));}catch(e){toast(getError(e));retry.disabled=false;}});}}
   async function directorySearch(append=false){
     const button=$('directorySearch');button.disabled=true;try{const offset=append?Number($('directoryMore').dataset.offset||0):0;const params=new URLSearchParams({query:$('directoryQuery').value,department_id:$('directoryDepartment').value,limit:'12',offset:String(offset)});if(!params.get('department_id'))params.delete('department_id');const response=await fetch('/api/employees?'+params);if(!response.ok)throw Error('사원 검색에 실패했습니다.');const data=await response.json();if(!append)empty($('directoryResults'));
-      for(const profile of data.items){const card=makeContactCard(profile);const choose=add(card,'button','outline-btn','이 사번으로 새 대화');choose.type='button';choose.addEventListener('click',()=>{if(state.busy)return;clearSession();$('employeeId').value=profile.employee_id;onEmployeeInput();lookupEmployee();$('directoryDialog').close();nav('home');});$('directoryResults').append(card);}
+      for(const profile of data.items){const card=makeContactCard(profile,{idCard:false});const choose=add(card,'button','outline-btn','이 사번으로 새 대화');choose.type='button';choose.addEventListener('click',()=>{if(state.busy)return;clearSession();$('employeeId').value=profile.employee_id;onEmployeeInput();lookupEmployee();$('directoryDialog').close();nav('home');});$('directoryResults').append(card);}
       $('directoryCount').textContent=`총 ${data.total}명 · ${offset+data.items.length}명 표시`;$('directoryMore').dataset.offset=String(offset+data.items.length);show('directoryMore',offset+data.items.length<data.total);
     }catch(e){$('directoryCount').textContent=getError(e);}finally{button.disabled=false;}}
   function initDirectory(){
