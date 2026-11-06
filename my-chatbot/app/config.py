@@ -46,8 +46,8 @@ class Settings:
     tool_router: str = "ollama"
     enabled_tools: tuple[str, ...] = ()
     ollama_base_url: str = "http://127.0.0.1:11434"
-    ollama_model: str = "qwen2.5:3b"
-    ollama_answer_model: str = 'gemma3:4b'
+    ollama_model: str = "gemma4:e2b"
+    ollama_answer_model: str = 'gemma4:e2b'
     ollama_timeout: float = 60
     ollama_think: bool = False
     # 표를 복원한 근거가 길어져도 시스템 프롬프트가 잘리지 않도록 기존 8192보다 넉넉히 둡니다.
@@ -162,13 +162,13 @@ class Settings:
             tool_router=env.get("TOOL_ROUTER", "ollama"),
             enabled_tools=tuple(item.strip() for item in env.get("ENABLED_TOOLS", "").split(",") if item.strip()),
             ollama_base_url=env.get("OLLAMA_BASE_URL", "http://127.0.0.1:11434"),
-            ollama_model=env.get("OLLAMA_MODEL", "qwen2.5:3b"), ollama_timeout=timeout,
+            ollama_model=env.get("OLLAMA_MODEL", "gemma4:e2b"), ollama_timeout=timeout,
             ollama_think=env_bool(env,'OLLAMA_THINK',False),
             ollama_num_ctx=env_int(env, 'OLLAMA_NUM_CTX', 12288),
             ollama_keep_alive=env.get('OLLAMA_KEEP_ALIVE', '-1').strip() or '-1',
             ollama_unload_on_exit=env_bool(env, 'OLLAMA_UNLOAD_ON_EXIT', True),
             warm_up=env_bool(env, 'WARM_UP', True),
-            ollama_answer_model=env.get('OLLAMA_ANSWER_MODEL', 'gemma3:4b'),
+            ollama_answer_model=env.get('OLLAMA_ANSWER_MODEL', 'gemma4:e2b'),
             mcp_timeout=float(env.get('MCP_TIMEOUT_SECONDS', '180')),
             contact_recommendation_limit=env_int(env, 'CONTACT_RECOMMENDATION_LIMIT', 2),
             contact_routing_path=env_path(env,'CONTACT_ROUTING_PATH',PROJECT_ROOT/'config'/'contact_topics.json'),

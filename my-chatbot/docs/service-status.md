@@ -8,7 +8,7 @@
 - FastAPI 상태: live / chat_available=true
 - SQLite 연결 정상. 이후 사원 연동에서는 employee_directory의 100명·부서 16개를 사용자 원본으로 연결했습니다. 이전 대화 DB의 직원 102행은 유지합니다.
 - MCP stdio 연결 정상: 분야 도구 9개
-- Ollama 설치 모델: 도구 선택 qwen2.5:3b, 답변 gemma3:4b
+- Ollama 사용 모델: 도구 선택·답변 모두 gemma4:e2b
 - 실제 질문 2회를 연속 실행하여 두 번 모두 answered, pay_benefits 선택, 문서 근거 5개를 확인
 - 두 번째 질문의 컨텍스트에 이전 메시지 2개와 현재 사용자 프로필 포함
 - SQLite에서 질문/답변 총 4개 복원 확인

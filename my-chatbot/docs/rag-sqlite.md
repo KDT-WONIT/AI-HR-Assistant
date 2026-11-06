@@ -7,7 +7,7 @@
 - 규정 벡터 DB: `chroma_db` (CHROMA_DIR)
 - 컬렉션: `kdn_regulations_bge_m3_v1`, 59개 문서 / 7,117개 조각
 - 질문 임베딩: `BAAI/bge-m3`, 리비전 `5617a9f61b028005a4858fdac845db406aefb181`, 1,024차원, 정규화
-- 도구 선택: Ollama `qwen2.5:3b`, 최종 답변: `gemma3:4b` (각각 .env에서 변경 가능)
+- 도구 선택·최종 답변: Ollama `gemma4:e2b` (기본값, 각각 .env에서 변경 가능)
 
 기존 ChromaDB는 재적재하지 않습니다. 컬렉션이 없으면 빈 컬렉션을 만들지 않고 오류를 반환합니다.
 SQLite와 Chroma 내부 chroma.sqlite3는 서로 다른 DB입니다. 직원/대화를 Chroma 내부 DB에 쓰지 않습니다.

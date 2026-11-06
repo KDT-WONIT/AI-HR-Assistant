@@ -36,7 +36,7 @@
 | USER_DATA_SOURCE | directory / auto / sqlite / mysql / file. 현재 directory로 독립 사원 DB 조회 |
 | USER_DATA_PATH | DATA_DIR/raw/users.json. JSON 프로필 파일 |
 | OLLAMA_BASE_URL / OLLAMA_MODEL | Ollama 서버·설치 모델 |
-| OLLAMA_ANSWER_MODEL | 최종 답변용 모델, 기본 gemma3:4b. OLLAMA_MODEL은 도구 선택용 |
+| OLLAMA_ANSWER_MODEL | 최종 답변용 모델, 기본 gemma4:e2b. OLLAMA_MODEL은 도구 선택용(기본 gemma4:e2b) |
 | OLLAMA_TIMEOUT_SECONDS | 답변 대기 시간, 기본 60초 |
 | MCP_TIMEOUT_SECONDS | 로컬 MCP 도구 호출 제한, 기본 180초 |
 | N8N_WEBHOOK_URL | n8n 웹훅 전체 주소. 기본 빈 값이면 외부 POST 없음 |
