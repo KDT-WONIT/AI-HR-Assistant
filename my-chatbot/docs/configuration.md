@@ -96,4 +96,4 @@ ChromaDB 인터페이스의 저장 위치와 컬렉션 이름이 이 설정에 �
 
 ## WONIT v7 UI
 
-FRONTEND_DIR 기본값은 ./frontend_v7입니다. UI_REGULATIONS_DIR은 제공받은 v7 UI 묶음의 regulations/wonit_preprocessed 폴더를 가리킵니다. OLLAMA_THINK=false는 구조화된 도구 선택과 답변의 내부 추론 출력을 끕니다. 경로를 옮기면 .env를 수정하고 재시작하세요. 상세 내용은 [v7 연결 안내](wonit-v7-integration.md)를 참고하세요.
+FRONTEND_DIR 기본값은 ./frontend_v7입니다. UI_REGULATIONS_DIR은 화면의 규정집 PDF 원문 폴더(기본 ./data/regulations_pdf, 59개)를 가리킵니다. OLLAMA_THINK=false는 구조화된 도구 선택과 답변의 내부 추론 출력을 끕니다. 경로를 옮기면 .env를 수정하고 재시작하세요. 상세 내용은 [v7 연결 안내](wonit-v7-integration.md)를 참고하세요.

@@ -25,6 +25,9 @@ def business_data(tool_id: str, request: ToolInput) -> tuple[dict, str | None]:
     args = ToolArguments.model_validate(request.arguments)
     if situation_statement(question):
         return {'user_situation': question}, None
+    from app.agent.tenure import tenure_question, tenure_info
+    if tenure_question(question):
+        return tenure_data(request, question, tenure_info)
     if history_question(question):
         return {'inquiry_history':inquiry_history(request,args)},None
     args.history_query = None  # 라우터가 일반 질문에도 채울 수 있어, 명시적인 이력 요청만 이력 모드로 처리합니다.
@@ -39,6 +42,16 @@ def business_data(tool_id: str, request: ToolInput) -> tuple[dict, str | None]:
         else:
             assumptions=[]
         result=travel_expense(request,args)
+        if isinstance(result,dict) and result.get('status')=='needs_review' and args.trip:
+            # 담당자 확인으로 멈추지 않고, 계산 가능한 일반 조건으로 완화해 추정 계산을 한 번 더 시도합니다.
+            from app.agent.travel_estimate_answers import relax_for_estimate
+            relaxed=relax_for_estimate(args.trip,result.get('message',''))
+            if relaxed is not None:
+                retry_args=args.model_copy(update={'trip':relaxed[0]})
+                retry=travel_expense(request,retry_args)
+                if isinstance(retry,dict) and retry.get('status') in {'success','partial'}:
+                    assumptions=[*assumptions,'원래 조건: '+result.get('message','담당자 확인이 필요한 조건입니다.'),*relaxed[1]]
+                    result=retry
         if isinstance(result,dict) and assumptions:
             result['assumptions']=[*assumptions,*result.get('assumptions',[])]
         if isinstance(result,dict) and result.get('status')=='needs_review' and args.trip:
@@ -132,6 +145,26 @@ def business_data(tool_id: str, request: ToolInput) -> tuple[dict, str | None]:
 from app.agent.intent_guard import is_contact_lookup, drop_unrelated_directory_data  # noqa: E402,F401
 
 
+def tenure_data(request: ToolInput, question: str, tenure_info) -> tuple[dict, str | None]:
+    """근속 질문: 본인(또는 질문에 이름·사번이 있는 사원)의 입사일로 근속 기간을 계산합니다."""
+    person = request.user_profile
+    if settings.user_data_source == 'directory':
+        directory = EmployeeDirectoryRepository()
+        target = directory.identify_query(question)
+        other = directory.get(target) if target else None
+        if other is not None and getattr(other, 'hired_at', None) and (person is None or other.employee_id != person.employee_id):
+            person = other
+    if person is None or not person.hired_at:
+        return {}, '입사일 정보를 찾지 못했습니다. 인사 담당 부서에 확인해주세요.'
+    today = datetime.now(timezone(timedelta(hours=9))).date()
+    info = tenure_info(person.hired_at, today)
+    if info is None:
+        return {}, '입사일이 오늘보다 늦어 근속 기간을 계산할 수 없습니다.'
+    info['name'] = person.name
+    info['is_self'] = request.user_profile is not None and person.employee_id == request.user_profile.employee_id
+    return {'tenure': info}, None
+
+
 def travel_calc_data(request: ToolInput, question: str) -> tuple[dict, str | None]:
     """출장비 계산기: 4가지 입력이 모두 있어야 계산하고, 없으면 빠진 항목을 되묻습니다."""
     import json
@@ -159,7 +192,7 @@ async def execute_domain(tool_id: str, patterns: list[str], request: ToolInput) 
     policy_question = any(word in request.question for word in ('규정','기준','절차','방법','자격','지원','신청'))
     # 사원 정보만 묻는 질문에 무관한 규정 검색/LLM 설명을 섞지 않습니다.
     from app.integrations.leave_balance import balance_only_question
-    structured = any(data.get(key) for key in ('inquiry_history','travel_expense','travel_calc','calculator','user_situation')) or (
+    structured = any(data.get(key) for key in ('inquiry_history','travel_expense','travel_calc','calculator','user_situation','tenure')) or (
         bool(data.get('leave_balance')) and balance_only_question(request.question))
     profile = request.user_profile
     hints = RetrievalHints(grade=profile.grade, job_title=profile.job_title, department=profile.department,

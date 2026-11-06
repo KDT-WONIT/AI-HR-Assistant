@@ -41,7 +41,7 @@ def is_chitchat(question: str) -> bool:
 
 
 STRUCTURED_KEYS = ('inquiry_history', 'travel_expense', 'travel_calc', 'calculator', 'user_situation', 'leave_balance',
-                   'leave_entitlement', 'leave_projection', 'employee', 'hr_contacts', 'departments')
+                   'leave_entitlement', 'leave_projection', 'tenure', 'employee', 'hr_contacts', 'departments')
 
 
 def should_fall_back_to_general(question: str, data: dict, history_has_business: bool = False) -> bool:

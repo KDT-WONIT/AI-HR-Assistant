@@ -137,6 +137,16 @@ class V7Tests(unittest.TestCase):
         self.assertEqual(response['contacts'][0]['extension'],'2115')
         self.assertEqual(response['contacts'][0]['email'],'c@example.com')
 
+    def test_contacts_work_without_employee_id(self):
+        profile=self.profile.model_copy(update={'employee_id':'C','name':'담당자','department':'급여부','extension_number':'2115','work_email':'c@example.com'})
+        self.service.contacts=Mock();self.service.contacts.recommend.return_value=ContactEscalation(
+            status='recommended',contacts=[ContactRecommendation(employee=profile,reason='급여 업무')])
+        for body in ({'category_id':'payroll'},{'employee_id':'','category_id':'payroll'}):
+            response=self.client.post('/api/hr/contact',json=body)
+            self.assertEqual(response.status_code,200)
+            self.assertEqual(response.json()['contacts'][0]['extension'],'2115')
+        self.assertEqual(self.service.contacts.recommend.call_args.args[1],'')
+
     def test_source_path_rejects_arbitrary_file_names(self):
         self.assertEqual(self.client.get('/api/hr/source/secrets.env').status_code,404)
 

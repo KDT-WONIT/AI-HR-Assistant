@@ -3,7 +3,7 @@
 적용일: 2026-11-05.
 
 제공받은 `WONIT_HR_UI_v7_WONIT_59_TEST/WONIT_HR_UI_v7_WONIT_59_TEST` 화면을
-`frontend_v7`에 복사해 실제 서비스에 연결했습니다. 전달받은 원본 폴더와 기존 `frontend`는 보존했습니다.
+`frontend_v7`에 복사해 실제 서비스에 연결했습니다. 기존 `frontend`는 보존했습니다. 규정집 PDF 59개는 `data/regulations_pdf`로 옮겨 이 프로젝트 폴더 안에서 모두 제공되며, 전달받은 원본 폴더는 더 이상 필요하지 않아 삭제했습니다.
 모의 서버 `mock_server.py`와 5510 포트는 사용하지 않습니다.
 
 ## 실행과 설정
@@ -16,7 +16,7 @@ python -m app --reload
 
 ```dotenv
 FRONTEND_DIR=./frontend_v7
-UI_REGULATIONS_DIR=../WONIT_HR_UI_v7_WONIT_59_TEST/WONIT_HR_UI_v7_WONIT_59_TEST/regulations/wonit_preprocessed
+UI_REGULATIONS_DIR=./data/regulations_pdf
 OLLAMA_THINK=false
 ```
 

@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="가상 HR 담당자 이미지">
-  <rect width="128" height="128" rx="64" fill="#EAF2FF"/>
-  <circle cx="64" cy="48" r="21" fill="#8AB7EB"/>
-  <path d="M20 117c4-29 19-45 44-45s40 16 44 45" fill="#2460B1"/>
-  <path d="M46 73l18 21 18-21" fill="#FFF"/>
-  <rect x="31" y="96" width="66" height="9" rx="4" fill="#83ACDA" opacity=".5"/>
-</svg>

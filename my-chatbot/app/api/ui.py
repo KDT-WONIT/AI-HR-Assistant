@@ -49,8 +49,18 @@ class HistoryRequest(EmployeeRequest):
     search: str = Field(default='',max_length=100)
 
 
-class ContactRequest(EmployeeRequest):
+class ContactRequest(RequestModel):
+    """HR 담당자 조회: 사번은 선택입니다(입력하면 본인을 후보에서 제외)."""
+    employee_id: str = Field(default='',max_length=50)
     category_id: str = Field(default='hr_employment',max_length=80)
+
+    @field_validator('employee_id')
+    @classmethod
+    def canonical_optional_id(cls, value):
+        if not value or not value.strip():
+            return ''
+        from app.identity import canonical_employee_id
+        return canonical_employee_id(value)
 
 
 class FeedbackRequest(SessionRequest):
@@ -194,7 +204,8 @@ async def conversation(data: SessionRequest):
 
 @router.post('/contact')
 async def contacts(data: ContactRequest):
-    await require_employee(data.employee_id)
+    if data.employee_id:
+        await require_employee(data.employee_id)
     topics={'leave':'연차 근태','travel':'출장 여비','welfare':'복리후생','payroll':'급여 연봉','hr_employment':'인사 채용','other':'인사'}
     result=await run_in_threadpool(core.service.contacts.recommend,topics.get(data.category_id,data.category_id),data.employee_id)
     return {'contacts':[person(p.employee,p.reason) for p in result.contacts],'message':result.message}

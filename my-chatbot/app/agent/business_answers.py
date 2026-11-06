@@ -20,6 +20,14 @@ def structured_answer(context):
     if estimate is not None:
         return estimate
     for result in context.tool_results:
+        info = result.data.get('tenure')
+        if info:
+            context.answer_coverage = 'direct'
+            who = '현재' if info.get('is_self') else f"{info.get('name')} 님은 현재"
+            span = f"{info['years']}년 {info['months']}개월" if info['years'] else f"{info['months']}개월"
+            return (f"{who} 입사 {info['year_rank']}년차입니다.\n"
+                    f"입사일 {info['hired_at']} 기준으로 오늘까지 {span} 근무하셨습니다(입사 첫해를 1년차로 계산).\n"
+                    f"\n[조회 근거] 사원 정보의 입사일")
         if result.data.get('user_situation'):
             context.answer_coverage = 'direct'
             return '말씀하신 상황을 이번 대화에서 참고하겠습니다. 이어서 궁금한 휴가·지원금·출장비를 물어봐 주세요.'

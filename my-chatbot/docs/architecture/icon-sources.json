@@ -1,0 +1,80 @@
+{
+  "fastapi": {
+    "url": "https://cdn.jsdelivr.net/npm/simple-icons@16.0.0/icons/fastapi.svg",
+    "color": "#009688",
+    "file": "icons/fastapi.svg",
+    "status": "downloaded"
+  },
+  "python": {
+    "url": "https://cdn.jsdelivr.net/npm/simple-icons@16.0.0/icons/python.svg",
+    "color": "#3776AB",
+    "file": "icons/python.svg",
+    "status": "downloaded"
+  },
+  "html5": {
+    "url": "https://cdn.jsdelivr.net/npm/simple-icons@16.0.0/icons/html5.svg",
+    "color": "#E34F26",
+    "file": "icons/html5.svg",
+    "status": "downloaded"
+  },
+  "css": {
+    "url": "https://cdn.jsdelivr.net/npm/simple-icons@16.0.0/icons/css.svg",
+    "color": "#663399",
+    "file": "icons/css.svg",
+    "status": "downloaded"
+  },
+  "javascript": {
+    "url": "https://cdn.jsdelivr.net/npm/simple-icons@16.0.0/icons/javascript.svg",
+    "color": "#B89D00",
+    "file": "icons/javascript.svg",
+    "status": "downloaded"
+  },
+  "googlechrome": {
+    "url": "https://cdn.jsdelivr.net/npm/simple-icons@16.0.0/icons/googlechrome.svg",
+    "color": "#4285F4",
+    "file": "icons/googlechrome.svg",
+    "status": "downloaded"
+  },
+  "sqlite": {
+    "url": "https://cdn.jsdelivr.net/npm/simple-icons@16.0.0/icons/sqlite.svg",
+    "color": "#003B57",
+    "file": "icons/sqlite.svg",
+    "status": "downloaded"
+  },
+  "ollama": {
+    "url": "https://cdn.jsdelivr.net/npm/simple-icons@16.0.0/icons/ollama.svg",
+    "color": "#242424",
+    "file": "icons/ollama.svg",
+    "status": "downloaded"
+  },
+  "n8n": {
+    "url": "https://cdn.jsdelivr.net/npm/simple-icons@16.0.0/icons/n8n.svg",
+    "color": "#EA4B71",
+    "file": "icons/n8n.svg",
+    "status": "downloaded"
+  },
+  "googlesheets": {
+    "url": "https://cdn.jsdelivr.net/npm/simple-icons@16.0.0/icons/googlesheets.svg",
+    "color": "#0F9D58",
+    "file": "icons/googlesheets.svg",
+    "status": "downloaded"
+  },
+  "modelcontextprotocol": {
+    "url": "https://cdn.jsdelivr.net/npm/simple-icons@16.0.0/icons/modelcontextprotocol.svg",
+    "color": "#30343B",
+    "file": "icons/modelcontextprotocol.svg",
+    "status": "downloaded"
+  },
+  "huggingface": {
+    "url": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
+    "color": null,
+    "file": "icons/huggingface.svg",
+    "status": "downloaded"
+  },
+  "chroma": {
+    "url": "https://www.trychroma.com/_next/static/immutable/media/chroma-wordmark.3omc55d6a9e1l.svg",
+    "color": null,
+    "file": "icons/chroma.svg",
+    "status": "downloaded"
+  }
+}

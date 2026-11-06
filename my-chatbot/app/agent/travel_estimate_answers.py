@@ -9,6 +9,97 @@ EXCERPT_CHARS = 160
 TRIP_LABEL = {'domestic': '국내', 'overseas': '국외'}
 
 
+FUEL_WON_PER_KM = 150   # 연비 약 11km/L, 휘발유 약 1,650원/L 가정
+TOLL_WON_PER_KM = 50    # 고속도로 통행료 대략치
+RENTAL_WON_PER_DAY = 60000  # 중형 렌터카 1일 대여료 대략치
+PUBLIC_WON_PER_KM = 130     # 철도·버스 운임 대략치
+OVERSEAS_FARE_WON = 800000  # 국외 왕복 항공 등 운임 가정
+ASSUMED_USD_KRW = 1400      # 환율 가정
+
+
+def estimate_vehicle(trip, assumptions):
+    """국내 장거리 자가용·회사 제공 차량·대여 차량: 담당자 확인으로 멈추지 않고 교통비를 추정해 일반 계산으로 보냅니다.
+
+    규정상 최종 지급액은 증빙으로 확정되므로, 계산기는 추정 교통비 + 일비·식비·숙박비 방식으로 계산하고
+    추정한 가정은 모두 답변에 표시합니다. 근거리(50km 미만·동일 시·군) 정액 계산은 건드리지 않습니다.
+    """
+    mode = trip.get('transport_mode')
+    if mode not in ('private_car', 'company_car', 'rental_car') or trip.get('trip_type') != 'domestic':
+        return
+    try:
+        distance = float(trip.get('distance_km'))
+    except (TypeError, ValueError):
+        return
+    if distance < 50 or trip.get('same_city'):
+        return
+    try:
+        from datetime import date
+        days = (date.fromisoformat(str(trip['end_date'])) - date.fromisoformat(str(trip['start_date']))).days + 1
+    except (KeyError, ValueError):
+        days = 1
+    fuel = int(round(distance * FUEL_WON_PER_KM, -2))
+    toll = int(round(distance * TOLL_WON_PER_KM, -2))
+    if mode == 'private_car':
+        trip['transport_mode'] = 'public_transport'  # 담당자 확인 분기를 피해 일반 계산으로
+        if trip.get('transport_cost_krw') in (None, ''):
+            trip['transport_cost_krw'] = fuel
+            assumptions.append(f'교통비(추정): 자가용 연료비를 거리 {distance:g}km × km당 약 {FUEL_WON_PER_KM}원 = {fuel:,}원으로 추정했습니다.')
+        if trip.get('toll_cost_krw') in (None, ''):
+            trip['toll_cost_krw'] = toll
+            assumptions.append(f'통행료(추정): 거리 {distance:g}km × km당 약 {TOLL_WON_PER_KM}원 = {toll:,}원으로 추정했습니다.')
+        assumptions.append('자가용 교통비는 규정상 철도·버스운임 한도 안에서 인정되며 실제 지급액은 증빙으로 확정됩니다.')
+    elif mode == 'company_car':
+        trip['transport_mode'] = 'public_transport'
+        if trip.get('transport_cost_krw') in (None, ''):
+            trip['transport_cost_krw'] = 0
+            assumptions.append('교통비(추정): 회사 제공 차량이라 개인 교통비는 0원으로 가정했습니다.')
+        if trip.get('toll_cost_krw') in (None, ''):
+            trip['toll_cost_krw'] = 0
+            assumptions.append('통행료(추정): 회사 차량 통행료는 회사가 직접 부담하는 것으로 보고 0원으로 가정했습니다.')
+        assumptions.append('회사 제공 차량의 일비 제외 범위는 확정되지 않아 일비를 정상 지급하는 것으로 가정했습니다. 담당자 확인이 필요할 수 있습니다.')
+    else:  # rental_car: 일비 50% 감액은 계산기가 처리합니다.
+        rental = RENTAL_WON_PER_DAY * days
+        if trip.get('transport_cost_krw') in (None, ''):
+            trip['transport_cost_krw'] = rental + fuel
+            assumptions.append(f'교통비(추정): 렌터카 대여료 {RENTAL_WON_PER_DAY:,}원 × {days}일 + 연료비 {fuel:,}원 = {rental + fuel:,}원으로 추정했습니다.')
+        if trip.get('toll_cost_krw') in (None, ''):
+            trip['toll_cost_krw'] = toll
+            assumptions.append(f'통행료(추정): 거리 {distance:g}km × km당 약 {TOLL_WON_PER_KM}원 = {toll:,}원으로 추정했습니다.')
+
+
+estimate_private_car = estimate_vehicle  # 이전 이름 호환
+
+
+def relax_for_estimate(trip, message=''):
+    """담당자 확인(needs_review)으로 멈춘 조건을 계산 가능한 일반 출장 조건으로 완화합니다.
+    반환: (완화된 입력, 설명 목록). 완화할 수 없으면 None."""
+    trip = dict(trip)
+    notes = []
+    if trip.get('special_conditions'):
+        notes.append('특별 조건(' + ', '.join(map(str, trip['special_conditions'])) + ')은 계산에 반영하지 못했습니다. 담당자 확인이 필요합니다.')
+        trip['special_conditions'] = []
+    if trip.get('trip_type', 'domestic') == 'domestic':
+        try:
+            distance = float(trip.get('distance_km'))
+        except (TypeError, ValueError):
+            distance = None
+        if distance is not None and (distance < 50 or trip.get('same_city')):
+            trip['distance_km'] = max(distance, 50)
+            trip['same_city'] = False
+            notes.append('근거리 정액 규정(당일·식사 미제공 등)에 맞지 않아 일반 출장(왕복 50km 이상, 다른 시·군) 기준으로 추정했습니다.')
+            assumptions = []
+            estimate_vehicle(trip, assumptions)
+            notes.extend(assumptions)
+        else:
+            return None if not notes else (trip, notes)
+        return trip, notes
+    if trip.get('transport_mode') in ('private_car', 'company_car'):
+        trip['transport_mode'] = 'public_transport'
+        notes.append('국외 자가·회사 제공 차량 교통비는 확정할 수 없어 대중교통 기준으로 추정했습니다. 교통비는 별도로 입력해야 합니다.')
+        return trip, notes
+    return (trip, notes) if notes else None
+
+
 def apply_defaults(trip):
     """필수 입력(출장지·기간·교통수단) 외 값이 비어 있어도 계산되도록 기본 가정을 채우고 가정 목록을 돌려줍니다."""
     from datetime import date
@@ -29,6 +120,11 @@ def apply_defaults(trip):
         if days > 1 and trip.get('lodging_nights', days - 1) and 'domestic_region_type' not in trip:
             trip['domestic_region_type'] = 'other'
             assumptions.append('숙박 지역이 없어 "기타" 지역 기준(1박 상한 70,000원)으로 계산했습니다.')
+        estimate_vehicle(trip, assumptions)
+        if trip.get('transport_mode', 'public_transport') == 'public_transport' and trip.get('transport_cost_krw') in (None, ''):
+            cost = int(round(float(trip['distance_km']) * PUBLIC_WON_PER_KM, -2))
+            trip['transport_cost_krw'] = cost
+            assumptions.append(f'교통비(추정): 대중교통 운임을 거리 {float(trip["distance_km"]):g}km × km당 약 {PUBLIC_WON_PER_KM}원 = {cost:,}원으로 추정했습니다.')
     else:
         if 'destination_country' not in trip:
             trip['destination_country'] = trip.get('destination_city', '')
@@ -39,6 +135,20 @@ def apply_defaults(trip):
         if 'meal_days' not in trip:
             trip['meal_days'] = days
             assumptions.append(f'식비 지급 일수가 없어 출장 {days}일 전체로 계산했습니다.')
+        if trip.get('transport_mode') in ('private_car', 'company_car'):
+            trip['transport_mode'] = 'public_transport'
+            assumptions.append('국외 자가·회사 제공 차량 교통비는 확정할 수 없어 항공 등 대중교통 기준으로 추정했습니다.')
+        if trip.get('transport_cost_krw') in (None, '') and trip.get('transport_mode', 'public_transport') in ('public_transport', 'rental_car'):
+            trip['transport_cost_krw'] = OVERSEAS_FARE_WON
+            assumptions.append(f'교통비(추정): 국외 왕복 항공 등 운임을 {OVERSEAS_FARE_WON:,}원으로 가정했습니다.')
+        if 'exchange_rate_krw_per_usd' not in trip:
+            from datetime import date as _date
+            approval = min(_date.today(), _date.fromisoformat(str(trip['start_date'])))
+            trip.setdefault('approval_date', approval.isoformat())
+            trip.setdefault('exchange_rate_date', trip['approval_date'])
+            trip.setdefault('exchange_rate_basis', 'hana_cash_buy_opening')
+            trip['exchange_rate_krw_per_usd'] = ASSUMED_USD_KRW
+            assumptions.append(f'환율이 없어 {ASSUMED_USD_KRW:,}원/USD로 가정했습니다. 실제는 품의일 하나은행 현찰 살 때 시초가를 적용합니다.')
     if 'meal_days' not in trip:
         assumptions.append(f'식비 지급 일수가 없어 출장 {days}일 전체로 계산했습니다.')
     return trip, assumptions
@@ -175,9 +285,11 @@ def travel_estimate_answer(context, fetch=None):
     elif lodging is not None:
         lines.append(f"- 숙박비: {_fmt(lodging, currency)}")
     transport = data.get('transport_cost_krw')
-    lines.append(f"- 교통비: {_fmt(transport, 'KRW')} (입력값)" if transport is not None else '- 교통비: 입력되지 않아 합계에서 제외했습니다.')
+    estimated = any('교통비(추정)' in note for note in calculation.get('assumptions', []))
+    lines.append(f"- 교통비: {_fmt(transport, 'KRW')} ({'추정값, 아래 가정 참고' if estimated else '입력값'})" if transport is not None else '- 교통비: 입력되지 않아 합계에서 제외했습니다.')
     if _num(data.get('toll_cost_krw')):
-        lines.append(f"- 통행료: {_fmt(data['toll_cost_krw'], 'KRW')}")
+        toll_estimated = any('통행료(추정)' in note for note in calculation.get('assumptions', []))
+        lines.append(f"- 통행료: {_fmt(data['toll_cost_krw'], 'KRW')}" + (' (추정값)' if toll_estimated else ''))
     if overseas:
         rate = data.get('exchange_rate_krw_per_usd')
         lines.append(f"- 국외 수당·숙박 소계: {_fmt(data.get('known_allowances_subtotal'), 'USD')}"

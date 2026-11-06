@@ -184,6 +184,10 @@ class ChatService:
             # 내 연차 잔여를 묻는 질문은 라우터 판단과 상관없이 연차 계산 도구로 보냅니다.
             if '연차' in current and balance_only_question(data.message):
                 forced_tool = 'work_labor'
+        if forced_tool is None and any(tool.id == 'hr_employment' for tool in catalog):
+            from app.agent.tenure import tenure_question
+            if tenure_question(data.message):
+                forced_tool = 'hr_employment'  # 근속 질문은 라우터 판단과 상관없이 입사일 계산으로 보냅니다.
         if forced_tool is None:
             from app.agent.intent import is_chitchat
             if is_chitchat(data.message):

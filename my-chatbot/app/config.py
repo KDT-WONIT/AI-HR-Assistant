@@ -84,7 +84,7 @@ class Settings:
     chroma_collection: str = "kdn_regulations_bge_m3_v1"
     user_data_source: str = "auto"
     frontend_dir: Path = PROJECT_ROOT / "frontend_v7"
-    ui_regulations_dir: Path = PROJECT_ROOT.parent / 'WONIT_HR_UI_v7_WONIT_59_TEST' / 'WONIT_HR_UI_v7_WONIT_59_TEST' / 'regulations' / 'wonit_preprocessed'
+    ui_regulations_dir: Path = PROJECT_ROOT / 'data' / 'regulations_pdf'
     prompts_dir: Path = PROJECT_ROOT / "prompts"
     logs_dir: Path = PROJECT_ROOT / "logs"
     database_schema_path: Path = PROJECT_ROOT / "database" / "schema.sql"
@@ -194,7 +194,7 @@ class Settings:
             chroma_collection=env.get("CHROMA_COLLECTION", "kdn_regulations_bge_m3_v1"),
             user_data_source=env.get("USER_DATA_SOURCE", "auto"),
             frontend_dir=env_path(env, "FRONTEND_DIR", PROJECT_ROOT / "frontend_v7"),
-            ui_regulations_dir=env_path(env,'UI_REGULATIONS_DIR',PROJECT_ROOT.parent/'WONIT_HR_UI_v7_WONIT_59_TEST'/'WONIT_HR_UI_v7_WONIT_59_TEST'/'regulations'/'wonit_preprocessed'),
+            ui_regulations_dir=env_path(env,'UI_REGULATIONS_DIR',data/'regulations_pdf'),
             prompts_dir=env_path(env, "PROMPTS_DIR", PROJECT_ROOT / "prompts"),
             logs_dir=env_path(env, "LOGS_DIR", PROJECT_ROOT / "logs"),
             database_schema_path=env_path(env, "DATABASE_SCHEMA_PATH", PROJECT_ROOT / "database" / "schema.sql"),
